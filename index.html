@@ -1,0 +1,1911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
+<title>Dinner</title>
+
+<!-- iOS PWA / Home Screen support -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content="Dinner" />
+<meta name="theme-color" content="#1a2332" />
+<link rel="apple-touch-icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect width='180' height='180' rx='40' fill='%231a2332'/><circle cx='90' cy='95' r='44' fill='none' stroke='%23ffffff' stroke-width='6'/><circle cx='90' cy='95' r='30' fill='none' stroke='%23c9a84c' stroke-width='4'/><rect x='84' y='35' width='12' height='22' rx='4' fill='%23c9a84c'/></svg>" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --bg: #f5f6f8;
+    --surface: #ffffff;
+    --surface-2: #fafbfc;
+    --surface-3: #f0f2f6;
+    --border: #e3e5ea;
+    --border-strong: #c9ccd4;
+    --text: #1a1d24;
+    --text-soft: #555a66;
+    --text-mute: #8a8f99;
+    --accent: #1a2332;
+    --accent-soft: #eef1f7;
+    --gold: #c9a84c;
+    --gold-soft: #faf3df;
+    --green: #2e8b57;
+    --green-soft: #e6f4ea;
+    --red: #b03030;
+    --red-soft: #fbeaea;
+    --blue: #2d6cdf;
+    --blue-soft: #e8f0fd;
+    --shadow: 0 6px 24px rgba(20, 25, 40, 0.06), 0 1px 3px rgba(20, 25, 40, 0.04);
+    --shadow-lift: 0 18px 48px rgba(20, 25, 40, 0.12), 0 2px 6px rgba(20, 25, 40, 0.06);
+    --radius: 14px;
+    --radius-sm: 10px;
+    --tap: 48px;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; padding: 0; }
+  html { height: 100%; }
+  body {
+    font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    min-height: 100dvh;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    overscroll-behavior-y: contain;
+  }
+  button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: inherit;
+    padding: 0;
+  }
+  input, textarea {
+    font-family: inherit;
+    font-size: 16px; /* prevent iOS zoom */
+  }
+
+  /* ===== APP SHELL ===== */
+  .app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    height: 100dvh;
+    max-width: 720px;
+    margin: 0 auto;
+    background: var(--bg);
+    position: relative;
+  }
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 18px;
+    padding-top: max(14px, env(safe-area-inset-top));
+    background: var(--accent);
+    color: #fff;
+    flex-shrink: 0;
+    z-index: 10;
+  }
+  .topbar h1 {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: -0.01em;
+  }
+  .topbar .gold { color: var(--gold); }
+  .topbar-actions { display: flex; gap: 8px; align-items: center; }
+  .icon-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(255,255,255,0.08);
+    transition: background 0.15s;
+  }
+  .icon-btn:active { background: rgba(255,255,255,0.18); }
+  .icon-btn svg { width: 20px; height: 20px; }
+
+  /* Tab bar */
+  .tabs {
+    display: flex;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+  .tab {
+    flex: 1;
+    text-align: center;
+    padding: 14px 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-mute);
+    border-bottom: 3px solid transparent;
+    transition: color 0.15s, border-color 0.15s;
+    min-height: var(--tap);
+  }
+  .tab.active {
+    color: var(--accent);
+    border-bottom-color: var(--gold);
+  }
+  .tab .count {
+    display: inline-block;
+    background: var(--surface-3);
+    color: var(--text-soft);
+    border-radius: 999px;
+    padding: 1px 8px;
+    font-size: 12px;
+    margin-left: 4px;
+    font-weight: 700;
+  }
+  .tab.active .count { background: var(--gold-soft); color: var(--accent); }
+
+  /* Pane container */
+  .panes {
+    flex: 1;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+  .panes::-webkit-scrollbar { display: none; }
+  .pane {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    scroll-snap-align: start;
+    -webkit-overflow-scrolling: touch;
+    padding: 16px 18px;
+    padding-bottom: max(96px, calc(env(safe-area-inset-bottom) + 96px));
+  }
+
+  /* ===== RECIPES PANE ===== */
+  .section-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4px 0 12px;
+    gap: 12px;
+  }
+  .section-head h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    color: var(--text);
+    letter-spacing: -0.01em;
+  }
+  .section-head .sub {
+    font-size: 12px;
+    color: var(--text-mute);
+    margin-top: 2px;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 14px;
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    font-weight: 600;
+    background: var(--accent);
+    color: #fff;
+    min-height: 40px;
+    transition: opacity 0.15s, transform 0.05s;
+  }
+  .btn:active { transform: scale(0.97); }
+  .btn:disabled { opacity: 0.5; }
+  .btn.ghost {
+    background: var(--surface);
+    color: var(--accent);
+    border: 1px solid var(--border);
+  }
+  .btn.gold {
+    background: var(--gold);
+    color: var(--accent);
+  }
+  .btn.danger {
+    background: var(--red-soft);
+    color: var(--red);
+  }
+  .btn svg { width: 16px; height: 16px; }
+  .btn-block { width: 100%; justify-content: center; }
+  .btn-lg { padding: 14px 18px; font-size: 14px; min-height: var(--tap); }
+
+  /* Empty state */
+  .empty {
+    background: var(--surface);
+    border: 1px dashed var(--border-strong);
+    border-radius: var(--radius);
+    padding: 32px 20px;
+    text-align: center;
+    color: var(--text-soft);
+  }
+  .empty h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0 0 6px;
+  }
+  .empty p { font-size: 14px; margin: 0 0 16px; line-height: 1.5; }
+
+  /* Recipe card */
+  .recipe-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 28px;
+  }
+  .recipe-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px 14px 14px 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    transition: border-color 0.15s, box-shadow 0.15s;
+    position: relative;
+  }
+  .recipe-card.checked {
+    background: var(--green-soft);
+    border-color: var(--green);
+  }
+  .recipe-card:active { box-shadow: var(--shadow); }
+  .recipe-check {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    border: 2px solid var(--border-strong);
+    background: var(--surface);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .recipe-check svg {
+    width: 18px;
+    height: 18px;
+    stroke: #fff;
+    opacity: 0;
+    transition: opacity 0.15s;
+  }
+  .recipe-card.checked .recipe-check {
+    background: var(--green);
+    border-color: var(--green);
+  }
+  .recipe-card.checked .recipe-check svg { opacity: 1; }
+  .recipe-body {
+    flex: 1;
+    min-width: 0;
+    cursor: pointer;
+  }
+  .recipe-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0 0 4px;
+    line-height: 1.3;
+    word-wrap: break-word;
+  }
+  .recipe-meta {
+    font-size: 12px;
+    color: var(--text-mute);
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .recipe-meta .pill {
+    background: var(--surface-3);
+    padding: 2px 8px;
+    border-radius: 999px;
+    color: var(--text-soft);
+    font-weight: 500;
+  }
+  .recipe-card.checked .recipe-meta .pill {
+    background: rgba(255,255,255,0.7);
+  }
+
+  /* Inspiration upload */
+  .upload-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px;
+    margin-bottom: 16px;
+  }
+  .upload-box h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 4px;
+    color: var(--text);
+  }
+  .upload-box p {
+    font-size: 12px;
+    color: var(--text-mute);
+    margin: 0 0 12px;
+    line-height: 1.4;
+  }
+  .upload-row {
+    display: flex;
+    gap: 8px;
+  }
+  .upload-row input {
+    flex: 1;
+    padding: 12px 12px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    background: var(--surface-2);
+    color: var(--text);
+    min-height: var(--tap);
+    min-width: 0;
+  }
+  .upload-row input:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: var(--surface);
+  }
+  .upload-row .btn { flex-shrink: 0; }
+
+  /* Library list */
+  .library-toggle {
+    background: none;
+    border: none;
+    padding: 6px 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 8px;
+  }
+  .library-toggle svg { transition: transform 0.2s; width: 14px; height: 14px; }
+  .library-toggle.open svg { transform: rotate(90deg); }
+  .library-list {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+  .library-list.open { display: flex; }
+  .library-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 10px 12px;
+    gap: 8px;
+  }
+  .library-item-title {
+    flex: 1;
+    min-width: 0;
+    font-size: 13px;
+    color: var(--text);
+    font-weight: 500;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .library-item-actions {
+    display: flex;
+    gap: 4px;
+    flex-shrink: 0;
+  }
+  .library-item-actions .icon-btn {
+    width: 32px;
+    height: 32px;
+    color: var(--text-mute);
+    background: transparent;
+  }
+  .library-item-actions .icon-btn:active { background: var(--surface-3); }
+  .library-item-actions svg { width: 16px; height: 16px; }
+
+  /* ===== SHOPPING PANE ===== */
+  .shop-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+  .shop-section-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 14px;
+    background: var(--accent-soft);
+    border-bottom: 1px solid var(--border);
+  }
+  .shop-section-head h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--accent);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .shop-section-head .count {
+    font-size: 12px;
+    color: var(--text-soft);
+    font-weight: 600;
+  }
+  .shop-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    min-height: var(--tap);
+  }
+  .shop-item:last-child { border-bottom: none; }
+  .shop-check {
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    border: 2px solid var(--border-strong);
+    background: var(--surface);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+    transition: all 0.15s;
+  }
+  .shop-check svg {
+    width: 14px;
+    height: 14px;
+    stroke: #fff;
+    opacity: 0;
+  }
+  .shop-item.checked .shop-check {
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+  .shop-item.checked .shop-check svg { opacity: 1; }
+  .shop-item.checked .shop-body {
+    opacity: 0.45;
+    text-decoration: line-through;
+  }
+  .shop-body {
+    flex: 1;
+    min-width: 0;
+    line-height: 1.4;
+  }
+  .shop-name {
+    font-size: 14px;
+    color: var(--text);
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+  .shop-qty {
+    font-size: 12px;
+    color: var(--text-mute);
+    margin-top: 2px;
+  }
+  .shop-qty .for-recipe {
+    color: var(--text-soft);
+    font-style: italic;
+  }
+
+  /* ===== MODALS ===== */
+  .modal-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(20, 25, 40, 0.55);
+    display: none;
+    align-items: flex-end;
+    z-index: 100;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+  }
+  .modal-overlay.open { display: flex; }
+  .modal {
+    background: var(--surface);
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    max-height: 90vh;
+    max-height: 90dvh;
+    border-radius: 24px 24px 0 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: env(safe-area-inset-bottom);
+    animation: slideUp 0.25s ease-out;
+  }
+  @keyframes slideUp {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+  }
+  .modal-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+  .modal-head h2 {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0;
+    color: var(--text);
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 12px;
+  }
+  .modal-close {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    color: var(--text-soft);
+    flex-shrink: 0;
+  }
+  .modal-close:active { background: var(--surface-3); }
+  .modal-close svg { width: 22px; height: 22px; }
+  .modal-body {
+    overflow-y: auto;
+    padding: 18px;
+    flex: 1;
+    -webkit-overflow-scrolling: touch;
+  }
+  .modal-foot {
+    padding: 14px 18px;
+    border-top: 1px solid var(--border);
+    flex-shrink: 0;
+    display: flex;
+    gap: 8px;
+  }
+
+  /* Recipe detail */
+  .recipe-detail-meta {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+  .recipe-detail-meta .pill {
+    background: var(--accent-soft);
+    color: var(--accent);
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .recipe-detail h3 {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-soft);
+    margin: 16px 0 10px;
+  }
+  .recipe-detail h3:first-child { margin-top: 0; }
+  .recipe-detail .ing-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .recipe-detail .ing-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.4;
+  }
+  .recipe-detail .ing-list li:last-child { border: none; }
+  .recipe-detail .ing-list .qty {
+    color: var(--text-soft);
+    font-weight: 500;
+    margin-right: 8px;
+  }
+  .recipe-detail .ing-list .sect-tag {
+    font-size: 11px;
+    color: var(--text-mute);
+    background: var(--surface-3);
+    padding: 1px 6px;
+    border-radius: 4px;
+    margin-left: 8px;
+  }
+  .recipe-detail .step-list {
+    padding: 0;
+    margin: 0;
+    counter-reset: step;
+    list-style: none;
+  }
+  .recipe-detail .step-list li {
+    counter-increment: step;
+    padding: 12px 0 12px 36px;
+    position: relative;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.5;
+  }
+  .recipe-detail .step-list li:last-child { border: none; }
+  .recipe-detail .step-list li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .recipe-detail .source-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 6px;
+    color: var(--blue);
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    word-break: break-all;
+  }
+  .recipe-detail .source-link svg { width: 14px; height: 14px; flex-shrink: 0; }
+
+  /* Settings */
+  .settings-group {
+    margin-bottom: 20px;
+  }
+  .settings-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-soft);
+    margin-bottom: 6px;
+  }
+  .settings-group input,
+  .settings-group select {
+    width: 100%;
+    padding: 12px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    background: var(--surface-2);
+    color: var(--text);
+    min-height: var(--tap);
+  }
+  .settings-group input:focus,
+  .settings-group select:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: var(--surface);
+  }
+  .settings-group .hint {
+    font-size: 12px;
+    color: var(--text-mute);
+    margin-top: 6px;
+    line-height: 1.4;
+  }
+  .settings-group .hint a {
+    color: var(--blue);
+    text-decoration: none;
+  }
+  .settings-status {
+    padding: 10px 12px;
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 14px;
+  }
+  .settings-status.ok {
+    background: var(--green-soft);
+    color: var(--green);
+  }
+  .settings-status.warn {
+    background: var(--gold-soft);
+    color: #8a6a16;
+  }
+
+  /* Toast */
+  .toast {
+    position: fixed;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-120%);
+    background: var(--accent);
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    z-index: 200;
+    transition: transform 0.3s ease-out;
+    box-shadow: var(--shadow-lift);
+    max-width: 90%;
+    text-align: center;
+    pointer-events: none;
+  }
+  .toast.show { transform: translateX(-50%) translateY(0); }
+  .toast.error { background: var(--red); }
+  .toast.success { background: var(--green); }
+
+  /* Loading spinner */
+  .spinner {
+    width: 14px;
+    height: 14px;
+    border: 2px solid currentColor;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+    display: inline-block;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .full-load {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    color: var(--text-mute);
+    font-size: 13px;
+    gap: 10px;
+  }
+  .full-load .spinner {
+    width: 24px;
+    height: 24px;
+    color: var(--accent);
+  }
+</style>
+</head>
+<body>
+
+<div class="app">
+  <header class="topbar">
+    <h1>What's for <span class="gold">Dinner</span></h1>
+    <div class="topbar-actions">
+      <button class="icon-btn" id="btnSettings" aria-label="Settings">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab active" data-pane="0">Recipes <span class="count" id="cntRecipes">0</span></button>
+    <button class="tab" data-pane="1">Shopping <span class="count" id="cntShop">0</span></button>
+  </nav>
+
+  <main class="panes" id="panes">
+    <!-- PANE 1: RECIPES -->
+    <section class="pane" id="paneRecipes">
+      <div class="section-head">
+        <div>
+          <h2>This Week's Dinners</h2>
+          <div class="sub" id="weekSub">7 picks · checked = on shopping list</div>
+        </div>
+        <button class="btn gold" id="btnRefresh" title="Refresh unchecked picks">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+          Refresh
+        </button>
+      </div>
+
+      <div class="recipe-list" id="recipeList">
+        <!-- Recipes rendered here -->
+      </div>
+
+      <div class="upload-box">
+        <h3>Add Recipe Inspiration</h3>
+        <p>Paste a recipe URL — the app will parse it and add to your library for future weekly picks.</p>
+        <div class="upload-row">
+          <input type="url" id="urlInput" placeholder="https://..." autocomplete="off" autocapitalize="off" spellcheck="false" />
+          <button class="btn" id="btnAdd">
+            <span id="addLabel">Add</span>
+            <span id="addSpinner" style="display:none;" class="spinner"></span>
+          </button>
+        </div>
+      </div>
+
+      <button class="library-toggle" id="libToggle">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        <span>Inspiration Library</span>
+        <span class="count" id="cntLib" style="color:var(--text-mute); font-weight:500; margin-left:4px;">(0)</span>
+      </button>
+      <div class="library-list" id="libList">
+        <!-- library items rendered here -->
+      </div>
+    </section>
+
+    <!-- PANE 2: SHOPPING -->
+    <section class="pane" id="paneShopping">
+      <div class="section-head">
+        <div>
+          <h2>Shopping List</h2>
+          <div class="sub" id="shopSub">From this week's checked recipes</div>
+        </div>
+        <button class="btn ghost" id="btnClearChecked">Clear ✓</button>
+      </div>
+
+      <div id="shopContent">
+        <!-- Shopping sections rendered here -->
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- ===== Settings Modal ===== -->
+<div class="modal-overlay" id="modalSettings">
+  <div class="modal">
+    <div class="modal-head">
+      <h2>Settings</h2>
+      <button class="modal-close" data-close>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="settings-status" id="setStatus"></div>
+
+      <div class="settings-group">
+        <label>Anthropic API key</label>
+        <input type="password" id="setAnthropic" placeholder="sk-ant-..." autocomplete="off" />
+        <div class="hint">Used to parse recipe URLs and generate weekly picks. Get one at <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener">console.anthropic.com</a>.</div>
+      </div>
+
+      <div class="settings-group">
+        <label>GitHub repo (owner/name)</label>
+        <input type="text" id="setRepo" placeholder="pashajohnson/dinner-app" autocomplete="off" autocapitalize="off" spellcheck="false" />
+        <div class="hint">Shared data store. Both phones point to the same repo.</div>
+      </div>
+
+      <div class="settings-group">
+        <label>GitHub personal access token</label>
+        <input type="password" id="setGithub" placeholder="ghp_... or github_pat_..." autocomplete="off" />
+        <div class="hint">Needs <strong>Contents: Read &amp; Write</strong> scope on the repo above. Create at <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens</a>.</div>
+      </div>
+
+      <div class="settings-group">
+        <label>Branch</label>
+        <input type="text" id="setBranch" value="main" autocomplete="off" />
+      </div>
+
+      <div style="display:flex; gap:8px; margin-top: 24px;">
+        <button class="btn ghost" id="btnTestConn" style="flex:1;">Test connection</button>
+        <button class="btn" id="btnSaveSettings" style="flex:1;">Save</button>
+      </div>
+
+      <button class="btn danger btn-block" id="btnClearLocal" style="margin-top: 18px;">Clear local data</button>
+      <div class="hint" style="text-align:center; margin-top:10px;">v1.0 · made with Claude</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Recipe Detail Modal ===== -->
+<div class="modal-overlay" id="modalRecipe">
+  <div class="modal">
+    <div class="modal-head">
+      <h2 id="rdTitle">Recipe</h2>
+      <button class="modal-close" data-close>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="modal-body recipe-detail" id="rdBody">
+      <!-- detail content -->
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ====================================================================
+   DINNER APP — single-file PWA
+   Architecture:
+     - Public GitHub Pages site (same as flashcards) — anyone with link views.
+     - Per-device localStorage holds: Anthropic API key, GitHub PAT, repo, branch.
+     - Shared mutable data lives in the repo as JSON:
+         data/inspirations.json — full recipe library (URL-imported)
+         data/weekly-picks.json — current week's 7 picks + checked flags
+     - Adding a recipe / refreshing picks reads-modifies-writes these JSON files
+       via GitHub Contents API (with SHA round-trip).
+==================================================================== */
+
+const ANTHROPIC_MODEL = 'claude-sonnet-4-6';
+const CORS_PROXY = 'https://corsproxy.io/?url=';
+const INSPIRATIONS_PATH = 'data/inspirations.json';
+const PICKS_PATH = 'data/weekly-picks.json';
+const WEEKLY_COUNT = 7;
+
+/* ===== State ===== */
+const state = {
+  cfg: { anthropic: '', github: '', repo: '', branch: 'main' },
+  inspirations: [],     // [{id, title, sourceUrl, ingredients, steps, ...}]
+  picks: [],            // [{recipeId, checked}]
+  weekStartDate: null,
+  shopChecked: {},      // {ingredientKey: true}  (per-device, localStorage)
+  shaInspirations: null,
+  shaPicks: null,
+};
+
+/* ===== localStorage helpers ===== */
+const LS = {
+  cfg: 'dinner.cfg',
+  shop: 'dinner.shop',
+};
+function loadCfg() {
+  try {
+    const c = JSON.parse(localStorage.getItem(LS.cfg) || '{}');
+    state.cfg = { anthropic: '', github: '', repo: '', branch: 'main', ...c };
+  } catch (e) { /* keep defaults */ }
+}
+function saveCfg() {
+  localStorage.setItem(LS.cfg, JSON.stringify(state.cfg));
+}
+function loadShop() {
+  try {
+    state.shopChecked = JSON.parse(localStorage.getItem(LS.shop) || '{}');
+  } catch (e) { state.shopChecked = {}; }
+}
+function saveShop() {
+  localStorage.setItem(LS.shop, JSON.stringify(state.shopChecked));
+}
+
+/* ===== Toast ===== */
+let toastTimer = null;
+function toast(msg, type = '') {
+  const el = document.getElementById('toast');
+  el.className = 'toast' + (type ? ' ' + type : '');
+  el.textContent = msg;
+  requestAnimationFrame(() => el.classList.add('show'));
+  if (toastTimer) clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.classList.remove('show'), 2800);
+}
+
+/* ===== GitHub Contents API ===== */
+async function ghGet(path) {
+  if (!state.cfg.repo || !state.cfg.github) throw new Error('Settings not configured');
+  const url = `https://api.github.com/repos/${state.cfg.repo}/contents/${path}?ref=${encodeURIComponent(state.cfg.branch || 'main')}`;
+  const res = await fetch(url, {
+    headers: {
+      Authorization: `Bearer ${state.cfg.github}`,
+      Accept: 'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28',
+    },
+  });
+  if (res.status === 404) return { content: null, sha: null };
+  if (!res.ok) throw new Error(`GitHub GET ${path}: ${res.status} ${await res.text()}`);
+  const data = await res.json();
+  // content is base64 — decode UTF-8 safely
+  const raw = atob(data.content.replace(/\s/g, ''));
+  const bytes = new Uint8Array([...raw].map(c => c.charCodeAt(0)));
+  const text = new TextDecoder('utf-8').decode(bytes);
+  return { content: text, sha: data.sha };
+}
+
+async function ghPut(path, contentObj, sha, message) {
+  const text = JSON.stringify(contentObj, null, 2);
+  // Encode UTF-8 → base64 safely
+  const bytes = new TextEncoder().encode(text);
+  let bin = '';
+  for (const b of bytes) bin += String.fromCharCode(b);
+  const b64 = btoa(bin);
+  const url = `https://api.github.com/repos/${state.cfg.repo}/contents/${path}`;
+  const body = {
+    message: message || `Update ${path}`,
+    content: b64,
+    branch: state.cfg.branch || 'main',
+  };
+  if (sha) body.sha = sha;
+  const res = await fetch(url, {
+    method: 'PUT',
+    headers: {
+      Authorization: `Bearer ${state.cfg.github}`,
+      Accept: 'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28',
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(body),
+  });
+  if (!res.ok) {
+    const txt = await res.text();
+    throw new Error(`GitHub PUT ${path}: ${res.status} ${txt}`);
+  }
+  const data = await res.json();
+  return data.content.sha;
+}
+
+async function loadInspirations() {
+  try {
+    const { content, sha } = await ghGet(INSPIRATIONS_PATH);
+    state.shaInspirations = sha;
+    if (content) {
+      const j = JSON.parse(content);
+      state.inspirations = j.recipes || [];
+    } else {
+      state.inspirations = [];
+    }
+  } catch (e) {
+    console.warn('loadInspirations failed:', e);
+    state.inspirations = [];
+    state.shaInspirations = null;
+  }
+}
+
+async function saveInspirations(message) {
+  const obj = { recipes: state.inspirations };
+  state.shaInspirations = await ghPut(INSPIRATIONS_PATH, obj, state.shaInspirations, message);
+}
+
+async function loadPicks() {
+  try {
+    const { content, sha } = await ghGet(PICKS_PATH);
+    state.shaPicks = sha;
+    if (content) {
+      const j = JSON.parse(content);
+      state.picks = j.picks || [];
+      state.weekStartDate = j.weekStartDate || null;
+    } else {
+      state.picks = [];
+      state.weekStartDate = null;
+    }
+  } catch (e) {
+    console.warn('loadPicks failed:', e);
+    state.picks = [];
+    state.shaPicks = null;
+  }
+}
+
+async function savePicks(message) {
+  const obj = { weekStartDate: state.weekStartDate, picks: state.picks };
+  state.shaPicks = await ghPut(PICKS_PATH, obj, state.shaPicks, message);
+}
+
+/* ===== Anthropic API ===== */
+async function callClaude(systemPrompt, userPrompt, maxTokens = 4096) {
+  if (!state.cfg.anthropic) throw new Error('Anthropic API key not set');
+  const res = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'x-api-key': state.cfg.anthropic,
+      'anthropic-version': '2023-06-01',
+      'anthropic-dangerous-direct-browser-access': 'true',
+    },
+    body: JSON.stringify({
+      model: ANTHROPIC_MODEL,
+      max_tokens: maxTokens,
+      system: systemPrompt,
+      messages: [{ role: 'user', content: userPrompt }],
+    }),
+  });
+  if (!res.ok) {
+    const t = await res.text();
+    throw new Error(`Claude API ${res.status}: ${t}`);
+  }
+  const data = await res.json();
+  return data.content.map(b => b.text || '').join('');
+}
+
+/* ===== Grocery section classification ===== */
+const SECTION_KEYWORDS = {
+  'Produce': [
+    'lettuce','spinach','kale','arugula','romaine','cabbage','chard','collard',
+    'tomato','tomatoes','cucumber','zucchini','squash','pumpkin','eggplant',
+    'pepper','bell pepper','jalapeno','jalapeño','serrano','habanero','chili',
+    'onion','shallot','scallion','green onion','leek','garlic','ginger',
+    'carrot','celery','radish','beet','turnip','parsnip','potato','sweet potato','yam',
+    'broccoli','cauliflower','asparagus','brussels','okra','corn','peas','green beans',
+    'mushroom','shiitake','portobello','cremini','oyster mushroom',
+    'apple','banana','orange','lemon','lime','grapefruit','pear','peach','plum',
+    'strawberr','blueberr','raspberr','blackberr','cherr','grape','melon','watermelon',
+    'pineapple','mango','papaya','avocado','kiwi','pomegranate','fig','date',
+    'parsley','cilantro','basil','mint','dill','thyme','rosemary','sage','tarragon','chive',
+    'fennel','artichoke','endive','bok choy','sprouts','jicama','plantain',
+  ],
+  'Meat & Seafood': [
+    'chicken','turkey','duck','quail',
+    'beef','steak','ribeye','sirloin','tenderloin','brisket','flank','skirt','ground beef',
+    'pork','bacon','ham','sausage','chorizo','prosciutto','pancetta','salami','pepperoni',
+    'lamb','veal','venison','bison',
+    'salmon','tuna','cod','halibut','tilapia','trout','snapper','bass','swordfish','mahi','sardine','anchovy',
+    'shrimp','prawn','scallop','crab','lobster','clam','mussel','oyster','octopus','squid','calamari',
+    'fish','seafood','meat',
+  ],
+  'Dairy & Eggs': [
+    'milk','cream','half and half','heavy cream','whipping cream','buttermilk','condensed milk','evaporated milk',
+    'butter','margarine','ghee',
+    'cheese','cheddar','mozzarella','parmesan','feta','goat cheese','blue cheese','gouda','provolone',
+    'swiss','brie','camembert','manchego','ricotta','cottage cheese','cream cheese','mascarpone','queso',
+    'yogurt','yoghurt','sour cream','crème fraîche','creme fraiche',
+    'egg','eggs',
+  ],
+  'Bakery & Bread': [
+    'bread','baguette','ciabatta','sourdough','focaccia','pita','naan','tortilla','wrap',
+    'bun','roll','bagel','english muffin','croissant','brioche','challah',
+    'breadcrumbs','panko','crouton',
+  ],
+  'Pantry': [
+    'flour','sugar','brown sugar','powdered sugar','confectioners','cornstarch','baking powder','baking soda',
+    'yeast','cocoa','chocolate chip','vanilla extract','almond extract',
+    'rice','white rice','brown rice','basmati','jasmine','wild rice','arborio','risotto',
+    'pasta','spaghetti','linguine','fettuccine','penne','rigatoni','rotini','farfalle','orzo','lasagna','ravioli','tortellini','gnocchi','macaroni','noodle','noodles','ramen','udon','soba','rice noodle',
+    'quinoa','couscous','barley','farro','bulgur','polenta','grits','oat','oatmeal',
+    'bean','beans','black bean','pinto','kidney bean','garbanzo','chickpea','cannellini','navy bean','lima',
+    'lentil','split pea',
+    'broth','stock','bouillon',
+    'tomato sauce','tomato paste','crushed tomato','diced tomato','passata','marinara','pizza sauce',
+    'coconut milk','coconut cream','almond milk','oat milk','soy milk',
+    'tuna can','canned tuna','canned salmon','canned chicken','canned beans','canned corn',
+    'peanut butter','almond butter','nutella','jam','jelly','preserves','honey','maple syrup','agave',
+    'oil','olive oil','vegetable oil','canola oil','sesame oil','coconut oil','avocado oil',
+    'nuts','almond','walnut','pecan','cashew','pistachio','hazelnut','peanut','pine nut','sunflower seed','pumpkin seed','chia','flaxseed','sesame seed',
+    'raisin','craisin','dried cranberry','dried apricot','dried cherry',
+    'crackers','chips','tortilla chips','pita chips','pretzel',
+  ],
+  'Spices & Seasonings': [
+    'salt','pepper','black pepper','white pepper','kosher salt','sea salt',
+    'paprika','smoked paprika','cumin','coriander','turmeric','curry powder','garam masala','chili powder','cayenne','red pepper flake',
+    'cinnamon','nutmeg','clove','allspice','cardamom','ginger powder','garlic powder','onion powder',
+    'oregano','italian seasoning','herbs de provence','bay leaf','bay leaves','marjoram',
+    'mustard powder','mustard seed','dill seed','fennel seed','caraway','poppy seed',
+    'old bay','cajun','blackening','taco seasoning','five spice','za’atar','zaatar','sumac','saffron',
+  ],
+  'Condiments & Sauces': [
+    'ketchup','mustard','mayonnaise','mayo','aioli','tartar sauce','cocktail sauce',
+    'soy sauce','tamari','fish sauce','oyster sauce','hoisin','teriyaki','ponzu','rice vinegar','mirin','sake',
+    'sriracha','hot sauce','tabasco','tapatío','tapatio','chili crisp','sambal',
+    'vinegar','balsamic','red wine vinegar','white wine vinegar','apple cider vinegar','sherry vinegar',
+    'worcestershire','salsa','pesto','tahini','harissa','chimichurri',
+    'bbq sauce','barbecue sauce','steak sauce','a1',
+    'dressing','ranch','caesar','italian dressing','vinaigrette',
+    'lemon juice','lime juice',
+  ],
+  'Frozen': [
+    'frozen','ice cream','sorbet','gelato','popsicle','frozen pizza','frozen vegetable','frozen fruit','frozen berry',
+    'frozen shrimp','frozen fish','puff pastry','phyllo','pie crust','frozen dumpling','frozen ravioli','frozen edamame',
+  ],
+  'Beverages': [
+    'wine','red wine','white wine','rosé','rose wine','sparkling wine','champagne','prosecco',
+    'beer','lager','ale','ipa','stout','cider',
+    'whiskey','bourbon','rum','vodka','gin','tequila','brandy','cognac','vermouth','sherry','port',
+    'soda','sparkling water','seltzer','tonic','club soda','ginger ale','cola',
+    'juice','orange juice','apple juice','cranberry juice','lemonade',
+    'coffee','espresso','tea','green tea','black tea','chai','matcha',
+    'water',
+  ],
+};
+
+function normalizeIngredient(name) {
+  return String(name || '').toLowerCase().trim();
+}
+
+function classifyIngredient(name) {
+  const n = normalizeIngredient(name);
+  if (!n) return 'Other';
+  // Special pre-rules — order matters
+  if (/\bcanned\b/.test(n) && /tomato|bean|corn|tuna|salmon|chicken|coconut/.test(n)) return 'Pantry';
+  if (/\bfrozen\b/.test(n)) return 'Frozen';
+  // Score each section by # of keyword hits, weighted by keyword length
+  let best = null, bestScore = 0;
+  for (const [sec, words] of Object.entries(SECTION_KEYWORDS)) {
+    for (const w of words) {
+      // word boundary match (or substring for compound terms)
+      const idx = n.indexOf(w);
+      if (idx === -1) continue;
+      // Reward longer keyword matches and whole-word boundaries
+      const before = idx === 0 ? ' ' : n[idx - 1];
+      const after = idx + w.length >= n.length ? ' ' : n[idx + w.length];
+      const isWordBoundary = !/[a-z]/.test(before) && !/[a-z]/.test(after);
+      const score = w.length * (isWordBoundary ? 2 : 1);
+      if (score > bestScore) {
+        bestScore = score;
+        best = sec;
+      }
+    }
+  }
+  return best || 'Other';
+}
+
+const SECTION_ORDER = [
+  'Produce','Meat & Seafood','Dairy & Eggs','Bakery & Bread',
+  'Pantry','Spices & Seasonings','Condiments & Sauces',
+  'Frozen','Beverages','Other'
+];
+
+/* ===== Add a recipe from a URL ===== */
+async function fetchRecipePage(url) {
+  // Try direct first (some sites allow CORS), then fall back to proxy
+  try {
+    const r = await fetch(url, { headers: { 'Accept': 'text/html' } });
+    if (r.ok) return await r.text();
+  } catch (_) { /* fall through */ }
+  const proxied = CORS_PROXY + encodeURIComponent(url);
+  const r2 = await fetch(proxied);
+  if (!r2.ok) throw new Error(`Couldn't fetch page (${r2.status})`);
+  return await r2.text();
+}
+
+function stripHtml(html) {
+  // Light strip — keep some structure for Claude. Cap to ~80KB.
+  let s = html
+    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<noscript[\s\S]*?<\/noscript>/gi, ' ')
+    .replace(/<!--[\s\S]*?-->/g, ' ');
+  // Prefer JSON-LD if present
+  const ldMatches = [...html.matchAll(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)];
+  let ldText = '';
+  for (const m of ldMatches) ldText += '\n[JSON-LD]\n' + m[1].slice(0, 8000) + '\n';
+  s = s.replace(/<\/?(div|p|li|ul|ol|h[1-6]|br|tr|td|th|section|article)[^>]*>/gi, '\n')
+       .replace(/<[^>]+>/g, ' ')
+       .replace(/\s+\n/g, '\n')
+       .replace(/\n\s+/g, '\n')
+       .replace(/[ \t]{2,}/g, ' ')
+       .replace(/\n{3,}/g, '\n\n');
+  const head = ldText ? ldText + '\n[HTML]\n' : '';
+  return (head + s).slice(0, 80000);
+}
+
+const RECIPE_PARSE_SYS = `You are a recipe extractor. Given the text contents of a recipe webpage, return STRICT JSON in this exact shape — no markdown, no commentary:
+
+{
+  "title": "string",
+  "ingredients": [
+    {"item": "string (just the ingredient, e.g. 'olive oil')", "quantity": "string (e.g. '2 tbsp')"}
+  ],
+  "steps": ["string", ...],
+  "servings": number or null,
+  "cuisineType": "string (e.g. Italian, Mexican, Thai, American, Mediterranean) or null",
+  "mainProtein": "string (e.g. Chicken, Salmon, Tofu, Beef, Vegetarian) or null"
+}
+
+Rules:
+- Extract ingredient names cleanly. Don't include parenthetical notes in the item field — put them in the quantity field or omit.
+- Combine ingredient quantity, unit, and prep into the quantity field (e.g. "2 cups, chopped").
+- Strip step numbering from steps ("1. ", "Step 1: " etc.).
+- Return ONLY the JSON object, no other text.`;
+
+async function parseRecipeFromHtml(url, html) {
+  const text = stripHtml(html);
+  const user = `URL: ${url}\n\nPAGE TEXT (may include JSON-LD metadata at top):\n\n${text}`;
+  const raw = await callClaude(RECIPE_PARSE_SYS, user, 4096);
+  // Extract JSON robustly
+  let jsonStr = raw.trim();
+  const firstBrace = jsonStr.indexOf('{');
+  const lastBrace = jsonStr.lastIndexOf('}');
+  if (firstBrace >= 0 && lastBrace > firstBrace) {
+    jsonStr = jsonStr.slice(firstBrace, lastBrace + 1);
+  }
+  let parsed;
+  try {
+    parsed = JSON.parse(jsonStr);
+  } catch (e) {
+    throw new Error('Claude returned non-JSON output');
+  }
+  // Normalize
+  const ingredients = (parsed.ingredients || []).map(ing => ({
+    item: String(ing.item || '').trim(),
+    quantity: String(ing.quantity || '').trim(),
+    section: classifyIngredient(ing.item || ''),
+  })).filter(i => i.item);
+  const steps = (parsed.steps || []).map(s => String(s).trim()).filter(Boolean);
+  return {
+    id: 'rec_' + Math.random().toString(36).slice(2, 10) + Date.now().toString(36).slice(-4),
+    title: String(parsed.title || 'Untitled recipe').trim(),
+    sourceUrl: url,
+    ingredients,
+    steps,
+    servings: parsed.servings || null,
+    cuisineType: parsed.cuisineType || null,
+    mainProtein: parsed.mainProtein || null,
+    addedAt: new Date().toISOString(),
+  };
+}
+
+async function addRecipeFromUrl(url) {
+  const html = await fetchRecipePage(url);
+  const recipe = await parseRecipeFromHtml(url, html);
+  // Skip if this URL is already in the library
+  const dup = state.inspirations.find(r => r.sourceUrl === url);
+  if (dup) {
+    throw new Error('Already in library: ' + dup.title);
+  }
+  state.inspirations.unshift(recipe);
+  await saveInspirations(`Add recipe: ${recipe.title}`);
+  return recipe;
+}
+
+/* ===== Weekly picks generation ===== */
+const PICK_SYS = `You are a thoughtful home meal planner. Given a library of recipes and a count, choose recipes that:
+- Vary cuisine type across the week (avoid stacking 3 Italian or 3 Mexican).
+- Vary main protein (don't pick all chicken).
+- Avoid the recently-picked recipes when possible.
+- Prefer a mix of weeknight-friendly and slightly more involved meals.
+
+Return STRICT JSON only, no markdown, no commentary:
+{ "recipeIds": ["id1","id2",...] }`;
+
+async function generateWeeklyPicks(needed, lockedIds, recentlyPickedIds) {
+  if (state.inspirations.length === 0) {
+    return [];
+  }
+  if (needed <= 0) return [];
+  // If library is small, just fill from library minus locked
+  const availablePool = state.inspirations.filter(r => !lockedIds.includes(r.id));
+  if (availablePool.length === 0) return [];
+  // Random fallback in case Claude misbehaves
+  function randomFill(n) {
+    const pool = [...availablePool];
+    // De-prioritize recently picked
+    pool.sort((a, b) => {
+      const ar = recentlyPickedIds.includes(a.id) ? 1 : 0;
+      const br = recentlyPickedIds.includes(b.id) ? 1 : 0;
+      if (ar !== br) return ar - br;
+      return Math.random() - 0.5;
+    });
+    return pool.slice(0, n).map(r => r.id);
+  }
+  // Compact library payload for Claude
+  const libSummary = availablePool.map(r => ({
+    id: r.id,
+    title: r.title,
+    cuisineType: r.cuisineType,
+    mainProtein: r.mainProtein,
+  }));
+  const lockedSummary = state.inspirations
+    .filter(r => lockedIds.includes(r.id))
+    .map(r => ({ id: r.id, title: r.title, cuisineType: r.cuisineType, mainProtein: r.mainProtein }));
+  const userMsg = `Pick exactly ${needed} recipes for this week.
+
+ALREADY LOCKED IN (do NOT pick again, but ensure your picks complement these):
+${JSON.stringify(lockedSummary, null, 2)}
+
+RECENTLY PICKED IN PRIOR WEEKS (de-prioritize but ok if pool is small):
+${JSON.stringify(recentlyPickedIds, null, 2)}
+
+LIBRARY TO PICK FROM:
+${JSON.stringify(libSummary, null, 2)}
+
+Return the chosen ${needed} recipe IDs as JSON.`;
+  try {
+    const raw = await callClaude(PICK_SYS, userMsg, 1024);
+    const jsonStr = raw.slice(raw.indexOf('{'), raw.lastIndexOf('}') + 1);
+    const parsed = JSON.parse(jsonStr);
+    let ids = (parsed.recipeIds || []).filter(id => availablePool.some(r => r.id === id));
+    ids = [...new Set(ids)].slice(0, needed);
+    if (ids.length < needed) {
+      // top up with random
+      const extras = randomFill(needed * 2).filter(id => !ids.includes(id));
+      ids = ids.concat(extras).slice(0, needed);
+    }
+    return ids;
+  } catch (e) {
+    console.warn('AI pick failed, falling back to random:', e);
+    return randomFill(needed);
+  }
+}
+
+async function refreshWeeklyPicks() {
+  // Locked = checked recipes the user wants to keep
+  const lockedPicks = state.picks.filter(p => p.checked && state.inspirations.some(r => r.id === p.recipeId));
+  const lockedIds = lockedPicks.map(p => p.recipeId);
+  const need = Math.max(0, WEEKLY_COUNT - lockedIds.length);
+  // "Recently picked" = the current unchecked ones + any previously rotated out
+  const recentlyPicked = state.picks.filter(p => !p.checked).map(p => p.recipeId);
+  const newIds = await generateWeeklyPicks(need, lockedIds, recentlyPicked);
+  // Rebuild the picks array
+  const newPicks = [
+    ...lockedPicks,
+    ...newIds.map(id => ({ recipeId: id, checked: false })),
+  ];
+  state.picks = newPicks;
+  state.weekStartDate = new Date().toISOString().slice(0, 10);
+  await savePicks('Refresh weekly picks');
+}
+
+/* ===== Shopping list derivation ===== */
+function shopKey(recipeId, item) {
+  return recipeId + '|' + normalizeIngredient(item);
+}
+
+function buildShoppingList() {
+  // Aggregate from CHECKED picks
+  const map = {};  // section -> [{item, recipeTitle, quantity, key}]
+  for (const p of state.picks) {
+    if (!p.checked) continue;
+    const r = state.inspirations.find(x => x.id === p.recipeId);
+    if (!r) continue;
+    for (const ing of (r.ingredients || [])) {
+      const sec = ing.section || classifyIngredient(ing.item) || 'Other';
+      if (!map[sec]) map[sec] = [];
+      map[sec].push({
+        item: ing.item,
+        quantity: ing.quantity,
+        recipeTitle: r.title,
+        key: shopKey(p.recipeId, ing.item),
+      });
+    }
+  }
+  return map;
+}
+
+/* ===== Rendering ===== */
+function renderRecipes() {
+  const list = document.getElementById('recipeList');
+  document.getElementById('cntRecipes').textContent = state.picks.length;
+  if (!state.cfg.repo) {
+    list.innerHTML = `
+      <div class="empty">
+        <h3>Welcome</h3>
+        <p>Set up your GitHub repo + Anthropic key in Settings (top right) to start adding recipes.</p>
+      </div>`;
+    return;
+  }
+  if (state.picks.length === 0) {
+    const hasLib = state.inspirations.length > 0;
+    list.innerHTML = `
+      <div class="empty">
+        <h3>${hasLib ? 'No picks yet' : 'No recipes yet'}</h3>
+        <p>${hasLib
+          ? `Tap <strong>Refresh</strong> above to generate this week's ${WEEKLY_COUNT} picks from your library.`
+          : 'Add a recipe URL below to start building your inspiration library, then tap Refresh to pick this week\'s dinners.'}</p>
+      </div>`;
+    return;
+  }
+  list.innerHTML = '';
+  for (const p of state.picks) {
+    const r = state.inspirations.find(x => x.id === p.recipeId);
+    if (!r) continue;
+    const card = document.createElement('div');
+    card.className = 'recipe-card' + (p.checked ? ' checked' : '');
+    card.innerHTML = `
+      <button class="recipe-check" aria-label="${p.checked ? 'Uncheck' : 'Check'}">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      </button>
+      <div class="recipe-body">
+        <div class="recipe-title"></div>
+        <div class="recipe-meta">
+          ${r.cuisineType ? `<span class="pill">${escapeHtml(r.cuisineType)}</span>` : ''}
+          ${r.mainProtein ? `<span class="pill">${escapeHtml(r.mainProtein)}</span>` : ''}
+          ${r.servings ? `<span class="pill">Serves ${r.servings}</span>` : ''}
+          <span>${(r.ingredients || []).length} ing · ${(r.steps || []).length} steps</span>
+        </div>
+      </div>
+    `;
+    card.querySelector('.recipe-title').textContent = r.title;
+    card.querySelector('.recipe-check').addEventListener('click', (e) => {
+      e.stopPropagation();
+      togglePick(p.recipeId);
+    });
+    card.querySelector('.recipe-body').addEventListener('click', () => showRecipeDetail(r.id));
+    list.appendChild(card);
+  }
+}
+
+function renderLibrary() {
+  document.getElementById('cntLib').textContent = `(${state.inspirations.length})`;
+  const list = document.getElementById('libList');
+  if (state.inspirations.length === 0) {
+    list.innerHTML = '<div class="hint" style="padding:6px 2px; color:var(--text-mute); font-size:13px;">Empty — add a recipe URL above.</div>';
+    return;
+  }
+  list.innerHTML = '';
+  for (const r of state.inspirations) {
+    const row = document.createElement('div');
+    row.className = 'library-item';
+    row.innerHTML = `
+      <div class="library-item-title"></div>
+      <div class="library-item-actions">
+        <button class="icon-btn" data-act="view" title="View"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button>
+        <button class="icon-btn" data-act="delete" title="Remove"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1.5 14a2 2 0 0 1-2 1.8h-7a2 2 0 0 1-2-1.8L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></svg></button>
+      </div>
+    `;
+    row.querySelector('.library-item-title').textContent = r.title;
+    row.querySelector('.library-item-title').addEventListener('click', () => showRecipeDetail(r.id));
+    row.querySelector('[data-act=view]').addEventListener('click', () => showRecipeDetail(r.id));
+    row.querySelector('[data-act=delete]').addEventListener('click', () => deleteRecipe(r.id));
+    list.appendChild(row);
+  }
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  }[c]));
+}
+
+function renderShopping() {
+  const groups = buildShoppingList();
+  const total = Object.values(groups).reduce((s, arr) => s + arr.length, 0);
+  document.getElementById('cntShop').textContent = total;
+  const remaining = Object.values(groups).reduce((s, arr) =>
+    s + arr.filter(x => !state.shopChecked[x.key]).length, 0);
+  document.getElementById('shopSub').textContent =
+    total === 0 ? 'Check recipes on the Recipes tab to populate'
+                : `${remaining} remaining · ${total} total`;
+  const c = document.getElementById('shopContent');
+  if (total === 0) {
+    c.innerHTML = `
+      <div class="empty">
+        <h3>Nothing on the list</h3>
+        <p>Check recipes on the Recipes tab to auto-populate ingredients here, grouped by store section.</p>
+      </div>`;
+    return;
+  }
+  c.innerHTML = '';
+  for (const sec of SECTION_ORDER) {
+    const items = groups[sec];
+    if (!items || items.length === 0) continue;
+    // Deduplicate within section by item name — combine quantities + recipes
+    const dedupe = new Map();
+    for (const it of items) {
+      const k = normalizeIngredient(it.item);
+      if (!dedupe.has(k)) {
+        dedupe.set(k, { ...it, qtys: [], recipes: new Set(), keys: new Set() });
+      }
+      const e = dedupe.get(k);
+      if (it.quantity) e.qtys.push(it.quantity);
+      e.recipes.add(it.recipeTitle);
+      e.keys.add(it.key);
+    }
+    const block = document.createElement('div');
+    block.className = 'shop-section';
+    const remainingInSec = [...dedupe.values()].filter(e => ![...e.keys].every(k => state.shopChecked[k])).length;
+    block.innerHTML = `
+      <div class="shop-section-head">
+        <h3>${escapeHtml(sec)}</h3>
+        <div class="count">${remainingInSec} / ${dedupe.size}</div>
+      </div>
+    `;
+    for (const e of dedupe.values()) {
+      // checked if ALL contributing keys are checked
+      const allChecked = [...e.keys].every(k => state.shopChecked[k]);
+      const row = document.createElement('div');
+      row.className = 'shop-item' + (allChecked ? ' checked' : '');
+      const qtyText = e.qtys.length ? e.qtys.join(' + ') : '';
+      const recList = [...e.recipes].join(', ');
+      row.innerHTML = `
+        <div class="shop-check">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div class="shop-body">
+          <div class="shop-name"></div>
+          <div class="shop-qty">${qtyText ? `<span>${escapeHtml(qtyText)}</span> · ` : ''}<span class="for-recipe">for ${escapeHtml(recList)}</span></div>
+        </div>
+      `;
+      row.querySelector('.shop-name').textContent = e.item;
+      row.addEventListener('click', () => {
+        const willCheck = !allChecked;
+        for (const k of e.keys) {
+          if (willCheck) state.shopChecked[k] = true;
+          else delete state.shopChecked[k];
+        }
+        saveShop();
+        renderShopping();
+      });
+      block.appendChild(row);
+    }
+    c.appendChild(block);
+  }
+}
+
+function showRecipeDetail(id) {
+  const r = state.inspirations.find(x => x.id === id);
+  if (!r) return;
+  document.getElementById('rdTitle').textContent = r.title;
+  const body = document.getElementById('rdBody');
+  const meta = [];
+  if (r.cuisineType) meta.push(`<span class="pill">${escapeHtml(r.cuisineType)}</span>`);
+  if (r.mainProtein) meta.push(`<span class="pill">${escapeHtml(r.mainProtein)}</span>`);
+  if (r.servings) meta.push(`<span class="pill">Serves ${r.servings}</span>`);
+  body.innerHTML = `
+    ${meta.length ? `<div class="recipe-detail-meta">${meta.join('')}</div>` : ''}
+    <h3>Ingredients</h3>
+    <ul class="ing-list">
+      ${(r.ingredients || []).map(i => `
+        <li>
+          ${i.quantity ? `<span class="qty">${escapeHtml(i.quantity)}</span>` : ''}
+          ${escapeHtml(i.item)}
+          ${i.section ? `<span class="sect-tag">${escapeHtml(i.section)}</span>` : ''}
+        </li>
+      `).join('')}
+    </ul>
+    <h3>Instructions</h3>
+    <ol class="step-list">
+      ${(r.steps || []).map(s => `<li>${escapeHtml(s)}</li>`).join('')}
+    </ol>
+    ${r.sourceUrl ? `
+      <h3>Source</h3>
+      <a class="source-link" href="${escapeHtml(r.sourceUrl)}" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        <span>${escapeHtml(r.sourceUrl)}</span>
+      </a>
+    ` : ''}
+  `;
+  openModal('modalRecipe');
+}
+
+/* ===== Actions ===== */
+async function togglePick(recipeId) {
+  const p = state.picks.find(x => x.recipeId === recipeId);
+  if (!p) return;
+  p.checked = !p.checked;
+  renderRecipes();
+  renderShopping();
+  try {
+    await savePicks(`${p.checked ? 'Check' : 'Uncheck'} ${recipeId}`);
+  } catch (e) {
+    toast('Save failed — will retry on next change', 'error');
+  }
+}
+
+async function deleteRecipe(id) {
+  const r = state.inspirations.find(x => x.id === id);
+  if (!r) return;
+  if (!confirm(`Remove "${r.title}" from the library? (Will also drop it from this week's picks.)`)) return;
+  state.inspirations = state.inspirations.filter(x => x.id !== id);
+  state.picks = state.picks.filter(p => p.recipeId !== id);
+  try {
+    await saveInspirations(`Remove: ${r.title}`);
+    await savePicks(`Remove ${id} from picks`);
+    renderRecipes();
+    renderLibrary();
+    renderShopping();
+    toast('Removed', 'success');
+  } catch (e) {
+    toast('Failed: ' + e.message, 'error');
+  }
+}
+
+/* ===== Modals + tabs ===== */
+function openModal(id) {
+  document.getElementById(id).classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal(id) {
+  document.getElementById(id).classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function setActiveTab(idx) {
+  document.querySelectorAll('.tab').forEach((el, i) => {
+    el.classList.toggle('active', i === idx);
+  });
+}
+
+function scrollToPane(idx) {
+  const panes = document.getElementById('panes');
+  panes.scrollTo({ left: idx * panes.clientWidth, behavior: 'smooth' });
+  setActiveTab(idx);
+}
+
+/* ===== Settings UI ===== */
+function openSettings() {
+  document.getElementById('setAnthropic').value = state.cfg.anthropic || '';
+  document.getElementById('setRepo').value = state.cfg.repo || '';
+  document.getElementById('setGithub').value = state.cfg.github || '';
+  document.getElementById('setBranch').value = state.cfg.branch || 'main';
+  const ok = state.cfg.anthropic && state.cfg.github && state.cfg.repo;
+  const status = document.getElementById('setStatus');
+  status.className = 'settings-status ' + (ok ? 'ok' : 'warn');
+  status.textContent = ok ? 'Configured ✓' : 'Enter your keys + repo to get started.';
+  openModal('modalSettings');
+}
+
+async function saveSettingsAndReload() {
+  state.cfg.anthropic = document.getElementById('setAnthropic').value.trim();
+  state.cfg.repo = document.getElementById('setRepo').value.trim();
+  state.cfg.github = document.getElementById('setGithub').value.trim();
+  state.cfg.branch = document.getElementById('setBranch').value.trim() || 'main';
+  saveCfg();
+  closeModal('modalSettings');
+  toast('Settings saved', 'success');
+  await initialLoad();
+}
+
+async function testConnection() {
+  const cfg = {
+    anthropic: document.getElementById('setAnthropic').value.trim(),
+    github: document.getElementById('setGithub').value.trim(),
+    repo: document.getElementById('setRepo').value.trim(),
+    branch: document.getElementById('setBranch').value.trim() || 'main',
+  };
+  const status = document.getElementById('setStatus');
+  status.className = 'settings-status warn';
+  status.textContent = 'Testing…';
+  try {
+    // 1) GitHub repo access
+    const r = await fetch(`https://api.github.com/repos/${cfg.repo}`, {
+      headers: { Authorization: `Bearer ${cfg.github}`, Accept: 'application/vnd.github+json' },
+    });
+    if (!r.ok) throw new Error(`GitHub ${r.status} — check repo + PAT scopes`);
+    // 2) Claude ping (tiny)
+    const oldKey = state.cfg.anthropic;
+    state.cfg.anthropic = cfg.anthropic;
+    await callClaude('Return only the word OK.', 'OK', 16);
+    state.cfg.anthropic = oldKey;
+    status.className = 'settings-status ok';
+    status.textContent = 'All good ✓';
+  } catch (e) {
+    status.className = 'settings-status warn';
+    status.textContent = 'Failed: ' + e.message.slice(0, 200);
+  }
+}
+
+/* ===== Init / Refresh actions ===== */
+async function initialLoad() {
+  if (!state.cfg.repo || !state.cfg.github) {
+    renderRecipes();
+    renderLibrary();
+    renderShopping();
+    return;
+  }
+  const list = document.getElementById('recipeList');
+  list.innerHTML = `<div class="full-load"><div class="spinner"></div><div>Loading library…</div></div>`;
+  try {
+    await Promise.all([loadInspirations(), loadPicks()]);
+  } catch (e) {
+    toast('Load failed: ' + e.message, 'error');
+  }
+  renderRecipes();
+  renderLibrary();
+  renderShopping();
+}
+
+async function handleAddUrl() {
+  const url = document.getElementById('urlInput').value.trim();
+  if (!url) { toast('Paste a recipe URL', 'error'); return; }
+  if (!/^https?:\/\//i.test(url)) { toast('URL must start with http(s)://', 'error'); return; }
+  if (!state.cfg.anthropic || !state.cfg.repo || !state.cfg.github) {
+    toast('Set up Settings first', 'error'); return;
+  }
+  document.getElementById('addLabel').style.display = 'none';
+  document.getElementById('addSpinner').style.display = 'inline-block';
+  document.getElementById('btnAdd').disabled = true;
+  try {
+    const recipe = await addRecipeFromUrl(url);
+    document.getElementById('urlInput').value = '';
+    toast(`Added: ${recipe.title}`, 'success');
+    renderLibrary();
+    renderRecipes();
+  } catch (e) {
+    toast(e.message.slice(0, 240), 'error');
+  } finally {
+    document.getElementById('addLabel').style.display = 'inline';
+    document.getElementById('addSpinner').style.display = 'none';
+    document.getElementById('btnAdd').disabled = false;
+  }
+}
+
+async function handleRefresh() {
+  if (state.inspirations.length === 0) {
+    toast('Add some recipes first', 'error'); return;
+  }
+  const btn = document.getElementById('btnRefresh');
+  const orig = btn.innerHTML;
+  btn.innerHTML = '<span class="spinner"></span> Picking…';
+  btn.disabled = true;
+  try {
+    await refreshWeeklyPicks();
+    renderRecipes();
+    renderShopping();
+    toast('Picks refreshed ✓', 'success');
+  } catch (e) {
+    toast(e.message.slice(0, 240), 'error');
+  } finally {
+    btn.innerHTML = orig;
+    btn.disabled = false;
+  }
+}
+
+function clearCheckedShopItems() {
+  if (!confirm('Clear all checked items from the shopping list view?')) return;
+  for (const k of Object.keys(state.shopChecked)) delete state.shopChecked[k];
+  saveShop();
+  renderShopping();
+}
+
+/* ===== Wire up ===== */
+function init() {
+  loadCfg();
+  loadShop();
+
+  // Tabs
+  document.querySelectorAll('.tab').forEach(el => {
+    el.addEventListener('click', () => {
+      const idx = parseInt(el.dataset.pane, 10);
+      scrollToPane(idx);
+    });
+  });
+  // Pane swipe-tracking → update active tab
+  const panes = document.getElementById('panes');
+  let scrollT;
+  panes.addEventListener('scroll', () => {
+    clearTimeout(scrollT);
+    scrollT = setTimeout(() => {
+      const idx = Math.round(panes.scrollLeft / panes.clientWidth);
+      setActiveTab(idx);
+    }, 60);
+  });
+
+  // Modal close
+  document.querySelectorAll('[data-close]').forEach(el => {
+    el.addEventListener('click', () => {
+      const overlay = el.closest('.modal-overlay');
+      if (overlay) overlay.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+  document.querySelectorAll('.modal-overlay').forEach(o => {
+    o.addEventListener('click', (e) => {
+      if (e.target === o) {
+        o.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    });
+  });
+
+  // Settings
+  document.getElementById('btnSettings').addEventListener('click', openSettings);
+  document.getElementById('btnSaveSettings').addEventListener('click', saveSettingsAndReload);
+  document.getElementById('btnTestConn').addEventListener('click', testConnection);
+  document.getElementById('btnClearLocal').addEventListener('click', () => {
+    if (!confirm('Clear local API keys + checked shopping items from this device? (Repo data is not affected.)')) return;
+    localStorage.removeItem(LS.cfg);
+    localStorage.removeItem(LS.shop);
+    location.reload();
+  });
+
+  // Library toggle
+  document.getElementById('libToggle').addEventListener('click', (e) => {
+    e.currentTarget.classList.toggle('open');
+    document.getElementById('libList').classList.toggle('open');
+  });
+
+  // Add recipe
+  document.getElementById('btnAdd').addEventListener('click', handleAddUrl);
+  document.getElementById('urlInput').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') handleAddUrl();
+  });
+
+  // Refresh picks
+  document.getElementById('btnRefresh').addEventListener('click', handleRefresh);
+
+  // Clear checked
+  document.getElementById('btnClearChecked').addEventListener('click', clearCheckedShopItems);
+
+  // First-run: if no config, open settings
+  if (!state.cfg.repo || !state.cfg.github) {
+    setTimeout(openSettings, 250);
+  }
+
+  initialLoad();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', init);
+} else {
+  init();
+}
+</script>
+
+</body>
+</html>
