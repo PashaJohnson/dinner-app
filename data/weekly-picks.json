@@ -3,75 +3,6 @@
   "picks": [
     {
       "recipe": {
-        "id": "rec_onwcgtee2ht9",
-        "title": "Indian Spice Rubbed Chicken Thighs",
-        "sourceUrl": "https://culinaryginger.com/indian-spice-rubbed-chicken-thighs/",
-        "ingredients": [
-          {
-            "item": "mild yellow curry powder",
-            "quantity": "2 teaspoons",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "ground ginger",
-            "quantity": "1 teaspoon",
-            "section": "Produce"
-          },
-          {
-            "item": "garlic powder",
-            "quantity": "1 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "¼ teaspoon ground cardamom",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "paprika",
-            "quantity": "1 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "salt",
-            "quantity": "1 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "vegetable oil",
-            "quantity": "2 teaspoons",
-            "section": "Pantry"
-          },
-          {
-            "item": "chicken thighs (skin on, bone-in)",
-            "quantity": "4",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "vegetable oil",
-            "quantity": "1 tablespoon",
-            "section": "Pantry"
-          }
-        ],
-        "steps": [
-          "Preheat your oven to 400°F (200°C).",
-          "In a small bowl, combine all the spices and salt; mix well.",
-          "If the chicken skin is wrapped too far under the thigh, trim it off for a neater finish. Coat the thighs with 2 teaspoons of oil, then rub the spice mixture onto all sides of the chicken. Pro-Tip: Gently lift the skin and rub some spices underneath, being careful not to peel the skin back entirely.",
-          "Add 1 tablespoon of oil to an oven-proof sauté pan over medium heat. When the oil begins to ripple, place the thighs in the pan skin-side down. Cook for 8–10 minutes until the skin is golden and crispy.",
-          "Turn the thighs over and cook for an additional 5 minutes to seal the other side.",
-          "Transfer the pan to the oven and roast for about 10 minutes. The chicken is ready when the internal temperature reaches 180°F (82°C), though timing may vary slightly depending on the size of the thighs.",
-          "Serve warm with your favorite side dish."
-        ],
-        "servings": 4,
-        "cuisineType": "Indian",
-        "mainProtein": "Chicken",
-        "addedAt": "2026-06-08T00:56:05.037Z"
-      },
-      "checked": false,
-      "fromLibrary": false
-    },
-    {
-      "recipe": {
         "id": "rec_oz2cdlzy2hww",
         "title": "Mediterranean Baked Fish",
         "sourceUrl": "https://www.agoudalife.com/mediterranean-baked-fish/",
@@ -156,92 +87,6 @@
     },
     {
       "recipe": {
-        "id": "rec_rym8g5vy2hi6",
-        "title": "Crispy Spice Rubbed Chicken Thighs",
-        "sourceUrl": "https://www.fifteenspatulas.com/crispy-spice-rubbed-chicken-thighs/",
-        "ingredients": [
-          {
-            "item": "or 3 lb package skin-on bone-in chicken thighs (about 5 pieces)",
-            "quantity": "2",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "ground ginger",
-            "quantity": "1 tsp",
-            "section": "Produce"
-          },
-          {
-            "item": "ground chipotle pepper",
-            "quantity": "1 tsp",
-            "section": "Produce"
-          },
-          {
-            "item": "yellow curry powder",
-            "quantity": "2 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "paprika",
-            "quantity": "1 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "garlic powder",
-            "quantity": "1 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "ground coriander",
-            "quantity": "1/2 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "ground cardamom",
-            "quantity": "1/4 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "ground cloves",
-            "quantity": "1/8 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "ground cayenne pepper",
-            "quantity": "1/4 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "ground cumin",
-            "quantity": "1/2 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "sea salt",
-            "quantity": "1.5 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "olive oil",
-            "quantity": "",
-            "section": "Pantry"
-          }
-        ],
-        "steps": [
-          "Preheat the oven to 400 degrees F.",
-          "Stir to combine the ginger, chipotle pepper, curry powder, paprika, garlic powder, coriander, cardamom, cloves, cayenne, cumin, and salt.",
-          "Trim the excess fat from the chicken thighs (any part that overhangs the main piece). Rub the chicken thighs all over with the spice rub.",
-          "Heat an ovenproof skillet over medium heat and add enough olive oil to coat the bottom of the pan (about 2 tbsp). Cook the chicken thighs skin side down (in a single layer) for 10 minutes, until the skin gets crispy (and if the skin isn’t golden brown and crispy after 10 minutes, cook it for a few minutes longer). Flip the chicken and cook for another 5 minutes, then transfer the skillet to the oven to cook for additional 10-15 minutes, until the chicken is cooked through and has reached an internal temperature of 180 degrees F. Serve and enjoy!"
-        ],
-        "servings": 3,
-        "cuisineType": "American",
-        "mainProtein": "Chicken",
-        "addedAt": "2026-06-08T00:56:04.638Z"
-      },
-      "checked": false,
-      "fromLibrary": false
-    },
-    {
-      "recipe": {
         "id": "rec_owyjed012id9",
         "title": "Mediterranean Fish Bake",
         "sourceUrl": "https://kathleenashmore.com/mediterranean-fish-bake/",
@@ -315,169 +160,249 @@
     },
     {
       "recipe": {
-        "id": "rec_f0t10dsj2hux",
-        "title": "Curry Braised Chicken Thighs",
-        "sourceUrl": "https://www.fromachefskitchen.com/curry-braised-chicken-thighs/",
+        "id": "rec_vxztyybu59su",
+        "title": "Pan-Seared Steak with Garlic Butter",
+        "sourceUrl": "https://natashaskitchen.com/pan-seared-steak/",
         "ingredients": [
           {
-            "item": "chicken thighs on the bone (skin removed if desired)",
-            "quantity": "4",
+            "item": "New York Strip Steaks (2 steaks) (or Ribeye or Top Sirloin Steaks (1 lb each steak, 1 1/4” thick))",
+            "quantity": "2 lbs",
             "section": "Meat & Seafood"
           },
           {
-            "item": "Salt and freshly ground black pepper",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "Cayenne pepper",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "canola oil (or as needed)",
-            "quantity": "2 tablespoons",
+            "item": "vegetable oil (or any high heat cooking oil like canola or extra light olive oil)",
+            "quantity": "1/2 Tbsp",
             "section": "Pantry"
           },
           {
-            "item": "small onion (halved and thinly sliced)",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "medium carrots (quartered lengthwise, then cut into 2-inch pieces)",
-            "quantity": "2",
-            "section": "Produce"
-          },
-          {
-            "item": "curry powder (such as Madras, or to taste and tolerance)",
-            "quantity": "1 tablespoon",
+            "item": "sea salt",
+            "quantity": "1 1/2 tsp",
             "section": "Spices & Seasonings"
           },
           {
-            "item": "minced ginger",
-            "quantity": "1 tablespoon",
-            "section": "Produce"
+            "item": "black pepper (freshly ground)",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
           },
           {
-            "item": "garlic (minced)",
-            "quantity": "4 cloves",
-            "section": "Produce"
-          },
-          {
-            "item": "(14.5-ounce) diced tomatoes (undrained)",
-            "quantity": "1 can",
-            "section": "Produce"
-          },
-          {
-            "item": "chicken broth",
-            "quantity": "1 cup",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "heavy cream (or canned unsweetened coconut milk)",
-            "quantity": "1/2 cup",
-            "section": "Pantry"
-          },
-          {
-            "item": "chopped cilantro (plus sprigs for garnish)",
-            "quantity": "1/4 cup",
-            "section": "Produce"
-          },
-          {
-            "item": "Cooked brown basmati rice",
-            "quantity": "",
-            "section": "Pantry"
-          },
-          {
-            "item": "Plain yogurt (optional)",
-            "quantity": "",
+            "item": "unsalted butter",
+            "quantity": "2 Tbsp",
             "section": "Dairy & Eggs"
+          },
+          {
+            "item": "garlic (peeled and quartered)",
+            "quantity": "2 cloves",
+            "section": "Produce"
+          },
+          {
+            "item": "fresh rosemary",
+            "quantity": "1 sprig",
+            "section": "Produce"
           }
         ],
         "steps": [
-          "Season chicken thighs generously with salt, black pepper and cayenne pepper.",
-          "Heat oil in a deep skillet or sauté pan over medium-high heat. Add chicken, skin side down, and brown 2-3 minutes per side, or until browned. Transfer to a plate.",
-          "Add more oil if necessary. Add the onion then reduce heat to medium-low and cook 4-5 minutes or until beginning to soften.",
-          "Add carrot and cook 2-3 minutes or until lightly browned in places.",
-          "Add curry powder, ginger and garlic and cook very briefly, about 15 seconds.",
-          "Add tomatoes, chicken broth and cream or coconut milk. Return chicken thighs to the pan.",
-          "Bring to a boil, reduce heat to low, cover slightly and simmer 25-30 minutes or until chicken is cooked through to 165 degrees.",
-          "Adjust seasoning if desired. Stir in cilantro.",
-          "Serve with brown basmati rice. Garnish with cilantro sprigs and plain yogurt if desired."
+          "Thoroughly pat steak dry with paper towels. Just before cooking, generously season with 1 1/2 tsp salt and 1 tsp black pepper",
+          "Heat the cast iron pan until hot then add 1/2 Tbsp oil over medium-high heat, swirling to coat. Once the oil is very hot, add steaks to the skillet. Sear the steaks on the first side for 4 minutes until a brown crust has formed then flip and cook another 3-4 minutes. Using tongs, turn the steak on its sides to render the white fat and sear the edges (1-minute per edge).",
+          "Reduce heat to medium and immediately add 2 Tbsp butter, quartered garlic cloves and rosemary to the pan. Spoon the butter sauce over the steak, tilting the pan to get butter on your spoon. Continue spooning the sauce over the steak for a minute or until the steak is about 5-10 degrees from your desired doneness (the temperature will continue to rise another 5-19 degrees while steaks rest).",
+          "Transfer steak to a cutting board, loosely cover and rest 10 minutes before slicing into 1/2\" strips to serve. Spoon extra butter sauce over sliced steak to serve."
         ],
-        "servings": 2,
-        "cuisineType": "Indian",
-        "mainProtein": "Chicken",
-        "addedAt": "2026-06-08T00:56:05.097Z"
+        "servings": 4,
+        "cuisineType": "American",
+        "mainProtein": "Beef",
+        "addedAt": "2026-06-08T01:26:14.238Z"
       },
       "checked": false,
-      "fromLibrary": false
+      "fromLibrary": false,
+      "manual": false
     },
     {
       "recipe": {
-        "id": "rec_xxcpmj9o2i14",
-        "title": "Lemon Herb Baked Fish Recipe",
-        "sourceUrl": "https://coleycooks.com/herb-roasted-fish/",
+        "id": "rec_5gwpxcg359t8",
+        "title": "Pan-Seared Steak with Garlic Butter",
+        "sourceUrl": "https://gimmedelicious.com/pan-seared-steak-with-garlic-butter/",
         "ingredients": [
           {
-            "item": "white fish fillets ((about 6 ounces each), such as cod, mahi mahi, barramundi, sea bass, grouper, or tilefish)",
+            "item": "steaks ((New York Strip, Ribeye, Top Sirloin, or your favorite cut))",
             "quantity": "4",
             "section": "Meat & Seafood"
           },
           {
-            "item": "extra virgin olive oil (plus more for drizzling)",
-            "quantity": "3 tablespoons",
-            "section": "Pantry"
-          },
-          {
-            "item": "Kosher salt and freshly cracked black pepper (to taste)",
+            "item": "salt ((to taste))",
             "quantity": "",
             "section": "Spices & Seasonings"
           },
           {
-            "item": "Meyer lemons (1 thinly sliced; 1 zested and juiced)",
-            "quantity": "2",
-            "section": "Produce"
-          },
-          {
-            "item": "2–3 sprigs fresh rosemary (plus 1 teaspoon finely minced)",
+            "item": "pepper ((to taste))",
             "quantity": "",
             "section": "Produce"
           },
           {
-            "item": "2–3 sprigs fresh thyme (plus 1 teaspoon finely minced)",
-            "quantity": "",
-            "section": "Produce"
-          },
-          {
-            "item": "garlic clove (finely minced or grated)",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "fresh parsley (finely minced)",
+            "item": "olive oil",
             "quantity": "1 tablespoon",
+            "section": "Pantry"
+          },
+          {
+            "item": "butter ((softened))",
+            "quantity": "1 stick",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "garlic ((minced))",
+            "quantity": "1 tablespoon",
+            "section": "Produce"
+          },
+          {
+            "item": "minced fresh herbs ((parsley, thyme, dill or chives, plus more for garnish))",
+            "quantity": "2 tablespoons",
+            "section": "Produce"
+          },
+          {
+            "item": "salt",
+            "quantity": "1 pinch",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "pepper",
+            "quantity": "1 pinch",
             "section": "Produce"
           }
         ],
         "steps": [
-          "Preheat the oven to 425°F (220°C). Pat each fillet very dry with paper towels.",
-          "Line a baking sheet with parchment paper and drizzle it lightly with olive oil. Place the fillets on top.",
-          "Drizzle each fillet with a bit more olive oil, then season both sides with salt and pepper.",
-          "Layer lemon slices over each fillet, then scatter the rosemary and thyme sprigs on top. Drizzle again with a little olive oil.",
-          "Bake for 8–12 minutes, depending on the thickness of the fillets, or until the flesh turns opaque. Do not overcook.",
-          "While the fish is baking, whisk together the Meyer lemon zest and juice, garlic, minced rosemary, thyme, parsley, and 3 tablespoons of olive oil in a small bowl. Season with salt and pepper to taste, then set aside.",
-          "Once the fish is done, remove the lemon slices and herb sprigs. Carefully transfer the fillets to serving plates using a spatula.",
-          "Spoon the Meyer lemon vinaigrette over the top of each fillet. Serve immediately with extra vinaigrette and Meyer lemon wedges on the side."
+          "Heat a large cast-iron skillet or heavy-duty pan over medium-high heat for at least 2-3 minutes or until smoking.",
+          "Pat each steak dry with a paper towel. Generously season both sides with salt and pepper.",
+          "Add the olive oil to the pan followed by the steak. Sear steak for 3-4 minutes on each side. Resist the urge to flip until the first side is browned. (For medium, cook 4 to 5 minutes on each side; for well-done, cook 5 to 6 minutes on each side).",
+          "Remove steak from heat and rest for at least 5 minutes. Top with a scoop of the garlic butter and serve.",
+          "While the steak is cooking, gently stir all the ingredients for the butter in a small bowl."
         ],
         "servings": 4,
-        "cuisineType": "Italian",
-        "mainProtein": "Fish",
-        "addedAt": "2026-06-08T00:56:05.320Z"
+        "cuisineType": "American",
+        "mainProtein": "Beef",
+        "addedAt": "2026-06-08T01:26:14.252Z"
       },
       "checked": false,
-      "fromLibrary": false
+      "fromLibrary": false,
+      "manual": false
+    },
+    {
+      "recipe": {
+        "id": "rec_9v2876qs59zh",
+        "title": "Easy Garlic Butter Steak",
+        "sourceUrl": "https://ohsweetbasil.com/easy-garlic-butter-steak-at-home-recipe/",
+        "ingredients": [
+          {
+            "item": "Rib-Eye Steaks (12 oz each, 1 ¼-inch-thick*)",
+            "quantity": "3",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "Olive Oil",
+            "quantity": "4 Tablespoons",
+            "section": "Pantry"
+          },
+          {
+            "item": "Kosher Salt and Freshly Ground Black Pepper (to taste)",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "Unsalted Butter (at room temperature)",
+            "quantity": "1/2 Cup",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "Garlic (minced (especially wonderful if you use roasted garlic))",
+            "quantity": "3 Cloves",
+            "section": "Produce"
+          },
+          {
+            "item": "Kosher Salt",
+            "quantity": "1/2 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "Freshly Ground Black Pepper",
+            "quantity": "1/4 teaspoon",
+            "section": "Spices & Seasonings"
+          }
+        ],
+        "steps": [
+          "To make the garlic steak butter, combine butter, garlic, salt, and pepper. Transfer the mixture to parchment paper; shape into a log. Roll in parchment to 1 ½ inches in diameter, twisting the ends to close. Refrigerate until ready to use, up to 1 week.",
+          "Preheat oven to broil. Place an oven-proof skillet, we prefer to use our Lodge Cast Iron Skillet, in the oven.",
+          "Using paper towels, pat both sides of the steak dry. This is essential to get a nice caramelization on the steak. Drizzle with olive oil; season with salt and pepper evenly to taste.",
+          "Remove the skillet from the oven and heat over medium-high heat on the stovetop.",
+          "Once the pan is hot, place the steak in the middle of the skillet and cook until a dark crust has formed, about 1 minute. Using tongs, flip, and cook for an additional 60 seconds.",
+          "Remove the skillet from the stove.",
+          "Place your skillet into the oven and cook until desired doneness is reached, about 4-5 minutes for medium-rare, flipping once. Let rest for 3-5 minutes, tented, not wrapped with foil.",
+          "Serve immediately with a slice of garlic butter."
+        ],
+        "servings": 3,
+        "cuisineType": "American",
+        "mainProtein": "Vegetarian",
+        "addedAt": "2026-06-08T01:26:14.477Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": false
+    },
+    {
+      "recipe": {
+        "id": "rec_ar25nj475acz",
+        "title": "Pan Seared Steak with Butter & Garlic",
+        "sourceUrl": "https://www.chasingtheseasons.com/pan-seared-steak-with-garlic-butter/",
+        "ingredients": [
+          {
+            "item": "(1½-inch) rib eye steaks, thick-cut, bone-in (or butcher quality New York strip )",
+            "quantity": "2",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "extra light olive oil (substitute with another high heat oil like tallow or vegetable oil)",
+            "quantity": "1-2 tbsp",
+            "section": "Pantry"
+          },
+          {
+            "item": "fine sea salt",
+            "quantity": "1½ tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "fresh ground pepper",
+            "quantity": "1 tsp",
+            "section": "Produce"
+          },
+          {
+            "item": "butter",
+            "quantity": "4 tbsp",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "garlic cloves (lightly smashed)",
+            "quantity": "4",
+            "section": "Produce"
+          },
+          {
+            "item": "fresh sprigs of thyme (substitute with rosemary)",
+            "quantity": "2-4",
+            "section": "Produce"
+          }
+        ],
+        "steps": [
+          "If refrigerated, allow the raw steaks to rest at room temperature for 20-30 minutes before cooking.",
+          "Preheat the oven to 400 F.",
+          "Pat the steaks dry on both sides with a paper towel. Massage in oil and generously season both sides with salt and pepper.",
+          "Heat a cast iron skillet with deep sides over medium heat, getting it piping hot, about 2 minutes. Add the seasoned steaks, there should be a great sizzle. Gently push the steaks down so the surface is in full contact with the pan and sear, without moving them, on high heat for about 1-2 minutes on both sides, or until a golden brown crust develops and the steaks lift away easily from the pan. *",
+          "Reduce the heat to low and add the butter, garlic, and thyme. Tip the pan slightly to spoon the butter over each steak. (If opting to finish on the stovetop, see the variation below in notes).",
+          "Place the pan in the preheated oven for approximately 5-10 minutes, although the time will depend greatly on the thickness of the steaks and the desired doneness. Use a digital meat thermometer and check the doneness chart below.",
+          "Note that the steaks should be removed from the oven about 5 degrees shy of the desired final temperature as they will continue to cook as they rest. Let the steaks rest for 5-10 minutes for the juices to redistribute and for the steak to finish cooking before serving. To cut the steak, slice against the grain. Spoon the pan drippings over the steaks when serving. To help, use a meat thermometer to determine the internal temperature - noting again that the steaks should be removed about 5 degrees shy of the final desired internal temperature as it will continue to cook while resting."
+        ],
+        "servings": 2,
+        "cuisineType": null,
+        "mainProtein": "Vegetarian",
+        "addedAt": "2026-06-08T01:26:14.963Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": false
     }
   ]
 }
