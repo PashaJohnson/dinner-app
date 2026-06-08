@@ -1,17 +1,6 @@
 {
   "recipes": [
     {
-      "id": "rec_8ixdyf9kikue",
-      "title": "Unknown Recipe",
-      "sourceUrl": "https://www.instagram.com/p/DFyRRMkSFV1/",
-      "ingredients": [],
-      "steps": [],
-      "servings": null,
-      "cuisineType": null,
-      "mainProtein": null,
-      "addedAt": "2026-06-08T00:12:36.230Z"
-    },
-    {
       "id": "rec_6o0c2s2oedre",
       "title": "Chicken Tikka Masala",
       "sourceUrl": "https://carlsbadcravings.com/chicken-tikka-masala/#wprm-recipe-container-67305",
