@@ -1545,10 +1545,11 @@ DO NOT RETURN recipes matching these titles:
 ${JSON.stringify(avoidTitles)}
 
 Search the web and return ${needed} recipe URLs as JSON.`;
-  // max_uses=1 keeps input-token cost down for users on entry-tier rate limits
-  const tools = [{ type: 'web_search_20250305', name: 'web_search', max_uses: 1 }];
+  // max_uses=2 gives Claude a second search pass for more varied, on-style picks.
+  // (~1¢ extra per refresh vs. 1 search — negligible on Tier 2+.)
+  const tools = [{ type: 'web_search_20250305', name: 'web_search', max_uses: 2 }];
   const raw = await callClaude(SUGGEST_SYS, userMsg, {
-    maxTokens: 1536,
+    maxTokens: 2048,
     tools,
     model: ANTHROPIC_LIGHT_MODEL,
   });
@@ -1579,23 +1580,30 @@ Search the web and return ${needed} recipe URLs as JSON.`;
 }
 
 async function fetchAndParseUrls(urlObjs, onProgress) {
-  // Parse SERIALLY — most parse via free client-side JSON-LD (instant); only
-  // JSON-LD-less sites call Claude. Serial keeps any token use spread over time
-  // so we never spike past the per-minute rate limit.
-  const recipes = [];
-  let failed = 0;
-  for (let i = 0; i < urlObjs.length; i++) {
-    const { title, url } = urlObjs[i];
-    onProgress && onProgress(`Reading recipe ${i + 1} of ${urlObjs.length}…`);
+  // Parse all recipes in PARALLEL. Most parse via free client-side JSON-LD
+  // (instant, zero tokens); only JSON-LD-less sites call Claude. Concurrency is
+  // safe now — the 429 auto-retry in callClaude absorbs any rare burst, and
+  // higher rate limits make spikes a non-issue. Wall-clock = the single slowest
+  // recipe, not the sum of all of them.
+  const total = urlObjs.length;
+  let done = 0;
+  onProgress && onProgress(`Reading ${total} recipes…`);
+  const results = await Promise.allSettled(urlObjs.map(async ({ title, url }) => {
     try {
       const html = await fetchRecipePage(url);
       const recipe = await parseRecipeFromHtml(url, html);
       if ((!recipe.title || recipe.title === 'Untitled recipe') && title) recipe.title = title;
-      recipes.push(recipe);
-    } catch (e) {
-      failed++;
-      console.warn('parse failed:', url, e);
+      return recipe;
+    } finally {
+      done++;
+      onProgress && onProgress(`Read ${done} of ${total} recipes…`);
     }
+  }));
+  const recipes = [];
+  let failed = 0;
+  for (const r of results) {
+    if (r.status === 'fulfilled') recipes.push(r.value);
+    else { failed++; console.warn('parse failed:', r.reason); }
   }
   return { recipes, failed };
 }
