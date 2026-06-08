@@ -1090,9 +1090,11 @@ async function savePicks(message) {
 }
 
 /* ===== Anthropic API ===== */
+const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+
 async function callClaude(systemPrompt, userPrompt, opts = {}) {
   if (!state.cfg.anthropic) throw new Error('Anthropic API key not set');
-  const { maxTokens = 4096, tools = null, model = ANTHROPIC_MODEL } = opts;
+  const { maxTokens = 4096, tools = null, model = ANTHROPIC_MODEL, maxRetries = 2 } = opts;
   const body = {
     model,
     max_tokens: maxTokens,
@@ -1100,28 +1102,38 @@ async function callClaude(systemPrompt, userPrompt, opts = {}) {
     messages: [{ role: 'user', content: userPrompt }],
   };
   if (tools) body.tools = tools;
-  const res = await fetch('https://api.anthropic.com/v1/messages', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'x-api-key': state.cfg.anthropic,
-      'anthropic-version': '2023-06-01',
-      'anthropic-dangerous-direct-browser-access': 'true',
-    },
-    body: JSON.stringify(body),
-  });
-  if (!res.ok) {
+
+  for (let attempt = 0; ; attempt++) {
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-api-key': state.cfg.anthropic,
+        'anthropic-version': '2023-06-01',
+        'anthropic-dangerous-direct-browser-access': 'true',
+      },
+      body: JSON.stringify(body),
+    });
+    if (res.ok) {
+      const data = await res.json();
+      // Concatenate all text blocks (skips server_tool_use / web_search_tool_result blocks)
+      return data.content.map(b => b.type === 'text' ? (b.text || '') : '').join('');
+    }
     const t = await res.text();
+    if (res.status === 429 && attempt < maxRetries) {
+      // Auto-retry on rate limit. Honor retry-after header if present, else wait ~40s.
+      const ra = parseInt(res.headers.get('retry-after') || '', 10);
+      const waitMs = (Number.isFinite(ra) && ra > 0 ? ra : 40) * 1000;
+      toast(`Rate limit — waiting ${Math.round(waitMs / 1000)}s, then retrying…`, '');
+      await sleep(waitMs);
+      continue;
+    }
     if (res.status === 429) {
-      // Rate limit / quota — make message actionable
-      throw new Error('Anthropic rate limit hit. Wait 60 seconds and try again. (If this keeps happening, your account is on the entry tier — using the app a few times will auto-upgrade you to Tier 2 with higher limits.)');
+      throw new Error('Anthropic rate limit — your account is on the entry tier (10K tokens/min). Wait a minute and try again. Limits auto-raise after ~$5 spent + 7 days on the account.');
     }
     if (res.status === 401) throw new Error('Anthropic key rejected — check Settings');
     throw new Error(`Claude API ${res.status}: ${t.slice(0, 200)}`);
   }
-  const data = await res.json();
-  // Concatenate all text blocks (skips server_tool_use / web_search_tool_result blocks)
-  return data.content.map(b => b.type === 'text' ? (b.text || '') : '').join('');
 }
 
 /* ===== Grocery section classification ===== */
@@ -1284,6 +1296,120 @@ function stripHtml(html) {
   return (head + s).slice(0, 80000);
 }
 
+/* ---- JSON-LD recipe extraction (client-side, ZERO API tokens) ----
+   Most major recipe sites (NYT Cooking, Serious Eats, AllRecipes, Bon Appétit,
+   Food Network, and any WordPress site using WP Recipe Maker) embed schema.org
+   Recipe data as JSON-LD. We parse it directly in the browser — no Claude call,
+   no tokens, instant. Claude is only used as a fallback when JSON-LD is absent. */
+
+function newRecipeId() {
+  return 'rec_' + Math.random().toString(36).slice(2, 10) + Date.now().toString(36).slice(-4);
+}
+
+function decodeEntities(str) {
+  if (!str) return '';
+  const txt = document.createElement('textarea');
+  txt.innerHTML = String(str);
+  return txt.value.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+}
+
+// Split a raw ingredient line ("2 tablespoons olive oil, chopped") into {quantity, item}
+const QTY_RE = /^\s*((?:[\d¼½¾⅓⅔⅛⅜⅝⅞.\/⅐-⅞\s-]+)?\s*(?:cups?|c\.?|tbsps?|tablespoons?|tbs|tsps?|teaspoons?|oz|ounces?|lbs?|pounds?|grams?|g|kg|kilograms?|ml|milliliters?|l|liters?|cloves?|cans?|jars?|packages?|pkgs?|pinch(?:es)?|dash(?:es)?|handful|slices?|sprigs?|stalks?|heads?|bunch(?:es)?|sticks?|pieces?|quarts?|pints?|gallons?)?\.?)\s+/i;
+function splitIngredient(line) {
+  const raw = String(line || '').replace(/\s+/g, ' ').trim();
+  if (!raw) return null;
+  const m = raw.match(QTY_RE);
+  if (m && m[1] && m[1].trim() && /\d|cup|tbsp|tsp|oz|lb|pound|gram|clove|can|pinch|dash|slice|sprig|stalk|head|bunch|stick|piece|quart|pint|gallon/i.test(m[1])) {
+    const quantity = m[1].trim();
+    const item = raw.slice(m[0].length).trim();
+    if (item) return { quantity, item };
+  }
+  // No clear quantity — whole line is the item
+  return { quantity: '', item: raw };
+}
+
+function guessProtein(ingredientItems) {
+  const joined = ingredientItems.join(' ').toLowerCase();
+  const proteins = [
+    ['Chicken', /\bchicken\b/], ['Beef', /\b(beef|steak|ground beef|brisket|sirloin)\b/],
+    ['Pork', /\b(pork|bacon|ham|sausage|chorizo|prosciutto)\b/], ['Salmon', /\bsalmon\b/],
+    ['Shrimp', /\b(shrimp|prawn)\b/], ['Fish', /\b(cod|tuna|halibut|tilapia|trout|fish)\b/],
+    ['Lamb', /\blamb\b/], ['Turkey', /\bturkey\b/], ['Tofu', /\b(tofu|tempeh)\b/],
+    ['Beans', /\b(bean|lentil|chickpea|garbanzo)\b/],
+  ];
+  for (const [name, re] of proteins) if (re.test(joined)) return name;
+  return 'Vegetarian';
+}
+
+function parseYield(y) {
+  if (y == null) return null;
+  if (Array.isArray(y)) y = y[0];
+  const m = String(y).match(/\d+/);
+  return m ? parseInt(m[0], 10) : null;
+}
+
+function flattenInstructions(instr) {
+  // recipeInstructions can be: string, array of strings, array of HowToStep, or HowToSection (with itemListElement)
+  const out = [];
+  function walk(node) {
+    if (!node) return;
+    if (typeof node === 'string') { const t = decodeEntities(node); if (t) out.push(t); return; }
+    if (Array.isArray(node)) { node.forEach(walk); return; }
+    if (node['@type'] === 'HowToSection' && node.itemListElement) { walk(node.itemListElement); return; }
+    if (node.text) { const t = decodeEntities(node.text); if (t) out.push(t); return; }
+    if (node.itemListElement) { walk(node.itemListElement); return; }
+  }
+  walk(instr);
+  return out;
+}
+
+function findRecipeNode(json) {
+  // JSON-LD can be a single object, an array, or have an @graph
+  const candidates = [];
+  function collect(n) {
+    if (!n || typeof n !== 'object') return;
+    if (Array.isArray(n)) { n.forEach(collect); return; }
+    if (n['@graph']) collect(n['@graph']);
+    const types = [].concat(n['@type'] || []);
+    if (types.map(t => String(t).toLowerCase()).includes('recipe')) candidates.push(n);
+    // also recurse one level for nested
+  }
+  collect(json);
+  return candidates[0] || null;
+}
+
+function extractRecipeJsonLd(html) {
+  const ldMatches = [...html.matchAll(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)];
+  for (const m of ldMatches) {
+    let parsed;
+    try { parsed = JSON.parse(m[1].trim()); }
+    catch (_) { continue; }
+    const node = findRecipeNode(parsed);
+    if (!node) continue;
+    const title = decodeEntities(node.name || '');
+    const ingLines = [].concat(node.recipeIngredient || node.ingredients || []);
+    const steps = flattenInstructions(node.recipeInstructions);
+    if (!ingLines.length && !steps.length) continue; // not a usable recipe node
+    const ingredients = ingLines.map(l => {
+      const sp = splitIngredient(decodeEntities(l));
+      if (!sp) return null;
+      return { item: sp.item, quantity: sp.quantity, section: classifyIngredient(sp.item) };
+    }).filter(Boolean);
+    let cuisine = node.recipeCuisine;
+    if (Array.isArray(cuisine)) cuisine = cuisine[0];
+    cuisine = cuisine ? decodeEntities(cuisine) : null;
+    return {
+      title: title || 'Untitled recipe',
+      ingredients,
+      steps,
+      servings: parseYield(node.recipeYield),
+      cuisineType: cuisine,
+      mainProtein: ingredients.length ? guessProtein(ingredients.map(i => i.item)) : null,
+    };
+  }
+  return null;
+}
+
 const RECIPE_PARSE_SYS = `You are a recipe extractor. Given the text contents of a recipe webpage, return STRICT JSON in this exact shape — no markdown, no commentary:
 
 {
@@ -1303,24 +1429,18 @@ Rules:
 - Strip step numbering from steps ("1. ", "Step 1: " etc.).
 - Return ONLY the JSON object, no other text.`;
 
-async function parseRecipeFromHtml(url, html) {
-  const text = stripHtml(html);
+async function parseRecipeWithClaude(url, html) {
+  // Fallback path — costs tokens. Smaller cap than before to stay light on rate limits.
+  const text = stripHtml(html).slice(0, 24000);
   const user = `URL: ${url}\n\nPAGE TEXT (may include JSON-LD metadata at top):\n\n${text}`;
-  const raw = await callClaude(RECIPE_PARSE_SYS, user, { maxTokens: 4096 });
-  // Extract JSON robustly
+  const raw = await callClaude(RECIPE_PARSE_SYS, user, { maxTokens: 3072, model: ANTHROPIC_LIGHT_MODEL });
   let jsonStr = raw.trim();
   const firstBrace = jsonStr.indexOf('{');
   const lastBrace = jsonStr.lastIndexOf('}');
-  if (firstBrace >= 0 && lastBrace > firstBrace) {
-    jsonStr = jsonStr.slice(firstBrace, lastBrace + 1);
-  }
+  if (firstBrace >= 0 && lastBrace > firstBrace) jsonStr = jsonStr.slice(firstBrace, lastBrace + 1);
   let parsed;
-  try {
-    parsed = JSON.parse(jsonStr);
-  } catch (e) {
-    throw new Error('Claude returned non-JSON output');
-  }
-  // Normalize
+  try { parsed = JSON.parse(jsonStr); }
+  catch (e) { throw new Error('Claude returned non-JSON output'); }
   const ingredients = (parsed.ingredients || []).map(ing => ({
     item: String(ing.item || '').trim(),
     quantity: String(ing.quantity || '').trim(),
@@ -1328,14 +1448,31 @@ async function parseRecipeFromHtml(url, html) {
   })).filter(i => i.item);
   const steps = (parsed.steps || []).map(s => String(s).trim()).filter(Boolean);
   return {
-    id: 'rec_' + Math.random().toString(36).slice(2, 10) + Date.now().toString(36).slice(-4),
     title: String(parsed.title || 'Untitled recipe').trim(),
-    sourceUrl: url,
     ingredients,
     steps,
     servings: parsed.servings || null,
     cuisineType: parsed.cuisineType || null,
     mainProtein: parsed.mainProtein || null,
+  };
+}
+
+async function parseRecipeFromHtml(url, html) {
+  // 1) Try JSON-LD client-side (free + instant). 2) Fall back to Claude.
+  let core = null;
+  try { core = extractRecipeJsonLd(html); } catch (e) { console.warn('JSON-LD parse error:', e); }
+  if (!core || core.ingredients.length === 0) {
+    core = await parseRecipeWithClaude(url, html);
+  }
+  return {
+    id: newRecipeId(),
+    title: core.title,
+    sourceUrl: url,
+    ingredients: core.ingredients,
+    steps: core.steps,
+    servings: core.servings,
+    cuisineType: core.cuisineType,
+    mainProtein: core.mainProtein,
     addedAt: new Date().toISOString(),
   };
 }
@@ -1408,10 +1545,10 @@ DO NOT RETURN recipes matching these titles:
 ${JSON.stringify(avoidTitles)}
 
 Search the web and return ${needed} recipe URLs as JSON.`;
-  // max_uses=2 keeps input-token cost down for users on entry-tier rate limits
-  const tools = [{ type: 'web_search_20250305', name: 'web_search', max_uses: 2 }];
+  // max_uses=1 keeps input-token cost down for users on entry-tier rate limits
+  const tools = [{ type: 'web_search_20250305', name: 'web_search', max_uses: 1 }];
   const raw = await callClaude(SUGGEST_SYS, userMsg, {
-    maxTokens: 2048,
+    maxTokens: 1536,
     tools,
     model: ANTHROPIC_LIGHT_MODEL,
   });
@@ -1441,20 +1578,24 @@ Search the web and return ${needed} recipe URLs as JSON.`;
   return out.slice(0, needed);
 }
 
-async function fetchAndParseUrls(urlObjs) {
-  // Parse all URLs in parallel; tolerate individual failures
-  const results = await Promise.allSettled(urlObjs.map(async ({ title, url }) => {
-    const html = await fetchRecipePage(url);
-    const recipe = await parseRecipeFromHtml(url, html);
-    // If Claude's parsed title is missing, fall back to the search-result title
-    if ((!recipe.title || recipe.title === 'Untitled recipe') && title) recipe.title = title;
-    return recipe;
-  }));
+async function fetchAndParseUrls(urlObjs, onProgress) {
+  // Parse SERIALLY — most parse via free client-side JSON-LD (instant); only
+  // JSON-LD-less sites call Claude. Serial keeps any token use spread over time
+  // so we never spike past the per-minute rate limit.
   const recipes = [];
   let failed = 0;
-  for (const r of results) {
-    if (r.status === 'fulfilled') recipes.push(r.value);
-    else { failed++; console.warn('parse failed:', r.reason); }
+  for (let i = 0; i < urlObjs.length; i++) {
+    const { title, url } = urlObjs[i];
+    onProgress && onProgress(`Reading recipe ${i + 1} of ${urlObjs.length}…`);
+    try {
+      const html = await fetchRecipePage(url);
+      const recipe = await parseRecipeFromHtml(url, html);
+      if ((!recipe.title || recipe.title === 'Untitled recipe') && title) recipe.title = title;
+      recipes.push(recipe);
+    } catch (e) {
+      failed++;
+      console.warn('parse failed:', url, e);
+    }
   }
   return { recipes, failed };
 }
@@ -1473,8 +1614,7 @@ async function refreshWeeklyPicks(onProgress) {
   onProgress && onProgress(`Searching for ${need} recipes…`);
   const urlObjs = await searchForNewRecipeUrls(need, lockedRecipes, recentTitles);
   if (urlObjs.length === 0) throw new Error('No recipes found — try again');
-  onProgress && onProgress(`Parsing ${urlObjs.length} recipes…`);
-  const { recipes, failed } = await fetchAndParseUrls(urlObjs);
+  const { recipes, failed } = await fetchAndParseUrls(urlObjs, onProgress);
   if (recipes.length === 0) throw new Error('All recipe pages failed to parse');
   // Mark fresh picks as not-from-library, not-checked
   const newPicks = recipes.map(r => ({ recipe: r, checked: false, fromLibrary: false }));
