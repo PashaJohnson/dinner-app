@@ -2,20 +2,514 @@
   "weekStartDate": "2026-06-08",
   "picks": [
     {
-      "recipeId": "rec_6o0c2s2oedre",
-      "checked": false
+      "recipe": {
+        "id": "rec_f18u9ld4j3j6",
+        "title": "Our Favorite Chicken Curry",
+        "sourceUrl": "https://www.inspiredtaste.net/48607/chicken-curry/",
+        "ingredients": [
+          {
+            "item": "chicken thighs or chicken breast",
+            "quantity": "1 ½ pounds, boneless, skinless",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "fine sea salt",
+            "quantity": "1 ½ teaspoons, divided",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "ground cumin",
+            "quantity": "1 teaspoon, divided",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "ground coriander",
+            "quantity": "3/4 teaspoon, divided",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "ground turmeric",
+            "quantity": "1/2 teaspoon, divided",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "fresh ground black pepper",
+            "quantity": "1/4 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "cayenne pepper",
+            "quantity": "1/8 to 1/4 teaspoon, optional for heat",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "garlic",
+            "quantity": "6 medium cloves, peeled",
+            "section": "Produce"
+          },
+          {
+            "item": "fresh ginger",
+            "quantity": "1-inch cube, peeled",
+            "section": "Produce"
+          },
+          {
+            "item": "onion",
+            "quantity": "1 medium, roughly chopped",
+            "section": "Produce"
+          },
+          {
+            "item": "water",
+            "quantity": "1 ½ cups",
+            "section": "Beverages"
+          },
+          {
+            "item": "vegetable oil or ghee",
+            "quantity": "3 tablespoons",
+            "section": "Pantry"
+          },
+          {
+            "item": "tomato paste",
+            "quantity": "2 tablespoons",
+            "section": "Pantry"
+          },
+          {
+            "item": "full-fat plain unsweetened yogurt",
+            "quantity": "4 tablespoons",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "Garam Masala",
+            "quantity": "1 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "heavy cream",
+            "quantity": "3 tablespoons",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "cilantro leaves",
+            "quantity": "Handful, chopped, optional for serving",
+            "section": "Produce"
+          }
+        ],
+        "steps": [
+          "Cut the chicken into 1-inch pieces and add them to a bowl. You can leave the chicken whole if you prefer or if you are using bone-in pieces.",
+          "Scatter 1/2 teaspoon salt, 1/2 teaspoon ground cumin, 1/4 teaspoon ground coriander, 1/4 teaspoon ground turmeric, 1/4 teaspoon black pepper, and optional cayenne pepper over the chicken. Toss well and set aside to marinate for at least 20 minutes.",
+          "The chicken can be left to marinate for up to 24 hours; it should be covered and stored in the refrigerator.",
+          "Add garlic, ginger, onion, and 1/2 cup of water to a blender or food processor. Blend until mostly smooth. You can also use an immersion blender with a cup attachment.",
+          "Heat the oil or ghee in a wide skillet (with a lid) over medium-high heat. Arrange the marinated chicken in the pan in one layer and brown on both sides, 2 to 3 minutes per side. Remove the chicken from the pan and place the skillet back on the heat.",
+          "Add the onion-ginger mixture and cook, stirring often, until all the water evaporates, about 5 minutes.",
+          "Stir in the remaining 1/2 teaspoon ground cumin, 1/2 teaspoon coriander, and 1/4 teaspoon turmeric over the onion-ginger mixture and cook for about 20 seconds. Stir in 2 tablespoons of tomato paste, turn the heat down to medium-low, and cook another minute.",
+          "Add the yogurt, a tablespoon at a time, stirring it into the sauce before adding any more. Adding the yogurt slowly prevents it from curdling.",
+          "Return the chicken pieces and any accumulated juices to the pan, along with the remaining 1 cup of water and 3/4 teaspoon of salt. Bring to a boil, turn the heat down to a simmer, and cover with a lid. Simmer, covered, for 20 minutes.",
+          "Remove the lid and stir in the Garam Masala and cream. Taste the sauce and add the final 1/4 teaspoon of salt if you feel that it is needed (we almost always add it). Turn the heat back to medium-high and cook, stirring occasionally, until the sauce has reduced and thickened, 3 to 5 minutes. Serve with fresh cilantro scattered on top."
+        ],
+        "servings": 4,
+        "cuisineType": "Indian",
+        "mainProtein": "Chicken",
+        "addedAt": "2026-06-08T00:41:00.066Z"
+      },
+      "checked": false,
+      "fromLibrary": false
     },
     {
-      "recipeId": "rec_i9d7hz0kcx6k",
-      "checked": false
+      "recipe": {
+        "id": "rec_v0ympcwej415",
+        "title": "Dahi Chicken Recipe (Yogurt Chicken Curry)",
+        "sourceUrl": "https://www.whiskaffair.com/dahi-wala-murgh/",
+        "ingredients": [
+          {
+            "item": "plain yogurt (dahi, curd)",
+            "quantity": "2 cups",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "chicken masala powder",
+            "quantity": "1 tablespoon",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "coriander powder",
+            "quantity": "2 teaspoons",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "½ teaspoon turmeric powder",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "Kashmiri red chili powder",
+            "quantity": "2 teaspoons",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "garam masala powder",
+            "quantity": "1 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "all-purpose flour (maida)",
+            "quantity": "1 tablespoon",
+            "section": "Pantry"
+          },
+          {
+            "item": "salt (or to taste)",
+            "quantity": "2 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "skinless bone-in chicken (cut into 1 and ½ inch pieces, rinsed)",
+            "quantity": "1 kilogram",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "cooking oil (I prefer mustard oil)",
+            "quantity": "5 tablespoons",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "whole cloves (laung)",
+            "quantity": "3-4",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "whole black peppercorns (kali mirch)",
+            "quantity": "5-6",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "whole black cardamoms (badi elaichi)",
+            "quantity": "2",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "inch piece of cinnamon stick (dalchini)",
+            "quantity": "1",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "dry red chilies (stalks removed)",
+            "quantity": "2-3",
+            "section": "Produce"
+          },
+          {
+            "item": "and ½ cups thinly sliced onions",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "ginger garlic paste",
+            "quantity": "2 teaspoons",
+            "section": "Produce"
+          },
+          {
+            "item": "lime juice",
+            "quantity": "1 tablespoon",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "chopped cilantro (fresh coriander leaves)",
+            "quantity": "2 tablespoons",
+            "section": "Spices & Seasonings"
+          }
+        ],
+        "steps": [
+          "Whisk yogurt with chicken masala powder, coriander powder, turmeric powder, chili powder, garam masala powder, all-purpose flour, and salt. Keep it aside.",
+          "Heat oil in a pan over medium-high heat.",
+          "Lightly crush cloves, black peppercorns, black cardamoms, and cinnamon stick in a mortar and pestle.",
+          "When the oil is hot, add the crushed whole spices and dry red chilies and saute for 5-6 seconds.",
+          "Add onions and cook until they turn light brown (5-6 minutes), stirring frequently.",
+          "Add ginger garlic paste and cook until the onions turn dark brown (5-6 minutes), stirring frequently.",
+          "Now add the chicken to the pan and cook for 5-6 minutes, stirring occasionally.",
+          "Add the yogurt mixture and mix until well combined.",
+          "Reduce the heat to medium-low.",
+          "Cover the pan with a lid and cook for 35-40 minutes, stirring occasionally.",
+          "Add some water if the curry looks thick. Check for salt and add more if needed.",
+          "Add lime juice and mix well.",
+          "Garnish with chopped cilantro and serve hot."
+        ],
+        "servings": 6,
+        "cuisineType": "Indian",
+        "mainProtein": "Chicken",
+        "addedAt": "2026-06-08T00:41:00.713Z"
+      },
+      "checked": false,
+      "fromLibrary": false
     },
     {
-      "recipeId": "rec_3hxbdjmbb1ef",
-      "checked": false
+      "recipe": {
+        "id": "rec_yvliul17j4il",
+        "title": "Instant Pot Chicken Curry (Mom's Homestyle 30-Minute Recipe)",
+        "sourceUrl": "https://spicecravings.com/chicken-curry-recipe",
+        "ingredients": [
+          {
+            "item": "chicken thighs, boneless & skinless ((1.25-1.5 lbs.))",
+            "quantity": "1.5 lbs.",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "ghee ((or oil))",
+            "quantity": "1 tbsp",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "cumin seeds",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "onion, chopped ((1 medium onion))",
+            "quantity": "1 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "ginger (1 inch, grated or ground)",
+            "quantity": "2 tsp",
+            "section": "Produce"
+          },
+          {
+            "item": "garlic (2-3 cloves, grated or ground)",
+            "quantity": "2 tsp",
+            "section": "Produce"
+          },
+          {
+            "item": "salt (adjust to taste)",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "turmeric",
+            "quantity": "1/2 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "kashmiri red chili powder ((or paprika))",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "ground coriander",
+            "quantity": "2 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "garam masala ((add 1 tsp for mild flavor))",
+            "quantity": "2 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "ground cumin",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "roma tomato, de-seeded and chopped ((or 1 tbsp tomato paste))",
+            "quantity": "1",
+            "section": "Pantry"
+          },
+          {
+            "item": "plain greek yogurt",
+            "quantity": "1/4 cup",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "water (Add as needed)",
+            "quantity": "1/4-1/2 cup",
+            "section": "Beverages"
+          },
+          {
+            "item": "crushed cardamom",
+            "quantity": "½ tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "chopped cilantro",
+            "quantity": "¼ cup",
+            "section": "Produce"
+          },
+          {
+            "item": "basmati rice (rinsed 2-3 times)",
+            "quantity": "2 cups",
+            "section": "Pantry"
+          },
+          {
+            "item": "water ((or 2.5 cups for softer texture))",
+            "quantity": "2.25 cups",
+            "section": "Beverages"
+          },
+          {
+            "item": "ghee (or oil)",
+            "quantity": "2 tsp",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "cumin seeds",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "salt (adjust to taste)",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          }
+        ],
+        "steps": [
+          "Turn on Saute (high). When display reads 'hot', add ghee or oil, and cumin seeds.",
+          "When cumin seeds begin to sizzle, add ginger, garlic and chopped onion. Saute for 1 minute, then cover with a lid and cook for 2 mins.",
+          "Add chicken, salt, turmeric, red chili, coriander, cumin, garam masala and plain greek yogurt. Stir and saute for another 2 mins.",
+          "Add chopped tomatoes. If you prefer a smoother curry, you can add tomato paste or pureed tomato instead of chopped. Depending on how much liquid the chicken has released by now, add 1/4-1/2 cup of water. (adjust water quantity for an 8qt cooker)",
+          "To make pot-in-pot rice, place a trivet in the main pot. Assemble rinsed rice, water, cumin seeds, salt and oil in an oven safe bowl and place it on top of the trivet. Skip this step if not making rice.",
+          "Close the lid, vent to sealing position in DUO models. Pressure cook for 6 mins.",
+          "After pressure cooking, wait 5 mins and then carefully release the pressure manually (NPR 5, then QR). You can do that by turning the pressure knob to 'Venting' position in Instant Pot DUO, or push down the pressure valve in Instant Pot ULTRA.",
+          "Open lid after the pin drops. Remove rice bowl and fluff with a fork. Add crushed or ground cardamom and chopped cilantro. If the sauce appears too thin, reduce it on saute mode for 2-4 mins. It will thicken as it simmers. Serve warm with rice, naan or roti!"
+        ],
+        "servings": 6,
+        "cuisineType": "Indian",
+        "mainProtein": "Chicken",
+        "addedAt": "2026-06-08T00:41:01.341Z"
+      },
+      "checked": false,
+      "fromLibrary": false
     },
     {
-      "recipeId": "rec_mfus2z1w9riv",
-      "checked": false
+      "recipe": {
+        "id": "rec_ksyacwjnj53p",
+        "title": "Homestyle Rustic Indian Chicken Curry",
+        "sourceUrl": "https://signatureconcoctions.com/recipes/rustic-indian-chicken-curry-two-ways/",
+        "ingredients": [
+          {
+            "item": "plain, unsweetened Greek yogurt",
+            "quantity": "¼ cup",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "ginger-garlic paste",
+            "quantity": "1 tbsp",
+            "section": "Produce"
+          },
+          {
+            "item": "turmeric",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "regular Indian red chili powder, or to taste",
+            "quantity": "½ tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "garam masala",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "salt, to taste",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "(454 g) boneless, skinless chicken thighs, cut into about 1½-inch cubes (see Variations)",
+            "quantity": "1 lb",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "neutral oil of choice",
+            "quantity": "2 tbsp",
+            "section": "Pantry"
+          },
+          {
+            "item": "mustard seeds",
+            "quantity": "½ tsp",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "cumin seeds",
+            "quantity": "½ tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "asafetida",
+            "quantity": "¼ tsp",
+            "section": "Other"
+          },
+          {
+            "item": "medium onion, finely chopped",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "Salt, as needed",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "ginger-garlic paste",
+            "quantity": "1 tbsp",
+            "section": "Produce"
+          },
+          {
+            "item": "turmeric",
+            "quantity": "½ tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "garam masala",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "medium tomatoes, puréed or finely chopped",
+            "quantity": "2",
+            "section": "Produce"
+          },
+          {
+            "item": "water, optional, if needed",
+            "quantity": "¼ cup",
+            "section": "Beverages"
+          },
+          {
+            "item": "to 10 sprigs fresh cilantro, leaves roughly chopped, for garnishing",
+            "quantity": "8",
+            "section": "Produce"
+          }
+        ],
+        "steps": [
+          "Combine all the ingredients for the marinade in a medium bowl and toss well to ensure the chicken pieces are well and evenly coated.",
+          "Cover with a lid or plastic wrap and let is sit on the counter for 30 minutes or so while you prepare the curry (see FAQs & Notes for more information).",
+          "In a medium pot or a deep sauté pan, heat oil over medium heat and add the oil. When the oil starts shimmering add in the cumin and mustard seeds along with asafetida.",
+          "When the seeds sizzle and the asafetida froths, add the onion. Season the onion with salt to help it soften. Sauté for 4-5 minutes, stirring it frequently, until it is translucent.",
+          "Stir in the ginger-garlic paste and sauté for 1 minute.",
+          "Stir in the turmeric and garam masala. Sauté the mixture for about 30 seconds to let the spices bloom.",
+          "Add the puréed or chopped tomatoes. Season the mixture with additional salt and stir the ingredients to combine them well.",
+          "Cook uncovered for 5-7 minutes on medium-low heat till most of the moisture is absorbed and you can see tiny drops of oil floating on the surface.",
+          "Toss in the marinated chicken and mix well to combine.",
+          "Simmer covered for 10-12 minutes, till the chicken is fully cooked.",
+          "Continue simmering uncovered for additional 8-10 minutes to let the excess moisture absorb and evaporate, while stirring occasionally.",
+          "Garnish with cilantro. Serve immediately (see FAQs & Notes for storing leftovers or meal prepping information).",
+          "Place the inner pot in the Instant Pot and press the Sauté button.",
+          "Add the oil along with cumin and mustard seeds along with asafetida.",
+          "When the seeds splutter, add the onions. Sprinkle some salt and sauté till the onion turns light brown in color, for about 5-7 minutes.",
+          "Stir in the ginger- garlic paste and sauté the mixture for 1 minute.",
+          "Add the turmeric and garam masala and sauté the mixture for 30 seconds to let the spices bloom.",
+          "Mix in the tomatoes and stir to combine the ingredients. Deglaze the bottom of the pot by scraping it with a wooden spoon. This is an important step; if the bottom of the pot is not deglazed well, the “burn” error might appear during the pressure-cooking stage.",
+          "Cook the mixture for 5 minutes, until the tomatoes lose most of their moisture.",
+          "Press the Cancel button to turn off the Instant Pot.",
+          "Add the marinated chicken along with 1/4 cup of water.",
+          "Toss the chicken with the onion-tomato mixture and stir to combine the ingredients.",
+          "Close the lid and turn the steam release valve to the sealing position. Press the Poultry/ Manual/ Pressure Cook button and set the time for 10 minutes on high pressure.",
+          "When cooking is complete, open the lid after the pressure has released naturally. It will take about 15 -20 minutes to depressurize.",
+          "Using a slotted spoon, transfer the cooked chicken to a clean medium bowl. Press the Sauté button and bring the sauce to a boil. Stir the curry continuously for 5 to 7 minutes, until most of the moisture is evaporated and the oil has separated from the sauce. Transfer the chicken back to the reduced curry and toss to combine it well with the curry. Press the Cancel button to turn off the Instant Pot.",
+          "Garnish with cilantro/coriander and serve hot with rotis or rice."
+        ],
+        "servings": null,
+        "cuisineType": null,
+        "mainProtein": "Chicken",
+        "addedAt": "2026-06-08T00:41:02.101Z"
+      },
+      "checked": false,
+      "fromLibrary": false
     }
   ]
 }
