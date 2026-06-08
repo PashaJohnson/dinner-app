@@ -928,7 +928,8 @@
        via GitHub Contents API (with SHA round-trip).
 ==================================================================== */
 
-const ANTHROPIC_MODEL = 'claude-sonnet-4-6';
+const ANTHROPIC_MODEL = 'claude-sonnet-4-6';            // for URL parsing (structured extraction needs the smarts)
+const ANTHROPIC_LIGHT_MODEL = 'claude-haiku-4-5';       // for suggest-and-search (cheaper + higher rate-limit budget per minute)
 const CORS_PROXY = 'https://corsproxy.io/?url=';
 const INSPIRATIONS_PATH = 'data/inspirations.json';
 const PICKS_PATH = 'data/weekly-picks.json';
@@ -1089,10 +1090,11 @@ async function savePicks(message) {
 }
 
 /* ===== Anthropic API ===== */
-async function callClaude(systemPrompt, userPrompt, maxTokens = 4096, tools = null) {
+async function callClaude(systemPrompt, userPrompt, opts = {}) {
   if (!state.cfg.anthropic) throw new Error('Anthropic API key not set');
+  const { maxTokens = 4096, tools = null, model = ANTHROPIC_MODEL } = opts;
   const body = {
-    model: ANTHROPIC_MODEL,
+    model,
     max_tokens: maxTokens,
     system: systemPrompt,
     messages: [{ role: 'user', content: userPrompt }],
@@ -1110,7 +1112,12 @@ async function callClaude(systemPrompt, userPrompt, maxTokens = 4096, tools = nu
   });
   if (!res.ok) {
     const t = await res.text();
-    throw new Error(`Claude API ${res.status}: ${t}`);
+    if (res.status === 429) {
+      // Rate limit / quota — make message actionable
+      throw new Error('Anthropic rate limit hit. Wait 60 seconds and try again. (If this keeps happening, your account is on the entry tier — using the app a few times will auto-upgrade you to Tier 2 with higher limits.)');
+    }
+    if (res.status === 401) throw new Error('Anthropic key rejected — check Settings');
+    throw new Error(`Claude API ${res.status}: ${t.slice(0, 200)}`);
   }
   const data = await res.json();
   // Concatenate all text blocks (skips server_tool_use / web_search_tool_result blocks)
@@ -1299,7 +1306,7 @@ Rules:
 async function parseRecipeFromHtml(url, html) {
   const text = stripHtml(html);
   const user = `URL: ${url}\n\nPAGE TEXT (may include JSON-LD metadata at top):\n\n${text}`;
-  const raw = await callClaude(RECIPE_PARSE_SYS, user, 4096);
+  const raw = await callClaude(RECIPE_PARSE_SYS, user, { maxTokens: 4096 });
   // Extract JSON robustly
   let jsonStr = raw.trim();
   const firstBrace = jsonStr.indexOf('{');
@@ -1367,13 +1374,12 @@ After searching, return ONLY a JSON array — no markdown fences, no preamble, n
 The URLs must be direct links to specific recipe pages (not homepages, not category pages, not search results).`;
 
 function summarizeLibraryForPrompt(recipes) {
+  // Keep this small — every byte is input tokens, and we may be on a low rate-limit tier
   return recipes.map(r => ({
     title: r.title,
-    cuisineType: r.cuisineType,
-    mainProtein: r.mainProtein,
-    topIngredients: (r.ingredients || []).slice(0, 8).map(i => i.item),
-    prepSteps: (r.steps || []).length,
-    servings: r.servings,
+    cuisine: r.cuisineType,
+    protein: r.mainProtein,
+    keyIngredients: (r.ingredients || []).slice(0, 5).map(i => i.item),
   }));
 }
 
@@ -1392,18 +1398,23 @@ async function searchForNewRecipeUrls(needed, lockedRecipes, recentTitles) {
   ];
   const userMsg = `Find exactly ${needed} NEW dinner recipes for this user.
 
-THEIR LIBRARY (their taste profile — match this style, but do NOT suggest these exact recipes):
-${JSON.stringify(libSummary, null, 2)}
+THEIR LIBRARY (their taste — match style, don't repeat):
+${JSON.stringify(libSummary)}
 
-ALREADY LOCKED IN THIS WEEK (don't overlap with these on cuisine/protein):
-${JSON.stringify(lockedSummary, null, 2)}
+LOCKED IN THIS WEEK (don't overlap on cuisine/protein):
+${JSON.stringify(lockedSummary)}
 
-DO NOT RETURN any recipe matching these titles (case-insensitive, substring match):
-${JSON.stringify(avoidTitles, null, 2)}
+DO NOT RETURN recipes matching these titles:
+${JSON.stringify(avoidTitles)}
 
 Search the web and return ${needed} recipe URLs as JSON.`;
-  const tools = [{ type: 'web_search_20250305', name: 'web_search', max_uses: 5 }];
-  const raw = await callClaude(SUGGEST_SYS, userMsg, 4096, tools);
+  // max_uses=2 keeps input-token cost down for users on entry-tier rate limits
+  const tools = [{ type: 'web_search_20250305', name: 'web_search', max_uses: 2 }];
+  const raw = await callClaude(SUGGEST_SYS, userMsg, {
+    maxTokens: 2048,
+    tools,
+    model: ANTHROPIC_LIGHT_MODEL,
+  });
   // Extract JSON array robustly
   let jsonStr = raw.trim();
   const firstBracket = jsonStr.indexOf('[');
@@ -1854,7 +1865,7 @@ async function testConnection() {
     // 2) Claude ping (tiny)
     const oldKey = state.cfg.anthropic;
     state.cfg.anthropic = cfg.anthropic;
-    await callClaude('Return only the word OK.', 'OK', 16);
+    await callClaude('Return only the word OK.', 'OK', { maxTokens: 16, model: ANTHROPIC_LIGHT_MODEL });
     state.cfg.anthropic = oldKey;
     status.className = 'settings-status ok';
     status.textContent = 'All good ✓';
