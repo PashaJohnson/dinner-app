@@ -114,14 +114,34 @@
     },
     {
       "recipe": {
-        "id": "rec_ee1ly4xrvkbe",
-        "title": "Grilled Skirt Steak",
-        "sourceUrl": "https://www.themediterraneandish.com/grilled-skirt-steak/",
+        "id": "rec_ugwazrtgwl37",
+        "title": "Mediterranean Chickpea Salad",
+        "sourceUrl": "https://www.themediterraneandish.com/chickpea-salad/",
         "ingredients": [
           {
-            "item": "skirt steak, (trimmed of extra fat)",
-            "quantity": "2 pounds",
-            "section": "Meat & Seafood"
+            "item": "Dijon mustard",
+            "quantity": "1 teaspoon",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "lemon, (juiced)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "garlic clove, (minced)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "Aleppo pepper ((or red pepper flakes))",
+            "quantity": "1 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "sumac ((or lemon zest))",
+            "quantity": "1 teaspoon",
+            "section": "Produce"
           },
           {
             "item": "Kosher salt",
@@ -134,67 +154,60 @@
             "section": "Spices & Seasonings"
           },
           {
-            "item": "shallots, (finely chopped)",
+            "item": "Extra virgin olive oil",
+            "quantity": "1/4 cup",
+            "section": "Pantry"
+          },
+          {
+            "item": "(15-ounce) cans chickpeas, (drained and rinsed)",
             "quantity": "2",
-            "section": "Produce"
+            "section": "Pantry"
           },
           {
-            "item": "large garlic cloves, (minced or crushed)",
-            "quantity": "4-6",
-            "section": "Produce"
-          },
-          {
-            "item": "chopped Italian parsley leaves and tender stems",
-            "quantity": "1/3 cup",
-            "section": "Produce"
-          },
-          {
-            "item": "ground cumin",
-            "quantity": "1 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "Aleppo pepper or red pepper flakes",
-            "quantity": "1 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "paprika",
-            "quantity": "1/2 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "large lemon, (zested and juiced)",
+            "item": "large English cucumber, (chopped)",
             "quantity": "1",
             "section": "Produce"
           },
           {
-            "item": "red wine vinegar",
-            "quantity": "1/4 cup",
-            "section": "Condiments & Sauces"
+            "item": "grape tomatoes, (halved)",
+            "quantity": "2 cups",
+            "section": "Produce"
           },
           {
-            "item": "extra virgin olive oil",
+            "item": "roasted red peppers, (seeded and chopped (or a 16-ounce jar roasted peppers in oil))",
+            "quantity": "2",
+            "section": "Produce"
+          },
+          {
+            "item": "small red onion or 2 shallots, (finely chopped)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "chopped parsley leaves",
+            "quantity": "1 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "chopped mint leaves",
             "quantity": "1/2 cup",
-            "section": "Pantry"
+            "section": "Produce"
           },
           {
-            "item": "Neutral oil, (for grilling)",
-            "quantity": "",
-            "section": "Pantry"
+            "item": "avocado, (pitted and roughly chopped)",
+            "quantity": "1",
+            "section": "Produce"
           }
         ],
         "steps": [
-          "Make the marinade: Rub the steak well on both sides with kosher salt and black pepper. Place in a resealable bag and add the shallot, garlic, parsley, cumin, Aleppo pepper (or red pepper flakes), and paprika. Add the lemon juice, zest, red wine vinegar, and extra virgin olive oil. Seal and gently massage the skirt steak to distribute the marinade.",
-          "Marinate the steak: If you have the time, marinate it in the refrigerator for 30 minutes to 24 hours, turning the bag every so often to distribute the marinade. Then, allow it to sit at room temperature for 30 minutes before grilling. Otherwise, allow the steak to marinate at room temperature for about 30 minutes. (It is best to bring the meat to room temperature before grilling so it will start with an even temperature throughout).",
-          "Get ready: Lightly oil the grates and preheat the grill to high heat (400 to 450°F for direct heat). Keeping the steak in the bag, hit the steak with a mallet or rolling pin to tenderize the meat.",
-          "Grill: Remove the meat from the sealed bag and gently shake off the excess marinade. Arrange on the grill directly over the heat. Grill for 3-4 minutes on each side, or until the temperature reaches somewhere between 125-130°F.",
-          "Slice and serve: Transfer to a wire rack or cutting board to rest for 5 minutes. Thinly slice the skirt steak against the grain and arrange the pieces on a large platter. Serve with your favorite sides and salads (see notes for ideas)."
+          "Make the dressing. In a large bowl, whisk together the Dijon, lemon juice, garlic, Aleppo pepper, sumac, and salt and pepper (about 1/2 teaspoon each). Whisk, and while whisking, drizzle in enough olive oil to make it nicely glossy and well-balanced. Continue to whisk until emulsified.",
+          "Mix. To the bowl with the dressing, add the chickpeas, cucumbers, tomatoes, roasted bell peppers, onion, parsley, and mint. Toss gently. Add the avocado and toss very gently once more.",
+          "Enjoy! Taste and adjust the seasoning to your liking and serve immediately."
         ],
         "servings": 6,
-        "cuisineType": "Mediterranean",
-        "mainProtein": "Beef",
-        "addedAt": "2026-06-08T02:14:40.538Z"
+        "cuisineType": "American/Mediterranean",
+        "mainProtein": "Vegetarian",
+        "addedAt": "2026-06-08T02:15:28.195Z"
       },
       "checked": false,
       "fromLibrary": false,
@@ -202,120 +215,178 @@
     },
     {
       "recipe": {
-        "id": "rec_ekt9hwhvvke0",
-        "title": "Flat Iron Steaks with Paprika-Cumin Sauce",
-        "sourceUrl": "https://www.beefitswhatsfordinner.com/recipes/recipe/1683/flat-iron-steaks-with-paprika-cumin-sauce",
+        "id": "rec_i49inzb1wl02",
+        "title": "Butter Chicken",
+        "sourceUrl": "https://www.andy-cooks.com/blogs/recipes/butter-chicken",
         "ingredients": [
           {
-            "item": "beef Flat Iron Steaks (about 8 ounces each)",
-            "quantity": "2",
+            "item": "chicken thigh fillets, sliced",
+            "quantity": "8",
             "section": "Meat & Seafood"
           },
           {
-            "item": "ready-to-serve beef broth",
-            "quantity": "1 cup",
+            "item": "steamed Basmati rice and or naan to serve",
+            "quantity": "",
             "section": "Pantry"
           },
           {
-            "item": "tomato paste",
-            "quantity": "2 tablespoons",
-            "section": "Pantry"
+            "item": "kasoori methi and coriander leaves, for garnish",
+            "quantity": "",
+            "section": "Spices & Seasonings"
           },
           {
-            "item": "sweet paprika",
-            "quantity": "1/2 teaspoon",
+            "item": "thumb size piece fresh ginger, finely grated",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "garlic, finely grated",
+            "quantity": "6 cloves",
+            "section": "Produce"
+          },
+          {
+            "item": "ground turmeric",
+            "quantity": "1 tsp",
             "section": "Spices & Seasonings"
           },
           {
             "item": "ground cumin",
-            "quantity": "1/4 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "garlic powder",
-            "quantity": "1/8 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "butter",
-            "quantity": "1 tablespoon",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "Salt and pepper",
-            "quantity": "",
-            "section": "Produce"
-          }
-        ],
-        "steps": [
-          "Heat large nonstick skillet over medium heat until hot. Place steaks in skillet; cook 11 to 14 minutes for medium rare (145°F ) to medium (160°F ) doneness, turning occasionally. Transfer to carving board; keep warm.",
-          "Add broth, tomato paste, paprika, cumin and garlic powder to skillet. Cook and stir 2 to 3 minutes over medium heat or until browned bits attached to skillet are dissolved and sauce is smooth and slightly thickened. Remove from heat; whisk in butter.",
-          "Carve steaks into slices. Season with salt and pepper, as desired. Serve with sauce."
-        ],
-        "servings": 4,
-        "cuisineType": "American",
-        "mainProtein": "Beef",
-        "addedAt": "2026-06-08T02:14:40.632Z"
-      },
-      "checked": false,
-      "fromLibrary": false,
-      "manual": false
-    },
-    {
-      "recipe": {
-        "id": "rec_hqzxch1kvl5k",
-        "title": "Pan Seared Steak with Butter & Garlic",
-        "sourceUrl": "https://www.chasingtheseasons.com/pan-seared-steak-with-garlic-butter/",
-        "ingredients": [
-          {
-            "item": "(1½-inch) rib eye steaks, thick-cut, bone-in (or butcher quality New York strip )",
-            "quantity": "2",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "extra light olive oil (substitute with another high heat oil like tallow or vegetable oil)",
-            "quantity": "1-2 tbsp",
-            "section": "Pantry"
-          },
-          {
-            "item": "fine sea salt",
             "quantity": "1½ tsp",
             "section": "Spices & Seasonings"
           },
           {
-            "item": "fresh ground pepper",
+            "item": "ground coriander",
+            "quantity": "1½ tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "garam masala",
             "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "kashmiri chilli powder",
+            "quantity": "1 tsp",
+            "section": "Other"
+          },
+          {
+            "item": "sea salt",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "juice of 1 lemon",
+            "quantity": "",
             "section": "Produce"
           },
           {
-            "item": "butter",
-            "quantity": "4 tbsp",
+            "item": "greek yoghurt",
+            "quantity": "120ml",
             "section": "Dairy & Eggs"
           },
           {
-            "item": "garlic cloves (lightly smashed)",
-            "quantity": "4",
+            "item": "peanut oil",
+            "quantity": "2 tbs",
+            "section": "Pantry"
+          },
+          {
+            "item": "unsalted butter",
+            "quantity": "100g",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "red onion, finely diced",
+            "quantity": "1",
             "section": "Produce"
           },
           {
-            "item": "fresh sprigs of thyme (substitute with rosemary)",
-            "quantity": "2-4",
+            "item": "cardamom pods",
+            "quantity": "4",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "dried bay leaves",
+            "quantity": "2",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "whole cloves",
+            "quantity": "3",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "ground turmeric",
+            "quantity": "½ tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "ground cumin",
+            "quantity": "1½ tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "garam masala",
+            "quantity": "1 tbsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "kashmiri chilli powder",
+            "quantity": "1 tsp",
+            "section": "Other"
+          },
+          {
+            "item": "ground coriander",
+            "quantity": "1½ tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "sea salt, to season",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "cashews",
+            "quantity": "60g",
+            "section": "Pantry"
+          },
+          {
+            "item": "(1 cup) water",
+            "quantity": "250ml",
+            "section": "Beverages"
+          },
+          {
+            "item": "can crushed tomatoes (or 6 fresh ripe tomatoes)",
+            "quantity": "400g",
             "section": "Produce"
+          },
+          {
+            "item": "thickened cream",
+            "quantity": "100ml",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "caster sugar, to taste",
+            "quantity": "1 - 2 tbsp",
+            "section": "Pantry"
           }
         ],
         "steps": [
-          "If refrigerated, allow the raw steaks to rest at room temperature for 20-30 minutes before cooking.",
-          "Preheat the oven to 400 F.",
-          "Pat the steaks dry on both sides with a paper towel. Massage in oil and generously season both sides with salt and pepper.",
-          "Heat a cast iron skillet with deep sides over medium heat, getting it piping hot, about 2 minutes. Add the seasoned steaks, there should be a great sizzle. Gently push the steaks down so the surface is in full contact with the pan and sear, without moving them, on high heat for about 1-2 minutes on both sides, or until a golden brown crust develops and the steaks lift away easily from the pan. *",
-          "Reduce the heat to low and add the butter, garlic, and thyme. Tip the pan slightly to spoon the butter over each steak. (If opting to finish on the stovetop, see the variation below in notes).",
-          "Place the pan in the preheated oven for approximately 5-10 minutes, although the time will depend greatly on the thickness of the steaks and the desired doneness. Use a digital meat thermometer and check the doneness chart below.",
-          "Note that the steaks should be removed from the oven about 5 degrees shy of the desired final temperature as they will continue to cook as they rest. Let the steaks rest for 5-10 minutes for the juices to redistribute and for the steak to finish cooking before serving. To cut the steak, slice against the grain. Spoon the pan drippings over the steaks when serving. To help, use a meat thermometer to determine the internal temperature - noting again that the steaks should be removed about 5 degrees shy of the final desired internal temperature as it will continue to cook while resting."
+          "Mix the ginger and garlic together and set half aside for the sauce. Mix the other half with the turmeric, cumin, coriander, garam masala, chilli and salt in a large bowl. Stir in the lemon juice and yoghurt.",
+          "Mix chicken into the marinade with your hands. Cover and refrigerate for 2 hours, up to overnight.",
+          "Heat half the butter and oil in a heavy based saucepan over medium-high heat. Add the onion and reserved garlic and ginger paste. Cook, stirring, for 2 minutes until the onion starts to soften.",
+          "Add the cardamom, cloves and bay leaves and stir through to infuse the butter. Then add the turmeric, cumin, garam masala, chilli powder and coriander. Season with salt and cook for 5 minutes, stirring often.",
+          "Stir in the cashews, and cook until starting to toast. Pour in the water and deglaze the pan, then add the tomatoes. Bring to a simmer, then reduce the heat and cook at a simmer for 20 minutes (add a little more water if the sauce becomes too dry).",
+          "After simmering the sauce for about 10 minutes, start cooking the chicken.",
+          "After simmering for 20 minutes, remove the hard spices and discard, then transfer the sauce to a blender and puree until smooth and creamy.",
+          "Return the sauce to the saucepan over a low heat. Stir through the remaining butter and the cream. Season to taste with the caster sugar.",
+          "Preheat a BBQ grill to high heat. Cook the chicken slices for 5-6 minutes, turning to char well on both sides.",
+          "Remove the chicken from the grill and add it to the finished sauce. Stir through over low heat for a few minutes, until heated hot.",
+          "Serve the butter chicken over steamed rice, garnished with coriander and kasoori methi with some fresh naan bread on the side."
         ],
-        "servings": 2,
-        "cuisineType": null,
-        "mainProtein": "Vegetarian",
-        "addedAt": "2026-06-08T02:14:41.624Z"
+        "servings": 4,
+        "cuisineType": "Indian",
+        "mainProtein": "Chicken",
+        "addedAt": "2026-06-08T02:15:28.082Z"
       },
       "checked": false,
       "fromLibrary": false,
@@ -323,61 +394,120 @@
     },
     {
       "recipe": {
-        "id": "rec_gx93w64evkbh",
-        "title": "Pan Seared Steak",
-        "sourceUrl": "https://littlesunnykitchen.com/pan-seared-steak/",
+        "id": "rec_uzomuu5owmk6",
+        "title": "Mediterranean Chickpea Salad",
+        "sourceUrl": "https://rainbowplantlife.com/chickpea-salad/",
         "ingredients": [
           {
-            "item": "steaks (1 lb each, about 1¼ to 1½” thickness, ribeye, strip, sirloin, t-bone)",
+            "item": "(15 oz / 425g) cans chickpeas, (drained and rinsed (see Note 1))",
             "quantity": "2",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "kosher salt",
-            "quantity": "1 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "¾ teaspoon ground black pepper",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "vegetable oil (or any high smoke point oil)",
-            "quantity": "1 tablespoon",
             "section": "Pantry"
           },
           {
-            "item": "unsalted butter",
-            "quantity": "4 tablespoons",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "garlic (lightly smashed, no need to peel)",
+            "item": "garlic, (minced, grated, or crushed with a press)",
             "quantity": "4 cloves",
             "section": "Produce"
           },
           {
-            "item": "rosemary",
-            "quantity": "2 sprigs",
+            "item": "Aleppo pepper ((or ½ tsp red pepper flakes))",
+            "quantity": "2 teaspoons",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "(56g) extra virgin olive oil",
+            "quantity": "¼ cup",
+            "section": "Pantry"
+          },
+          {
+            "item": "coriander seeds, (lightly crushed (see Note 2))",
+            "quantity": "1 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "cumin seeds ((see Note 2))",
+            "quantity": "1 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "preserved lemon, (minced (or the zest of 1 lemon below / 1 TBSP zest))",
+            "quantity": "1 tablespoon",
             "section": "Produce"
           },
           {
-            "item": "thyme",
-            "quantity": "2 sprigs",
+            "item": "medium lemons, (juiced)",
+            "quantity": "2",
             "section": "Produce"
+          },
+          {
+            "item": "sumac, (more for finishing (optional, see Note 3))",
+            "quantity": "1 tablespoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "Kosher salt",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "heaping cup (100g) thinly sliced red onion",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "Persian cucumbers ((or ~10 oz / 285g English cucumber), diced)",
+            "quantity": "4",
+            "section": "Produce"
+          },
+          {
+            "item": "(32g) roasted white sesame seeds",
+            "quantity": "¼ cup",
+            "section": "Pantry"
+          },
+          {
+            "item": "(8g) flat leaf parsley leaves and tender stems, (chopped)",
+            "quantity": "½ cup",
+            "section": "Produce"
+          },
+          {
+            "item": "(8g) fresh mint leaves, (chopped)",
+            "quantity": "½ cup",
+            "section": "Produce"
+          },
+          {
+            "item": "⅓ to ½ cup (75 to 112g) tahini, ( well-stirred (see Note 4))",
+            "quantity": "",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "to 4 tablespoons ice water",
+            "quantity": "3",
+            "section": "Beverages"
+          },
+          {
+            "item": "½ teaspoon pure maple syrup, (more as needed)",
+            "quantity": "",
+            "section": "Pantry"
+          },
+          {
+            "item": "A few pinches of flaky sea salt",
+            "quantity": "",
+            "section": "Spices & Seasonings"
           }
         ],
         "steps": [
-          "Pat the steaks dry with paper towels, then generously season with salt and pepper from all sides. These are thick cuts of meat, so you need to season well.",
-          "Heat a heavy-bottomed pan on medium-high heat. Add oil, and when it’s shimmering add the steaks and cook for 3 minutes and a nice crust will form.",
-          "Reduce heat to medium, flip the steaks using kitchen tongs, and cook for 30 seconds. Then add the butter, garlic, and herbs, and baste with melted butter using a spoon. The cook time here should be 2 minutes in total. Use the thermometer to make sure the steak reaches the desired temperature (keep in mind that the temp will rise by 5-10 degrees as it rests). Don’t forget to sear the sides to render some fat, do this using tongs.",
-          "Remove from the pan, and allow to rest loosely tented with foil for 5-8 minutes before slicing against the grain (only slice if you’re serving right away, because steaks lose heat fast). Do not slice too thin unless you’re making a salad with it."
+          "Add the drained chickpeas to a large bowl. In a small bowl, combine the garlic and Aleppo pepper.",
+          "Lightly crush the coriander seeds by either blitzing once or twice in a spice grinder; using a mortar and pestle; or crushing with the back of a sturdy mug.",
+          "Toast the spices: Heat the olive oil in your smallest frying pan or saucepan over medium heat for 2 minutes. Add the crushed coriander and cumin seeds. Allow to sizzle and swirl the pan frequently to prevent burning. Cook for 2 minutes, or until the spices are a few shades darker and very aromatic. Immediately pour the hot oil over the garlic mixture and allow to sizzle. Stir, then let sit for 1 minute.",
+          "Pour the infused oil over the chickpeas. Stir in the minced preserved lemon (or 1 TBSP lemon zest), 2 TBSP (30 mL) lemon juice, and sumac, if using. Season generously with salt and pepper (I use ~ 1 ½ tsp kosher salt). Set aside to marinate.",
+          "Add the sliced red onion to a bowl of ice water (to mellow out the pungency). Soak for 10 minutes, then drain and pat dry.",
+          "Tahini Dressing: In a bowl, combine the tahini, 3 TBSP (45 mL) ice water, 2 TBSP (30 mL) lemon juice, maple syrup, and ½ teaspoon kosher salt. Stir with a fork until thick and very creamy (I like mine spreadable and thick, but if using less tahini, it will be a bit thinner). Taste, adding lemon juice or salt to taste, or more maple syrup for sweetness.",
+          "Add the diced cucumbers, drained onions, sesame seeds, and half of the chopped mint/parsley to the chickpea salad. Toss well to combine. Taste, adding more lemon juice or salt as desired.",
+          "Schmear the Tahini Dressing onto the bottom of a shallow bowl or plate. Top with the chickpea salad and the remaining mint and parsley. Sprinkle the salad with a bit of sumac and Aleppo pepper and flaky sea salt to taste."
         ],
-        "servings": 4,
-        "cuisineType": "International",
-        "mainProtein": "Beef",
-        "addedAt": "2026-06-08T02:14:40.541Z"
+        "servings": 6,
+        "cuisineType": "Mediterranean",
+        "mainProtein": "Vegetarian",
+        "addedAt": "2026-06-08T02:15:30.102Z"
       },
       "checked": false,
       "fromLibrary": false,
@@ -385,60 +515,147 @@
     },
     {
       "recipe": {
-        "id": "rec_hh8qol69vkga",
-        "title": "Pan Seared Steak Recipe",
-        "sourceUrl": "https://www.orchidsandsweettea.com/pan-seared-steak-recipe/",
+        "id": "rec_khl82kztwla1",
+        "title": "Butter Chicken (Murgh Makhani)",
+        "sourceUrl": "https://niksharmacooks.com/butter-chicken/",
         "ingredients": [
           {
-            "item": "Ribeye steak, organic ((You can also use New York Strip Steak or Top Sirloin Steak))",
-            "quantity": "2 lbs.",
+            "item": "lb/1 kg chicken thighs, skinless, bone-in or",
+            "quantity": "2.25",
             "section": "Meat & Seafood"
           },
           {
-            "item": "Extra virgin olive oil",
+            "item": "lb/910 g chicken thighs, skinless and boneless, cut into 1 in/2.5 cm cubes",
+            "quantity": "2",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "½ cup/120 g plain unsweetened Greek yogurt",
+            "quantity": "",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "fresh lemon or lime juice",
+            "quantity": "2 Tbsp",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "grated garlic",
+            "quantity": "1 Tbsp",
+            "section": "Produce"
+          },
+          {
+            "item": "grated ginger",
+            "quantity": "1 Tbsp",
+            "section": "Produce"
+          },
+          {
+            "item": "garam masala homemade or store-bought",
+            "quantity": "1 Tbsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "ground Kashmiri chilli powder",
+            "quantity": "1 tsp",
+            "section": "Other"
+          },
+          {
+            "item": "kasoori methi (optional)",
+            "quantity": "1 tsp",
+            "section": "Other"
+          },
+          {
+            "item": "ground turmeric",
+            "quantity": "½ tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "fine sea salt",
+            "quantity": "½ tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "½ stick/55 g unsalted butter",
+            "quantity": "",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "vegetable oil",
             "quantity": "1 Tbsp",
             "section": "Pantry"
           },
           {
-            "item": "Dry Rub Steak Seasoning",
-            "quantity": "2 tsps",
-            "section": "Meat & Seafood"
+            "item": "Kashmiri chilli powder",
+            "quantity": "1 Tbsp",
+            "section": "Other"
           },
           {
-            "item": "unsalted butter",
-            "quantity": "2 Tbsps",
+            "item": "ground toasted cumin",
+            "quantity": "2 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "grated garlic",
+            "quantity": "1 Tbsp",
+            "section": "Produce"
+          },
+          {
+            "item": "grated ginger",
+            "quantity": "1 Tbsp",
+            "section": "Produce"
+          },
+          {
+            "item": "garam masala homemade or store-bought",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "green chilli such as jalapeno, serrano, or Bird’s eye, minced",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "¾ cup/180 g tomato paste",
+            "quantity": "",
+            "section": "Pantry"
+          },
+          {
+            "item": "cup/240 ml heavy cream",
+            "quantity": "1",
             "section": "Dairy & Eggs"
           },
           {
-            "item": "garlic cloves, peeled + halved",
-            "quantity": "3",
-            "section": "Produce"
-          },
-          {
-            "item": "Fresh thyme sprigs ((You can also use rosemary sprigs))",
-            "quantity": "2-4",
-            "section": "Produce"
-          },
-          {
-            "item": "Steak sauce",
-            "quantity": "",
+            "item": "fresh lemon or lime juice",
+            "quantity": "1 Tbsp",
             "section": "Condiments & Sauces"
+          },
+          {
+            "item": "Fine sea salt",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "chopped cilantro, tender stems and leaves",
+            "quantity": "2 Tbsp",
+            "section": "Produce"
+          },
+          {
+            "item": "salted butter for garnish (optional)",
+            "quantity": "1 Tbsp",
+            "section": "Dairy & Eggs"
           }
         ],
         "steps": [
-          "Start by patting dry the steaks on both sides with paper towels. Generously season the sides with My Fave Steak Seasoning [Dry Rub].",
-          "Heat a medium 10-inch cast iron skillet over medium-high heat until hot and add the olive oil to coat the bottom. Once hot, add the steaks to the skillet and sear the steaks on the first side for 4-5 minutes or until a brown crust has formed and using tongs, turn them onto their opposite sides-------searing for another 4-5 minutes.",
-          "Now, reduce the heat to medium and add the butter, garlic cloves, and thyme sprigs on the sides of the steaks in the pan. As the butter melts, spoon the butter sauce over the steak, slightly tilting the pan.",
-          "Continue to spoon the butter sauce atop steaks for another 1-2 minutes. NOTE: Be sure to check the internal temperature of your steaks for desired doneness.",
-          "Internal temperature notes: Medium Rare: 130°–135°; Medium: 140°–145°, Medium Well: 150°–155°; Well Done: 160°–165.",
-          "Once done, transfer the steaks onto a cutting board to \"rest\" for about 10 minutes before slicing and adding any garnish and/or sauce.",
-          "Serve with your favorite side: mashed potatoes, baked potatoes, salad, basmati rice, brown rice, mac + cheese, etc.",
-          "Bon Appetit!"
+          "If using bone-in chicken thighs, make 2 to 3 deep gashes in the chicken; skip this if you use the boneless pieces.",
+          "Place all the ingredients for the marinade in a medium bowl or ziptop bag and combine until smooth. Fold in the chicken and make sure the chicken is completely coated with the marinade. Leave in the refrigerator covered for 1 hour, preferably overnight.",
+          "When ready to cook, preheat the oven to 400F/200C.",
+          "Lay the marinated chicken pieces out on a baking dish or roasting pan. Roast the chicken in the oven until the internal temperature reaches 164F/74C, 30 to 45 minutes (boneless chicken takes about 20 minutes), rotating the dish halfway through during cooking. Transfer the baking dish to the upper rack of the oven, and then broil over high for 2 to 4 minutes, until the chicken starts to char in a few spots. Remove the baking dish from the oven.",
+          "At the 20-minute mark of cooking the chicken, start the sauce. Melt the butter in a medium Dutch oven or saucepan over low heat. Once the butter begins to foam, stir in the oil. Add the Kashmiri chilli powder, toasted cumin, garlic, ginger, garam masala, and green chilli. Stir until fragrant, 30 to 45 seconds. Then add the tomato paste and cook until the paste begins to turn light brown, 5 to 6 minutes. Pour in the heavy cream and add the chicken and any liquids left behind in the baking dish. Fold to coat well. Stir in the lemon juice, taste, and season with salt. Bring to a boil over medium-high; the fat should separate from the sauce. Remove from the heat. Garnish with cilantro and salted butter if using. Serve hot or warm with rice or naan. Leftovers will stay good for up to 3 days if stored in an airtight container in the refrigerator."
         ],
         "servings": 4,
         "cuisineType": null,
-        "mainProtein": "Beef",
-        "addedAt": "2026-06-08T02:14:40.714Z"
+        "mainProtein": "Chicken",
+        "addedAt": "2026-06-08T02:15:28.441Z"
       },
       "checked": false,
       "fromLibrary": false,
@@ -446,56 +663,220 @@
     },
     {
       "recipe": {
-        "id": "rec_jkb4upsgvkce",
-        "title": "Pan-Seared Steak with Garlic Butter",
-        "sourceUrl": "https://natashaskitchen.com/pan-seared-steak/",
+        "id": "rec_6lavlnq1wl6k",
+        "title": "Mediterranean Chickpea Salad",
+        "sourceUrl": "https://www.twopeasandtheirpod.com/mediterranean-chickpea-salad/",
         "ingredients": [
           {
-            "item": "New York Strip Steaks (2 steaks) (or Ribeye or Top Sirloin Steaks (1 lb each steak, 1 1/4” thick))",
-            "quantity": "2 lbs",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "vegetable oil (or any high heat cooking oil like canola or extra light olive oil)",
-            "quantity": "1/2 Tbsp",
-            "section": "Pantry"
-          },
-          {
-            "item": "sea salt",
-            "quantity": "1 1/2 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "black pepper (freshly ground)",
-            "quantity": "1 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "unsalted butter",
-            "quantity": "2 Tbsp",
+            "item": "crumbled feta",
+            "quantity": "1/2 cup",
             "section": "Dairy & Eggs"
           },
           {
-            "item": "garlic (peeled and quartered)",
-            "quantity": "2 cloves",
+            "item": "olive oil",
+            "quantity": "3 tablespoons",
+            "section": "Pantry"
+          },
+          {
+            "item": "red wine vinegar",
+            "quantity": "2 tablespoons",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "lemon juice",
+            "quantity": "1 tablespoon",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "finely chopped dill",
+            "quantity": "1 tablespoon",
             "section": "Produce"
           },
           {
-            "item": "fresh rosemary",
-            "quantity": "1 sprig",
+            "item": "of crushed red pepper flakes",
+            "quantity": "Dash",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "can chickpeas, (rinsed and drained)",
+            "quantity": "15 oz",
+            "section": "Pantry"
+          },
+          {
+            "item": "diced cucumber",
+            "quantity": "1 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "diced tomatoes",
+            "quantity": "1 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "diced red pepper",
+            "quantity": "1/2 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "diced red onion",
+            "quantity": "1/2 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "chopped parsley",
+            "quantity": "1/4 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "chopped basil",
+            "quantity": "1/4 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "Kosher salt and black pepper, (to taste)",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "Pita chips, (for serving, optional)",
+            "quantity": "",
+            "section": "Pantry"
+          }
+        ],
+        "steps": [
+          "n a large bowl, add the feta, olive oil, vinegar, lemon juice, dill, and red pepper flakes. Smash with a fork until fully combined.",
+          "Add the chickpeas, cucumber, tomatoes, red pepper, onion, parsley, and basil.",
+          "Stir until well combined. Season with salt and pepper, to taste. Serve with pita chips, if desired."
+        ],
+        "servings": 6,
+        "cuisineType": "Mediterranean",
+        "mainProtein": "Vegetarian",
+        "addedAt": "2026-06-08T02:15:28.316Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": false
+    },
+    {
+      "recipe": {
+        "id": "rec_i0k0mpawwl27",
+        "title": "Indian Butter Chicken",
+        "sourceUrl": "https://www.wellplated.com/butter-chicken/",
+        "ingredients": [
+          {
+            "item": "extra-virgin olive oil",
+            "quantity": "1 tablespoon",
+            "section": "Pantry"
+          },
+          {
+            "item": "boneless (skinless chicken breasts or thighs, cut into bite-sized pieces)",
+            "quantity": "2 pounds",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "kosher salt (divided)",
+            "quantity": "1 1/4 teaspoons",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "ground black pepper",
+            "quantity": "1/4 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "curry powder (divided)",
+            "quantity": "1 1/2 tablespoons",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "unsalted butter (divided)",
+            "quantity": "3 tablespoons",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "small yellow onion (diced (about 1 cup))",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "minced garlic (about 4 teaspoons)",
+            "quantity": "4 cloves",
+            "section": "Produce"
+          },
+          {
+            "item": "minced fresh ginger",
+            "quantity": "1 tablespoon",
+            "section": "Produce"
+          },
+          {
+            "item": "garam masala",
+            "quantity": "1 tablespoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "chili powder",
+            "quantity": "1 1/2 teaspoons",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "ground cumin",
+            "quantity": "1 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "can tomato sauce, plus 1/2 can of water",
+            "quantity": "1 15-ounce",
+            "section": "Pantry"
+          },
+          {
+            "item": "half-and-half",
+            "quantity": "1/2 cup",
+            "section": "Other"
+          },
+          {
+            "item": "plain Greek yogurt",
+            "quantity": "1/2 cup",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "chopped fresh cilantro (plus additional for serving)",
+            "quantity": "1/2 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "Brown rice",
+            "quantity": "",
+            "section": "Pantry"
+          },
+          {
+            "item": "Quinoa",
+            "quantity": "",
+            "section": "Pantry"
+          },
+          {
+            "item": "Homemade Naan",
+            "quantity": "",
+            "section": "Bakery & Bread"
+          },
+          {
+            "item": "Chopped fresh cilantro",
+            "quantity": "",
             "section": "Produce"
           }
         ],
         "steps": [
-          "Thoroughly pat steak dry with paper towels. Just before cooking, generously season with 1 1/2 tsp salt and 1 tsp black pepper",
-          "Heat the cast iron pan until hot then add 1/2 Tbsp oil over medium-high heat, swirling to coat. Once the oil is very hot, add steaks to the skillet. Sear the steaks on the first side for 4 minutes until a brown crust has formed then flip and cook another 3-4 minutes. Using tongs, turn the steak on its sides to render the white fat and sear the edges (1-minute per edge).",
-          "Reduce heat to medium and immediately add 2 Tbsp butter, quartered garlic cloves and rosemary to the pan. Spoon the butter sauce over the steak, tilting the pan to get butter on your spoon. Continue spooning the sauce over the steak for a minute or until the steak is about 5-10 degrees from your desired doneness (the temperature will continue to rise another 5-19 degrees while steaks rest).",
-          "Transfer steak to a cutting board, loosely cover and rest 10 minutes before slicing into 1/2\" strips to serve. Spoon extra butter sauce over sliced steak to serve."
+          "In a Dutch oven or similar large, sturdy pot, heat the oil over medium-high heat. Add the chicken, 1/2 teaspoon of the kosher salt, black pepper, and 1/2 tablespoon of the curry powder, stirring to coat the chicken evenly. Sear the chicken on all sides until lightly golden (about 5-6 minutes)—the chicken does not need to be cooked through at this point. Remove to a plate.",
+          "Reduce the heat to medium. Add 2 tablespoons of the butter and the onion to the pot. Cook until the onion is beginning to soften, about 5 minutes.",
+          "Add the garlic, ginger, garam masala, chili powder, cumin, and the remaining 3/4 teaspoon salt and 1 tablespoon curry powder. Stir and cook until fragrant, about 30 seconds.",
+          "Reduce the heat to low. Carefully pour in the tomato sauce (be careful of splatters). Fill the can of tomato sauce up halfway with water, then add the liquid to the pot. Stir to combine, then partially cover the pot and let simmer gently for 15 minutes.",
+          "Return the chicken and any juices that have collected on the plate to the pot. Stir in the half-and-half. Let simmer until the chicken is fully cooked through, about 5 minutes more.",
+          "Place the Greek yogurt in a small bowl and add a few big spoonfuls of the hot butter chicken liquid. Stir to combine, then add the mixture to the pot (this tempers the yogurt so it doesn't curdle).",
+          "Stir in the cilantro and 1 tablespoon butter. Enjoy warm over brown rice, quinoa, or naan, sprinkled with more cilantro."
         ],
         "servings": 4,
-        "cuisineType": "American",
-        "mainProtein": "Beef",
-        "addedAt": "2026-06-08T02:14:40.574Z"
+        "cuisineType": "Indian",
+        "mainProtein": "Chicken",
+        "addedAt": "2026-06-08T02:15:28.159Z"
       },
       "checked": false,
       "fromLibrary": false,
