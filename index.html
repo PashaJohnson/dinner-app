@@ -842,9 +842,10 @@
     <section class="pane" id="paneRecipes">
       <div class="section-head">
         <div>
-          <h2>This Week's Dinners</h2>
+          <h2>This Week's Recipes</h2>
           <div class="sub" id="weekSub">New picks inspired by your library · check = add to shopping list + lock on refresh</div>
         </div>
+        <button class="btn ghost" id="btnClearWeek" style="display:none;">Clear all</button>
       </div>
 
       <div class="refresh-row">
@@ -1741,7 +1742,8 @@ async function toggleLibraryInWeek(recipe) {
   if (idx >= 0) {
     state.picks.splice(idx, 1);
   } else {
-    state.picks.push({ recipe, checked: false, fromLibrary: true, manual: true });
+    // Arrives pre-checked → on the shopping list + locked on refresh
+    state.picks.push({ recipe, checked: true, fromLibrary: true, manual: true });
     if (!state.weekStartDate) state.weekStartDate = new Date().toISOString().slice(0, 10);
   }
   renderRecipes();
@@ -1791,6 +1793,8 @@ function buildShoppingList() {
 function renderRecipes() {
   const list = document.getElementById('recipeList');
   document.getElementById('cntRecipes').textContent = state.picks.length;
+  const clearBtn = document.getElementById('btnClearWeek');
+  if (clearBtn) clearBtn.style.display = state.picks.length > 0 ? '' : 'none';
   if (!state.cfg.repo) {
     list.innerHTML = `
       <div class="empty">
@@ -2258,6 +2262,21 @@ function clearCheckedShopItems() {
   renderShopping();
 }
 
+async function clearWeek() {
+  if (state.picks.length === 0) return;
+  if (!confirm("Clear all recipes from this week? (Your inspiration library isn't affected.)")) return;
+  state.picks = [];
+  renderRecipes();
+  renderLibrary();   // uncheck the inspo boxes
+  renderShopping();  // empties the shopping list
+  try {
+    await savePicks('Clear this week');
+    toast('Cleared this week', 'success');
+  } catch (e) {
+    toast('Failed: ' + e.message, 'error');
+  }
+}
+
 /* ===== Wire up ===== */
 function init() {
   loadCfg();
@@ -2333,8 +2352,11 @@ function init() {
     if (e.key === 'Enter') handleRefresh();
   });
 
-  // Clear checked
+  // Clear checked (shopping)
   document.getElementById('btnClearChecked').addEventListener('click', clearCheckedShopItems);
+
+  // Clear all (this week's recipes)
+  document.getElementById('btnClearWeek').addEventListener('click', clearWeek);
 
   // First-run: if no config, open settings
   if (!state.cfg.repo || !state.cfg.github) {
