@@ -319,6 +319,28 @@
     background: rgba(255,255,255,0.7);
   }
 
+  /* Refresh row (instruction input + button) */
+  .refresh-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .refresh-row input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    min-height: var(--tap);
+  }
+  .refresh-row input:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+  .refresh-row .btn { flex-shrink: 0; }
+
   /* Inspiration upload */
   .upload-box {
     background: var(--surface);
@@ -390,8 +412,28 @@
     border: 1px solid var(--border);
     border-radius: var(--radius-sm);
     padding: 10px 12px;
-    gap: 8px;
+    gap: 10px;
   }
+  .library-item.in-week {
+    border-color: var(--green);
+    background: var(--green-soft);
+  }
+  .lib-check {
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    border: 2px solid var(--border-strong);
+    background: var(--surface);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .lib-check svg { width: 14px; height: 14px; stroke: #fff; opacity: 0; }
+  .library-item.in-week .lib-check { background: var(--green); border-color: var(--green); }
+  .library-item.in-week .lib-check svg { opacity: 1; }
   .library-item-title {
     flex: 1;
     min-width: 0;
@@ -803,7 +845,11 @@
           <h2>This Week's Dinners</h2>
           <div class="sub" id="weekSub">New picks inspired by your library · check = add to shopping list + lock on refresh</div>
         </div>
-        <button class="btn gold" id="btnRefresh" title="Refresh unchecked picks">
+      </div>
+
+      <div class="refresh-row">
+        <input type="text" id="instructionInput" placeholder="Optional: e.g. something with steak, quick weeknight, vegetarian…" autocomplete="off" />
+        <button class="btn gold" id="btnRefresh" title="Find new picks (keeps checked + added recipes)">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
           Refresh
         </button>
@@ -811,6 +857,18 @@
 
       <div class="recipe-list" id="recipeList">
         <!-- Recipes rendered here -->
+      </div>
+
+      <div class="upload-box">
+        <h3>Add a Recipe to This Week</h3>
+        <p>Paste a URL to drop a recipe straight into this week's dinners — without saving it to your inspiration library.</p>
+        <div class="upload-row">
+          <input type="url" id="weekUrlInput" placeholder="https://..." autocomplete="off" autocapitalize="off" spellcheck="false" />
+          <button class="btn" id="btnAddWeek">
+            <span id="addWeekLabel">Add</span>
+            <span id="addWeekSpinner" style="display:none;" class="spinner"></span>
+          </button>
+        </div>
       </div>
 
       <div class="upload-box">
@@ -1502,6 +1560,8 @@ Use the web_search tool to find real recipes from reputable cooking sites (NYT C
 
 When picking, vary cuisine type and main protein across the week so no two suggestions overlap too much. Avoid recipes that are essentially the same as ones already in the library. Avoid the "do not repeat" list of recent suggestion titles.
 
+IMPORTANT: If the user includes a SPECIAL REQUEST (e.g. "something with steak", "quick weeknight meals", "vegetarian", "Thai food"), that request takes priority over the variety guidance. Make every returned recipe satisfy the request — it's fine for them to share a protein or cuisine if that's what was asked for. Still match the user's general style/effort level from their library.
+
 After searching, return ONLY a JSON array — no markdown fences, no preamble, no commentary — of objects with this exact shape:
 [
   {"title": "<recipe title>", "url": "<direct URL to the recipe page>"},
@@ -1520,7 +1580,7 @@ function summarizeLibraryForPrompt(recipes) {
   }));
 }
 
-async function searchForNewRecipeUrls(needed, lockedRecipes, recentTitles) {
+async function searchForNewRecipeUrls(needed, lockedRecipes, recentTitles, instruction) {
   if (state.inspirations.length === 0) {
     throw new Error('Add some recipes to your library first — Claude needs to learn what you like.');
   }
@@ -1533,12 +1593,16 @@ async function searchForNewRecipeUrls(needed, lockedRecipes, recentTitles) {
     ...lockedRecipes.map(r => r.title),
     ...recentTitles,
   ];
+  const instr = (instruction || '').trim();
+  const instructionBlock = instr
+    ? `\n\n⭐ SPECIAL REQUEST FROM THE USER — PRIORITIZE THIS: "${instr}"\nEvery recipe you return must satisfy this request.\n`
+    : '';
   const userMsg = `Find exactly ${needed} NEW dinner recipes for this user.
-
+${instructionBlock}
 THEIR LIBRARY (their taste — match style, don't repeat):
 ${JSON.stringify(libSummary)}
 
-LOCKED IN THIS WEEK (don't overlap on cuisine/protein):
+ALREADY IN THIS WEEK (don't overlap on cuisine/protein unless the special request says otherwise):
 ${JSON.stringify(lockedSummary)}
 
 DO NOT RETURN recipes matching these titles:
@@ -1608,28 +1672,72 @@ async function fetchAndParseUrls(urlObjs, onProgress) {
   return { recipes, failed };
 }
 
-async function refreshWeeklyPicks(onProgress) {
-  // Locked = checked picks. Each pick now stores the FULL recipe object.
-  const lockedPicks = state.picks.filter(p => p.checked && p.recipe);
-  const lockedRecipes = lockedPicks.map(p => p.recipe);
-  const need = Math.max(0, WEEKLY_COUNT - lockedPicks.length);
+async function refreshWeeklyPicks(onProgress, instruction) {
+  // KEEP on refresh = checked picks OR deliberate manual adds (from library or
+  // direct link). Only AI "New" suggestions you didn't act on get rolled over.
+  const keptPicks = state.picks.filter(p => p.recipe && (p.checked || p.manual));
+  const keptRecipes = keptPicks.map(p => p.recipe);
+  const need = Math.max(0, WEEKLY_COUNT - keptPicks.length);
   if (need === 0) {
-    toast('All slots locked — uncheck a recipe to refresh', 'error');
+    toast('Every slot is kept (checked or added) — uncheck/remove one to make room', 'error');
     return;
   }
-  // Don't suggest the same titles we just showed (the unchecked ones being rolled out)
-  const recentTitles = state.picks.filter(p => !p.checked && p.recipe).map(p => p.recipe.title);
+  // Don't re-suggest titles we just showed (the rolled-over AI picks)
+  const recentTitles = state.picks.filter(p => p.recipe && !p.checked && !p.manual).map(p => p.recipe.title);
   onProgress && onProgress(`Searching for ${need} recipes…`);
-  const urlObjs = await searchForNewRecipeUrls(need, lockedRecipes, recentTitles);
+  const urlObjs = await searchForNewRecipeUrls(need, keptRecipes, recentTitles, instruction);
   if (urlObjs.length === 0) throw new Error('No recipes found — try again');
   const { recipes, failed } = await fetchAndParseUrls(urlObjs, onProgress);
   if (recipes.length === 0) throw new Error('All recipe pages failed to parse');
-  // Mark fresh picks as not-from-library, not-checked
-  const newPicks = recipes.map(r => ({ recipe: r, checked: false, fromLibrary: false }));
-  state.picks = [...lockedPicks, ...newPicks];
+  // Fresh AI picks: not from library, not manual, not checked
+  const newPicks = recipes.map(r => ({ recipe: r, checked: false, fromLibrary: false, manual: false }));
+  state.picks = [...keptPicks, ...newPicks];
   state.weekStartDate = new Date().toISOString().slice(0, 10);
   await savePicks('Refresh weekly picks');
   if (failed > 0) toast(`Got ${recipes.length} of ${urlObjs.length} (${failed} failed to parse)`, 'success');
+}
+
+// Add a single recipe straight into this week (not the library)
+async function addRecipeToWeek(url) {
+  // Already in this week by URL?
+  const dupPick = state.picks.find(p => p.recipe && p.recipe.sourceUrl === url);
+  if (dupPick) throw new Error('Already in this week: ' + dupPick.recipe.title);
+  const existing = state.inspirations.find(r => r.sourceUrl === url);
+  let recipe;
+  if (existing) {
+    recipe = existing;
+  } else {
+    const html = await fetchRecipePage(url);
+    recipe = await parseRecipeFromHtml(url, html);
+  }
+  // manual=true so a refresh keeps it; fromLibrary reflects whether it's saved in the library
+  state.picks.push({ recipe, checked: false, fromLibrary: !!existing, manual: true });
+  if (!state.weekStartDate) state.weekStartDate = new Date().toISOString().slice(0, 10);
+  await savePicks(`Add to week: ${recipe.title}`);
+  return recipe;
+}
+
+// Toggle a library recipe in/out of this week (the inspiration-list checkbox)
+async function toggleLibraryInWeek(recipe) {
+  const idx = state.picks.findIndex(p => p.recipe && p.recipe.id === recipe.id);
+  if (idx >= 0) {
+    state.picks.splice(idx, 1);
+  } else {
+    state.picks.push({ recipe, checked: false, fromLibrary: true, manual: true });
+    if (!state.weekStartDate) state.weekStartDate = new Date().toISOString().slice(0, 10);
+  }
+  renderRecipes();
+  renderLibrary();
+  renderShopping();
+  try {
+    await savePicks('Toggle library recipe in week');
+  } catch (e) {
+    toast('Save failed — try again', 'error');
+  }
+}
+
+function isRecipeInWeek(recipeId) {
+  return state.picks.some(p => p.recipe && p.recipe.id === recipeId);
 }
 
 /* ===== Shopping list derivation ===== */
@@ -1692,7 +1800,9 @@ function renderRecipes() {
     card.className = 'recipe-card' + (p.checked ? ' checked' : '');
     const sourcePill = p.fromLibrary
       ? '<span class="pill" style="background:var(--gold-soft); color:#8a6a16;">Library</span>'
-      : '<span class="pill" style="background:var(--blue-soft); color:var(--blue);">New</span>';
+      : (p.manual
+          ? '<span class="pill" style="background:var(--surface-3); color:var(--text-soft);">Added</span>'
+          : '<span class="pill" style="background:var(--blue-soft); color:var(--blue);">New</span>');
     card.innerHTML = `
       <button class="recipe-check" aria-label="${p.checked ? 'Uncheck' : 'Check'}">
         <svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
@@ -1727,16 +1837,21 @@ function renderLibrary() {
   }
   list.innerHTML = '';
   for (const r of state.inspirations) {
+    const inWeek = isRecipeInWeek(r.id);
     const row = document.createElement('div');
-    row.className = 'library-item';
+    row.className = 'library-item' + (inWeek ? ' in-week' : '');
     row.innerHTML = `
+      <div class="lib-check" title="${inWeek ? "Remove from this week" : "Add to this week's dinners"}">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
       <div class="library-item-title"></div>
       <div class="library-item-actions">
         <button class="icon-btn" data-act="view" title="View"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button>
-        <button class="icon-btn" data-act="delete" title="Remove"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1.5 14a2 2 0 0 1-2 1.8h-7a2 2 0 0 1-2-1.8L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></svg></button>
+        <button class="icon-btn" data-act="delete" title="Remove from library"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1.5 14a2 2 0 0 1-2 1.8h-7a2 2 0 0 1-2-1.8L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></svg></button>
       </div>
     `;
     row.querySelector('.library-item-title').textContent = r.title;
+    row.querySelector('.lib-check').addEventListener('click', () => toggleLibraryInWeek(r));
     row.querySelector('.library-item-title').addEventListener('click', () => showRecipeDetail(r));
     row.querySelector('[data-act=view]').addEventListener('click', () => showRecipeDetail(r));
     row.querySelector('[data-act=delete]').addEventListener('click', () => deleteRecipe(r.id));
@@ -2072,6 +2187,7 @@ async function handleRefresh() {
   if (state.inspirations.length === 0) {
     toast('Add 3+ recipes to your library first — Claude needs examples to learn your taste.', 'error'); return;
   }
+  const instruction = document.getElementById('instructionInput').value.trim();
   const btn = document.getElementById('btnRefresh');
   const orig = btn.innerHTML;
   btn.innerHTML = '<span class="spinner"></span> Searching…';
@@ -2079,15 +2195,41 @@ async function handleRefresh() {
   try {
     await refreshWeeklyPicks((msg) => {
       btn.innerHTML = `<span class="spinner"></span> ${msg}`;
-    });
+    }, instruction);
     renderRecipes();
     renderShopping();
-    toast('New picks ready ✓', 'success');
+    toast(instruction ? `New picks for "${instruction}" ✓` : 'New picks ready ✓', 'success');
   } catch (e) {
     toast(e.message.slice(0, 240), 'error');
   } finally {
     btn.innerHTML = orig;
     btn.disabled = false;
+  }
+}
+
+async function handleAddWeekUrl() {
+  const url = document.getElementById('weekUrlInput').value.trim();
+  if (!url) { toast('Paste a recipe URL', 'error'); return; }
+  if (!/^https?:\/\//i.test(url)) { toast('URL must start with http(s)://', 'error'); return; }
+  if (!state.cfg.anthropic || !state.cfg.repo || !state.cfg.github) {
+    toast('Set up Settings first', 'error'); return;
+  }
+  document.getElementById('addWeekLabel').style.display = 'none';
+  document.getElementById('addWeekSpinner').style.display = 'inline-block';
+  document.getElementById('btnAddWeek').disabled = true;
+  try {
+    const recipe = await addRecipeToWeek(url);
+    document.getElementById('weekUrlInput').value = '';
+    toast(`Added to this week: ${recipe.title}`, 'success');
+    renderRecipes();
+    renderLibrary();
+    renderShopping();
+  } catch (e) {
+    toast(e.message.slice(0, 240), 'error');
+  } finally {
+    document.getElementById('addWeekLabel').style.display = 'inline';
+    document.getElementById('addWeekSpinner').style.display = 'none';
+    document.getElementById('btnAddWeek').disabled = false;
   }
 }
 
@@ -2155,14 +2297,23 @@ function init() {
     document.getElementById('libList').classList.toggle('open');
   });
 
-  // Add recipe
+  // Add recipe to library
   document.getElementById('btnAdd').addEventListener('click', handleAddUrl);
   document.getElementById('urlInput').addEventListener('keydown', (e) => {
     if (e.key === 'Enter') handleAddUrl();
   });
 
-  // Refresh picks
+  // Add recipe directly to this week
+  document.getElementById('btnAddWeek').addEventListener('click', handleAddWeekUrl);
+  document.getElementById('weekUrlInput').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') handleAddWeekUrl();
+  });
+
+  // Refresh picks (instruction box submits on Enter too)
   document.getElementById('btnRefresh').addEventListener('click', handleRefresh);
+  document.getElementById('instructionInput').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') handleRefresh();
+  });
 
   // Clear checked
   document.getElementById('btnClearChecked').addEventListener('click', clearCheckedShopItems);
