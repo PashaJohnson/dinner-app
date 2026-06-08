@@ -1129,7 +1129,7 @@ async function callClaude(systemPrompt, userPrompt, opts = {}) {
       continue;
     }
     if (res.status === 429) {
-      throw new Error('Anthropic rate limit — your account is on the entry tier (10K tokens/min). Wait a minute and try again. Limits auto-raise after ~$5 spent + 7 days on the account.');
+      throw new Error('Anthropic rate limit hit. Wait ~60 seconds and try again. To raise the limit, add credits in the Anthropic Console (Billing) — Tier 2 ($40 total) lifts the per-minute cap dramatically and applies instantly.');
     }
     if (res.status === 401) throw new Error('Anthropic key rejected — check Settings');
     throw new Error(`Claude API ${res.status}: ${t.slice(0, 200)}`);
