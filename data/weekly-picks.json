@@ -765,6 +765,85 @@
       "checked": true,
       "fromLibrary": true,
       "manual": true
+    },
+    {
+      "recipe": {
+        "id": "rec_jp20jydi8ka9",
+        "title": "Roasted Purple Cauliflower with Cilantro Pesto",
+        "sourceUrl": "https://www.lastingredient.com/roasted-purple-cauliflower/",
+        "ingredients": [
+          {
+            "item": "large head purple cauliflower (about 2 pounds), (leaves removed, bottom stem trimmed)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "olive oil",
+            "quantity": "1 tablespoon",
+            "section": "Pantry"
+          },
+          {
+            "item": "kosher salt",
+            "quantity": "1/2 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "black pepper",
+            "quantity": "1/4 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "garlic cloves",
+            "quantity": "2",
+            "section": "Produce"
+          },
+          {
+            "item": "fresno chili, (quartered and deseeded)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "packed cilantro leaves",
+            "quantity": "1 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "roasted peanuts",
+            "quantity": "1/3 cup",
+            "section": "Pantry"
+          },
+          {
+            "item": "lime",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "black pepper",
+            "quantity": "1/4 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "olive oil",
+            "quantity": "1/3 cup",
+            "section": "Pantry"
+          }
+        ],
+        "steps": [
+          "Preheat the oven to 425 degrees F.",
+          "Cut the cauliflower lengthwise into 1/2-inch-thick slices.",
+          "On a sheet pan, toss the cauliflower with 1 tablespoon olive oil, 1/2 teaspoon kosher salt and 1/4 teaspoon pepper. Spread into a single layer. Roast the cauliflower until it is browned at the edges and darker purple, flipping halfway through cooking, about 20-25 minutes.",
+          "While the cauliflower roasts, make the cilantro pesto. In a food processor or blender, mince the garlic and chilies.",
+          "Add the cilantro leaves, peanuts, lime juice, 1/4 teaspoon pepper and olive oil. Pulse the mixture until it is roughly chopped. It should turn out more chunky than traditional pesto.",
+          "Spoon the pesto over the roasted cauliflower as you arrange it on a serving plate."
+        ],
+        "servings": 4,
+        "cuisineType": "Mediterranean",
+        "mainProtein": "Vegetarian",
+        "addedAt": "2026-06-08T01:28:47.793Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": true
     }
   ]
 }
