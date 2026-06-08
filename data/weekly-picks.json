@@ -196,7 +196,7 @@
         "mainProtein": "Beef",
         "addedAt": "2026-06-08T02:14:40.538Z"
       },
-      "checked": false,
+      "checked": true,
       "fromLibrary": false,
       "manual": false
     },
