@@ -160,81 +160,14 @@
     },
     {
       "recipe": {
-        "id": "rec_vxztyybu59su",
-        "title": "Pan-Seared Steak with Garlic Butter",
-        "sourceUrl": "https://natashaskitchen.com/pan-seared-steak/",
+        "id": "rec_01a5jk086da8",
+        "title": "Mediterranean Pasta with Feta and Olives",
+        "sourceUrl": "https://skinnyspatula.com/mediterranean-pasta/",
         "ingredients": [
           {
-            "item": "New York Strip Steaks (2 steaks) (or Ribeye or Top Sirloin Steaks (1 lb each steak, 1 1/4” thick))",
-            "quantity": "2 lbs",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "vegetable oil (or any high heat cooking oil like canola or extra light olive oil)",
-            "quantity": "1/2 Tbsp",
+            "item": "(9 oz) linguine",
+            "quantity": "250 g",
             "section": "Pantry"
-          },
-          {
-            "item": "sea salt",
-            "quantity": "1 1/2 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "black pepper (freshly ground)",
-            "quantity": "1 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "unsalted butter",
-            "quantity": "2 Tbsp",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "garlic (peeled and quartered)",
-            "quantity": "2 cloves",
-            "section": "Produce"
-          },
-          {
-            "item": "fresh rosemary",
-            "quantity": "1 sprig",
-            "section": "Produce"
-          }
-        ],
-        "steps": [
-          "Thoroughly pat steak dry with paper towels. Just before cooking, generously season with 1 1/2 tsp salt and 1 tsp black pepper",
-          "Heat the cast iron pan until hot then add 1/2 Tbsp oil over medium-high heat, swirling to coat. Once the oil is very hot, add steaks to the skillet. Sear the steaks on the first side for 4 minutes until a brown crust has formed then flip and cook another 3-4 minutes. Using tongs, turn the steak on its sides to render the white fat and sear the edges (1-minute per edge).",
-          "Reduce heat to medium and immediately add 2 Tbsp butter, quartered garlic cloves and rosemary to the pan. Spoon the butter sauce over the steak, tilting the pan to get butter on your spoon. Continue spooning the sauce over the steak for a minute or until the steak is about 5-10 degrees from your desired doneness (the temperature will continue to rise another 5-19 degrees while steaks rest).",
-          "Transfer steak to a cutting board, loosely cover and rest 10 minutes before slicing into 1/2\" strips to serve. Spoon extra butter sauce over sliced steak to serve."
-        ],
-        "servings": 4,
-        "cuisineType": "American",
-        "mainProtein": "Beef",
-        "addedAt": "2026-06-08T01:26:14.238Z"
-      },
-      "checked": false,
-      "fromLibrary": false,
-      "manual": false
-    },
-    {
-      "recipe": {
-        "id": "rec_5gwpxcg359t8",
-        "title": "Pan-Seared Steak with Garlic Butter",
-        "sourceUrl": "https://gimmedelicious.com/pan-seared-steak-with-garlic-butter/",
-        "ingredients": [
-          {
-            "item": "steaks ((New York Strip, Ribeye, Top Sirloin, or your favorite cut))",
-            "quantity": "4",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "salt ((to taste))",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "pepper ((to taste))",
-            "quantity": "",
-            "section": "Produce"
           },
           {
             "item": "olive oil",
@@ -242,42 +175,84 @@
             "section": "Pantry"
           },
           {
-            "item": "butter ((softened))",
-            "quantity": "1 stick",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "garlic ((minced))",
-            "quantity": "1 tablespoon",
+            "item": "large red onion, finely diced",
+            "quantity": "1",
             "section": "Produce"
           },
           {
-            "item": "minced fresh herbs ((parsley, thyme, dill or chives, plus more for garnish))",
+            "item": "large garlic cloves, finely chopped",
+            "quantity": "2",
+            "section": "Produce"
+          },
+          {
+            "item": "tomato paste",
+            "quantity": "1 tablespoon",
+            "section": "Pantry"
+          },
+          {
+            "item": "dried oregano",
+            "quantity": "1 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "dried basil",
+            "quantity": "1 teaspoon",
+            "section": "Produce"
+          },
+          {
+            "item": "red chilli flakes",
+            "quantity": "1/4 teaspoon",
+            "section": "Other"
+          },
+          {
+            "item": "x 400 g (14 oz) can chopped tomatoes",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "fresh parsley, finely chopped",
             "quantity": "2 tablespoons",
             "section": "Produce"
           },
           {
-            "item": "salt",
-            "quantity": "1 pinch",
-            "section": "Spices & Seasonings"
+            "item": "(3.5 oz) Kalamata olives, pitted and roughly chopped",
+            "quantity": "100 g",
+            "section": "Other"
           },
           {
-            "item": "pepper",
-            "quantity": "1 pinch",
+            "item": "(3.5 oz) artichokes, drained and quartered",
+            "quantity": "100 g",
             "section": "Produce"
+          },
+          {
+            "item": "(3.5 oz) feta cheese, cut int bite-size pieces",
+            "quantity": "100 g",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "fresh basil leaves, roughly shredded",
+            "quantity": "6-8",
+            "section": "Produce"
+          },
+          {
+            "item": "Freshly ground black pepper to taste",
+            "quantity": "",
+            "section": "Spices & Seasonings"
           }
         ],
         "steps": [
-          "Heat a large cast-iron skillet or heavy-duty pan over medium-high heat for at least 2-3 minutes or until smoking.",
-          "Pat each steak dry with a paper towel. Generously season both sides with salt and pepper.",
-          "Add the olive oil to the pan followed by the steak. Sear steak for 3-4 minutes on each side. Resist the urge to flip until the first side is browned. (For medium, cook 4 to 5 minutes on each side; for well-done, cook 5 to 6 minutes on each side).",
-          "Remove steak from heat and rest for at least 5 minutes. Top with a scoop of the garlic butter and serve.",
-          "While the steak is cooking, gently stir all the ingredients for the butter in a small bowl."
+          "Bring a large pot of water to a boil, salt it generously and cook the pasta al dente according to the instructions on the package. Reserve 1-2 cups of starchy pasta water before draining.",
+          "Meanwhile, heat the olive oil in a large pan and saute the red onion for 2-3 minutes over medium heat.",
+          "When the onion has softened a bit, stir in the garlic and continue to cook for another minute until fragrant.",
+          "Stir in the tomato paste, dried oregano, dried basil and red chilli flakes, then add the chopped tomatoes.",
+          "Allow the sauce to simmer for a minute, then stir in the fresh parsley, Kalamata olives and artichokes.",
+          "Add a dash of pasta water if the sauce looks too thick, and then stir in the feta cheese. Add the cooked linguine to the pan and toss gently until they’re well covered in sauce.",
+          "Sprinkle the fresh basil on top, season with freshly ground black pepper, divide into bowls and serve immediately."
         ],
         "servings": 4,
-        "cuisineType": "American",
-        "mainProtein": "Beef",
-        "addedAt": "2026-06-08T01:26:14.252Z"
+        "cuisineType": "Mediterranean",
+        "mainProtein": "Vegetarian",
+        "addedAt": "2026-06-08T01:27:05.408Z"
       },
       "checked": false,
       "fromLibrary": false,
@@ -285,60 +260,92 @@
     },
     {
       "recipe": {
-        "id": "rec_9v2876qs59zh",
-        "title": "Easy Garlic Butter Steak",
-        "sourceUrl": "https://ohsweetbasil.com/easy-garlic-butter-steak-at-home-recipe/",
+        "id": "rec_pkskjidh6dlc",
+        "title": "Easy Mediterranean Pasta",
+        "sourceUrl": "https://www.connoisseurusveg.com/mediterranean-pasta/",
         "ingredients": [
           {
-            "item": "Rib-Eye Steaks (12 oz each, 1 ¼-inch-thick*)",
-            "quantity": "3",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "Olive Oil",
-            "quantity": "4 Tablespoons",
+            "item": "dried fettuccine pasta",
+            "quantity": "10 ounces",
             "section": "Pantry"
           },
           {
-            "item": "Kosher Salt and Freshly Ground Black Pepper (to taste)",
-            "quantity": "",
-            "section": "Spices & Seasonings"
+            "item": "olive oil, (plus a dash)",
+            "quantity": "2 tablespoons",
+            "section": "Pantry"
           },
           {
-            "item": "Unsalted Butter (at room temperature)",
-            "quantity": "1/2 Cup",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "Garlic (minced (especially wonderful if you use roasted garlic))",
-            "quantity": "3 Cloves",
+            "item": "garlic cloves, (minced)",
+            "quantity": "3",
             "section": "Produce"
           },
           {
-            "item": "Kosher Salt",
+            "item": "dry white wine",
+            "quantity": "1/2 cup",
+            "section": "Beverages"
+          },
+          {
+            "item": "cherry tomatoes, (halved)",
+            "quantity": "2 cups",
+            "section": "Produce"
+          },
+          {
+            "item": "canned tomato sauce",
+            "quantity": "1 cup",
+            "section": "Pantry"
+          },
+          {
+            "item": "(6.5 ounce or 184 gram) jar marinated artichoke hearts, (roughly chopped (about 1 cup of artichoke hearts))",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "Kalamata olives, (pitted and halved)",
+            "quantity": "1 cup",
+            "section": "Other"
+          },
+          {
+            "item": "roasted red peppers, (roughly chopped)",
+            "quantity": "1 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "organic granulated sugar",
+            "quantity": "1 1/2 teaspoons",
+            "section": "Pantry"
+          },
+          {
+            "item": "red pepper flakes, (or to taste)",
             "quantity": "1/2 teaspoon",
             "section": "Spices & Seasonings"
           },
           {
-            "item": "Freshly Ground Black Pepper",
-            "quantity": "1/4 teaspoon",
+            "item": "chopped fresh basil leaves, (packed)",
+            "quantity": "1/4 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "Salt and black pepper, (to taste (see Note))",
+            "quantity": "",
             "section": "Spices & Seasonings"
           }
         ],
         "steps": [
-          "To make the garlic steak butter, combine butter, garlic, salt, and pepper. Transfer the mixture to parchment paper; shape into a log. Roll in parchment to 1 ½ inches in diameter, twisting the ends to close. Refrigerate until ready to use, up to 1 week.",
-          "Preheat oven to broil. Place an oven-proof skillet, we prefer to use our Lodge Cast Iron Skillet, in the oven.",
-          "Using paper towels, pat both sides of the steak dry. This is essential to get a nice caramelization on the steak. Drizzle with olive oil; season with salt and pepper evenly to taste.",
-          "Remove the skillet from the oven and heat over medium-high heat on the stovetop.",
-          "Once the pan is hot, place the steak in the middle of the skillet and cook until a dark crust has formed, about 1 minute. Using tongs, flip, and cook for an additional 60 seconds.",
-          "Remove the skillet from the stove.",
-          "Place your skillet into the oven and cook until desired doneness is reached, about 4-5 minutes for medium-rare, flipping once. Let rest for 3-5 minutes, tented, not wrapped with foil.",
-          "Serve immediately with a slice of garlic butter."
+          "Bring a large pot of salted water to a boil.",
+          "Add the pasta and cook it according to the package directions, until al dente.",
+          "Drain the cooked pasta into a colander, return it to the pot and toss it with a dash of olive oil.",
+          "While the pasta cooks, place a large skillet over medium heat and add 2 tablespoons of olive oil.",
+          "When the oil is hot, add the garlic and cook it for about 1 minute, until very fragrant.",
+          "Add the wine and cherry tomatoes. Bring the wine to a simmer and let it cook for about 4 minutes, until the liquid has reduced by about half and the tomatoes begin to soften.",
+          "Stir in the sauce, artichoke hearts, olives, peppers, sugar, and red pepper flakes. Bring the sauce to a simmer and let it cook for about 5 minutes, stirring occasionally, until the sauce thickens slightly.",
+          "Stir in the cooked pasta and let it simmer in the sauce for about 30 seconds.",
+          "Remove the skillet from heat and stir in the basil. Season the pasta with salt and pepper to taste, if desired.",
+          "Divide onto plates and serve."
         ],
-        "servings": 3,
+        "servings": 4,
         "cuisineType": "American",
         "mainProtein": "Vegetarian",
-        "addedAt": "2026-06-08T01:26:14.477Z"
+        "addedAt": "2026-06-08T01:27:05.808Z"
       },
       "checked": false,
       "fromLibrary": false,
@@ -346,184 +353,297 @@
     },
     {
       "recipe": {
-        "id": "rec_ar25nj475acz",
-        "title": "Pan Seared Steak with Butter & Garlic",
-        "sourceUrl": "https://www.chasingtheseasons.com/pan-seared-steak-with-garlic-butter/",
+        "id": "rec_2khqa7bu6d7a",
+        "title": "Mediterranean Pasta",
+        "sourceUrl": "https://www.wellplated.com/mediterranean-pasta/",
         "ingredients": [
           {
-            "item": "(1½-inch) rib eye steaks, thick-cut, bone-in (or butcher quality New York strip )",
-            "quantity": "2",
-            "section": "Meat & Seafood"
+            "item": "kosher salt (plus 1 teaspoon, divided)",
+            "quantity": "1 tablespoon",
+            "section": "Spices & Seasonings"
           },
           {
-            "item": "extra light olive oil (substitute with another high heat oil like tallow or vegetable oil)",
-            "quantity": "1-2 tbsp",
+            "item": "whole wheat angel hair pasta (whole wheat spaghetti, or similar whole wheat noodles (I recommend DeLallo whole wheat pasta))",
+            "quantity": "6 ounces",
             "section": "Pantry"
           },
           {
-            "item": "fine sea salt",
-            "quantity": "1½ tsp",
+            "item": "garlic",
+            "quantity": "4 cloves",
+            "section": "Produce"
+          },
+          {
+            "item": "grape tomatoes (or cherry tomatoes)",
+            "quantity": "2 cups",
+            "section": "Produce"
+          },
+          {
+            "item": "quartered artichoke hearts ((14 ounces))",
+            "quantity": "1 can",
+            "section": "Produce"
+          },
+          {
+            "item": "whole pitted black olives ((6 ounces))",
+            "quantity": "1 can",
+            "section": "Other"
+          },
+          {
+            "item": "good-quality olive oil",
+            "quantity": "3 tablespoons",
+            "section": "Pantry"
+          },
+          {
+            "item": "ground black pepper",
+            "quantity": "1/2 teaspoon",
             "section": "Spices & Seasonings"
           },
           {
-            "item": "fresh ground pepper",
-            "quantity": "1 tsp",
-            "section": "Produce"
+            "item": "crushed red pepper flakes",
+            "quantity": "1/4-1/2 teaspoon",
+            "section": "Spices & Seasonings"
           },
           {
-            "item": "butter",
-            "quantity": "4 tbsp",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "garlic cloves (lightly smashed)",
-            "quantity": "4",
-            "section": "Produce"
-          },
-          {
-            "item": "fresh sprigs of thyme (substitute with rosemary)",
-            "quantity": "2-4",
-            "section": "Produce"
-          }
-        ],
-        "steps": [
-          "If refrigerated, allow the raw steaks to rest at room temperature for 20-30 minutes before cooking.",
-          "Preheat the oven to 400 F.",
-          "Pat the steaks dry on both sides with a paper towel. Massage in oil and generously season both sides with salt and pepper.",
-          "Heat a cast iron skillet with deep sides over medium heat, getting it piping hot, about 2 minutes. Add the seasoned steaks, there should be a great sizzle. Gently push the steaks down so the surface is in full contact with the pan and sear, without moving them, on high heat for about 1-2 minutes on both sides, or until a golden brown crust develops and the steaks lift away easily from the pan. *",
-          "Reduce the heat to low and add the butter, garlic, and thyme. Tip the pan slightly to spoon the butter over each steak. (If opting to finish on the stovetop, see the variation below in notes).",
-          "Place the pan in the preheated oven for approximately 5-10 minutes, although the time will depend greatly on the thickness of the steaks and the desired doneness. Use a digital meat thermometer and check the doneness chart below.",
-          "Note that the steaks should be removed from the oven about 5 degrees shy of the desired final temperature as they will continue to cook as they rest. Let the steaks rest for 5-10 minutes for the juices to redistribute and for the steak to finish cooking before serving. To cut the steak, slice against the grain. Spoon the pan drippings over the steaks when serving. To help, use a meat thermometer to determine the internal temperature - noting again that the steaks should be removed about 5 degrees shy of the final desired internal temperature as it will continue to cook while resting."
-        ],
-        "servings": 2,
-        "cuisineType": null,
-        "mainProtein": "Vegetarian",
-        "addedAt": "2026-06-08T01:26:14.963Z"
-      },
-      "checked": false,
-      "fromLibrary": false,
-      "manual": false
-    },
-    {
-      "recipe": {
-        "id": "rec_6o0c2s2oedre",
-        "title": "Chicken Tikka Masala",
-        "sourceUrl": "https://carlsbadcravings.com/chicken-tikka-masala/#wprm-recipe-container-67305",
-        "ingredients": [
-          {
-            "item": "boneless chicken thighs",
-            "quantity": "2 pounds, cut into large bite-sized pieces (about 1 1/2-inches)",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "plain or Greek yogurt",
-            "quantity": "1 cup, full fat is best",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "lemon juice",
-            "quantity": "2 tablespoons",
+            "item": "freshly squeezed lemon juice (about 1 lemon)",
+            "quantity": "1/4 cup",
             "section": "Condiments & Sauces"
           },
           {
-            "item": "freshly grated ginger",
-            "quantity": "2 tablespoons, divided",
-            "section": "Produce"
+            "item": "freshly grated Parmesan cheese",
+            "quantity": "1/4 cup",
+            "section": "Dairy & Eggs"
           },
           {
-            "item": "minced garlic",
-            "quantity": "2 tablespoons, divided",
+            "item": "fresh Italian parsley (chopped)",
+            "quantity": "1/4 cup",
             "section": "Produce"
-          },
+          }
+        ],
+        "steps": [
+          "Bring a large pot of water to a boil and add 1 tablespoon salt. Cook the pasta until al dente. Reserve 1/2 cup of the pasta water, then drain.",
+          "While the water boils and pasta cooks, prep your vegetables and remaining ingredients: mince the garlic; halve the cherry tomatoes; drain and roughly chop the artichokes; drain and slice the olives in half. Once the vegetables start cooking, the recipe goes quickly, so you want to be ready.",
+          "Heat the olive oil in a large skillet over medium high heat. Add the tomatoes, garlic, the remaining 1 teaspoon salt, pepper, and crushed red pepper flakes. Cook, stirring frequently, until the garlic is fragrant and the tomatoes begin to break down and release some juices into the oil, 1 to 2 minutes.",
+          "Add the pasta to the skillet and toss to coat. Add the artichokes and olives. Drizzle the lemon juice over the pasta. Continue tossing and cook for 1 to 2 minutes, until warmed through. If the pasta seems too dry, add a splash of the reserved pasta water to loosen it. Taste and adjust the salt and pepper as desired. Remove from heat and sprinkle with Parmesan and parsley. Toss once more and enjoy."
+        ],
+        "servings": 4,
+        "cuisineType": "Mediterranean",
+        "mainProtein": "Vegetarian",
+        "addedAt": "2026-06-08T01:27:05.302Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": false
+    },
+    {
+      "recipe": {
+        "id": "rec_q0bro6nb6dzz",
+        "title": "Vegetarian Mediterranean Pasta with Feta and Artichokes",
+        "sourceUrl": "https://www.justalittlebitofbacon.com/vegetarian-mediterranean-pasta/",
+        "ingredients": [
           {
-            "item": "neutral high smoking point oil",
-            "quantity": "as needed (canola or coconut)",
+            "item": "spaghetti",
+            "quantity": "1 lb",
             "section": "Pantry"
           },
           {
-            "item": "large onion",
-            "quantity": "1, chopped",
+            "item": "extra virgin olive oil, (divided)",
+            "quantity": "1/4 cup",
+            "section": "Pantry"
+          },
+          {
+            "item": "bell peppers, (assorted colors)",
+            "quantity": "1 lb",
             "section": "Produce"
           },
           {
-            "item": "fire roasted crushed tomatoes",
-            "quantity": "1 (28 oz.) can",
+            "item": "jar marinated artichoke hearts, (drained)",
+            "quantity": "1 12-oz",
             "section": "Produce"
           },
           {
-            "item": "garam masala",
-            "quantity": "1 tablespoon",
+            "item": "pitted kalamata olives, (halved)",
+            "quantity": "1/2 cup",
+            "section": "Other"
+          },
+          {
+            "item": "chopped fresh parsley",
+            "quantity": "1/2 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "garlic, (minced)",
+            "quantity": "4 cloves",
+            "section": "Produce"
+          },
+          {
+            "item": "scallions, (sliced)",
+            "quantity": "2",
+            "section": "Produce"
+          },
+          {
+            "item": "red pepper flakes",
+            "quantity": "1/2 tsp",
             "section": "Spices & Seasonings"
           },
           {
-            "item": "chili powder",
-            "quantity": "1 tablespoon",
+            "item": "fresh lemon juice",
+            "quantity": "2 tbsp",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "kosher salt and black pepper, (to taste)",
+            "quantity": "",
             "section": "Spices & Seasonings"
           },
           {
-            "item": "paprika",
-            "quantity": "1 tablespoon (not smoked)",
+            "item": "feta cheese, (crumbled)",
+            "quantity": "6 oz",
+            "section": "Dairy & Eggs"
+          }
+        ],
+        "steps": [
+          "Bring a large pot of salted water to a boil. Cook the spaghetti according to the package directions.",
+          "Scoop out and reserve 1 cup of the pasta water. Drain the spaghetti.",
+          "In a large skillet, heat 1 tablespoon of the olive oil on medium high until shimmering.",
+          "Add the sliced bell peppers and saute until they are a little browned around the edges, about 5 minutes.",
+          "Turn the heat down to low and add the artichokes, olives, parsley, garlic, scallions, and red pepper flakes along with the rest of the olive oil. Saute for 2-3 minutes. Set the sauce aside until the pasta is done.",
+          "Once it ia cooked, add the drained pasta and 1/2 cup of the water to the skillet with the sauce.",
+          "Toss and simmer together until the sauce thickens and clings to the pasta. If you don't have enough liquid, add more of the water.",
+          "Stir in the fresh lemon juice.",
+          "Taste and add salt and/or pepper as needed.",
+          "Serve topped with the crumbled feta."
+        ],
+        "servings": 6,
+        "cuisineType": "Mediterranean",
+        "mainProtein": "Vegetarian",
+        "addedAt": "2026-06-08T01:27:06.335Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": false
+    },
+    {
+      "recipe": {
+        "id": "rec_bstywf4s6d7m",
+        "title": "Mediterranean Pasta",
+        "sourceUrl": "https://www.acedarspoon.com/mediterranean-pasta/",
+        "ingredients": [
+          {
+            "item": "linguine ( {or pasta of your choice})",
+            "quantity": "6 ounces",
+            "section": "Pantry"
+          },
+          {
+            "item": "+ 1/2 cup Extra Virgin Olive Oil (divided)",
+            "quantity": "2 tablespoons",
+            "section": "Pantry"
+          },
+          {
+            "item": "garlic (chopped)",
+            "quantity": "4 cloves",
+            "section": "Produce"
+          },
+          {
+            "item": "crushed red pepper ({optional})",
+            "quantity": "1/2 teaspoon",
+            "section": "Produce"
+          },
+          {
+            "item": "salt",
+            "quantity": "1/2 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "cherry tomatoes (halved)",
+            "quantity": "2 cups",
+            "section": "Produce"
+          },
+          {
+            "item": "artichoke hearts (drained, quartered (marinated))",
+            "quantity": "12 ounces",
+            "section": "Produce"
+          },
+          {
+            "item": "green onions (green parts chopped)",
+            "quantity": "5",
+            "section": "Produce"
+          },
+          {
+            "item": "kalamata olives (pitted, cut in half)",
+            "quantity": "1/2 cup",
+            "section": "Other"
+          },
+          {
+            "item": "capers",
+            "quantity": "4 ounces",
+            "section": "Other"
+          },
+          {
+            "item": "spinach ( {or greens of your choice})",
+            "quantity": "2 cups",
+            "section": "Produce"
+          },
+          {
+            "item": "parsley (chopped)",
+            "quantity": "1/2 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "basil (torn)",
+            "quantity": "1/4 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "feta cheese (crumbled)",
+            "quantity": "1/3 cup",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "lemon (juiced)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "lemon zest",
+            "quantity": "1 teaspoon",
+            "section": "Produce"
+          },
+          {
+            "item": "dried oregano",
+            "quantity": "1 teaspoon",
             "section": "Spices & Seasonings"
           },
           {
             "item": "salt",
-            "quantity": "2 1/2 teaspoons",
+            "quantity": "1/4 teaspoon",
             "section": "Spices & Seasonings"
           },
           {
-            "item": "turmeric",
-            "quantity": "2 teaspoons",
+            "item": "black pepper",
+            "quantity": "1/8 teaspoon",
             "section": "Spices & Seasonings"
           },
           {
-            "item": "ground cumin",
-            "quantity": "2 teaspoons",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "ground coriander",
-            "quantity": "2 teaspoons",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "cayenne pepper",
-            "quantity": "1/2 to 1 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "ground cardamom",
-            "quantity": "1/4 teaspoon (optional)",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "heavy cream",
-            "quantity": "1 1/3 cups",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "sugar",
-            "quantity": "1 teaspoon, optional, as needed",
+            "item": "pine nuts",
+            "quantity": "1/4 cup",
             "section": "Pantry"
           }
         ],
         "steps": [
-          "Whisk together all of the Spice Blend spices in a small bowl; set aside.",
-          "Remove 2 1/2 tablespoons Spice Blend to a large bowl or freezer bag. Add the yogurt, lemon juice, 1 tablespoon grated ginger and 1 tablespoon minced garlic. Whisk to combine. Add the chopped chicken and stir to evenly coat. Marinate for 30-45 minutes at room temperature, but best if refrigerated overnight.",
-          "Heat 1 1/2 tablespoons oil in a large braiser or Dutch oven over medium-high heat. Add the onions and sauté until softened, 5-7 minutes. Add the remaining 1 tablespoon ginger, 1 tablespoon garlic and the remaining Spice Blend and sauté for 1 minute.",
-          "Stir in the crushed tomatoes. Bring to a boil then reduce to a gentle simmer and cook for 10 minutes, stirring often and scraping up the brown bits from the bottom of the pan.",
-          "After simmering, transfer the tomato mixture to a high-powered blender and purée until smooth, leaving a corner of the lid open and covered with a paper towel so steam can escape. Alternatively, use an immersion blender. Season to taste, adding 1-2 teaspoons sugar if needed to balance acidity.",
-          "Heat 2 tablespoons oil in a large cast iron skillet over high heat until smoking. Working in batches, add the chicken in a single layer and cook until charred on each side, about 2 minutes per side (it will not be cooked through). Transfer chicken to a bowl. Scrape out the skillet between batches and add more oil as needed.",
-          "Stir the heavy cream into the blended sauce followed by the chicken. Cover and gently simmer for a few minutes, until the chicken is cooked through. Season to taste with additional salt, sugar and/or cayenne pepper.",
-          "Serve over basmati rice with optional cilantro."
+          "Using a large pot bring water to a boil and add 1 Tablespoon of salt to it. Cook the pasta according to the package until al dente. Drain the water from the pasta.",
+          "While the pasta cooks prep your vegetables and measure your ingredients out.",
+          "In a medium mixing bowl whisk together the olive oil, lemon juice, lemon zest, oregano and salt and pepper. Set aside.",
+          "Heat a skillet over medium heat and add 2 Tablespoons olive oil. Add the garlic and 1/2 teaspoon salt and crushed red pepper {optional}. Sauté for 2 minutes. Add the tomatoes and continue to sauté until the tomatoes begin to pop open and break down a bit.",
+          "Add the pasta back in along with the olive oil sauce, artichoke hearts, green onions, kalamata olives, capers, spinach, parsley and basil and cook on low until the spinach is wilted, stirring gently.",
+          "Remove the pasta from heat and add the feta cheese and pine nuts along with any additional garnishes you want like more fresh herbs and crushed red pepper. Serve warm with crusty bread."
         ],
-        "servings": 6,
-        "cuisineType": "Indian",
-        "mainProtein": "Chicken",
-        "addedAt": "2026-06-08T00:09:20.426Z"
+        "servings": 4,
+        "cuisineType": "Mediterranean",
+        "mainProtein": "Vegetarian",
+        "addedAt": "2026-06-08T01:27:05.314Z"
       },
       "checked": true,
-      "fromLibrary": true,
-      "manual": true
+      "fromLibrary": false,
+      "manual": false
     }
   ]
 }
