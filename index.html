@@ -801,7 +801,7 @@
       <div class="section-head">
         <div>
           <h2>This Week's Dinners</h2>
-          <div class="sub" id="weekSub">7 picks · checked = on shopping list</div>
+          <div class="sub" id="weekSub">New picks inspired by your library · check = add to shopping list + lock on refresh</div>
         </div>
         <button class="btn gold" id="btnRefresh" title="Refresh unchecked picks">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
@@ -815,7 +815,7 @@
 
       <div class="upload-box">
         <h3>Add Recipe Inspiration</h3>
-        <p>Paste a recipe URL — the app will parse it and add to your library for future weekly picks.</p>
+        <p>Paste a URL for a recipe you like. Claude learns your taste from this library and uses it to suggest <em>new</em> recipes each week.</p>
         <div class="upload-row">
           <input type="url" id="urlInput" placeholder="https://..." autocomplete="off" autocapitalize="off" spellcheck="false" />
           <button class="btn" id="btnAdd">
@@ -938,7 +938,7 @@ const WEEKLY_COUNT = 7;
 const state = {
   cfg: { anthropic: '', github: '', repo: '', branch: 'main' },
   inspirations: [],     // [{id, title, sourceUrl, ingredients, steps, ...}]
-  picks: [],            // [{recipeId, checked}]
+  picks: [],            // [{recipe: {...}, checked, fromLibrary}]
   weekStartDate: null,
   shopChecked: {},      // {ingredientKey: true}  (per-device, localStorage)
   shaInspirations: null,
@@ -1060,7 +1060,17 @@ async function loadPicks() {
     state.shaPicks = sha;
     if (content) {
       const j = JSON.parse(content);
-      state.picks = j.picks || [];
+      const raw = j.picks || [];
+      // Backward-compat: migrate old {recipeId, checked} shape → {recipe: {...}, checked, fromLibrary:true}
+      state.picks = raw.map(p => {
+        if (p.recipe) return p;  // already new shape
+        if (p.recipeId) {
+          const r = state.inspirations.find(x => x.id === p.recipeId);
+          if (!r) return null;
+          return { recipe: r, checked: !!p.checked, fromLibrary: true };
+        }
+        return null;
+      }).filter(Boolean);
       state.weekStartDate = j.weekStartDate || null;
     } else {
       state.picks = [];
@@ -1079,8 +1089,15 @@ async function savePicks(message) {
 }
 
 /* ===== Anthropic API ===== */
-async function callClaude(systemPrompt, userPrompt, maxTokens = 4096) {
+async function callClaude(systemPrompt, userPrompt, maxTokens = 4096, tools = null) {
   if (!state.cfg.anthropic) throw new Error('Anthropic API key not set');
+  const body = {
+    model: ANTHROPIC_MODEL,
+    max_tokens: maxTokens,
+    system: systemPrompt,
+    messages: [{ role: 'user', content: userPrompt }],
+  };
+  if (tools) body.tools = tools;
   const res = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
     headers: {
@@ -1089,19 +1106,15 @@ async function callClaude(systemPrompt, userPrompt, maxTokens = 4096) {
       'anthropic-version': '2023-06-01',
       'anthropic-dangerous-direct-browser-access': 'true',
     },
-    body: JSON.stringify({
-      model: ANTHROPIC_MODEL,
-      max_tokens: maxTokens,
-      system: systemPrompt,
-      messages: [{ role: 'user', content: userPrompt }],
-    }),
+    body: JSON.stringify(body),
   });
   if (!res.ok) {
     const t = await res.text();
     throw new Error(`Claude API ${res.status}: ${t}`);
   }
   const data = await res.json();
-  return data.content.map(b => b.text || '').join('');
+  // Concatenate all text blocks (skips server_tool_use / web_search_tool_result blocks)
+  return data.content.map(b => b.type === 'text' ? (b.text || '') : '').join('');
 }
 
 /* ===== Grocery section classification ===== */
@@ -1333,106 +1346,148 @@ async function addRecipeFromUrl(url) {
   return recipe;
 }
 
-/* ===== Weekly picks generation ===== */
-const PICK_SYS = `You are a thoughtful home meal planner. Given a library of recipes and a count, choose recipes that:
-- Vary cuisine type across the week (avoid stacking 3 Italian or 3 Mexican).
-- Vary main protein (don't pick all chicken).
-- Avoid the recently-picked recipes when possible.
-- Prefer a mix of weeknight-friendly and slightly more involved meals.
+/* ===== Weekly picks generation =====
+   New model: picks are NEW recipes, web-searched by Claude to match the
+   user's library style. Locked (checked) picks are preserved. Each pick stores
+   the full recipe object — not an ID — because suggestions aren't in the library
+   until the user explicitly saves them. */
 
-Return STRICT JSON only, no markdown, no commentary:
-{ "recipeIds": ["id1","id2",...] }`;
+const SUGGEST_SYS = `You are a personalized recipe finder for a home cook. You will be given the user's recipe library — the dinner recipes they've cooked and liked over time. Your job is to find NEW dinner recipes on the web that match the style, ingredient palette, complexity, and prep effort of their library.
 
-async function generateWeeklyPicks(needed, lockedIds, recentlyPickedIds) {
-  if (state.inspirations.length === 0) {
-    return [];
-  }
-  if (needed <= 0) return [];
-  // If library is small, just fill from library minus locked
-  const availablePool = state.inspirations.filter(r => !lockedIds.includes(r.id));
-  if (availablePool.length === 0) return [];
-  // Random fallback in case Claude misbehaves
-  function randomFill(n) {
-    const pool = [...availablePool];
-    // De-prioritize recently picked
-    pool.sort((a, b) => {
-      const ar = recentlyPickedIds.includes(a.id) ? 1 : 0;
-      const br = recentlyPickedIds.includes(b.id) ? 1 : 0;
-      if (ar !== br) return ar - br;
-      return Math.random() - 0.5;
-    });
-    return pool.slice(0, n).map(r => r.id);
-  }
-  // Compact library payload for Claude
-  const libSummary = availablePool.map(r => ({
-    id: r.id,
+Use the web_search tool to find real recipes from reputable cooking sites (NYT Cooking, Bon Appétit, Serious Eats, Smitten Kitchen, Half Baked Harvest, Bon Appétit, Food52, Food Network, well-regarded food blogs, etc.). Avoid AI-generated recipe sites, low-quality SEO content farms, and video-only sites with no written recipe.
+
+When picking, vary cuisine type and main protein across the week so no two suggestions overlap too much. Avoid recipes that are essentially the same as ones already in the library. Avoid the "do not repeat" list of recent suggestion titles.
+
+After searching, return ONLY a JSON array — no markdown fences, no preamble, no commentary — of objects with this exact shape:
+[
+  {"title": "<recipe title>", "url": "<direct URL to the recipe page>"},
+  ...
+]
+
+The URLs must be direct links to specific recipe pages (not homepages, not category pages, not search results).`;
+
+function summarizeLibraryForPrompt(recipes) {
+  return recipes.map(r => ({
     title: r.title,
     cuisineType: r.cuisineType,
     mainProtein: r.mainProtein,
+    topIngredients: (r.ingredients || []).slice(0, 8).map(i => i.item),
+    prepSteps: (r.steps || []).length,
+    servings: r.servings,
   }));
-  const lockedSummary = state.inspirations
-    .filter(r => lockedIds.includes(r.id))
-    .map(r => ({ id: r.id, title: r.title, cuisineType: r.cuisineType, mainProtein: r.mainProtein }));
-  const userMsg = `Pick exactly ${needed} recipes for this week.
-
-ALREADY LOCKED IN (do NOT pick again, but ensure your picks complement these):
-${JSON.stringify(lockedSummary, null, 2)}
-
-RECENTLY PICKED IN PRIOR WEEKS (de-prioritize but ok if pool is small):
-${JSON.stringify(recentlyPickedIds, null, 2)}
-
-LIBRARY TO PICK FROM:
-${JSON.stringify(libSummary, null, 2)}
-
-Return the chosen ${needed} recipe IDs as JSON.`;
-  try {
-    const raw = await callClaude(PICK_SYS, userMsg, 1024);
-    const jsonStr = raw.slice(raw.indexOf('{'), raw.lastIndexOf('}') + 1);
-    const parsed = JSON.parse(jsonStr);
-    let ids = (parsed.recipeIds || []).filter(id => availablePool.some(r => r.id === id));
-    ids = [...new Set(ids)].slice(0, needed);
-    if (ids.length < needed) {
-      // top up with random
-      const extras = randomFill(needed * 2).filter(id => !ids.includes(id));
-      ids = ids.concat(extras).slice(0, needed);
-    }
-    return ids;
-  } catch (e) {
-    console.warn('AI pick failed, falling back to random:', e);
-    return randomFill(needed);
-  }
 }
 
-async function refreshWeeklyPicks() {
-  // Locked = checked recipes the user wants to keep
-  const lockedPicks = state.picks.filter(p => p.checked && state.inspirations.some(r => r.id === p.recipeId));
-  const lockedIds = lockedPicks.map(p => p.recipeId);
-  const need = Math.max(0, WEEKLY_COUNT - lockedIds.length);
-  // "Recently picked" = the current unchecked ones + any previously rotated out
-  const recentlyPicked = state.picks.filter(p => !p.checked).map(p => p.recipeId);
-  const newIds = await generateWeeklyPicks(need, lockedIds, recentlyPicked);
-  // Rebuild the picks array
-  const newPicks = [
-    ...lockedPicks,
-    ...newIds.map(id => ({ recipeId: id, checked: false })),
+async function searchForNewRecipeUrls(needed, lockedRecipes, recentTitles) {
+  if (state.inspirations.length === 0) {
+    throw new Error('Add some recipes to your library first — Claude needs to learn what you like.');
+  }
+  if (needed <= 0) return [];
+  const libSummary = summarizeLibraryForPrompt(state.inspirations);
+  const lockedSummary = summarizeLibraryForPrompt(lockedRecipes);
+  // Avoid duplicating any of the library OR locked titles, plus any recent suggestion titles
+  const avoidTitles = [
+    ...state.inspirations.map(r => r.title),
+    ...lockedRecipes.map(r => r.title),
+    ...recentTitles,
   ];
-  state.picks = newPicks;
+  const userMsg = `Find exactly ${needed} NEW dinner recipes for this user.
+
+THEIR LIBRARY (their taste profile — match this style, but do NOT suggest these exact recipes):
+${JSON.stringify(libSummary, null, 2)}
+
+ALREADY LOCKED IN THIS WEEK (don't overlap with these on cuisine/protein):
+${JSON.stringify(lockedSummary, null, 2)}
+
+DO NOT RETURN any recipe matching these titles (case-insensitive, substring match):
+${JSON.stringify(avoidTitles, null, 2)}
+
+Search the web and return ${needed} recipe URLs as JSON.`;
+  const tools = [{ type: 'web_search_20250305', name: 'web_search', max_uses: 5 }];
+  const raw = await callClaude(SUGGEST_SYS, userMsg, 4096, tools);
+  // Extract JSON array robustly
+  let jsonStr = raw.trim();
+  const firstBracket = jsonStr.indexOf('[');
+  const lastBracket = jsonStr.lastIndexOf(']');
+  if (firstBracket < 0 || lastBracket <= firstBracket) {
+    throw new Error('Claude did not return a JSON array of URLs');
+  }
+  jsonStr = jsonStr.slice(firstBracket, lastBracket + 1);
+  let parsed;
+  try {
+    parsed = JSON.parse(jsonStr);
+  } catch (e) {
+    throw new Error('Claude returned malformed JSON: ' + e.message);
+  }
+  // Validate + dedupe
+  const seen = new Set();
+  const out = [];
+  for (const item of parsed) {
+    if (!item || !item.url || !/^https?:\/\//i.test(item.url)) continue;
+    if (seen.has(item.url)) continue;
+    seen.add(item.url);
+    out.push({ title: String(item.title || '').trim(), url: item.url });
+  }
+  return out.slice(0, needed);
+}
+
+async function fetchAndParseUrls(urlObjs) {
+  // Parse all URLs in parallel; tolerate individual failures
+  const results = await Promise.allSettled(urlObjs.map(async ({ title, url }) => {
+    const html = await fetchRecipePage(url);
+    const recipe = await parseRecipeFromHtml(url, html);
+    // If Claude's parsed title is missing, fall back to the search-result title
+    if ((!recipe.title || recipe.title === 'Untitled recipe') && title) recipe.title = title;
+    return recipe;
+  }));
+  const recipes = [];
+  let failed = 0;
+  for (const r of results) {
+    if (r.status === 'fulfilled') recipes.push(r.value);
+    else { failed++; console.warn('parse failed:', r.reason); }
+  }
+  return { recipes, failed };
+}
+
+async function refreshWeeklyPicks(onProgress) {
+  // Locked = checked picks. Each pick now stores the FULL recipe object.
+  const lockedPicks = state.picks.filter(p => p.checked && p.recipe);
+  const lockedRecipes = lockedPicks.map(p => p.recipe);
+  const need = Math.max(0, WEEKLY_COUNT - lockedPicks.length);
+  if (need === 0) {
+    toast('All slots locked — uncheck a recipe to refresh', 'error');
+    return;
+  }
+  // Don't suggest the same titles we just showed (the unchecked ones being rolled out)
+  const recentTitles = state.picks.filter(p => !p.checked && p.recipe).map(p => p.recipe.title);
+  onProgress && onProgress(`Searching for ${need} recipes…`);
+  const urlObjs = await searchForNewRecipeUrls(need, lockedRecipes, recentTitles);
+  if (urlObjs.length === 0) throw new Error('No recipes found — try again');
+  onProgress && onProgress(`Parsing ${urlObjs.length} recipes…`);
+  const { recipes, failed } = await fetchAndParseUrls(urlObjs);
+  if (recipes.length === 0) throw new Error('All recipe pages failed to parse');
+  // Mark fresh picks as not-from-library, not-checked
+  const newPicks = recipes.map(r => ({ recipe: r, checked: false, fromLibrary: false }));
+  state.picks = [...lockedPicks, ...newPicks];
   state.weekStartDate = new Date().toISOString().slice(0, 10);
   await savePicks('Refresh weekly picks');
+  if (failed > 0) toast(`Got ${recipes.length} of ${urlObjs.length} (${failed} failed to parse)`, 'success');
 }
 
 /* ===== Shopping list derivation ===== */
-function shopKey(recipeId, item) {
-  return recipeId + '|' + normalizeIngredient(item);
+function pickKey(p) {
+  // Stable per-pick key for the per-device shopping checked state
+  return (p.recipe && (p.recipe.id || p.recipe.sourceUrl || p.recipe.title)) || '';
+}
+function shopKey(p, item) {
+  return pickKey(p) + '|' + normalizeIngredient(item);
 }
 
 function buildShoppingList() {
   // Aggregate from CHECKED picks
   const map = {};  // section -> [{item, recipeTitle, quantity, key}]
   for (const p of state.picks) {
-    if (!p.checked) continue;
-    const r = state.inspirations.find(x => x.id === p.recipeId);
-    if (!r) continue;
+    if (!p.checked || !p.recipe) continue;
+    const r = p.recipe;
     for (const ing of (r.ingredients || [])) {
       const sec = ing.section || classifyIngredient(ing.item) || 'Other';
       if (!map[sec]) map[sec] = [];
@@ -1440,7 +1495,7 @@ function buildShoppingList() {
         item: ing.item,
         quantity: ing.quantity,
         recipeTitle: r.title,
-        key: shopKey(p.recipeId, ing.item),
+        key: shopKey(p, ing.item),
       });
     }
   }
@@ -1465,17 +1520,20 @@ function renderRecipes() {
       <div class="empty">
         <h3>${hasLib ? 'No picks yet' : 'No recipes yet'}</h3>
         <p>${hasLib
-          ? `Tap <strong>Refresh</strong> above to generate this week's ${WEEKLY_COUNT} picks from your library.`
-          : 'Add a recipe URL below to start building your inspiration library, then tap Refresh to pick this week\'s dinners.'}</p>
+          ? `Tap <strong>Refresh</strong> above — Claude will search the web for ${WEEKLY_COUNT} new recipes inspired by your library.`
+          : 'Add a few recipe URLs below to teach Claude your taste. Once your library has some recipes, tap Refresh to get new suggestions matching that style.'}</p>
       </div>`;
     return;
   }
   list.innerHTML = '';
-  for (const p of state.picks) {
-    const r = state.inspirations.find(x => x.id === p.recipeId);
-    if (!r) continue;
+  state.picks.forEach((p, idx) => {
+    if (!p.recipe) return;
+    const r = p.recipe;
     const card = document.createElement('div');
     card.className = 'recipe-card' + (p.checked ? ' checked' : '');
+    const sourcePill = p.fromLibrary
+      ? '<span class="pill" style="background:var(--gold-soft); color:#8a6a16;">Library</span>'
+      : '<span class="pill" style="background:var(--blue-soft); color:var(--blue);">New</span>';
     card.innerHTML = `
       <button class="recipe-check" aria-label="${p.checked ? 'Uncheck' : 'Check'}">
         <svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
@@ -1483,6 +1541,7 @@ function renderRecipes() {
       <div class="recipe-body">
         <div class="recipe-title"></div>
         <div class="recipe-meta">
+          ${sourcePill}
           ${r.cuisineType ? `<span class="pill">${escapeHtml(r.cuisineType)}</span>` : ''}
           ${r.mainProtein ? `<span class="pill">${escapeHtml(r.mainProtein)}</span>` : ''}
           ${r.servings ? `<span class="pill">Serves ${r.servings}</span>` : ''}
@@ -1493,18 +1552,18 @@ function renderRecipes() {
     card.querySelector('.recipe-title').textContent = r.title;
     card.querySelector('.recipe-check').addEventListener('click', (e) => {
       e.stopPropagation();
-      togglePick(p.recipeId);
+      togglePick(idx);
     });
-    card.querySelector('.recipe-body').addEventListener('click', () => showRecipeDetail(r.id));
+    card.querySelector('.recipe-body').addEventListener('click', () => showRecipeDetail(p.recipe, { pickIndex: idx }));
     list.appendChild(card);
-  }
+  });
 }
 
 function renderLibrary() {
   document.getElementById('cntLib').textContent = `(${state.inspirations.length})`;
   const list = document.getElementById('libList');
   if (state.inspirations.length === 0) {
-    list.innerHTML = '<div class="hint" style="padding:6px 2px; color:var(--text-mute); font-size:13px;">Empty — add a recipe URL above.</div>';
+    list.innerHTML = '<div class="hint" style="padding:6px 2px; color:var(--text-mute); font-size:13px;">Empty — add a recipe URL above. Claude needs a few examples to learn your taste before it can suggest new ones.</div>';
     return;
   }
   list.innerHTML = '';
@@ -1519,8 +1578,8 @@ function renderLibrary() {
       </div>
     `;
     row.querySelector('.library-item-title').textContent = r.title;
-    row.querySelector('.library-item-title').addEventListener('click', () => showRecipeDetail(r.id));
-    row.querySelector('[data-act=view]').addEventListener('click', () => showRecipeDetail(r.id));
+    row.querySelector('.library-item-title').addEventListener('click', () => showRecipeDetail(r));
+    row.querySelector('[data-act=view]').addEventListener('click', () => showRecipeDetail(r));
     row.querySelector('[data-act=delete]').addEventListener('click', () => deleteRecipe(r.id));
     list.appendChild(row);
   }
@@ -1607,9 +1666,15 @@ function renderShopping() {
   }
 }
 
-function showRecipeDetail(id) {
-  const r = state.inspirations.find(x => x.id === id);
+function showRecipeDetail(recipe, opts = {}) {
+  // Accept either a recipe object or a library id (back-compat for the library list)
+  const r = (typeof recipe === 'string')
+    ? state.inspirations.find(x => x.id === recipe)
+    : recipe;
   if (!r) return;
+  const inLibrary = state.inspirations.some(x =>
+    (r.id && x.id === r.id) || (r.sourceUrl && x.sourceUrl === r.sourceUrl)
+  );
   document.getElementById('rdTitle').textContent = r.title;
   const body = document.getElementById('rdBody');
   const meta = [];
@@ -1618,6 +1683,14 @@ function showRecipeDetail(id) {
   if (r.servings) meta.push(`<span class="pill">Serves ${r.servings}</span>`);
   body.innerHTML = `
     ${meta.length ? `<div class="recipe-detail-meta">${meta.join('')}</div>` : ''}
+    ${!inLibrary ? `
+      <div style="display:flex; gap:8px; margin-bottom:16px;">
+        <button class="btn gold" id="rdSaveLib" style="flex:1;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:14px; height:14px;"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+          Save to inspiration library
+        </button>
+      </div>
+    ` : ''}
     <h3>Ingredients</h3>
     <ul class="ing-list">
       ${(r.ingredients || []).map(i => `
@@ -1640,18 +1713,54 @@ function showRecipeDetail(id) {
       </a>
     ` : ''}
   `;
+  if (!inLibrary) {
+    const saveBtn = document.getElementById('rdSaveLib');
+    if (saveBtn) saveBtn.addEventListener('click', () => saveRecipeToLibrary(r, opts.pickIndex));
+  }
   openModal('modalRecipe');
 }
 
+async function saveRecipeToLibrary(recipe, pickIndex) {
+  // If already there (by sourceUrl), no-op
+  if (recipe.sourceUrl && state.inspirations.some(x => x.sourceUrl === recipe.sourceUrl)) {
+    toast('Already in library', 'success');
+    return;
+  }
+  // Clone with a new id if missing
+  const toSave = {
+    ...recipe,
+    id: recipe.id || ('rec_' + Math.random().toString(36).slice(2, 10) + Date.now().toString(36).slice(-4)),
+    addedAt: recipe.addedAt || new Date().toISOString(),
+  };
+  state.inspirations.unshift(toSave);
+  // Update the pick to mark fromLibrary
+  if (typeof pickIndex === 'number' && state.picks[pickIndex]) {
+    state.picks[pickIndex].fromLibrary = true;
+    state.picks[pickIndex].recipe = toSave;
+  }
+  try {
+    await saveInspirations(`Save to library: ${toSave.title}`);
+    await savePicks('Mark pick as library-sourced');
+    closeModal('modalRecipe');
+    renderLibrary();
+    renderRecipes();
+    toast('Saved to library ✓', 'success');
+  } catch (e) {
+    // Roll back local change on failure
+    state.inspirations = state.inspirations.filter(x => x.id !== toSave.id);
+    toast('Save failed: ' + e.message.slice(0, 180), 'error');
+  }
+}
+
 /* ===== Actions ===== */
-async function togglePick(recipeId) {
-  const p = state.picks.find(x => x.recipeId === recipeId);
+async function togglePick(idx) {
+  const p = state.picks[idx];
   if (!p) return;
   p.checked = !p.checked;
   renderRecipes();
   renderShopping();
   try {
-    await savePicks(`${p.checked ? 'Check' : 'Uncheck'} ${recipeId}`);
+    await savePicks(`${p.checked ? 'Check' : 'Uncheck'} ${p.recipe ? p.recipe.title : ''}`);
   } catch (e) {
     toast('Save failed — will retry on next change', 'error');
   }
@@ -1660,16 +1769,21 @@ async function togglePick(recipeId) {
 async function deleteRecipe(id) {
   const r = state.inspirations.find(x => x.id === id);
   if (!r) return;
-  if (!confirm(`Remove "${r.title}" from the library? (Will also drop it from this week's picks.)`)) return;
+  if (!confirm(`Remove "${r.title}" from the library? (This week's picks won't be affected — they're already independent of the library.)`)) return;
   state.inspirations = state.inspirations.filter(x => x.id !== id);
-  state.picks = state.picks.filter(p => p.recipeId !== id);
+  // Also flip any pick that was marked fromLibrary for this recipe back to "New" (full data is still in the pick)
+  for (const p of state.picks) {
+    if (p.fromLibrary && p.recipe && (p.recipe.id === id || p.recipe.sourceUrl === r.sourceUrl)) {
+      p.fromLibrary = false;
+    }
+  }
   try {
     await saveInspirations(`Remove: ${r.title}`);
-    await savePicks(`Remove ${id} from picks`);
+    await savePicks(`Unmark library-sourced for ${id}`);
     renderRecipes();
     renderLibrary();
     renderShopping();
-    toast('Removed', 'success');
+    toast('Removed from library', 'success');
   } catch (e) {
     toast('Failed: ' + e.message, 'error');
   }
@@ -1797,17 +1911,19 @@ async function handleAddUrl() {
 
 async function handleRefresh() {
   if (state.inspirations.length === 0) {
-    toast('Add some recipes first', 'error'); return;
+    toast('Add 3+ recipes to your library first — Claude needs examples to learn your taste.', 'error'); return;
   }
   const btn = document.getElementById('btnRefresh');
   const orig = btn.innerHTML;
-  btn.innerHTML = '<span class="spinner"></span> Picking…';
+  btn.innerHTML = '<span class="spinner"></span> Searching…';
   btn.disabled = true;
   try {
-    await refreshWeeklyPicks();
+    await refreshWeeklyPicks((msg) => {
+      btn.innerHTML = `<span class="spinner"></span> ${msg}`;
+    });
     renderRecipes();
     renderShopping();
-    toast('Picks refreshed ✓', 'success');
+    toast('New picks ready ✓', 'success');
   } catch (e) {
     toast(e.message.slice(0, 240), 'error');
   } finally {
