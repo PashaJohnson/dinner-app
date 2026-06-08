@@ -1150,6 +1150,32 @@ async function savePicks(message) {
 /* ===== Anthropic API ===== */
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
+// Pull the first balanced JSON value (array or object) out of a model reply,
+// ignoring any prose before/after — even if that prose contains stray [ ] { }
+// characters. Scans bracket depth while respecting quoted strings + escapes.
+function extractJson(raw, open, close) {
+  const s = String(raw == null ? '' : raw);
+  const start = s.indexOf(open);
+  if (start < 0) return null;
+  let depth = 0, inStr = false, esc = false;
+  for (let i = start; i < s.length; i++) {
+    const ch = s[i];
+    if (inStr) {
+      if (esc) esc = false;
+      else if (ch === '\\') esc = true;
+      else if (ch === '"') inStr = false;
+    } else if (ch === '"') {
+      inStr = true;
+    } else if (ch === open) {
+      depth++;
+    } else if (ch === close) {
+      depth--;
+      if (depth === 0) return s.slice(start, i + 1);
+    }
+  }
+  return null; // unbalanced — no complete value found
+}
+
 async function callClaude(systemPrompt, userPrompt, opts = {}) {
   if (!state.cfg.anthropic) throw new Error('Anthropic API key not set');
   const { maxTokens = 4096, tools = null, model = ANTHROPIC_MODEL, maxRetries = 2 } = opts;
@@ -1492,10 +1518,7 @@ async function parseRecipeWithClaude(url, html) {
   const text = stripHtml(html).slice(0, 24000);
   const user = `URL: ${url}\n\nPAGE TEXT (may include JSON-LD metadata at top):\n\n${text}`;
   const raw = await callClaude(RECIPE_PARSE_SYS, user, { maxTokens: 3072, model: ANTHROPIC_LIGHT_MODEL });
-  let jsonStr = raw.trim();
-  const firstBrace = jsonStr.indexOf('{');
-  const lastBrace = jsonStr.lastIndexOf('}');
-  if (firstBrace >= 0 && lastBrace > firstBrace) jsonStr = jsonStr.slice(firstBrace, lastBrace + 1);
+  const jsonStr = extractJson(raw, '{', '}') || raw.trim();
   let parsed;
   try { parsed = JSON.parse(jsonStr); }
   catch (e) { throw new Error('Claude returned non-JSON output'); }
@@ -1617,14 +1640,9 @@ Search the web and return ${needed} recipe URLs as JSON.`;
     tools,
     model: ANTHROPIC_LIGHT_MODEL,
   });
-  // Extract JSON array robustly
-  let jsonStr = raw.trim();
-  const firstBracket = jsonStr.indexOf('[');
-  const lastBracket = jsonStr.lastIndexOf(']');
-  if (firstBracket < 0 || lastBracket <= firstBracket) {
-    throw new Error('Claude did not return a JSON array of URLs');
-  }
-  jsonStr = jsonStr.slice(firstBracket, lastBracket + 1);
+  // Extract the first balanced JSON array, ignoring any prose Claude tacks on
+  const jsonStr = extractJson(raw, '[', ']');
+  if (!jsonStr) throw new Error('Claude did not return a JSON array of URLs');
   let parsed;
   try {
     parsed = JSON.parse(jsonStr);
