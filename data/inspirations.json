@@ -1,6 +1,98 @@
 {
   "recipes": [
     {
+      "id": "rec_i9d7hz0kcx6k",
+      "title": "Tortellini Pasta Salad",
+      "sourceUrl": "https://www.lastingredient.com/tortellini-pasta-salad/",
+      "ingredients": [
+        {
+          "item": "refrigerated tortellini",
+          "quantity": "1 pound",
+          "section": "Pantry"
+        },
+        {
+          "item": "sun dried tomatoes",
+          "quantity": "1 cup, roughly chopped, oil drained",
+          "section": "Produce"
+        },
+        {
+          "item": "pitted olive mix",
+          "quantity": "1 cup, halved",
+          "section": "Other"
+        },
+        {
+          "item": "baby spinach",
+          "quantity": "2 cups",
+          "section": "Produce"
+        },
+        {
+          "item": "red onion",
+          "quantity": "1/2 small, thinly sliced",
+          "section": "Produce"
+        },
+        {
+          "item": "toasted pine nuts",
+          "quantity": "1/4 cup",
+          "section": "Pantry"
+        },
+        {
+          "item": "parsley",
+          "quantity": "1 tablespoon, chopped",
+          "section": "Produce"
+        },
+        {
+          "item": "Parmesan",
+          "quantity": "1/4 cup, grated",
+          "section": "Dairy & Eggs"
+        },
+        {
+          "item": "basil pesto",
+          "quantity": "3 tablespoons",
+          "section": "Produce"
+        },
+        {
+          "item": "dried oregano",
+          "quantity": "1/2 teaspoon",
+          "section": "Spices & Seasonings"
+        },
+        {
+          "item": "red pepper flakes",
+          "quantity": "1 pinch",
+          "section": "Spices & Seasonings"
+        },
+        {
+          "item": "kosher salt",
+          "quantity": "1/2 teaspoon",
+          "section": "Spices & Seasonings"
+        },
+        {
+          "item": "black pepper",
+          "quantity": "1/2 teaspoon",
+          "section": "Spices & Seasonings"
+        },
+        {
+          "item": "red wine vinegar",
+          "quantity": "2 tablespoons",
+          "section": "Condiments & Sauces"
+        },
+        {
+          "item": "olive oil",
+          "quantity": "1/4 cup",
+          "section": "Pantry"
+        }
+      ],
+      "steps": [
+        "Cook the tortellini in salted boiling water 1 minute less than the recommended cook time on package instructions. Drain in a colander and rinse with cold water.",
+        "Combine the tortellini, sun dried tomatoes, olives, spinach, pine nuts, parsley and Parmesan in a large bowl.",
+        "For the vinaigrette, whisk together the pesto, oregano, red pepper flakes, salt, pepper, vinegar and olive oil in a small bowl.",
+        "Drizzle the vinaigrette into the salad. Toss to combine."
+      ],
+      "servings": 6,
+      "cuisineType": "Italian",
+      "mainProtein": "Vegetarian",
+      "addedAt": "2026-06-08T00:08:12.284Z"
+    },
+    {
       "id": "rec_3hxbdjmbb1ef",
       "title": "Chickpea Spinach Stuffed Sweet Potatoes",
       "sourceUrl": "https://www.lastingredient.com/chickpea-spinach-stuffed-sweet-potatoes/#wprm-recipe-container-9008",
