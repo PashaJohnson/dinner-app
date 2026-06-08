@@ -3,510 +3,478 @@
   "picks": [
     {
       "recipe": {
-        "id": "rec_f18u9ld4j3j6",
-        "title": "Our Favorite Chicken Curry",
-        "sourceUrl": "https://www.inspiredtaste.net/48607/chicken-curry/",
+        "id": "rec_onwcgtee2ht9",
+        "title": "Indian Spice Rubbed Chicken Thighs",
+        "sourceUrl": "https://culinaryginger.com/indian-spice-rubbed-chicken-thighs/",
         "ingredients": [
           {
-            "item": "chicken thighs or chicken breast",
-            "quantity": "1 ½ pounds, boneless, skinless",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "fine sea salt",
-            "quantity": "1 ½ teaspoons, divided",
+            "item": "mild yellow curry powder",
+            "quantity": "2 teaspoons",
             "section": "Spices & Seasonings"
           },
           {
-            "item": "ground cumin",
-            "quantity": "1 teaspoon, divided",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "ground coriander",
-            "quantity": "3/4 teaspoon, divided",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "ground turmeric",
-            "quantity": "1/2 teaspoon, divided",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "fresh ground black pepper",
-            "quantity": "1/4 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "cayenne pepper",
-            "quantity": "1/8 to 1/4 teaspoon, optional for heat",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "garlic",
-            "quantity": "6 medium cloves, peeled",
+            "item": "ground ginger",
+            "quantity": "1 teaspoon",
             "section": "Produce"
           },
           {
-            "item": "fresh ginger",
-            "quantity": "1-inch cube, peeled",
-            "section": "Produce"
-          },
-          {
-            "item": "onion",
-            "quantity": "1 medium, roughly chopped",
-            "section": "Produce"
-          },
-          {
-            "item": "water",
-            "quantity": "1 ½ cups",
-            "section": "Beverages"
-          },
-          {
-            "item": "vegetable oil or ghee",
-            "quantity": "3 tablespoons",
-            "section": "Pantry"
-          },
-          {
-            "item": "tomato paste",
-            "quantity": "2 tablespoons",
-            "section": "Pantry"
-          },
-          {
-            "item": "full-fat plain unsweetened yogurt",
-            "quantity": "4 tablespoons",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "Garam Masala",
+            "item": "garlic powder",
             "quantity": "1 teaspoon",
             "section": "Spices & Seasonings"
           },
           {
-            "item": "heavy cream",
-            "quantity": "3 tablespoons",
-            "section": "Dairy & Eggs"
+            "item": "¼ teaspoon ground cardamom",
+            "quantity": "",
+            "section": "Spices & Seasonings"
           },
           {
-            "item": "cilantro leaves",
-            "quantity": "Handful, chopped, optional for serving",
-            "section": "Produce"
+            "item": "paprika",
+            "quantity": "1 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "salt",
+            "quantity": "1 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "vegetable oil",
+            "quantity": "2 teaspoons",
+            "section": "Pantry"
+          },
+          {
+            "item": "chicken thighs (skin on, bone-in)",
+            "quantity": "4",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "vegetable oil",
+            "quantity": "1 tablespoon",
+            "section": "Pantry"
           }
         ],
         "steps": [
-          "Cut the chicken into 1-inch pieces and add them to a bowl. You can leave the chicken whole if you prefer or if you are using bone-in pieces.",
-          "Scatter 1/2 teaspoon salt, 1/2 teaspoon ground cumin, 1/4 teaspoon ground coriander, 1/4 teaspoon ground turmeric, 1/4 teaspoon black pepper, and optional cayenne pepper over the chicken. Toss well and set aside to marinate for at least 20 minutes.",
-          "The chicken can be left to marinate for up to 24 hours; it should be covered and stored in the refrigerator.",
-          "Add garlic, ginger, onion, and 1/2 cup of water to a blender or food processor. Blend until mostly smooth. You can also use an immersion blender with a cup attachment.",
-          "Heat the oil or ghee in a wide skillet (with a lid) over medium-high heat. Arrange the marinated chicken in the pan in one layer and brown on both sides, 2 to 3 minutes per side. Remove the chicken from the pan and place the skillet back on the heat.",
-          "Add the onion-ginger mixture and cook, stirring often, until all the water evaporates, about 5 minutes.",
-          "Stir in the remaining 1/2 teaspoon ground cumin, 1/2 teaspoon coriander, and 1/4 teaspoon turmeric over the onion-ginger mixture and cook for about 20 seconds. Stir in 2 tablespoons of tomato paste, turn the heat down to medium-low, and cook another minute.",
-          "Add the yogurt, a tablespoon at a time, stirring it into the sauce before adding any more. Adding the yogurt slowly prevents it from curdling.",
-          "Return the chicken pieces and any accumulated juices to the pan, along with the remaining 1 cup of water and 3/4 teaspoon of salt. Bring to a boil, turn the heat down to a simmer, and cover with a lid. Simmer, covered, for 20 minutes.",
-          "Remove the lid and stir in the Garam Masala and cream. Taste the sauce and add the final 1/4 teaspoon of salt if you feel that it is needed (we almost always add it). Turn the heat back to medium-high and cook, stirring occasionally, until the sauce has reduced and thickened, 3 to 5 minutes. Serve with fresh cilantro scattered on top."
+          "Preheat your oven to 400°F (200°C).",
+          "In a small bowl, combine all the spices and salt; mix well.",
+          "If the chicken skin is wrapped too far under the thigh, trim it off for a neater finish. Coat the thighs with 2 teaspoons of oil, then rub the spice mixture onto all sides of the chicken. Pro-Tip: Gently lift the skin and rub some spices underneath, being careful not to peel the skin back entirely.",
+          "Add 1 tablespoon of oil to an oven-proof sauté pan over medium heat. When the oil begins to ripple, place the thighs in the pan skin-side down. Cook for 8–10 minutes until the skin is golden and crispy.",
+          "Turn the thighs over and cook for an additional 5 minutes to seal the other side.",
+          "Transfer the pan to the oven and roast for about 10 minutes. The chicken is ready when the internal temperature reaches 180°F (82°C), though timing may vary slightly depending on the size of the thighs.",
+          "Serve warm with your favorite side dish."
         ],
         "servings": 4,
         "cuisineType": "Indian",
         "mainProtein": "Chicken",
-        "addedAt": "2026-06-08T00:41:00.066Z"
+        "addedAt": "2026-06-08T00:56:05.037Z"
       },
       "checked": false,
       "fromLibrary": false
     },
     {
       "recipe": {
-        "id": "rec_v0ympcwej415",
-        "title": "Dahi Chicken Recipe (Yogurt Chicken Curry)",
-        "sourceUrl": "https://www.whiskaffair.com/dahi-wala-murgh/",
+        "id": "rec_oz2cdlzy2hww",
+        "title": "Mediterranean Baked Fish",
+        "sourceUrl": "https://www.agoudalife.com/mediterranean-baked-fish/",
         "ingredients": [
           {
-            "item": "plain yogurt (dahi, curd)",
-            "quantity": "2 cups",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "chicken masala powder",
-            "quantity": "1 tablespoon",
+            "item": "mild white fish fillets (cod used; see post for options - thicker fillets work best)",
+            "quantity": "1 pound",
             "section": "Meat & Seafood"
-          },
-          {
-            "item": "coriander powder",
-            "quantity": "2 teaspoons",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "½ teaspoon turmeric powder",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "Kashmiri red chili powder",
-            "quantity": "2 teaspoons",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "garam masala powder",
-            "quantity": "1 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "all-purpose flour (maida)",
-            "quantity": "1 tablespoon",
-            "section": "Pantry"
           },
           {
             "item": "salt (or to taste)",
-            "quantity": "2 teaspoon",
+            "quantity": "1/2 teaspoon",
             "section": "Spices & Seasonings"
           },
           {
-            "item": "skinless bone-in chicken (cut into 1 and ½ inch pieces, rinsed)",
-            "quantity": "1 kilogram",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "cooking oil (I prefer mustard oil)",
-            "quantity": "5 tablespoons",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "whole cloves (laung)",
-            "quantity": "3-4",
+            "item": "black pepper (or to taste)",
+            "quantity": "1/4 teaspoon",
             "section": "Spices & Seasonings"
           },
           {
-            "item": "whole black peppercorns (kali mirch)",
-            "quantity": "5-6",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "whole black cardamoms (badi elaichi)",
-            "quantity": "2",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "inch piece of cinnamon stick (dalchini)",
-            "quantity": "1",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "dry red chilies (stalks removed)",
-            "quantity": "2-3",
-            "section": "Produce"
-          },
-          {
-            "item": "and ½ cups thinly sliced onions",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "ginger garlic paste",
-            "quantity": "2 teaspoons",
-            "section": "Produce"
-          },
-          {
-            "item": "lime juice",
-            "quantity": "1 tablespoon",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "chopped cilantro (fresh coriander leaves)",
+            "item": "olive oil (divided)",
             "quantity": "2 tablespoons",
-            "section": "Spices & Seasonings"
+            "section": "Pantry"
+          },
+          {
+            "item": "butter",
+            "quantity": "1 tablespoon",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "half lemon (juice and zest)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "cherry or grape tomatoes (halves)",
+            "quantity": "1 1/2 cups",
+            "section": "Produce"
+          },
+          {
+            "item": "garlic (grated)",
+            "quantity": "2 cloves",
+            "section": "Produce"
+          },
+          {
+            "item": "fresh dill",
+            "quantity": "1 tablespoon",
+            "section": "Produce"
+          },
+          {
+            "item": "capers (or more to taste)",
+            "quantity": "3 tablespoons",
+            "section": "Other"
+          },
+          {
+            "item": "sliced olives (kalamata, green or combination)",
+            "quantity": "1/4 cup",
+            "section": "Other"
+          },
+          {
+            "item": "dry white wine",
+            "quantity": "1/4 cup",
+            "section": "Beverages"
           }
         ],
         "steps": [
-          "Whisk yogurt with chicken masala powder, coriander powder, turmeric powder, chili powder, garam masala powder, all-purpose flour, and salt. Keep it aside.",
-          "Heat oil in a pan over medium-high heat.",
-          "Lightly crush cloves, black peppercorns, black cardamoms, and cinnamon stick in a mortar and pestle.",
-          "When the oil is hot, add the crushed whole spices and dry red chilies and saute for 5-6 seconds.",
-          "Add onions and cook until they turn light brown (5-6 minutes), stirring frequently.",
-          "Add ginger garlic paste and cook until the onions turn dark brown (5-6 minutes), stirring frequently.",
-          "Now add the chicken to the pan and cook for 5-6 minutes, stirring occasionally.",
-          "Add the yogurt mixture and mix until well combined.",
-          "Reduce the heat to medium-low.",
-          "Cover the pan with a lid and cook for 35-40 minutes, stirring occasionally.",
-          "Add some water if the curry looks thick. Check for salt and add more if needed.",
-          "Add lime juice and mix well.",
-          "Garnish with chopped cilantro and serve hot."
+          "Preheat the oven to 400 degrees.",
+          "To a small bowl, melt 1 tablespoon of butter then add 1 tablespoon of the olive oil, lemon juice and zest from HALF of one lemon, grated garlic, finely choppd dill and wine. Stir to combine then set aside.",
+          "Pat the fish dry using paper towels then season with salt and pepper.",
+          "Add 1 tablespoon of oil to a large, oven-safe skillet over medium to medium-high heat swirling the skillet so the oil coats the bottom evenly. NOTE: if you don't have an oven safe skillet, sear in any skillet then transfer fish to a baking dish for the baking portion of the recipe.",
+          "Once the oil is hot (not smoking), carefully add the fish to the skillet and cook undisturbed 2-3 minutes or until it starts to caramelize then turn it over.",
+          "Scatter halved tomatoes, capers and (optional) olives around the fish in the skillet then remove from the heat source and pour the reserved olive oil mixture over the top of the fish and vegetables.",
+          "Bake 8-12 minutes or until the fish flakes easily with a fork. Remove from the oven and serve right away."
         ],
-        "servings": 6,
-        "cuisineType": "Indian",
-        "mainProtein": "Chicken",
-        "addedAt": "2026-06-08T00:41:00.713Z"
+        "servings": 2,
+        "cuisineType": "Mediterranean",
+        "mainProtein": "Fish",
+        "addedAt": "2026-06-08T00:56:05.168Z"
       },
       "checked": false,
       "fromLibrary": false
     },
     {
       "recipe": {
-        "id": "rec_yvliul17j4il",
-        "title": "Instant Pot Chicken Curry (Mom's Homestyle 30-Minute Recipe)",
-        "sourceUrl": "https://spicecravings.com/chicken-curry-recipe",
+        "id": "rec_rym8g5vy2hi6",
+        "title": "Crispy Spice Rubbed Chicken Thighs",
+        "sourceUrl": "https://www.fifteenspatulas.com/crispy-spice-rubbed-chicken-thighs/",
         "ingredients": [
           {
-            "item": "chicken thighs, boneless & skinless ((1.25-1.5 lbs.))",
-            "quantity": "1.5 lbs.",
+            "item": "or 3 lb package skin-on bone-in chicken thighs (about 5 pieces)",
+            "quantity": "2",
             "section": "Meat & Seafood"
           },
           {
-            "item": "ghee ((or oil))",
-            "quantity": "1 tbsp",
-            "section": "Dairy & Eggs"
+            "item": "ground ginger",
+            "quantity": "1 tsp",
+            "section": "Produce"
           },
           {
-            "item": "cumin seeds",
+            "item": "ground chipotle pepper",
+            "quantity": "1 tsp",
+            "section": "Produce"
+          },
+          {
+            "item": "yellow curry powder",
+            "quantity": "2 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "paprika",
             "quantity": "1 tsp",
             "section": "Spices & Seasonings"
           },
           {
-            "item": "onion, chopped ((1 medium onion))",
-            "quantity": "1 cup",
-            "section": "Produce"
-          },
-          {
-            "item": "ginger (1 inch, grated or ground)",
-            "quantity": "2 tsp",
-            "section": "Produce"
-          },
-          {
-            "item": "garlic (2-3 cloves, grated or ground)",
-            "quantity": "2 tsp",
-            "section": "Produce"
-          },
-          {
-            "item": "salt (adjust to taste)",
-            "quantity": "1 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "turmeric",
-            "quantity": "1/2 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "kashmiri red chili powder ((or paprika))",
+            "item": "garlic powder",
             "quantity": "1 tsp",
             "section": "Spices & Seasonings"
           },
           {
             "item": "ground coriander",
-            "quantity": "2 tsp",
+            "quantity": "1/2 tsp",
             "section": "Spices & Seasonings"
           },
           {
-            "item": "garam masala ((add 1 tsp for mild flavor))",
-            "quantity": "2 tsp",
+            "item": "ground cardamom",
+            "quantity": "1/4 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "ground cloves",
+            "quantity": "1/8 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "ground cayenne pepper",
+            "quantity": "1/4 tsp",
             "section": "Spices & Seasonings"
           },
           {
             "item": "ground cumin",
-            "quantity": "1 tsp",
+            "quantity": "1/2 tsp",
             "section": "Spices & Seasonings"
           },
           {
-            "item": "roma tomato, de-seeded and chopped ((or 1 tbsp tomato paste))",
-            "quantity": "1",
+            "item": "sea salt",
+            "quantity": "1.5 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "olive oil",
+            "quantity": "",
             "section": "Pantry"
-          },
-          {
-            "item": "plain greek yogurt",
-            "quantity": "1/4 cup",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "water (Add as needed)",
-            "quantity": "1/4-1/2 cup",
-            "section": "Beverages"
-          },
-          {
-            "item": "crushed cardamom",
-            "quantity": "½ tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "chopped cilantro",
-            "quantity": "¼ cup",
-            "section": "Produce"
-          },
-          {
-            "item": "basmati rice (rinsed 2-3 times)",
-            "quantity": "2 cups",
-            "section": "Pantry"
-          },
-          {
-            "item": "water ((or 2.5 cups for softer texture))",
-            "quantity": "2.25 cups",
-            "section": "Beverages"
-          },
-          {
-            "item": "ghee (or oil)",
-            "quantity": "2 tsp",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "cumin seeds",
-            "quantity": "1 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "salt (adjust to taste)",
-            "quantity": "1 tsp",
-            "section": "Spices & Seasonings"
           }
         ],
         "steps": [
-          "Turn on Saute (high). When display reads 'hot', add ghee or oil, and cumin seeds.",
-          "When cumin seeds begin to sizzle, add ginger, garlic and chopped onion. Saute for 1 minute, then cover with a lid and cook for 2 mins.",
-          "Add chicken, salt, turmeric, red chili, coriander, cumin, garam masala and plain greek yogurt. Stir and saute for another 2 mins.",
-          "Add chopped tomatoes. If you prefer a smoother curry, you can add tomato paste or pureed tomato instead of chopped. Depending on how much liquid the chicken has released by now, add 1/4-1/2 cup of water. (adjust water quantity for an 8qt cooker)",
-          "To make pot-in-pot rice, place a trivet in the main pot. Assemble rinsed rice, water, cumin seeds, salt and oil in an oven safe bowl and place it on top of the trivet. Skip this step if not making rice.",
-          "Close the lid, vent to sealing position in DUO models. Pressure cook for 6 mins.",
-          "After pressure cooking, wait 5 mins and then carefully release the pressure manually (NPR 5, then QR). You can do that by turning the pressure knob to 'Venting' position in Instant Pot DUO, or push down the pressure valve in Instant Pot ULTRA.",
-          "Open lid after the pin drops. Remove rice bowl and fluff with a fork. Add crushed or ground cardamom and chopped cilantro. If the sauce appears too thin, reduce it on saute mode for 2-4 mins. It will thicken as it simmers. Serve warm with rice, naan or roti!"
+          "Preheat the oven to 400 degrees F.",
+          "Stir to combine the ginger, chipotle pepper, curry powder, paprika, garlic powder, coriander, cardamom, cloves, cayenne, cumin, and salt.",
+          "Trim the excess fat from the chicken thighs (any part that overhangs the main piece). Rub the chicken thighs all over with the spice rub.",
+          "Heat an ovenproof skillet over medium heat and add enough olive oil to coat the bottom of the pan (about 2 tbsp). Cook the chicken thighs skin side down (in a single layer) for 10 minutes, until the skin gets crispy (and if the skin isn’t golden brown and crispy after 10 minutes, cook it for a few minutes longer). Flip the chicken and cook for another 5 minutes, then transfer the skillet to the oven to cook for additional 10-15 minutes, until the chicken is cooked through and has reached an internal temperature of 180 degrees F. Serve and enjoy!"
         ],
-        "servings": 6,
-        "cuisineType": "Indian",
+        "servings": 3,
+        "cuisineType": "American",
         "mainProtein": "Chicken",
-        "addedAt": "2026-06-08T00:41:01.341Z"
+        "addedAt": "2026-06-08T00:56:04.638Z"
       },
       "checked": false,
       "fromLibrary": false
     },
     {
       "recipe": {
-        "id": "rec_ksyacwjnj53p",
-        "title": "Homestyle Rustic Indian Chicken Curry",
-        "sourceUrl": "https://signatureconcoctions.com/recipes/rustic-indian-chicken-curry-two-ways/",
+        "id": "rec_owyjed012id9",
+        "title": "Mediterranean Fish Bake",
+        "sourceUrl": "https://kathleenashmore.com/mediterranean-fish-bake/",
         "ingredients": [
           {
-            "item": "plain, unsweetened Greek yogurt",
-            "quantity": "¼ cup",
-            "section": "Dairy & Eggs"
+            "item": "white fish fillet such as cod or halibut ((1 to 1 ½ in thickness))",
+            "quantity": "1 ½ lb",
+            "section": "Meat & Seafood"
           },
           {
-            "item": "ginger-garlic paste",
-            "quantity": "1 tbsp",
-            "section": "Produce"
-          },
-          {
-            "item": "turmeric",
-            "quantity": "1 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "regular Indian red chili powder, or to taste",
-            "quantity": "½ tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "garam masala",
-            "quantity": "1 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "salt, to taste",
+            "item": "Kosher salt and ground black pepper",
             "quantity": "",
             "section": "Spices & Seasonings"
           },
           {
-            "item": "(454 g) boneless, skinless chicken thighs, cut into about 1½-inch cubes (see Variations)",
-            "quantity": "1 lb",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "neutral oil of choice",
-            "quantity": "2 tbsp",
+            "item": "Extra virgin olive oil",
+            "quantity": "",
             "section": "Pantry"
           },
           {
-            "item": "mustard seeds",
-            "quantity": "½ tsp",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "cumin seeds",
-            "quantity": "½ tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "asafetida",
-            "quantity": "¼ tsp",
-            "section": "Other"
-          },
-          {
-            "item": "medium onion, finely chopped",
+            "item": "lemon",
             "quantity": "1",
             "section": "Produce"
           },
           {
-            "item": "Salt, as needed",
+            "item": "cherry tomatoes (halved)",
+            "quantity": "8 ounces",
+            "section": "Produce"
+          },
+          {
+            "item": "pitted olives (halved (I used a combination of kalamata olives and green olives))",
+            "quantity": "3 ounces",
+            "section": "Other"
+          },
+          {
+            "item": "shallot (minced)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "to 5 garlic cloves (minced)",
+            "quantity": "4",
+            "section": "Produce"
+          },
+          {
+            "item": "fresh thyme leaves",
+            "quantity": "1 tablespoon",
+            "section": "Produce"
+          },
+          {
+            "item": "dried oregano",
+            "quantity": "2 teaspoons",
+            "section": "Spices & Seasonings"
+          }
+        ],
+        "steps": [
+          "Heat the oven to 400 degrees F.",
+          "Pat the fish dry and season with salt and pepper on both sides. Brush a 9 ½ x 13-inch baking dish with a little extra virgin olive oil and add half of the cut cherry tomatoes. Place the fish on top. Squeeze juice from ½ of the lemon all over the top of the fish.",
+          "In a medium mixing bowl, combine the tomatoes, olives, shallot, garlic, thyme, and oregano. Add a very small pinch of salt and ground pepper. Add a generous drizzle (about 3 tablespoons extra virgin olive oil) and toss to combine.",
+          "Pour the tomato and olive mixture over the fish.",
+          "Bake in the heated oven for 15 to 20 minutes (this will depend on the thickness of your fish).",
+          "Remove from the heat, squeeze the other half of the lemon on top."
+        ],
+        "servings": 4,
+        "cuisineType": "Mediterranean",
+        "mainProtein": "Fish",
+        "addedAt": "2026-06-08T00:56:05.757Z"
+      },
+      "checked": false,
+      "fromLibrary": false
+    },
+    {
+      "recipe": {
+        "id": "rec_f0t10dsj2hux",
+        "title": "Curry Braised Chicken Thighs",
+        "sourceUrl": "https://www.fromachefskitchen.com/curry-braised-chicken-thighs/",
+        "ingredients": [
+          {
+            "item": "chicken thighs on the bone (skin removed if desired)",
+            "quantity": "4",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "Salt and freshly ground black pepper",
             "quantity": "",
             "section": "Spices & Seasonings"
           },
           {
-            "item": "ginger-garlic paste",
-            "quantity": "1 tbsp",
+            "item": "Cayenne pepper",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "canola oil (or as needed)",
+            "quantity": "2 tablespoons",
+            "section": "Pantry"
+          },
+          {
+            "item": "small onion (halved and thinly sliced)",
+            "quantity": "1",
             "section": "Produce"
           },
           {
-            "item": "turmeric",
-            "quantity": "½ tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "garam masala",
-            "quantity": "1 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "medium tomatoes, puréed or finely chopped",
+            "item": "medium carrots (quartered lengthwise, then cut into 2-inch pieces)",
             "quantity": "2",
             "section": "Produce"
           },
           {
-            "item": "water, optional, if needed",
-            "quantity": "¼ cup",
-            "section": "Beverages"
+            "item": "curry powder (such as Madras, or to taste and tolerance)",
+            "quantity": "1 tablespoon",
+            "section": "Spices & Seasonings"
           },
           {
-            "item": "to 10 sprigs fresh cilantro, leaves roughly chopped, for garnishing",
-            "quantity": "8",
+            "item": "minced ginger",
+            "quantity": "1 tablespoon",
+            "section": "Produce"
+          },
+          {
+            "item": "garlic (minced)",
+            "quantity": "4 cloves",
+            "section": "Produce"
+          },
+          {
+            "item": "(14.5-ounce) diced tomatoes (undrained)",
+            "quantity": "1 can",
+            "section": "Produce"
+          },
+          {
+            "item": "chicken broth",
+            "quantity": "1 cup",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "heavy cream (or canned unsweetened coconut milk)",
+            "quantity": "1/2 cup",
+            "section": "Pantry"
+          },
+          {
+            "item": "chopped cilantro (plus sprigs for garnish)",
+            "quantity": "1/4 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "Cooked brown basmati rice",
+            "quantity": "",
+            "section": "Pantry"
+          },
+          {
+            "item": "Plain yogurt (optional)",
+            "quantity": "",
+            "section": "Dairy & Eggs"
+          }
+        ],
+        "steps": [
+          "Season chicken thighs generously with salt, black pepper and cayenne pepper.",
+          "Heat oil in a deep skillet or sauté pan over medium-high heat. Add chicken, skin side down, and brown 2-3 minutes per side, or until browned. Transfer to a plate.",
+          "Add more oil if necessary. Add the onion then reduce heat to medium-low and cook 4-5 minutes or until beginning to soften.",
+          "Add carrot and cook 2-3 minutes or until lightly browned in places.",
+          "Add curry powder, ginger and garlic and cook very briefly, about 15 seconds.",
+          "Add tomatoes, chicken broth and cream or coconut milk. Return chicken thighs to the pan.",
+          "Bring to a boil, reduce heat to low, cover slightly and simmer 25-30 minutes or until chicken is cooked through to 165 degrees.",
+          "Adjust seasoning if desired. Stir in cilantro.",
+          "Serve with brown basmati rice. Garnish with cilantro sprigs and plain yogurt if desired."
+        ],
+        "servings": 2,
+        "cuisineType": "Indian",
+        "mainProtein": "Chicken",
+        "addedAt": "2026-06-08T00:56:05.097Z"
+      },
+      "checked": false,
+      "fromLibrary": false
+    },
+    {
+      "recipe": {
+        "id": "rec_xxcpmj9o2i14",
+        "title": "Lemon Herb Baked Fish Recipe",
+        "sourceUrl": "https://coleycooks.com/herb-roasted-fish/",
+        "ingredients": [
+          {
+            "item": "white fish fillets ((about 6 ounces each), such as cod, mahi mahi, barramundi, sea bass, grouper, or tilefish)",
+            "quantity": "4",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "extra virgin olive oil (plus more for drizzling)",
+            "quantity": "3 tablespoons",
+            "section": "Pantry"
+          },
+          {
+            "item": "Kosher salt and freshly cracked black pepper (to taste)",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "Meyer lemons (1 thinly sliced; 1 zested and juiced)",
+            "quantity": "2",
+            "section": "Produce"
+          },
+          {
+            "item": "2–3 sprigs fresh rosemary (plus 1 teaspoon finely minced)",
+            "quantity": "",
+            "section": "Produce"
+          },
+          {
+            "item": "2–3 sprigs fresh thyme (plus 1 teaspoon finely minced)",
+            "quantity": "",
+            "section": "Produce"
+          },
+          {
+            "item": "garlic clove (finely minced or grated)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "fresh parsley (finely minced)",
+            "quantity": "1 tablespoon",
             "section": "Produce"
           }
         ],
         "steps": [
-          "Combine all the ingredients for the marinade in a medium bowl and toss well to ensure the chicken pieces are well and evenly coated.",
-          "Cover with a lid or plastic wrap and let is sit on the counter for 30 minutes or so while you prepare the curry (see FAQs & Notes for more information).",
-          "In a medium pot or a deep sauté pan, heat oil over medium heat and add the oil. When the oil starts shimmering add in the cumin and mustard seeds along with asafetida.",
-          "When the seeds sizzle and the asafetida froths, add the onion. Season the onion with salt to help it soften. Sauté for 4-5 minutes, stirring it frequently, until it is translucent.",
-          "Stir in the ginger-garlic paste and sauté for 1 minute.",
-          "Stir in the turmeric and garam masala. Sauté the mixture for about 30 seconds to let the spices bloom.",
-          "Add the puréed or chopped tomatoes. Season the mixture with additional salt and stir the ingredients to combine them well.",
-          "Cook uncovered for 5-7 minutes on medium-low heat till most of the moisture is absorbed and you can see tiny drops of oil floating on the surface.",
-          "Toss in the marinated chicken and mix well to combine.",
-          "Simmer covered for 10-12 minutes, till the chicken is fully cooked.",
-          "Continue simmering uncovered for additional 8-10 minutes to let the excess moisture absorb and evaporate, while stirring occasionally.",
-          "Garnish with cilantro. Serve immediately (see FAQs & Notes for storing leftovers or meal prepping information).",
-          "Place the inner pot in the Instant Pot and press the Sauté button.",
-          "Add the oil along with cumin and mustard seeds along with asafetida.",
-          "When the seeds splutter, add the onions. Sprinkle some salt and sauté till the onion turns light brown in color, for about 5-7 minutes.",
-          "Stir in the ginger- garlic paste and sauté the mixture for 1 minute.",
-          "Add the turmeric and garam masala and sauté the mixture for 30 seconds to let the spices bloom.",
-          "Mix in the tomatoes and stir to combine the ingredients. Deglaze the bottom of the pot by scraping it with a wooden spoon. This is an important step; if the bottom of the pot is not deglazed well, the “burn” error might appear during the pressure-cooking stage.",
-          "Cook the mixture for 5 minutes, until the tomatoes lose most of their moisture.",
-          "Press the Cancel button to turn off the Instant Pot.",
-          "Add the marinated chicken along with 1/4 cup of water.",
-          "Toss the chicken with the onion-tomato mixture and stir to combine the ingredients.",
-          "Close the lid and turn the steam release valve to the sealing position. Press the Poultry/ Manual/ Pressure Cook button and set the time for 10 minutes on high pressure.",
-          "When cooking is complete, open the lid after the pressure has released naturally. It will take about 15 -20 minutes to depressurize.",
-          "Using a slotted spoon, transfer the cooked chicken to a clean medium bowl. Press the Sauté button and bring the sauce to a boil. Stir the curry continuously for 5 to 7 minutes, until most of the moisture is evaporated and the oil has separated from the sauce. Transfer the chicken back to the reduced curry and toss to combine it well with the curry. Press the Cancel button to turn off the Instant Pot.",
-          "Garnish with cilantro/coriander and serve hot with rotis or rice."
+          "Preheat the oven to 425°F (220°C). Pat each fillet very dry with paper towels.",
+          "Line a baking sheet with parchment paper and drizzle it lightly with olive oil. Place the fillets on top.",
+          "Drizzle each fillet with a bit more olive oil, then season both sides with salt and pepper.",
+          "Layer lemon slices over each fillet, then scatter the rosemary and thyme sprigs on top. Drizzle again with a little olive oil.",
+          "Bake for 8–12 minutes, depending on the thickness of the fillets, or until the flesh turns opaque. Do not overcook.",
+          "While the fish is baking, whisk together the Meyer lemon zest and juice, garlic, minced rosemary, thyme, parsley, and 3 tablespoons of olive oil in a small bowl. Season with salt and pepper to taste, then set aside.",
+          "Once the fish is done, remove the lemon slices and herb sprigs. Carefully transfer the fillets to serving plates using a spatula.",
+          "Spoon the Meyer lemon vinaigrette over the top of each fillet. Serve immediately with extra vinaigrette and Meyer lemon wedges on the side."
         ],
-        "servings": null,
-        "cuisineType": null,
-        "mainProtein": "Chicken",
-        "addedAt": "2026-06-08T00:41:02.101Z"
+        "servings": 4,
+        "cuisineType": "Italian",
+        "mainProtein": "Fish",
+        "addedAt": "2026-06-08T00:56:05.320Z"
       },
       "checked": false,
       "fromLibrary": false
