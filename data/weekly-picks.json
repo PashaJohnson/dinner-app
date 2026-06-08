@@ -568,6 +568,86 @@
       "checked": false,
       "fromLibrary": false,
       "manual": false
+    },
+    {
+      "recipe": {
+        "id": "rec_3hxbdjmbb1ef",
+        "title": "Chickpea Spinach Stuffed Sweet Potatoes",
+        "sourceUrl": "https://www.lastingredient.com/chickpea-spinach-stuffed-sweet-potatoes/#wprm-recipe-container-9008",
+        "ingredients": [
+          {
+            "item": "sweet potatoes",
+            "quantity": "4 medium",
+            "section": "Produce"
+          },
+          {
+            "item": "chickpeas",
+            "quantity": "1 (15 ounce) can, drained and rinsed, any loose skins removed",
+            "section": "Pantry"
+          },
+          {
+            "item": "olive oil",
+            "quantity": "1 tablespoon plus 1 teaspoon, divided",
+            "section": "Pantry"
+          },
+          {
+            "item": "cumin",
+            "quantity": "1 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "kosher salt",
+            "quantity": "1 teaspoon, divided",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "black pepper",
+            "quantity": "1/2 teaspoon, divided",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "baby spinach",
+            "quantity": "1 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "garlic clove",
+            "quantity": "1, minced",
+            "section": "Produce"
+          },
+          {
+            "item": "tahini",
+            "quantity": "2 tablespoons",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "flaky sea salt",
+            "quantity": "to taste, for serving",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "crushed red pepper flakes",
+            "quantity": "to taste, for serving",
+            "section": "Spices & Seasonings"
+          }
+        ],
+        "steps": [
+          "Preheat the oven to 375 degrees F.",
+          "Prick the sweet potatoes all over with a fork. Place them on a sheet pan and roast for 45-55 minutes until they are just tender. You should be able to easily pierce them with a knife.",
+          "Let the sweet potatoes cool for 5-10 minutes before halving them lengthwise and fluffing their flesh with a fork.",
+          "Give the sweet potatoes a slight head start baking in the oven. Then prep the chickpeas. In a small bowl, toss the chickpeas with 1 tablespoon olive oil, 1 teaspoon cumin, 1/2 teaspoon kosher salt and 1/4 teaspoon black pepper.",
+          "Spread the chickpeas in a single layer across a sheet pan. Bake for 30-35 minutes until they are crisp and browned, gently shaking the pan about halfway through roasting.",
+          "Toward the end of the roasting time for the chickpeas, warm 1 teaspoon olive oil in a small skillet over medium heat. Sauté the spinach until the leaves start to wilt, about 2 minutes. Add the minced garlic, 1/2 teaspoon kosher salt and 1/4 teaspoon black pepper, and continue cooking until fragrant, about 1 minute.",
+          "Spoon the chickpeas and spinach into the sweet potato halves. Drizzle with tahini and sprinkle with flaky sea salt and red pepper flakes before serving."
+        ],
+        "servings": 4,
+        "cuisineType": "Mediterranean",
+        "mainProtein": "Vegetarian",
+        "addedAt": "2026-06-08T00:06:44.440Z"
+      },
+      "checked": false,
+      "fromLibrary": true,
+      "manual": true
     }
   ]
 }
