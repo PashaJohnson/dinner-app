@@ -1,887 +1,6 @@
 {
-  "weekStartDate": "2026-06-08",
+  "weekStartDate": "2026-06-15",
   "picks": [
-    {
-      "recipe": {
-        "id": "rec_kn20v19gvke4",
-        "title": "Mediterranean Grilled Skirt Steak Flatbreads",
-        "sourceUrl": "https://domesticate-me.com/mediterranean-grilled-skirt-steak-flatbreads/",
-        "ingredients": [
-          {
-            "item": "skirt steak",
-            "quantity": "1 pound",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "smoked paprika",
-            "quantity": "1½ teaspoons",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "ground cumin",
-            "quantity": "1 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "½ teaspoon dried oregano",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "½ teaspoon kosher salt",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "¼ teaspoon black pepper",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "¼ teaspoon garlic powder",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "very thinly sliced English cucumber (mini cucumbers are also great)",
-            "quantity": "1 cup",
-            "section": "Produce"
-          },
-          {
-            "item": "cherry or grape tomatoes (sliced crosswise into rounds (or quartered))",
-            "quantity": "1 cup",
-            "section": "Produce"
-          },
-          {
-            "item": "very thinly sliced red onion",
-            "quantity": "½ cup",
-            "section": "Produce"
-          },
-          {
-            "item": "red wine vinegar",
-            "quantity": "1 tablespoon",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "extra virgin olive oil",
-            "quantity": "2 teaspoons",
-            "section": "Pantry"
-          },
-          {
-            "item": "naan breads (or flatbread of your choice, i.e. pita)",
-            "quantity": "4",
-            "section": "Bakery & Bread"
-          },
-          {
-            "item": "hummus (homemade or store-bought)",
-            "quantity": "1 cup",
-            "section": "Other"
-          },
-          {
-            "item": "feta cheese (crumbled)",
-            "quantity": "2 ounces",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "Fresh parsley",
-            "quantity": "",
-            "section": "Produce"
-          },
-          {
-            "item": "Crushed red pepper",
-            "quantity": "",
-            "section": "Produce"
-          }
-        ],
-        "steps": [
-          "Remove the steak from the fridge and allow it to come to room temperature (20 to 30 minutes).",
-          "Meanwhile, combine the smoked paprika, cumin, oregano, salt, pepper, and garlic powder in a small bowl. Briefly set aside.",
-          "In a medium bowl, combine the cucumber, tomatoes, and red onion. Drizzle with red wine vinegar and olive oil and toss to combine. Season with a tiny pinch of salt and pepper if desired. Cover and refrigerate until ready to use.",
-          "Pre-heat a grill or grill pan over high-heat.",
-          "Rub the steak all over with the spice mixture. Once seasoned, slice the steak crosswise into two pieces of roughly equal size. (If you’re using a grill pan, you may want to cut the steak into 3 pieces so that they’re not too long for the pan.)",
-          "Place the steak on the hot grill and cook for about 2½ to 5 minutes per side for medium rare. (Skirt steak varies so much in thickness, which is why the cooking window is so large here. In general, it cooks quickly so be careful not to overdo it, especially if you have a thin steak! The piece of steak with the narrow “tail” tends to cook more quickly, so you’ll want to take that off the grill before the other piece(s).) Transfer the steak to a cutting board and allow to rest for 5 minutes. Slice thinly against the grain.",
-          "While the meat rests, warm the flatbreads. Place them on the hot grill for about 1 minute per side, just until grill marks appear.",
-          "Spread each flatbread with ¼ cup of hummus. Top with sliced steak and the cucumber mix. Garnish with feta, parsley, and crushed red pepper if you like."
-        ],
-        "servings": 4,
-        "cuisineType": null,
-        "mainProtein": "Beef",
-        "addedAt": "2026-06-08T02:14:40.636Z"
-      },
-      "checked": false,
-      "fromLibrary": false,
-      "manual": false
-    },
-    {
-      "recipe": {
-        "id": "rec_ugwazrtgwl37",
-        "title": "Mediterranean Chickpea Salad",
-        "sourceUrl": "https://www.themediterraneandish.com/chickpea-salad/",
-        "ingredients": [
-          {
-            "item": "Dijon mustard",
-            "quantity": "1 teaspoon",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "lemon, (juiced)",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "garlic clove, (minced)",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "Aleppo pepper ((or red pepper flakes))",
-            "quantity": "1 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "sumac ((or lemon zest))",
-            "quantity": "1 teaspoon",
-            "section": "Produce"
-          },
-          {
-            "item": "Kosher salt",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "Black pepper",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "Extra virgin olive oil",
-            "quantity": "1/4 cup",
-            "section": "Pantry"
-          },
-          {
-            "item": "(15-ounce) cans chickpeas, (drained and rinsed)",
-            "quantity": "2",
-            "section": "Pantry"
-          },
-          {
-            "item": "large English cucumber, (chopped)",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "grape tomatoes, (halved)",
-            "quantity": "2 cups",
-            "section": "Produce"
-          },
-          {
-            "item": "roasted red peppers, (seeded and chopped (or a 16-ounce jar roasted peppers in oil))",
-            "quantity": "2",
-            "section": "Produce"
-          },
-          {
-            "item": "small red onion or 2 shallots, (finely chopped)",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "chopped parsley leaves",
-            "quantity": "1 cup",
-            "section": "Produce"
-          },
-          {
-            "item": "chopped mint leaves",
-            "quantity": "1/2 cup",
-            "section": "Produce"
-          },
-          {
-            "item": "avocado, (pitted and roughly chopped)",
-            "quantity": "1",
-            "section": "Produce"
-          }
-        ],
-        "steps": [
-          "Make the dressing. In a large bowl, whisk together the Dijon, lemon juice, garlic, Aleppo pepper, sumac, and salt and pepper (about 1/2 teaspoon each). Whisk, and while whisking, drizzle in enough olive oil to make it nicely glossy and well-balanced. Continue to whisk until emulsified.",
-          "Mix. To the bowl with the dressing, add the chickpeas, cucumbers, tomatoes, roasted bell peppers, onion, parsley, and mint. Toss gently. Add the avocado and toss very gently once more.",
-          "Enjoy! Taste and adjust the seasoning to your liking and serve immediately."
-        ],
-        "servings": 6,
-        "cuisineType": "American/Mediterranean",
-        "mainProtein": "Vegetarian",
-        "addedAt": "2026-06-08T02:15:28.195Z"
-      },
-      "checked": false,
-      "fromLibrary": false,
-      "manual": false
-    },
-    {
-      "recipe": {
-        "id": "rec_i49inzb1wl02",
-        "title": "Butter Chicken",
-        "sourceUrl": "https://www.andy-cooks.com/blogs/recipes/butter-chicken",
-        "ingredients": [
-          {
-            "item": "chicken thigh fillets, sliced",
-            "quantity": "8",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "steamed Basmati rice and or naan to serve",
-            "quantity": "",
-            "section": "Pantry"
-          },
-          {
-            "item": "kasoori methi and coriander leaves, for garnish",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "thumb size piece fresh ginger, finely grated",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "garlic, finely grated",
-            "quantity": "6 cloves",
-            "section": "Produce"
-          },
-          {
-            "item": "ground turmeric",
-            "quantity": "1 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "ground cumin",
-            "quantity": "1½ tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "ground coriander",
-            "quantity": "1½ tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "garam masala",
-            "quantity": "1 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "kashmiri chilli powder",
-            "quantity": "1 tsp",
-            "section": "Other"
-          },
-          {
-            "item": "sea salt",
-            "quantity": "1 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "juice of 1 lemon",
-            "quantity": "",
-            "section": "Produce"
-          },
-          {
-            "item": "greek yoghurt",
-            "quantity": "120ml",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "peanut oil",
-            "quantity": "2 tbs",
-            "section": "Pantry"
-          },
-          {
-            "item": "unsalted butter",
-            "quantity": "100g",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "red onion, finely diced",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "cardamom pods",
-            "quantity": "4",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "dried bay leaves",
-            "quantity": "2",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "whole cloves",
-            "quantity": "3",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "ground turmeric",
-            "quantity": "½ tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "ground cumin",
-            "quantity": "1½ tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "garam masala",
-            "quantity": "1 tbsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "kashmiri chilli powder",
-            "quantity": "1 tsp",
-            "section": "Other"
-          },
-          {
-            "item": "ground coriander",
-            "quantity": "1½ tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "sea salt, to season",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "cashews",
-            "quantity": "60g",
-            "section": "Pantry"
-          },
-          {
-            "item": "(1 cup) water",
-            "quantity": "250ml",
-            "section": "Beverages"
-          },
-          {
-            "item": "can crushed tomatoes (or 6 fresh ripe tomatoes)",
-            "quantity": "400g",
-            "section": "Produce"
-          },
-          {
-            "item": "thickened cream",
-            "quantity": "100ml",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "caster sugar, to taste",
-            "quantity": "1 - 2 tbsp",
-            "section": "Pantry"
-          }
-        ],
-        "steps": [
-          "Mix the ginger and garlic together and set half aside for the sauce. Mix the other half with the turmeric, cumin, coriander, garam masala, chilli and salt in a large bowl. Stir in the lemon juice and yoghurt.",
-          "Mix chicken into the marinade with your hands. Cover and refrigerate for 2 hours, up to overnight.",
-          "Heat half the butter and oil in a heavy based saucepan over medium-high heat. Add the onion and reserved garlic and ginger paste. Cook, stirring, for 2 minutes until the onion starts to soften.",
-          "Add the cardamom, cloves and bay leaves and stir through to infuse the butter. Then add the turmeric, cumin, garam masala, chilli powder and coriander. Season with salt and cook for 5 minutes, stirring often.",
-          "Stir in the cashews, and cook until starting to toast. Pour in the water and deglaze the pan, then add the tomatoes. Bring to a simmer, then reduce the heat and cook at a simmer for 20 minutes (add a little more water if the sauce becomes too dry).",
-          "After simmering the sauce for about 10 minutes, start cooking the chicken.",
-          "After simmering for 20 minutes, remove the hard spices and discard, then transfer the sauce to a blender and puree until smooth and creamy.",
-          "Return the sauce to the saucepan over a low heat. Stir through the remaining butter and the cream. Season to taste with the caster sugar.",
-          "Preheat a BBQ grill to high heat. Cook the chicken slices for 5-6 minutes, turning to char well on both sides.",
-          "Remove the chicken from the grill and add it to the finished sauce. Stir through over low heat for a few minutes, until heated hot.",
-          "Serve the butter chicken over steamed rice, garnished with coriander and kasoori methi with some fresh naan bread on the side."
-        ],
-        "servings": 4,
-        "cuisineType": "Indian",
-        "mainProtein": "Chicken",
-        "addedAt": "2026-06-08T02:15:28.082Z"
-      },
-      "checked": false,
-      "fromLibrary": false,
-      "manual": false
-    },
-    {
-      "recipe": {
-        "id": "rec_uzomuu5owmk6",
-        "title": "Mediterranean Chickpea Salad",
-        "sourceUrl": "https://rainbowplantlife.com/chickpea-salad/",
-        "ingredients": [
-          {
-            "item": "(15 oz / 425g) cans chickpeas, (drained and rinsed (see Note 1))",
-            "quantity": "2",
-            "section": "Pantry"
-          },
-          {
-            "item": "garlic, (minced, grated, or crushed with a press)",
-            "quantity": "4 cloves",
-            "section": "Produce"
-          },
-          {
-            "item": "Aleppo pepper ((or ½ tsp red pepper flakes))",
-            "quantity": "2 teaspoons",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "(56g) extra virgin olive oil",
-            "quantity": "¼ cup",
-            "section": "Pantry"
-          },
-          {
-            "item": "coriander seeds, (lightly crushed (see Note 2))",
-            "quantity": "1 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "cumin seeds ((see Note 2))",
-            "quantity": "1 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "preserved lemon, (minced (or the zest of 1 lemon below / 1 TBSP zest))",
-            "quantity": "1 tablespoon",
-            "section": "Produce"
-          },
-          {
-            "item": "medium lemons, (juiced)",
-            "quantity": "2",
-            "section": "Produce"
-          },
-          {
-            "item": "sumac, (more for finishing (optional, see Note 3))",
-            "quantity": "1 tablespoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "Kosher salt",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "heaping cup (100g) thinly sliced red onion",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "Persian cucumbers ((or ~10 oz / 285g English cucumber), diced)",
-            "quantity": "4",
-            "section": "Produce"
-          },
-          {
-            "item": "(32g) roasted white sesame seeds",
-            "quantity": "¼ cup",
-            "section": "Pantry"
-          },
-          {
-            "item": "(8g) flat leaf parsley leaves and tender stems, (chopped)",
-            "quantity": "½ cup",
-            "section": "Produce"
-          },
-          {
-            "item": "(8g) fresh mint leaves, (chopped)",
-            "quantity": "½ cup",
-            "section": "Produce"
-          },
-          {
-            "item": "⅓ to ½ cup (75 to 112g) tahini, ( well-stirred (see Note 4))",
-            "quantity": "",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "to 4 tablespoons ice water",
-            "quantity": "3",
-            "section": "Beverages"
-          },
-          {
-            "item": "½ teaspoon pure maple syrup, (more as needed)",
-            "quantity": "",
-            "section": "Pantry"
-          },
-          {
-            "item": "A few pinches of flaky sea salt",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          }
-        ],
-        "steps": [
-          "Add the drained chickpeas to a large bowl. In a small bowl, combine the garlic and Aleppo pepper.",
-          "Lightly crush the coriander seeds by either blitzing once or twice in a spice grinder; using a mortar and pestle; or crushing with the back of a sturdy mug.",
-          "Toast the spices: Heat the olive oil in your smallest frying pan or saucepan over medium heat for 2 minutes. Add the crushed coriander and cumin seeds. Allow to sizzle and swirl the pan frequently to prevent burning. Cook for 2 minutes, or until the spices are a few shades darker and very aromatic. Immediately pour the hot oil over the garlic mixture and allow to sizzle. Stir, then let sit for 1 minute.",
-          "Pour the infused oil over the chickpeas. Stir in the minced preserved lemon (or 1 TBSP lemon zest), 2 TBSP (30 mL) lemon juice, and sumac, if using. Season generously with salt and pepper (I use ~ 1 ½ tsp kosher salt). Set aside to marinate.",
-          "Add the sliced red onion to a bowl of ice water (to mellow out the pungency). Soak for 10 minutes, then drain and pat dry.",
-          "Tahini Dressing: In a bowl, combine the tahini, 3 TBSP (45 mL) ice water, 2 TBSP (30 mL) lemon juice, maple syrup, and ½ teaspoon kosher salt. Stir with a fork until thick and very creamy (I like mine spreadable and thick, but if using less tahini, it will be a bit thinner). Taste, adding lemon juice or salt to taste, or more maple syrup for sweetness.",
-          "Add the diced cucumbers, drained onions, sesame seeds, and half of the chopped mint/parsley to the chickpea salad. Toss well to combine. Taste, adding more lemon juice or salt as desired.",
-          "Schmear the Tahini Dressing onto the bottom of a shallow bowl or plate. Top with the chickpea salad and the remaining mint and parsley. Sprinkle the salad with a bit of sumac and Aleppo pepper and flaky sea salt to taste."
-        ],
-        "servings": 6,
-        "cuisineType": "Mediterranean",
-        "mainProtein": "Vegetarian",
-        "addedAt": "2026-06-08T02:15:30.102Z"
-      },
-      "checked": false,
-      "fromLibrary": false,
-      "manual": false
-    },
-    {
-      "recipe": {
-        "id": "rec_khl82kztwla1",
-        "title": "Butter Chicken (Murgh Makhani)",
-        "sourceUrl": "https://niksharmacooks.com/butter-chicken/",
-        "ingredients": [
-          {
-            "item": "lb/1 kg chicken thighs, skinless, bone-in or",
-            "quantity": "2.25",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "lb/910 g chicken thighs, skinless and boneless, cut into 1 in/2.5 cm cubes",
-            "quantity": "2",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "½ cup/120 g plain unsweetened Greek yogurt",
-            "quantity": "",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "fresh lemon or lime juice",
-            "quantity": "2 Tbsp",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "grated garlic",
-            "quantity": "1 Tbsp",
-            "section": "Produce"
-          },
-          {
-            "item": "grated ginger",
-            "quantity": "1 Tbsp",
-            "section": "Produce"
-          },
-          {
-            "item": "garam masala homemade or store-bought",
-            "quantity": "1 Tbsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "ground Kashmiri chilli powder",
-            "quantity": "1 tsp",
-            "section": "Other"
-          },
-          {
-            "item": "kasoori methi (optional)",
-            "quantity": "1 tsp",
-            "section": "Other"
-          },
-          {
-            "item": "ground turmeric",
-            "quantity": "½ tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "fine sea salt",
-            "quantity": "½ tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "½ stick/55 g unsalted butter",
-            "quantity": "",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "vegetable oil",
-            "quantity": "1 Tbsp",
-            "section": "Pantry"
-          },
-          {
-            "item": "Kashmiri chilli powder",
-            "quantity": "1 Tbsp",
-            "section": "Other"
-          },
-          {
-            "item": "ground toasted cumin",
-            "quantity": "2 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "grated garlic",
-            "quantity": "1 Tbsp",
-            "section": "Produce"
-          },
-          {
-            "item": "grated ginger",
-            "quantity": "1 Tbsp",
-            "section": "Produce"
-          },
-          {
-            "item": "garam masala homemade or store-bought",
-            "quantity": "1 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "green chilli such as jalapeno, serrano, or Bird’s eye, minced",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "¾ cup/180 g tomato paste",
-            "quantity": "",
-            "section": "Pantry"
-          },
-          {
-            "item": "cup/240 ml heavy cream",
-            "quantity": "1",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "fresh lemon or lime juice",
-            "quantity": "1 Tbsp",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "Fine sea salt",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "chopped cilantro, tender stems and leaves",
-            "quantity": "2 Tbsp",
-            "section": "Produce"
-          },
-          {
-            "item": "salted butter for garnish (optional)",
-            "quantity": "1 Tbsp",
-            "section": "Dairy & Eggs"
-          }
-        ],
-        "steps": [
-          "If using bone-in chicken thighs, make 2 to 3 deep gashes in the chicken; skip this if you use the boneless pieces.",
-          "Place all the ingredients for the marinade in a medium bowl or ziptop bag and combine until smooth. Fold in the chicken and make sure the chicken is completely coated with the marinade. Leave in the refrigerator covered for 1 hour, preferably overnight.",
-          "When ready to cook, preheat the oven to 400F/200C.",
-          "Lay the marinated chicken pieces out on a baking dish or roasting pan. Roast the chicken in the oven until the internal temperature reaches 164F/74C, 30 to 45 minutes (boneless chicken takes about 20 minutes), rotating the dish halfway through during cooking. Transfer the baking dish to the upper rack of the oven, and then broil over high for 2 to 4 minutes, until the chicken starts to char in a few spots. Remove the baking dish from the oven.",
-          "At the 20-minute mark of cooking the chicken, start the sauce. Melt the butter in a medium Dutch oven or saucepan over low heat. Once the butter begins to foam, stir in the oil. Add the Kashmiri chilli powder, toasted cumin, garlic, ginger, garam masala, and green chilli. Stir until fragrant, 30 to 45 seconds. Then add the tomato paste and cook until the paste begins to turn light brown, 5 to 6 minutes. Pour in the heavy cream and add the chicken and any liquids left behind in the baking dish. Fold to coat well. Stir in the lemon juice, taste, and season with salt. Bring to a boil over medium-high; the fat should separate from the sauce. Remove from the heat. Garnish with cilantro and salted butter if using. Serve hot or warm with rice or naan. Leftovers will stay good for up to 3 days if stored in an airtight container in the refrigerator."
-        ],
-        "servings": 4,
-        "cuisineType": null,
-        "mainProtein": "Chicken",
-        "addedAt": "2026-06-08T02:15:28.441Z"
-      },
-      "checked": false,
-      "fromLibrary": false,
-      "manual": false
-    },
-    {
-      "recipe": {
-        "id": "rec_6lavlnq1wl6k",
-        "title": "Mediterranean Chickpea Salad",
-        "sourceUrl": "https://www.twopeasandtheirpod.com/mediterranean-chickpea-salad/",
-        "ingredients": [
-          {
-            "item": "crumbled feta",
-            "quantity": "1/2 cup",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "olive oil",
-            "quantity": "3 tablespoons",
-            "section": "Pantry"
-          },
-          {
-            "item": "red wine vinegar",
-            "quantity": "2 tablespoons",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "lemon juice",
-            "quantity": "1 tablespoon",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "finely chopped dill",
-            "quantity": "1 tablespoon",
-            "section": "Produce"
-          },
-          {
-            "item": "of crushed red pepper flakes",
-            "quantity": "Dash",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "can chickpeas, (rinsed and drained)",
-            "quantity": "15 oz",
-            "section": "Pantry"
-          },
-          {
-            "item": "diced cucumber",
-            "quantity": "1 cup",
-            "section": "Produce"
-          },
-          {
-            "item": "diced tomatoes",
-            "quantity": "1 cup",
-            "section": "Produce"
-          },
-          {
-            "item": "diced red pepper",
-            "quantity": "1/2 cup",
-            "section": "Produce"
-          },
-          {
-            "item": "diced red onion",
-            "quantity": "1/2 cup",
-            "section": "Produce"
-          },
-          {
-            "item": "chopped parsley",
-            "quantity": "1/4 cup",
-            "section": "Produce"
-          },
-          {
-            "item": "chopped basil",
-            "quantity": "1/4 cup",
-            "section": "Produce"
-          },
-          {
-            "item": "Kosher salt and black pepper, (to taste)",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "Pita chips, (for serving, optional)",
-            "quantity": "",
-            "section": "Pantry"
-          }
-        ],
-        "steps": [
-          "n a large bowl, add the feta, olive oil, vinegar, lemon juice, dill, and red pepper flakes. Smash with a fork until fully combined.",
-          "Add the chickpeas, cucumber, tomatoes, red pepper, onion, parsley, and basil.",
-          "Stir until well combined. Season with salt and pepper, to taste. Serve with pita chips, if desired."
-        ],
-        "servings": 6,
-        "cuisineType": "Mediterranean",
-        "mainProtein": "Vegetarian",
-        "addedAt": "2026-06-08T02:15:28.316Z"
-      },
-      "checked": false,
-      "fromLibrary": false,
-      "manual": false
-    },
-    {
-      "recipe": {
-        "id": "rec_i0k0mpawwl27",
-        "title": "Indian Butter Chicken",
-        "sourceUrl": "https://www.wellplated.com/butter-chicken/",
-        "ingredients": [
-          {
-            "item": "extra-virgin olive oil",
-            "quantity": "1 tablespoon",
-            "section": "Pantry"
-          },
-          {
-            "item": "boneless (skinless chicken breasts or thighs, cut into bite-sized pieces)",
-            "quantity": "2 pounds",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "kosher salt (divided)",
-            "quantity": "1 1/4 teaspoons",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "ground black pepper",
-            "quantity": "1/4 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "curry powder (divided)",
-            "quantity": "1 1/2 tablespoons",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "unsalted butter (divided)",
-            "quantity": "3 tablespoons",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "small yellow onion (diced (about 1 cup))",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "minced garlic (about 4 teaspoons)",
-            "quantity": "4 cloves",
-            "section": "Produce"
-          },
-          {
-            "item": "minced fresh ginger",
-            "quantity": "1 tablespoon",
-            "section": "Produce"
-          },
-          {
-            "item": "garam masala",
-            "quantity": "1 tablespoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "chili powder",
-            "quantity": "1 1/2 teaspoons",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "ground cumin",
-            "quantity": "1 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "can tomato sauce, plus 1/2 can of water",
-            "quantity": "1 15-ounce",
-            "section": "Pantry"
-          },
-          {
-            "item": "half-and-half",
-            "quantity": "1/2 cup",
-            "section": "Other"
-          },
-          {
-            "item": "plain Greek yogurt",
-            "quantity": "1/2 cup",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "chopped fresh cilantro (plus additional for serving)",
-            "quantity": "1/2 cup",
-            "section": "Produce"
-          },
-          {
-            "item": "Brown rice",
-            "quantity": "",
-            "section": "Pantry"
-          },
-          {
-            "item": "Quinoa",
-            "quantity": "",
-            "section": "Pantry"
-          },
-          {
-            "item": "Homemade Naan",
-            "quantity": "",
-            "section": "Bakery & Bread"
-          },
-          {
-            "item": "Chopped fresh cilantro",
-            "quantity": "",
-            "section": "Produce"
-          }
-        ],
-        "steps": [
-          "In a Dutch oven or similar large, sturdy pot, heat the oil over medium-high heat. Add the chicken, 1/2 teaspoon of the kosher salt, black pepper, and 1/2 tablespoon of the curry powder, stirring to coat the chicken evenly. Sear the chicken on all sides until lightly golden (about 5-6 minutes)—the chicken does not need to be cooked through at this point. Remove to a plate.",
-          "Reduce the heat to medium. Add 2 tablespoons of the butter and the onion to the pot. Cook until the onion is beginning to soften, about 5 minutes.",
-          "Add the garlic, ginger, garam masala, chili powder, cumin, and the remaining 3/4 teaspoon salt and 1 tablespoon curry powder. Stir and cook until fragrant, about 30 seconds.",
-          "Reduce the heat to low. Carefully pour in the tomato sauce (be careful of splatters). Fill the can of tomato sauce up halfway with water, then add the liquid to the pot. Stir to combine, then partially cover the pot and let simmer gently for 15 minutes.",
-          "Return the chicken and any juices that have collected on the plate to the pot. Stir in the half-and-half. Let simmer until the chicken is fully cooked through, about 5 minutes more.",
-          "Place the Greek yogurt in a small bowl and add a few big spoonfuls of the hot butter chicken liquid. Stir to combine, then add the mixture to the pot (this tempers the yogurt so it doesn't curdle).",
-          "Stir in the cilantro and 1 tablespoon butter. Enjoy warm over brown rice, quinoa, or naan, sprinkled with more cilantro."
-        ],
-        "servings": 4,
-        "cuisineType": "Indian",
-        "mainProtein": "Chicken",
-        "addedAt": "2026-06-08T02:15:28.159Z"
-      },
-      "checked": false,
-      "fromLibrary": false,
-      "manual": false
-    },
     {
       "recipe": {
         "id": "rec_uid3t2tg4k78",
@@ -967,6 +86,724 @@
       "checked": true,
       "fromLibrary": true,
       "manual": true
+    },
+    {
+      "recipe": {
+        "id": "rec_943brtdb5l2e",
+        "title": "Mediterranean Pasta Salad with Roasted Vegetables",
+        "sourceUrl": "https://lexiscleankitchen.com/mediterranean-pasta-salad/",
+        "ingredients": [
+          {
+            "item": "pasta of choice",
+            "quantity": "12 oz",
+            "section": "Pantry"
+          },
+          {
+            "item": "zucchini (quartered and sliced)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "yellow squash (quartered and sliced)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "eggplant (quartered and sliced)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "asparagus (trimmed and cut into 1-inch pieces)",
+            "quantity": "½ bunch",
+            "section": "Produce"
+          },
+          {
+            "item": "red onion (cut into chunks)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "red bell pepper (cut into chunks)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "cherry tomatoes",
+            "quantity": "4 oz",
+            "section": "Produce"
+          },
+          {
+            "item": "garlic (unpeeled)",
+            "quantity": "6 cloves",
+            "section": "Produce"
+          },
+          {
+            "item": "Olive oil (for roasting)",
+            "quantity": "",
+            "section": "Pantry"
+          },
+          {
+            "item": "Salt and pepper (to taste)",
+            "quantity": "",
+            "section": "Produce"
+          },
+          {
+            "item": "fresh parsley (finely chopped)",
+            "quantity": "¼ cup",
+            "section": "Produce"
+          },
+          {
+            "item": "fresh basil (finely chopped)",
+            "quantity": "¼ cup",
+            "section": "Produce"
+          },
+          {
+            "item": "shallot (finely diced)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "container mini mozzarella balls (about 8 oz)",
+            "quantity": "1",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "olive oil",
+            "quantity": "⅓ cup",
+            "section": "Pantry"
+          },
+          {
+            "item": "Juice of ½ lemon",
+            "quantity": "",
+            "section": "Produce"
+          },
+          {
+            "item": "Dijon mustard",
+            "quantity": "1 tsp",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "dried oregano",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "salt",
+            "quantity": "2 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "black pepper",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          }
+        ],
+        "steps": [
+          "Preheat oven to 400ºF.",
+          "Cook pasta according to package instructions. Drain, rinse with cool water, and set aside.",
+          "Arrange zucchini, squash, eggplant, asparagus, red onion, red pepper, cherry tomatoes, and garlic cloves (unpeeled) on a large sheet pan. Drizzle with olive oil and season with salt and pepper. Toss everything to coat and create a small well in the center for the garlic cloves.",
+          "Roast for 30 minutes, or until vegetables are tender and starting to brown. Let cool slightly.",
+          "Once garlic cloves are cool enough to handle, peel them and mash into a paste with a fork. Add to a small bowl or jar along with olive oil, lemon juice, Dijon mustard, oregano, salt, and pepper. Whisk or shake to combine.",
+          "In a large mixing bowl, combine the cooked pasta, roasted vegetables, mozzarella balls, diced shallot, parsley, and basil. Pour dressing over the top and toss until everything is well coated.",
+          "Serve and enjoy!",
+          "Tastes great warm, at room temperature, or chilled."
+        ],
+        "servings": 6,
+        "cuisineType": "American",
+        "mainProtein": "Vegetarian",
+        "addedAt": "2026-06-15T00:56:10.982Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": false
+    },
+    {
+      "recipe": {
+        "id": "rec_kuzs2wc95l4r",
+        "title": "Easy Mediterranean Pasta Salad with Orzo",
+        "sourceUrl": "https://www.acedarspoon.com/mediterranean-pasta-salad/",
+        "ingredients": [
+          {
+            "item": "orzo pasta (cooked according to package to al dente)",
+            "quantity": "16 ounces",
+            "section": "Pantry"
+          },
+          {
+            "item": "baby spinach (torn into small pieces)",
+            "quantity": "3 cups",
+            "section": "Produce"
+          },
+          {
+            "item": "roasted red peppers (drained, chopped)",
+            "quantity": "1 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "of an english cucumber (diced)",
+            "quantity": "1/2",
+            "section": "Produce"
+          },
+          {
+            "item": "red onion (diced)",
+            "quantity": "1/2 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "cherry tomatoes (halved)",
+            "quantity": "1 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "pitted kalamata olives (halved)",
+            "quantity": "6 ounces",
+            "section": "Other"
+          },
+          {
+            "item": "pitted Castelvetrano green olives (halved)",
+            "quantity": "6 ounces",
+            "section": "Other"
+          },
+          {
+            "item": "feta cheese (crumbled)",
+            "quantity": "6 ounces",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "fresh basil (chopped)",
+            "quantity": "1/2 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "mint (chopped)",
+            "quantity": "1/4 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "fresh Italian parsley (chopped)",
+            "quantity": "1/4 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "extra virgin olive oil",
+            "quantity": "2/3 cup",
+            "section": "Pantry"
+          },
+          {
+            "item": "red wine vinegar",
+            "quantity": "1/3 cup",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "garlic cloves (minced)",
+            "quantity": "2",
+            "section": "Produce"
+          },
+          {
+            "item": "oregano (dried)",
+            "quantity": "2 teaspoons",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "lemon (juiced )",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "honey",
+            "quantity": "1 teaspoon",
+            "section": "Pantry"
+          },
+          {
+            "item": "honey dijon mustard",
+            "quantity": "2 teaspoons",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "kosher salt",
+            "quantity": "1/2 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "black pepper",
+            "quantity": "1/8 teaspoon",
+            "section": "Spices & Seasonings"
+          }
+        ],
+        "steps": [
+          "Cook the orzo according to the package to al dente. Remove, drain and rinse under cold water too keep it from cooking any longer. Drain the water completely and set aside.",
+          "In a large mixing bowl add the spinach, roasted red pepper, cucumber, red onion, cherry tomatoes, kalamata olives, Castelvetrano green olives, basil, mint and parsley and mix well.",
+          "In a mason jar or salad dressing container mix together the olive oil, red wine vinegar, garlic, oregano, lemon juice, honey, dijon mustard, salt and pepper.",
+          "Add the orzo to the large bowl with the salad ingredients and mix well.",
+          "Pour half of the dressing over the salad and mix well. Taste and add more dressing to your liking or save the remaining dressing for when you serve the salad. Add in the feta cheese and gently toss.",
+          "Cover and refrigerate until ready to eat. When you are ready to eat taste the salad and add the remaining salad dressing. Gently toss. Serve or refrigerate until ready to serve. The salad will last up to 5 days in an airtight container."
+        ],
+        "servings": 6,
+        "cuisineType": "Mediterranean",
+        "mainProtein": "Vegetarian",
+        "addedAt": "2026-06-15T00:56:11.067Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": false
+    },
+    {
+      "recipe": {
+        "id": "rec_w20ezz165l38",
+        "title": "Mediterranean Pasta Salad",
+        "sourceUrl": "https://feelgoodfoodie.net/recipe/mediterranean-pasta-salad/",
+        "ingredients": [
+          {
+            "item": "fusilli pasta",
+            "quantity": "8 ounces",
+            "section": "Pantry"
+          },
+          {
+            "item": "English cucumbers (diced)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "cherry tomatoes (halved)",
+            "quantity": "1 pint",
+            "section": "Produce"
+          },
+          {
+            "item": "baby spinach",
+            "quantity": "1 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "½ small red onion (sliced)",
+            "quantity": "",
+            "section": "Produce"
+          },
+          {
+            "item": "crumbled feta cheese",
+            "quantity": "½ cup",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "kalamata olives (halved)",
+            "quantity": "¼ cup",
+            "section": "Other"
+          },
+          {
+            "item": "olive oil",
+            "quantity": "¼ cup",
+            "section": "Pantry"
+          },
+          {
+            "item": "red wine vinegar",
+            "quantity": "3 tablespoons",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "Dijon mustard",
+            "quantity": "1 teaspoon",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "oregano",
+            "quantity": "1 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "dried mint",
+            "quantity": "1 teaspoon",
+            "section": "Produce"
+          },
+          {
+            "item": "garlic clove (minced)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "½ teaspoon salt",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "¼ teaspoon black pepper",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          }
+        ],
+        "steps": [
+          "Bring a large pot of heavily salted water to a boil. Add pasta and cook according to package directions. Drain and rinse with cold water until completely cool. Set aside.",
+          "Meanwhile, make the salad dressing in a large serving bowl by whisking together the dressing ingredients until emulsified.",
+          "Add the pasta on top of the dressing and toss to combine. Add the remaining salad ingredients, and toss the pasta salad until everything is evenly coated with the dressing. Serve immediately or allow to chill in the fridge until ready to eat."
+        ],
+        "servings": 6,
+        "cuisineType": "Mediterranean",
+        "mainProtein": "Vegetarian",
+        "addedAt": "2026-06-15T00:56:11.012Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": false
+    },
+    {
+      "recipe": {
+        "id": "rec_yj2dodes5lgs",
+        "title": "Vegan Tikka Masala Pasta Salad",
+        "sourceUrl": "https://www.veganricha.com/tikka-masala-pasta-salad/",
+        "ingredients": [
+          {
+            "item": "farfalle or other pasta cooked according to package instructions",
+            "quantity": "4 ounces",
+            "section": "Pantry"
+          },
+          {
+            "item": "large tomato (thinly sliced or chopped)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "green bell pepper (thinly sliced)",
+            "quantity": "1/2",
+            "section": "Produce"
+          },
+          {
+            "item": "red onion (chopped)",
+            "quantity": "1/2 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "to 7 ounces of firm or extra firm tofu (chopped or made into thin slices or rectangles)",
+            "quantity": "6",
+            "section": "Other"
+          },
+          {
+            "item": "to 4 tablespoons chopped pecans or other crunchy additions such as pumpkin seeds or hemp seeds or walnuts",
+            "quantity": "3",
+            "section": "Produce"
+          },
+          {
+            "item": "chopped cilantro",
+            "quantity": "1/4 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "tomato paste",
+            "quantity": "2.5 tablespoons",
+            "section": "Pantry"
+          },
+          {
+            "item": "non-dairy yogurt or use non dairy cream option such as coconut cream or cashew cream or blended up tofu",
+            "quantity": "2 tablespoons",
+            "section": "Pantry"
+          },
+          {
+            "item": "lime juice",
+            "quantity": "1 tablespoon",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "salt",
+            "quantity": "1/2 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "black pepper",
+            "quantity": "1/4 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "garam masala (less or more to preference)",
+            "quantity": "1/2 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "ground coriander",
+            "quantity": "1 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "garlic powder",
+            "quantity": "1/2 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "onion powder",
+            "quantity": "1/4 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "Kashmiri chili powder or paprika (less or more to preference )",
+            "quantity": "3/4 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "cayenne (omit for less heat)",
+            "quantity": "1/4 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "dried fenugreek leaves (or use 1/4 teaspoon ground mustard)",
+            "quantity": "1/2 teaspoon",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "Optional: 1/2 cup to 1/4 cup of chickpeas",
+            "quantity": "",
+            "section": "Pantry"
+          }
+        ],
+        "steps": [
+          "Cook the pasta according to the instructions on the package, drain and rinse in cold water and add to a bowl.",
+          "Chop up the vegetables that you plan to use then add to a bowl. Add the tofu, cilantro and the nuts or seeds and mix well.",
+          "Add all of the ingredients of the dressing into a bowl and mix really well. If the dressing is too thick add in a tablespoon or so of water and mix in. Heat it in a skillet or microwave until it just comes to a boil. Then taste and adjust salt and flavor, it will be salty but it’s going over the entire bowl so you want to keep it a bit on the salty side. Heating the dressing helps the spices bloom. Cool for a few minutes.",
+          "Add this dressing to your salad bowl, and toss well to coat. Taste and adjust salt and flavour. Add more lime juice if needed, more black pepper if needed. Top it with some more fresh cilantro, let it chill for 15 minutes or more then serve."
+        ],
+        "servings": 4,
+        "cuisineType": "American",
+        "mainProtein": "Tofu",
+        "addedAt": "2026-06-15T00:56:11.500Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": false
+    },
+    {
+      "recipe": {
+        "id": "rec_xzoy50o05mut",
+        "title": "Curry Pasta Salad",
+        "sourceUrl": "https://www.sanjanafeasts.co.uk/2023/05/curry-pasta-salad/",
+        "ingredients": [
+          {
+            "item": "fusilli or other pasta shape of your choice",
+            "quantity": "275g",
+            "section": "Pantry"
+          },
+          {
+            "item": "plain yoghurt",
+            "quantity": "150g",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "mayonnaise",
+            "quantity": "75g",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "Madras curry powder (medium or mild)",
+            "quantity": "1 tbsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "mango chutney",
+            "quantity": "2 tbsp",
+            "section": "Produce"
+          },
+          {
+            "item": "apple cider vinegar or white vinegar",
+            "quantity": "1 tbsp",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "cooked sweetcorn",
+            "quantity": "60g",
+            "section": "Produce"
+          },
+          {
+            "item": "red pepper, finely diced (60g)",
+            "quantity": "1/2",
+            "section": "Produce"
+          },
+          {
+            "item": "small red onion, finely chopped (30g)",
+            "quantity": "1/2",
+            "section": "Produce"
+          },
+          {
+            "item": "small cucumber, deseeded and chopped (60g)",
+            "quantity": "1/2",
+            "section": "Produce"
+          },
+          {
+            "item": "medium carrot, peeled, grated and squeezed of excess juices",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "chopped coriander",
+            "quantity": "2 tbsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "salt, or to taste",
+            "quantity": "1/2 tsp",
+            "section": "Spices & Seasonings"
+          }
+        ],
+        "steps": [
+          "Cook the pasta according to packet instructions. Don't leave it too al dente as it will require no further cooking. Drain and rinse under cold water. Allow to drain in a colander very well.",
+          "In a large bowl, whisk together the yoghurt, mayonnaise, curry powder, mango chutney, vinegar and salt.",
+          "Add the prepared sweetcorn, peppers, onions, cucumbers, carrots, coriander and pasta. Stir very well to coat.",
+          "Chill the pasta salad in the fridge for 30 minutes before serving."
+        ],
+        "servings": 4,
+        "cuisineType": "Indian Fusion",
+        "mainProtein": "Vegetarian",
+        "addedAt": "2026-06-15T00:56:13.301Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": false
+    },
+    {
+      "recipe": {
+        "id": "rec_xsxvf7hm5l5t",
+        "title": "Indian Curry Pasta | Spicy Masala Pasta Salad",
+        "sourceUrl": "https://cookilicious.com/one-pot-indian-curry-pasta/",
+        "ingredients": [
+          {
+            "item": "pasta (any variety)",
+            "quantity": "12 oz",
+            "section": "Pantry"
+          },
+          {
+            "item": "olive oil (or vegan butter)",
+            "quantity": "1 tbsp",
+            "section": "Pantry"
+          },
+          {
+            "item": "mustard seeds",
+            "quantity": "1 tsp",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "cumin seeds",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "GF asafoetida",
+            "quantity": "1/2 tsp",
+            "section": "Other"
+          },
+          {
+            "item": "fresh curry leaves",
+            "quantity": "5",
+            "section": "Other"
+          },
+          {
+            "item": "ginger garlic paste",
+            "quantity": "1 tbsp",
+            "section": "Produce"
+          },
+          {
+            "item": "green chillies (finely chopped)",
+            "quantity": "2-3",
+            "section": "Other"
+          },
+          {
+            "item": "onion (finely chopped)",
+            "quantity": "1 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "tomato (finely chopped)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "mushrooms (sliced)",
+            "quantity": "8 oz",
+            "section": "Produce"
+          },
+          {
+            "item": "frozen green peas",
+            "quantity": "1/4 cup",
+            "section": "Frozen"
+          },
+          {
+            "item": "bell pepper (finely chopped)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "turmeric powder",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "cumin powder",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "coriander powder",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "chilly powder",
+            "quantity": "1 tsp",
+            "section": "Other"
+          },
+          {
+            "item": "salt",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "red pepper flakes",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "oregano",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "garam masala",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "Kasoori methi",
+            "quantity": "1 tbsp",
+            "section": "Other"
+          },
+          {
+            "item": "chopped cilantro",
+            "quantity": "4 tbsp",
+            "section": "Produce"
+          },
+          {
+            "item": "lemon juice",
+            "quantity": "1 tbsp",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "vegan Parmesan cheese",
+            "quantity": "2 tbsp",
+            "section": "Dairy & Eggs"
+          }
+        ],
+        "steps": [
+          "In a pan, boil water with salt. Once it starts boiling, add the pasta and cook it as per the instructions on the packet. Keep stirring at intervals to ensure even cooking. Cook it al dente. Strain but do not throw away the water. Drizzle olive oil over it. Mix and keep it aside.",
+          "Meanwhile, slice the mushrooms, and finely chop all the veggies needed after washing them. Chef tip - Do not chop them too chunky, keep them fine.",
+          "Heat olive oil in the same pan. You can also use ghee instead (if you are not vegan). Once the oil is hot, temper mustard seeds and cumin seeds along with GF asafoetida. As the seeds begin to crackle, add curry leaves, green chillies, ginger paste, garlic paste, and part of the cilantro. Fry for a minute or two.",
+          "Then add the chopped onions. Fry till the onions turn translucent. This could take 3-4 minutes on medium flame.",
+          "Now add tomatoes and salt. Continue to saute till the tomatoes are cooked. This could take 3-4 minutes on medium flame.",
+          "Add mushrooms to the pan. Mix and saute for 5-7 minutes or till the mushrooms are cooked.",
+          "Next, add the green peas and bell peppers. Continue to saute for 2-3 more minutes.",
+          "Then add the dry spices like turmeric powder, cumin powder, coriander powder, chilly powder, oregano, and red pepper flakes. Also, add a teaspoon of sugar to balance out the flavors. Add 1/4 cup of the reserved water to prevent the masala from burning. Cook it for a minute.",
+          "Add the cooked pasta. Mix it all together so that it coats with the masala. taste and adjust the salt as needed.",
+          "Garnish with remaining cilantro, vegan Parmesan cheese, garam masala, Kasoori methi, and lemon juice for extra tanginess. Mix and take the pan off the flame. Keep it covered."
+        ],
+        "servings": 6,
+        "cuisineType": "fusion",
+        "mainProtein": "Vegetarian",
+        "addedAt": "2026-06-15T00:56:11.105Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": false
     }
   ]
 }
