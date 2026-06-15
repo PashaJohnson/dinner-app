@@ -89,571 +89,6 @@
     },
     {
       "recipe": {
-        "id": "rec_943brtdb5l2e",
-        "title": "Mediterranean Pasta Salad with Roasted Vegetables",
-        "sourceUrl": "https://lexiscleankitchen.com/mediterranean-pasta-salad/",
-        "ingredients": [
-          {
-            "item": "pasta of choice",
-            "quantity": "12 oz",
-            "section": "Pantry"
-          },
-          {
-            "item": "zucchini (quartered and sliced)",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "yellow squash (quartered and sliced)",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "eggplant (quartered and sliced)",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "asparagus (trimmed and cut into 1-inch pieces)",
-            "quantity": "½ bunch",
-            "section": "Produce"
-          },
-          {
-            "item": "red onion (cut into chunks)",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "red bell pepper (cut into chunks)",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "cherry tomatoes",
-            "quantity": "4 oz",
-            "section": "Produce"
-          },
-          {
-            "item": "garlic (unpeeled)",
-            "quantity": "6 cloves",
-            "section": "Produce"
-          },
-          {
-            "item": "Olive oil (for roasting)",
-            "quantity": "",
-            "section": "Pantry"
-          },
-          {
-            "item": "Salt and pepper (to taste)",
-            "quantity": "",
-            "section": "Produce"
-          },
-          {
-            "item": "fresh parsley (finely chopped)",
-            "quantity": "¼ cup",
-            "section": "Produce"
-          },
-          {
-            "item": "fresh basil (finely chopped)",
-            "quantity": "¼ cup",
-            "section": "Produce"
-          },
-          {
-            "item": "shallot (finely diced)",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "container mini mozzarella balls (about 8 oz)",
-            "quantity": "1",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "olive oil",
-            "quantity": "⅓ cup",
-            "section": "Pantry"
-          },
-          {
-            "item": "Juice of ½ lemon",
-            "quantity": "",
-            "section": "Produce"
-          },
-          {
-            "item": "Dijon mustard",
-            "quantity": "1 tsp",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "dried oregano",
-            "quantity": "1 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "salt",
-            "quantity": "2 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "black pepper",
-            "quantity": "1 tsp",
-            "section": "Spices & Seasonings"
-          }
-        ],
-        "steps": [
-          "Preheat oven to 400ºF.",
-          "Cook pasta according to package instructions. Drain, rinse with cool water, and set aside.",
-          "Arrange zucchini, squash, eggplant, asparagus, red onion, red pepper, cherry tomatoes, and garlic cloves (unpeeled) on a large sheet pan. Drizzle with olive oil and season with salt and pepper. Toss everything to coat and create a small well in the center for the garlic cloves.",
-          "Roast for 30 minutes, or until vegetables are tender and starting to brown. Let cool slightly.",
-          "Once garlic cloves are cool enough to handle, peel them and mash into a paste with a fork. Add to a small bowl or jar along with olive oil, lemon juice, Dijon mustard, oregano, salt, and pepper. Whisk or shake to combine.",
-          "In a large mixing bowl, combine the cooked pasta, roasted vegetables, mozzarella balls, diced shallot, parsley, and basil. Pour dressing over the top and toss until everything is well coated.",
-          "Serve and enjoy!",
-          "Tastes great warm, at room temperature, or chilled."
-        ],
-        "servings": 6,
-        "cuisineType": "American",
-        "mainProtein": "Vegetarian",
-        "addedAt": "2026-06-15T00:56:10.982Z"
-      },
-      "checked": false,
-      "fromLibrary": false,
-      "manual": false
-    },
-    {
-      "recipe": {
-        "id": "rec_kuzs2wc95l4r",
-        "title": "Easy Mediterranean Pasta Salad with Orzo",
-        "sourceUrl": "https://www.acedarspoon.com/mediterranean-pasta-salad/",
-        "ingredients": [
-          {
-            "item": "orzo pasta (cooked according to package to al dente)",
-            "quantity": "16 ounces",
-            "section": "Pantry"
-          },
-          {
-            "item": "baby spinach (torn into small pieces)",
-            "quantity": "3 cups",
-            "section": "Produce"
-          },
-          {
-            "item": "roasted red peppers (drained, chopped)",
-            "quantity": "1 cup",
-            "section": "Produce"
-          },
-          {
-            "item": "of an english cucumber (diced)",
-            "quantity": "1/2",
-            "section": "Produce"
-          },
-          {
-            "item": "red onion (diced)",
-            "quantity": "1/2 cup",
-            "section": "Produce"
-          },
-          {
-            "item": "cherry tomatoes (halved)",
-            "quantity": "1 cup",
-            "section": "Produce"
-          },
-          {
-            "item": "pitted kalamata olives (halved)",
-            "quantity": "6 ounces",
-            "section": "Other"
-          },
-          {
-            "item": "pitted Castelvetrano green olives (halved)",
-            "quantity": "6 ounces",
-            "section": "Other"
-          },
-          {
-            "item": "feta cheese (crumbled)",
-            "quantity": "6 ounces",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "fresh basil (chopped)",
-            "quantity": "1/2 cup",
-            "section": "Produce"
-          },
-          {
-            "item": "mint (chopped)",
-            "quantity": "1/4 cup",
-            "section": "Produce"
-          },
-          {
-            "item": "fresh Italian parsley (chopped)",
-            "quantity": "1/4 cup",
-            "section": "Produce"
-          },
-          {
-            "item": "extra virgin olive oil",
-            "quantity": "2/3 cup",
-            "section": "Pantry"
-          },
-          {
-            "item": "red wine vinegar",
-            "quantity": "1/3 cup",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "garlic cloves (minced)",
-            "quantity": "2",
-            "section": "Produce"
-          },
-          {
-            "item": "oregano (dried)",
-            "quantity": "2 teaspoons",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "lemon (juiced )",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "honey",
-            "quantity": "1 teaspoon",
-            "section": "Pantry"
-          },
-          {
-            "item": "honey dijon mustard",
-            "quantity": "2 teaspoons",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "kosher salt",
-            "quantity": "1/2 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "black pepper",
-            "quantity": "1/8 teaspoon",
-            "section": "Spices & Seasonings"
-          }
-        ],
-        "steps": [
-          "Cook the orzo according to the package to al dente. Remove, drain and rinse under cold water too keep it from cooking any longer. Drain the water completely and set aside.",
-          "In a large mixing bowl add the spinach, roasted red pepper, cucumber, red onion, cherry tomatoes, kalamata olives, Castelvetrano green olives, basil, mint and parsley and mix well.",
-          "In a mason jar or salad dressing container mix together the olive oil, red wine vinegar, garlic, oregano, lemon juice, honey, dijon mustard, salt and pepper.",
-          "Add the orzo to the large bowl with the salad ingredients and mix well.",
-          "Pour half of the dressing over the salad and mix well. Taste and add more dressing to your liking or save the remaining dressing for when you serve the salad. Add in the feta cheese and gently toss.",
-          "Cover and refrigerate until ready to eat. When you are ready to eat taste the salad and add the remaining salad dressing. Gently toss. Serve or refrigerate until ready to serve. The salad will last up to 5 days in an airtight container."
-        ],
-        "servings": 6,
-        "cuisineType": "Mediterranean",
-        "mainProtein": "Vegetarian",
-        "addedAt": "2026-06-15T00:56:11.067Z"
-      },
-      "checked": false,
-      "fromLibrary": false,
-      "manual": false
-    },
-    {
-      "recipe": {
-        "id": "rec_w20ezz165l38",
-        "title": "Mediterranean Pasta Salad",
-        "sourceUrl": "https://feelgoodfoodie.net/recipe/mediterranean-pasta-salad/",
-        "ingredients": [
-          {
-            "item": "fusilli pasta",
-            "quantity": "8 ounces",
-            "section": "Pantry"
-          },
-          {
-            "item": "English cucumbers (diced)",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "cherry tomatoes (halved)",
-            "quantity": "1 pint",
-            "section": "Produce"
-          },
-          {
-            "item": "baby spinach",
-            "quantity": "1 cup",
-            "section": "Produce"
-          },
-          {
-            "item": "½ small red onion (sliced)",
-            "quantity": "",
-            "section": "Produce"
-          },
-          {
-            "item": "crumbled feta cheese",
-            "quantity": "½ cup",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "kalamata olives (halved)",
-            "quantity": "¼ cup",
-            "section": "Other"
-          },
-          {
-            "item": "olive oil",
-            "quantity": "¼ cup",
-            "section": "Pantry"
-          },
-          {
-            "item": "red wine vinegar",
-            "quantity": "3 tablespoons",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "Dijon mustard",
-            "quantity": "1 teaspoon",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "oregano",
-            "quantity": "1 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "dried mint",
-            "quantity": "1 teaspoon",
-            "section": "Produce"
-          },
-          {
-            "item": "garlic clove (minced)",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "½ teaspoon salt",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "¼ teaspoon black pepper",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          }
-        ],
-        "steps": [
-          "Bring a large pot of heavily salted water to a boil. Add pasta and cook according to package directions. Drain and rinse with cold water until completely cool. Set aside.",
-          "Meanwhile, make the salad dressing in a large serving bowl by whisking together the dressing ingredients until emulsified.",
-          "Add the pasta on top of the dressing and toss to combine. Add the remaining salad ingredients, and toss the pasta salad until everything is evenly coated with the dressing. Serve immediately or allow to chill in the fridge until ready to eat."
-        ],
-        "servings": 6,
-        "cuisineType": "Mediterranean",
-        "mainProtein": "Vegetarian",
-        "addedAt": "2026-06-15T00:56:11.012Z"
-      },
-      "checked": false,
-      "fromLibrary": false,
-      "manual": false
-    },
-    {
-      "recipe": {
-        "id": "rec_yj2dodes5lgs",
-        "title": "Vegan Tikka Masala Pasta Salad",
-        "sourceUrl": "https://www.veganricha.com/tikka-masala-pasta-salad/",
-        "ingredients": [
-          {
-            "item": "farfalle or other pasta cooked according to package instructions",
-            "quantity": "4 ounces",
-            "section": "Pantry"
-          },
-          {
-            "item": "large tomato (thinly sliced or chopped)",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "green bell pepper (thinly sliced)",
-            "quantity": "1/2",
-            "section": "Produce"
-          },
-          {
-            "item": "red onion (chopped)",
-            "quantity": "1/2 cup",
-            "section": "Produce"
-          },
-          {
-            "item": "to 7 ounces of firm or extra firm tofu (chopped or made into thin slices or rectangles)",
-            "quantity": "6",
-            "section": "Other"
-          },
-          {
-            "item": "to 4 tablespoons chopped pecans or other crunchy additions such as pumpkin seeds or hemp seeds or walnuts",
-            "quantity": "3",
-            "section": "Produce"
-          },
-          {
-            "item": "chopped cilantro",
-            "quantity": "1/4 cup",
-            "section": "Produce"
-          },
-          {
-            "item": "tomato paste",
-            "quantity": "2.5 tablespoons",
-            "section": "Pantry"
-          },
-          {
-            "item": "non-dairy yogurt or use non dairy cream option such as coconut cream or cashew cream or blended up tofu",
-            "quantity": "2 tablespoons",
-            "section": "Pantry"
-          },
-          {
-            "item": "lime juice",
-            "quantity": "1 tablespoon",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "salt",
-            "quantity": "1/2 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "black pepper",
-            "quantity": "1/4 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "garam masala (less or more to preference)",
-            "quantity": "1/2 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "ground coriander",
-            "quantity": "1 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "garlic powder",
-            "quantity": "1/2 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "onion powder",
-            "quantity": "1/4 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "Kashmiri chili powder or paprika (less or more to preference )",
-            "quantity": "3/4 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "cayenne (omit for less heat)",
-            "quantity": "1/4 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "dried fenugreek leaves (or use 1/4 teaspoon ground mustard)",
-            "quantity": "1/2 teaspoon",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "Optional: 1/2 cup to 1/4 cup of chickpeas",
-            "quantity": "",
-            "section": "Pantry"
-          }
-        ],
-        "steps": [
-          "Cook the pasta according to the instructions on the package, drain and rinse in cold water and add to a bowl.",
-          "Chop up the vegetables that you plan to use then add to a bowl. Add the tofu, cilantro and the nuts or seeds and mix well.",
-          "Add all of the ingredients of the dressing into a bowl and mix really well. If the dressing is too thick add in a tablespoon or so of water and mix in. Heat it in a skillet or microwave until it just comes to a boil. Then taste and adjust salt and flavor, it will be salty but it’s going over the entire bowl so you want to keep it a bit on the salty side. Heating the dressing helps the spices bloom. Cool for a few minutes.",
-          "Add this dressing to your salad bowl, and toss well to coat. Taste and adjust salt and flavour. Add more lime juice if needed, more black pepper if needed. Top it with some more fresh cilantro, let it chill for 15 minutes or more then serve."
-        ],
-        "servings": 4,
-        "cuisineType": "American",
-        "mainProtein": "Tofu",
-        "addedAt": "2026-06-15T00:56:11.500Z"
-      },
-      "checked": false,
-      "fromLibrary": false,
-      "manual": false
-    },
-    {
-      "recipe": {
-        "id": "rec_xzoy50o05mut",
-        "title": "Curry Pasta Salad",
-        "sourceUrl": "https://www.sanjanafeasts.co.uk/2023/05/curry-pasta-salad/",
-        "ingredients": [
-          {
-            "item": "fusilli or other pasta shape of your choice",
-            "quantity": "275g",
-            "section": "Pantry"
-          },
-          {
-            "item": "plain yoghurt",
-            "quantity": "150g",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "mayonnaise",
-            "quantity": "75g",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "Madras curry powder (medium or mild)",
-            "quantity": "1 tbsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "mango chutney",
-            "quantity": "2 tbsp",
-            "section": "Produce"
-          },
-          {
-            "item": "apple cider vinegar or white vinegar",
-            "quantity": "1 tbsp",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "cooked sweetcorn",
-            "quantity": "60g",
-            "section": "Produce"
-          },
-          {
-            "item": "red pepper, finely diced (60g)",
-            "quantity": "1/2",
-            "section": "Produce"
-          },
-          {
-            "item": "small red onion, finely chopped (30g)",
-            "quantity": "1/2",
-            "section": "Produce"
-          },
-          {
-            "item": "small cucumber, deseeded and chopped (60g)",
-            "quantity": "1/2",
-            "section": "Produce"
-          },
-          {
-            "item": "medium carrot, peeled, grated and squeezed of excess juices",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "chopped coriander",
-            "quantity": "2 tbsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "salt, or to taste",
-            "quantity": "1/2 tsp",
-            "section": "Spices & Seasonings"
-          }
-        ],
-        "steps": [
-          "Cook the pasta according to packet instructions. Don't leave it too al dente as it will require no further cooking. Drain and rinse under cold water. Allow to drain in a colander very well.",
-          "In a large bowl, whisk together the yoghurt, mayonnaise, curry powder, mango chutney, vinegar and salt.",
-          "Add the prepared sweetcorn, peppers, onions, cucumbers, carrots, coriander and pasta. Stir very well to coat.",
-          "Chill the pasta salad in the fridge for 30 minutes before serving."
-        ],
-        "servings": 4,
-        "cuisineType": "Indian Fusion",
-        "mainProtein": "Vegetarian",
-        "addedAt": "2026-06-15T00:56:13.301Z"
-      },
-      "checked": false,
-      "fromLibrary": false,
-      "manual": false
-    },
-    {
-      "recipe": {
         "id": "rec_xsxvf7hm5l5t",
         "title": "Indian Curry Pasta | Spicy Masala Pasta Salad",
         "sourceUrl": "https://cookilicious.com/one-pot-indian-curry-pasta/",
@@ -802,6 +237,324 @@
         "addedAt": "2026-06-15T00:56:11.105Z"
       },
       "checked": true,
+      "fromLibrary": false,
+      "manual": false
+    },
+    {
+      "recipe": {
+        "id": "rec_40ndemhfja4d",
+        "title": "Avgolemono: Greek Lemon Chicken Soup",
+        "sourceUrl": "https://www.themediterraneandish.com/avgolemono-soup-recipe/",
+        "ingredients": [
+          {
+            "item": "Extra Virgin Olive Oil (I used Private Reserve Greek olive oil)",
+            "quantity": "",
+            "section": "Pantry"
+          },
+          {
+            "item": "to 1 cup finely chopped carrots",
+            "quantity": "1/2",
+            "section": "Produce"
+          },
+          {
+            "item": "to 1 cup finely chopped celery",
+            "quantity": "1/2",
+            "section": "Produce"
+          },
+          {
+            "item": "to 1 cup finely chopped green onions",
+            "quantity": "1/2",
+            "section": "Produce"
+          },
+          {
+            "item": "garlic cloves, finely chopped",
+            "quantity": "2",
+            "section": "Produce"
+          },
+          {
+            "item": "low-sodium chicken broth",
+            "quantity": "8 cups",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "bay leaves",
+            "quantity": "2",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "rice",
+            "quantity": "1 cup",
+            "section": "Pantry"
+          },
+          {
+            "item": "Salt and pepper",
+            "quantity": "",
+            "section": "Produce"
+          },
+          {
+            "item": "cooked boneless chicken breast pieces, shredded ( about 6 to 8 oz store-bought rotisserie chicken will work)",
+            "quantity": "2",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "freshly-squeezed lemon juice",
+            "quantity": "1/2 cup",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "large eggs",
+            "quantity": "2",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "Fresh parsley for garnish (optional)",
+            "quantity": "",
+            "section": "Produce"
+          }
+        ],
+        "steps": [
+          "In a large Dutch oven or heavy pot, heat 1 tbsp olive oil on medium-high. Add the carrots, celery and green onions, toss together to saute briefly then stir in the garlic.",
+          "Add the chicken broth and bay leaves then raise the heat to high. Once the liquid has come to a rolling boil, add the rice, salt and pepper. Turn the heat to medium-low and simmer for 20 minutes or until the rice is tender. Now stir in the cooked chicken.",
+          "To prepare the egg-lemon sauce, in a medium bowl, whisk together the lemon juice and eggs. While whisking add 2 ladles-full of the broth from the cooking pot (this helps temper the eggs). Once fully combined, add the sauce to the chicken soup and stir. Remove from the heat immediately.",
+          "Garnish with fresh parsley, if you like. Serve hot with your favorite bread. Enjoy!"
+        ],
+        "servings": 6,
+        "cuisineType": "Greek",
+        "mainProtein": "Chicken",
+        "addedAt": "2026-06-15T01:06:49.981Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": false
+    },
+    {
+      "recipe": {
+        "id": "rec_imgyht34jaxe",
+        "title": "Greek Chicken Avgolemono",
+        "sourceUrl": "https://honestcooking.com/greek-chicken-avgolemono-sauce/",
+        "ingredients": [
+          {
+            "item": "extra virgin olive oil",
+            "quantity": "2 tbsp",
+            "section": "Pantry"
+          },
+          {
+            "item": "(454 g) boneless, skinless chicken breast halves, pounded to ½-inch thickness",
+            "quantity": "1 lbs",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "(237 ml) low-sodium chicken stock",
+            "quantity": "1 cup",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "large eggs",
+            "quantity": "2",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "large lemon zest and juice",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "Salt",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "Freshly ground black pepper",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "Freshly chopped dill or parsley, for garnish",
+            "quantity": "",
+            "section": "Produce"
+          }
+        ],
+        "steps": [
+          "Prepare the Chicken: In a skillet over medium-high heat, warm 2 tablespoons of extra virgin olive oil. Add the chicken breasts (work in batches if necessary) and cook for about 4-5 minutes on each side or until golden brown and the internal temperature reaches 165°F (74°C). Once cooked, transfer the chicken to a plate and loosely cover with aluminum foil.",
+          "Make the Avgolemono Sauce: In the same skillet, add 1 cup of low-sodium chicken stock, scraping the bottom of the pan to loosen any browned bits.",
+          "Temper the Eggs: In a medium bowl, whisk together 2 large eggs, the zest and juice of 1 large lemon. Carefully ladle half a cup of the hot chicken stock into the egg mixture, whisking constantly to temper the eggs and prevent them from scrambling.",
+          "Combine and Cook the Sauce: Once the eggs are tempered, slowly whisk the egg mixture back into the skillet with the remaining hot chicken stock. Reduce heat to medium-low and continue to whisk the sauce until it thickens, about 3 minutes. Avoid boiling to prevent the eggs from curdling.",
+          "Strain and Serve: Place a fine mesh sieve over a bowl and strain the sauce to ensure its smooth. Serve the sauce hot over the cooked chicken breasts. Garnish with freshly chopped dill or parsley."
+        ],
+        "servings": 4,
+        "cuisineType": "Greek",
+        "mainProtein": "Chicken",
+        "addedAt": "2026-06-15T01:06:51.026Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": false
+    },
+    {
+      "recipe": {
+        "id": "rec_k0t68uu3jbkv",
+        "title": "Greek-Style Chicken Fricassee Avgolemono",
+        "sourceUrl": "https://www.dimitrasdishes.com/greek-style-chicken-fricassee-avgolemono/",
+        "ingredients": [
+          {
+            "item": "boneless, skinless chicken breasts cut into strips, or 3 pounds chicken cut into pieces",
+            "quantity": "4",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "greens, spinach, swiss chard, and/or kale, roughly chopped",
+            "quantity": "1-pound",
+            "section": "Produce"
+          },
+          {
+            "item": "olive oil",
+            "quantity": "¼ cup",
+            "section": "Pantry"
+          },
+          {
+            "item": "onion, finely chopped",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "scallions, thinly sliced",
+            "quantity": "2-3",
+            "section": "Produce"
+          },
+          {
+            "item": "garlic cloves, grated",
+            "quantity": "2",
+            "section": "Produce"
+          },
+          {
+            "item": "(946 ml) chicken stock",
+            "quantity": "4 cups",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "chopped dried dill",
+            "quantity": "1 tablespoon",
+            "section": "Produce"
+          },
+          {
+            "item": "all-purpose flour, or more",
+            "quantity": "¼ cup",
+            "section": "Pantry"
+          },
+          {
+            "item": "Salt and black pepper, to taste",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "• 3 egg yolks",
+            "quantity": "",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "• ¼ cup fresh lemon juice",
+            "quantity": "",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "• 2 teaspoons cornstarch",
+            "quantity": "",
+            "section": "Pantry"
+          }
+        ],
+        "steps": [
+          "Place the chicken strips on a tray and season it on both sides with salt, pepper, and flour.",
+          "Add the oil to a pot and heat over medium heat. Cook the chicken in 2-3 batches for 4-5 minutes on each side. The chicken will not be fully cooked. Set it aside on a plate or tray.",
+          "Add the onions to the pot and cook over medium-low heat until soft and golden. About 5-6 minutes.",
+          "Add the scallions to the pot and cook for 3 minutes.",
+          "Add the garlic and warm through for 20-30 seconds.",
+          "Pour the chicken stock into the pot and bring to a boil.",
+          "Add the chopped greens and cook for a few minutes until wilted.",
+          "Place the chicken back into the pot and reduce the heat to low.",
+          "Prepare the egg-lemon sauce. Whisk all of the avgolemono ingredients together and add 1-2 cups of hot chicken broth from the pot to temper the sauce. Whisk together and add the sauce to the pot.",
+          "Simmer for 4-5 minutes. Taste and adjust the seasoning if needed.",
+          "Serve with toasted bread, mashed potatoes, pasta, or rice. Enjoy!"
+        ],
+        "servings": 6,
+        "cuisineType": null,
+        "mainProtein": "Chicken",
+        "addedAt": "2026-06-15T01:06:51.871Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": false
+    },
+    {
+      "recipe": {
+        "id": "rec_8jyoa3q5ja3y",
+        "title": "Avgolemono Soup (Greek chicken soup with lemon and egg)",
+        "sourceUrl": "https://www.bowlofdelicious.com/avgolemono/",
+        "ingredients": [
+          {
+            "item": "butter (or olive oil, optional, see notes)",
+            "quantity": "2 tablespoons",
+            "section": "Pantry"
+          },
+          {
+            "item": "ribs celery (finely diced, optional)",
+            "quantity": "2",
+            "section": "Produce"
+          },
+          {
+            "item": "onion (finely diced, optional)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "chicken stock/broth (low sodium preferred)",
+            "quantity": "8 cups",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "long grain white rice (or another kind (see notes))",
+            "quantity": "1 cup",
+            "section": "Pantry"
+          },
+          {
+            "item": "cooked chicken (such as rotisserie)",
+            "quantity": "2 cups",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "eggs",
+            "quantity": "5",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "lemon juice (from about 4-5 lemons (more or less if you like - see notes))",
+            "quantity": "3/4 cup",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "salt and fresh cracked pepper (to taste)",
+            "quantity": "",
+            "section": "Produce"
+          },
+          {
+            "item": "extra butter or olive oil (optional)",
+            "quantity": "",
+            "section": "Pantry"
+          }
+        ],
+        "steps": [
+          "Optional: If using the celery and onion - melt 2 of the 2 tablespoons butter in a large heavy pot with a lid (such as a Dutch oven). Add the diced 2 ribs celery and 1 onion. Sauté over medium-high heat until softened (about 3 minutes).",
+          "Pour in the 8 cups chicken stock/broth. Bring to a boil. Add the 1 cup long grain white rice. Stir, cover, and simmer on low for 15-20 minutes, or until rice is fully cooked.",
+          "Make the Avgolemono sauce. Add the 5 eggs and 3/4 cup lemon juice to your blender. Turn the blender on to thoroughly mix the eggs and lemon juice. While the blender is running, very gradually pour some of the hot chicken broth from the pot. It's OK if some of the rice or veggies gets in there - this will only help to thicken the sauce. Continue blending until about 2 cups of broth is added. You will end up with a foamy, cream-colored sauce.",
+          "Add the 2 cups cooked chicken to the pot. Stir, cover, and continue simmering on low for 3-5 minutes, until chicken is heated.",
+          "Turn off the heat on the soup. Slowly and gradually add the Avgolemono sauce into the soup from the blender, stirring it in as you add it. It will look quite foamy still. This is what is supposed to happen!",
+          "If you like, you can stir in extra butter or olive oil to the pot for a richer taste. Taste and adjust seasoning if needed with salt and fresh cracked pepper. Serve with more freshly cracked black pepper on top."
+        ],
+        "servings": 8,
+        "cuisineType": "Greek",
+        "mainProtein": "Chicken",
+        "addedAt": "2026-06-15T01:06:49.966Z"
+      },
+      "checked": false,
       "fromLibrary": false,
       "manual": false
     }
