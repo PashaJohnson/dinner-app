@@ -753,7 +753,7 @@
         "mainProtein": "Vegetarian",
         "addedAt": "2026-06-08T02:15:28.316Z"
       },
-      "checked": true,
+      "checked": false,
       "fromLibrary": false,
       "manual": false
     },
