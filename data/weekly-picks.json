@@ -666,6 +666,83 @@
       "checked": true,
       "fromLibrary": false,
       "manual": true
+    },
+    {
+      "recipe": {
+        "id": "rec_xh2wcmg70h4a",
+        "title": "Grilled Hot Honey Chicken with Fresh Peach Salsa",
+        "sourceUrl": "https://kaleforniakravings.com/grilled-hot-honey-chicken-with-fresh-peach-salsa/?mcp_token=eyJwaWQiOjg4MTg3OSwic2lkIjoxNzU2MzM3Mzk2LCJheCI6IjI5YTI5MjMzNTJlN2ZkOWM4ZjYyMjliYmY3ZWM2MTk2IiwidHMiOjE3ODI2NzIxNjEsImV4cCI6MTc4NTA5MTM2MX0.Baf05_UbaBTH2q8FZgf8dlp5yiHF4a-_QWD4kr33e7w&fbclid=PAVERFWASuSoNleHRuA2FlbQIxMABzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAadE7L-ZL3mx8E35iSlZpq_YWrtHQsa_oZG_ZtY5NzOcyn4SXFumrKI9ArBpPQ_aem_eQouLuU-vNk80GRYtJHFow#recipe",
+        "ingredients": [
+          {
+            "item": "chicken breasts",
+            "quantity": "4",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "hot honey",
+            "quantity": "1/2 cup",
+            "section": "Pantry"
+          },
+          {
+            "item": "peaches",
+            "quantity": "3 medium, diced",
+            "section": "Produce"
+          },
+          {
+            "item": "red onion",
+            "quantity": "1/4 cup, finely diced",
+            "section": "Produce"
+          },
+          {
+            "item": "jalapeño",
+            "quantity": "1, minced",
+            "section": "Produce"
+          },
+          {
+            "item": "fresh cilantro",
+            "quantity": "2 tbsp, chopped",
+            "section": "Produce"
+          },
+          {
+            "item": "lime",
+            "quantity": "1, juiced",
+            "section": "Produce"
+          },
+          {
+            "item": "salt",
+            "quantity": "to taste",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "black pepper",
+            "quantity": "to taste",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "olive oil",
+            "quantity": "2 tbsp",
+            "section": "Pantry"
+          }
+        ],
+        "steps": [
+          "Preheat grill to medium-high heat.",
+          "Pat chicken breasts dry and season with salt and pepper.",
+          "Brush chicken with olive oil and place on grill.",
+          "Grill for 6-7 minutes per side until cooked through.",
+          "During the last minute of cooking, brush chicken generously with hot honey on both sides.",
+          "Remove chicken from grill and let rest for 5 minutes.",
+          "Meanwhile, prepare peach salsa by combining diced peaches, red onion, jalapeño, cilantro, and lime juice in a bowl.",
+          "Season salsa with salt and pepper to taste.",
+          "Serve grilled hot honey chicken topped with fresh peach salsa."
+        ],
+        "servings": 4,
+        "cuisineType": "American",
+        "mainProtein": "Chicken",
+        "addedAt": "2026-06-28T18:43:41.098Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": true
     }
   ]
 }
