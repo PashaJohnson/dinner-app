@@ -581,6 +581,21 @@
     color: var(--text-soft);
     font-style: normal;
   }
+  .shop-remove {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: var(--text-mute);
+    background: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: -3px -4px 0 4px;
+    transition: background 0.2s, color 0.2s;
+  }
+  .shop-remove:active { background: var(--surface-3); color: var(--text); }
+  .shop-remove svg { width: 16px; height: 16px; }
 
   /* ===== MODALS ===== */
   .modal-overlay {
@@ -950,6 +965,11 @@
         <button class="btn ghost" id="btnClearChecked">Clear ✓</button>
       </div>
 
+      <div class="refresh-row">
+        <input type="text" id="extraInput" placeholder="Add an item — e.g. paper towels, olive oil…" autocomplete="off" />
+        <button class="btn" id="btnAddExtra">Add</button>
+      </div>
+
       <div id="shopContent">
         <!-- Shopping sections rendered here -->
       </div>
@@ -1038,6 +1058,7 @@ const ANTHROPIC_LIGHT_MODEL = 'claude-haiku-4-5';       // for suggest-and-searc
 const CORS_PROXY = 'https://corsproxy.io/?url=';
 const INSPIRATIONS_PATH = 'data/inspirations.json';
 const PICKS_PATH = 'data/weekly-picks.json';
+const EXTRAS_PATH = 'data/shopping-extras.json';
 const WEEKLY_COUNT = 7;
 
 /* ===== State ===== */
@@ -1045,10 +1066,12 @@ const state = {
   cfg: { anthropic: '', github: '', repo: '', branch: 'main' },
   inspirations: [],     // [{id, title, sourceUrl, ingredients, steps, ...}]
   picks: [],            // [{recipe: {...}, checked, fromLibrary}]
+  extras: [],           // [{id, name, quantity, section}] — manual shopping-list items (synced)
   weekStartDate: null,
   shopChecked: {},      // {ingredientKey: true}  (per-device, localStorage)
   shaInspirations: null,
   shaPicks: null,
+  shaExtras: null,
 };
 
 /* ===== localStorage helpers ===== */
@@ -1158,6 +1181,23 @@ async function loadInspirations() {
 async function saveInspirations(message) {
   const obj = { recipes: state.inspirations };
   state.shaInspirations = await ghPut(INSPIRATIONS_PATH, obj, state.shaInspirations, message);
+}
+
+async function loadExtras() {
+  try {
+    const { content, sha } = await ghGet(EXTRAS_PATH);
+    state.shaExtras = sha;
+    state.extras = content ? (JSON.parse(content).items || []) : [];
+  } catch (e) {
+    console.warn('loadExtras failed:', e);
+    state.extras = [];
+    state.shaExtras = null;
+  }
+}
+
+async function saveExtras(message) {
+  const obj = { items: state.extras };
+  state.shaExtras = await ghPut(EXTRAS_PATH, obj, state.shaExtras, message);
 }
 
 async function loadPicks() {
@@ -1816,8 +1856,8 @@ function shopKey(p, item) {
 }
 
 function buildShoppingList() {
-  // Aggregate from CHECKED picks
-  const map = {};  // section -> [{item, recipeTitle, quantity, key}]
+  // Aggregate from CHECKED picks + manually-added extras
+  const map = {};  // section -> [{item, recipeTitle, quantity, key, extraId?}]
   for (const p of state.picks) {
     if (!p.checked || !p.recipe) continue;
     const r = p.recipe;
@@ -1831,6 +1871,17 @@ function buildShoppingList() {
         key: shopKey(p, ing.item),
       });
     }
+  }
+  for (const ex of state.extras) {
+    const sec = ex.section || classifyIngredient(ex.name) || 'Other';
+    if (!map[sec]) map[sec] = [];
+    map[sec].push({
+      item: ex.name,
+      quantity: ex.quantity || '',
+      recipeTitle: null,      // manual item — not tied to a recipe
+      key: 'extra|' + ex.id,
+      extraId: ex.id,
+    });
   }
   return map;
 }
@@ -1941,14 +1992,14 @@ function renderShopping() {
   const remaining = Object.values(groups).reduce((s, arr) =>
     s + arr.filter(x => !state.shopChecked[x.key]).length, 0);
   document.getElementById('shopSub').textContent =
-    total === 0 ? 'Check recipes on the Recipes tab to populate'
+    total === 0 ? 'Check recipes, or add an item above'
                 : `${remaining} remaining · ${total} total`;
   const c = document.getElementById('shopContent');
   if (total === 0) {
     c.innerHTML = `
       <div class="empty">
         <h3>Nothing on the list</h3>
-        <p>Check recipes on the Recipes tab to auto-populate ingredients here, grouped by store section.</p>
+        <p>Check recipes on the Recipes tab to auto-fill ingredients here, or add your own items with the box above.</p>
       </div>`;
     return;
   }
@@ -1961,11 +2012,12 @@ function renderShopping() {
     for (const it of items) {
       const k = normalizeIngredient(it.item);
       if (!dedupe.has(k)) {
-        dedupe.set(k, { ...it, qtys: [], recipes: new Set(), keys: new Set() });
+        dedupe.set(k, { ...it, qtys: [], recipes: new Set(), keys: new Set(), extraIds: new Set() });
       }
       const e = dedupe.get(k);
       if (it.quantity) e.qtys.push(it.quantity);
-      e.recipes.add(it.recipeTitle);
+      if (it.recipeTitle) e.recipes.add(it.recipeTitle);
+      if (it.extraId) e.extraIds.add(it.extraId);
       e.keys.add(it.key);
     }
     const block = document.createElement('div');
@@ -1980,18 +2032,26 @@ function renderShopping() {
     for (const e of dedupe.values()) {
       // checked if ALL contributing keys are checked
       const allChecked = [...e.keys].every(k => state.shopChecked[k]);
+      const isManualOnly = e.extraIds.size > 0 && e.recipes.size === 0;
       const row = document.createElement('div');
       row.className = 'shop-item' + (allChecked ? ' checked' : '');
       const qtyText = e.qtys.length ? e.qtys.join(' + ') : '';
       const recList = [...e.recipes].join(', ');
+      const metaPieces = [];
+      if (qtyText) metaPieces.push(`<span>${escapeHtml(qtyText)}</span>`);
+      if (recList) metaPieces.push(`<span class="for-recipe">for ${escapeHtml(recList)}</span>`);
+      if (isManualOnly && !qtyText) metaPieces.push(`<span class="for-recipe">added to list</span>`);
       row.innerHTML = `
         <div class="shop-check">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
         </div>
         <div class="shop-body">
           <div class="shop-name"></div>
-          <div class="shop-qty">${qtyText ? `<span>${escapeHtml(qtyText)}</span> · ` : ''}<span class="for-recipe">for ${escapeHtml(recList)}</span></div>
+          ${metaPieces.length ? `<div class="shop-qty">${metaPieces.join(' · ')}</div>` : ''}
         </div>
+        ${isManualOnly ? `<button class="shop-remove" aria-label="Remove item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>` : ''}
       `;
       row.querySelector('.shop-name').textContent = e.item;
       row.addEventListener('click', () => {
@@ -2002,6 +2062,11 @@ function renderShopping() {
         }
         saveShop();
         renderShopping();
+      });
+      const rm = row.querySelector('.shop-remove');
+      if (rm) rm.addEventListener('click', (ev) => {
+        ev.stopPropagation();
+        removeExtras([...e.extraIds]);
       });
       block.appendChild(row);
     }
@@ -2218,7 +2283,9 @@ async function initialLoad() {
   const list = document.getElementById('recipeList');
   list.innerHTML = `<div class="full-load"><div class="spinner"></div><div>Loading library…</div></div>`;
   try {
-    await Promise.all([loadInspirations(), loadPicks()]);
+    // Load inspirations + extras first, then picks (picks migration reads inspirations)
+    await Promise.all([loadInspirations(), loadExtras()]);
+    await loadPicks();
   } catch (e) {
     toast('Load failed: ' + e.message, 'error');
   }
@@ -2307,6 +2374,43 @@ function clearCheckedShopItems() {
   for (const k of Object.keys(state.shopChecked)) delete state.shopChecked[k];
   saveShop();
   renderShopping();
+}
+
+async function handleAddExtra() {
+  const input = document.getElementById('extraInput');
+  const name = input.value.trim();
+  if (!name) { toast('Type an item to add', 'error'); return; }
+  if (!state.cfg.repo || !state.cfg.github) { toast('Set up Settings first', 'error'); return; }
+  const item = {
+    id: newRecipeId(),
+    name,
+    quantity: '',
+    section: classifyIngredient(name) || 'Other',
+  };
+  state.extras.push(item);
+  input.value = '';
+  renderShopping();
+  try {
+    await saveExtras(`Add item: ${name}`);
+  } catch (e) {
+    // roll back on failure so the list reflects what's actually saved
+    state.extras = state.extras.filter(x => x.id !== item.id);
+    renderShopping();
+    toast('Save failed — try again', 'error');
+  }
+}
+
+async function removeExtras(ids) {
+  const idset = new Set(ids);
+  state.extras = state.extras.filter(x => !idset.has(x.id));
+  for (const id of ids) delete state.shopChecked['extra|' + id];
+  saveShop();
+  renderShopping();
+  try {
+    await saveExtras('Remove item(s)');
+  } catch (e) {
+    toast('Save failed — try again', 'error');
+  }
 }
 
 async function clearWeek() {
@@ -2401,6 +2505,12 @@ function init() {
 
   // Clear checked (shopping)
   document.getElementById('btnClearChecked').addEventListener('click', clearCheckedShopItems);
+
+  // Add manual shopping item
+  document.getElementById('btnAddExtra').addEventListener('click', handleAddExtra);
+  document.getElementById('extraInput').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') handleAddExtra();
+  });
 
   // Clear all (this week's recipes)
   document.getElementById('btnClearWeek').addEventListener('click', clearWeek);
