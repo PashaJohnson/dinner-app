@@ -1,6 +1,88 @@
 {
   "recipes": [
     {
+      "id": "rec_40ndemhfja4d",
+      "title": "Avgolemono: Greek Lemon Chicken Soup",
+      "sourceUrl": "https://www.themediterraneandish.com/avgolemono-soup-recipe/",
+      "ingredients": [
+        {
+          "item": "Extra Virgin Olive Oil (I used Private Reserve Greek olive oil)",
+          "quantity": "",
+          "section": "Pantry"
+        },
+        {
+          "item": "to 1 cup finely chopped carrots",
+          "quantity": "1/2",
+          "section": "Produce"
+        },
+        {
+          "item": "to 1 cup finely chopped celery",
+          "quantity": "1/2",
+          "section": "Produce"
+        },
+        {
+          "item": "to 1 cup finely chopped green onions",
+          "quantity": "1/2",
+          "section": "Produce"
+        },
+        {
+          "item": "garlic cloves, finely chopped",
+          "quantity": "2",
+          "section": "Produce"
+        },
+        {
+          "item": "low-sodium chicken broth",
+          "quantity": "8 cups",
+          "section": "Meat & Seafood"
+        },
+        {
+          "item": "bay leaves",
+          "quantity": "2",
+          "section": "Spices & Seasonings"
+        },
+        {
+          "item": "rice",
+          "quantity": "1 cup",
+          "section": "Pantry"
+        },
+        {
+          "item": "Salt and pepper",
+          "quantity": "",
+          "section": "Produce"
+        },
+        {
+          "item": "cooked boneless chicken breast pieces, shredded ( about 6 to 8 oz store-bought rotisserie chicken will work)",
+          "quantity": "2",
+          "section": "Meat & Seafood"
+        },
+        {
+          "item": "freshly-squeezed lemon juice",
+          "quantity": "1/2 cup",
+          "section": "Condiments & Sauces"
+        },
+        {
+          "item": "large eggs",
+          "quantity": "2",
+          "section": "Dairy & Eggs"
+        },
+        {
+          "item": "Fresh parsley for garnish (optional)",
+          "quantity": "",
+          "section": "Produce"
+        }
+      ],
+      "steps": [
+        "In a large Dutch oven or heavy pot, heat 1 tbsp olive oil on medium-high. Add the carrots, celery and green onions, toss together to saute briefly then stir in the garlic.",
+        "Add the chicken broth and bay leaves then raise the heat to high. Once the liquid has come to a rolling boil, add the rice, salt and pepper. Turn the heat to medium-low and simmer for 20 minutes or until the rice is tender. Now stir in the cooked chicken.",
+        "To prepare the egg-lemon sauce, in a medium bowl, whisk together the lemon juice and eggs. While whisking add 2 ladles-full of the broth from the cooking pot (this helps temper the eggs). Once fully combined, add the sauce to the chicken soup and stir. Remove from the heat immediately.",
+        "Garnish with fresh parsley, if you like. Serve hot with your favorite bread. Enjoy!"
+      ],
+      "servings": 6,
+      "cuisineType": "Greek",
+      "mainProtein": "Chicken",
+      "addedAt": "2026-06-15T01:06:49.981Z"
+    },
+    {
       "id": "rec_uid3t2tg4k78",
       "title": "Harissa Roasted Cauliflower Couscous",
       "sourceUrl": "https://www.lastingredient.com/harissa-roasted-cauliflower-couscous/",
