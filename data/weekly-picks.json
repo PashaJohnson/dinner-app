@@ -557,6 +557,115 @@
       "checked": true,
       "fromLibrary": true,
       "manual": true
+    },
+    {
+      "recipe": {
+        "id": "rec_k42m2ia5qbo7",
+        "title": "Elote Chicken Pasta Salad",
+        "sourceUrl": "https://moribyan.com/elote-chicken-pasta-salad/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleASuSKpleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAafgZnY3XIv7-IR28hpbz28oeqlJUy8-jsQ8t5vPyPZYoOWtsaN8g4Fx3ufPjA_aem_ufVMt6JPI78hn0DsLy2atw#recipe-card",
+        "ingredients": [
+          {
+            "item": "chicken breast",
+            "quantity": "1 pound",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "olive oil",
+            "quantity": "1 tablespoon, plus additional for pan",
+            "section": "Pantry"
+          },
+          {
+            "item": "salt",
+            "quantity": "1 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "paprika",
+            "quantity": "½ teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "chili powder",
+            "quantity": "½ teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "garlic powder",
+            "quantity": "½ teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "onion powder",
+            "quantity": "½ teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "rotini pasta",
+            "quantity": "12 ounces, cooked",
+            "section": "Pantry"
+          },
+          {
+            "item": "roasted corn",
+            "quantity": "1½ cups",
+            "section": "Produce"
+          },
+          {
+            "item": "cotija",
+            "quantity": "⅓ cup, crumbled",
+            "section": "Other"
+          },
+          {
+            "item": "cilantro",
+            "quantity": "⅓ cup, finely chopped",
+            "section": "Produce"
+          },
+          {
+            "item": "red onion",
+            "quantity": "1 small, finely diced",
+            "section": "Produce"
+          },
+          {
+            "item": "jalapeños",
+            "quantity": "2, seeds and stems removed, finely diced",
+            "section": "Produce"
+          },
+          {
+            "item": "sour cream",
+            "quantity": "⅓ cup",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "chipotle mayo",
+            "quantity": "½ cup",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "lime juice",
+            "quantity": "juice of ½ lime",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "black pepper",
+            "quantity": "to taste",
+            "section": "Spices & Seasonings"
+          }
+        ],
+        "steps": [
+          "Pat chicken breast dry with a paper towel. In a small bowl mix together salt, paprika, chili powder, garlic powder, and onion powder. Drizzle chicken with olive oil and rub the spice mixture all over until every inch is evenly coated.",
+          "Heat a drizzle of olive oil in a skillet over medium-high heat until shimmering. Add the chicken and cook undisturbed for 6–7 minutes until a deep golden crust forms on the bottom. Flip and cook another 6–7 minutes until cooked through and internal temp reaches 165°F. Transfer to a cutting board and let rest for 5 minutes before dicing into bite-sized pieces — resting keeps it juicy.",
+          "In a large bowl, whisk together sour cream, chipotle mayo, and lime juice until smooth and combined.",
+          "Add the cooked rotini, roasted corn, red onion, and jalapeños to the bowl with the dressing. Toss well until everything is evenly coated. Add the diced chicken and toss again gently to combine.",
+          "Fold in the cotija and cilantro last so they don't get crushed. Taste and season generously with salt, black pepper, and chili powder.",
+          "Serve immediately at room temperature or cover and chill in the fridge for at least 30 minutes for the flavors to really come together."
+        ],
+        "servings": 6,
+        "cuisineType": "Mexican",
+        "mainProtein": "Chicken",
+        "addedAt": "2026-06-28T18:35:47.479Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": true
     }
   ]
 }
