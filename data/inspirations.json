@@ -1,6 +1,101 @@
 {
   "recipes": [
     {
+      "id": "rec_migtvj2n1mt5",
+      "title": "Tzatziki Chicken Bowls with Cucumber Salad",
+      "sourceUrl": "https://kaleforniakravings.com/tzatziki-chicken-bowls-with-cucumber-salad/?mcp_token=eyJwaWQiOjg4MTg3OSwic2lkIjoxNzU2MzM3Mzk2LCJheCI6ImQwM2NhZTAyNzZkODExZTBlYTY4YTFhOWMxMGUyNTlkIiwidHMiOjE3ODI2NzIyMzEsImV4cCI6MTc4NTA5MTQzMX0.H_IhdcyCcJ2G9WZD6uJBFLJlmqnZUNtgVja9Zc9ktdQ&fbclid=PAVERFWASuSsNleHRuA2FlbQIxMABzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAafZxZrGt50x9Eueq4opPHrY4ozPdzo-wcVIfGMHu4eHLXivQFJybX7uRaHwRg_aem__CKB3kQrYPv28sgQ2fM2wQ#recipe",
+      "ingredients": [
+        {
+          "item": "chicken breasts",
+          "quantity": "2 lbs",
+          "section": "Meat & Seafood"
+        },
+        {
+          "item": "Greek yogurt",
+          "quantity": "1 cup",
+          "section": "Dairy & Eggs"
+        },
+        {
+          "item": "fresh dill",
+          "quantity": "3 tbsp, chopped",
+          "section": "Produce"
+        },
+        {
+          "item": "fresh mint",
+          "quantity": "2 tbsp, chopped",
+          "section": "Produce"
+        },
+        {
+          "item": "cucumber",
+          "quantity": "1 large, grated",
+          "section": "Produce"
+        },
+        {
+          "item": "garlic",
+          "quantity": "3 cloves, minced",
+          "section": "Produce"
+        },
+        {
+          "item": "lemon juice",
+          "quantity": "2 tbsp",
+          "section": "Condiments & Sauces"
+        },
+        {
+          "item": "salt",
+          "quantity": "to taste",
+          "section": "Spices & Seasonings"
+        },
+        {
+          "item": "black pepper",
+          "quantity": "to taste",
+          "section": "Spices & Seasonings"
+        },
+        {
+          "item": "olive oil",
+          "quantity": "2 tbsp",
+          "section": "Pantry"
+        },
+        {
+          "item": "cucumber",
+          "quantity": "2 medium, diced",
+          "section": "Produce"
+        },
+        {
+          "item": "red onion",
+          "quantity": "1/4 cup, diced",
+          "section": "Produce"
+        },
+        {
+          "item": "tomatoes",
+          "quantity": "1 cup, diced",
+          "section": "Produce"
+        },
+        {
+          "item": "kalamata olives",
+          "quantity": "1/2 cup",
+          "section": "Other"
+        },
+        {
+          "item": "feta cheese",
+          "quantity": "1/2 cup, crumbled",
+          "section": "Dairy & Eggs"
+        }
+      ],
+      "steps": [
+        "Mix Greek yogurt, dill, mint, grated cucumber, garlic, and lemon juice in a bowl to make tzatziki sauce. Season with salt and pepper to taste.",
+        "Season chicken breasts with salt and pepper on both sides.",
+        "Heat olive oil in a large skillet over medium-high heat.",
+        "Cook chicken breasts for 6-7 minutes per side until cooked through. Remove and let rest for 5 minutes, then slice.",
+        "Combine diced cucumber, red onion, tomatoes, olives, and feta cheese in a bowl to make the cucumber salad.",
+        "Assemble bowls with sliced chicken, cucumber salad, and a generous dollop of tzatziki sauce.",
+        "Serve immediately and enjoy."
+      ],
+      "servings": 4,
+      "cuisineType": "Mediterranean",
+      "mainProtein": "Chicken",
+      "addedAt": "2026-06-28T18:44:35.129Z"
+    },
+    {
       "id": "rec_40ndemhfja4d",
       "title": "Avgolemono: Greek Lemon Chicken Soup",
       "sourceUrl": "https://www.themediterraneandish.com/avgolemono-soup-recipe/",
