@@ -554,7 +554,7 @@
         "mainProtein": "Vegetarian",
         "addedAt": "2026-06-15T00:55:23.204Z"
       },
-      "checked": true,
+      "checked": false,
       "fromLibrary": true,
       "manual": true
     },
@@ -740,7 +740,7 @@
         "mainProtein": "Chicken",
         "addedAt": "2026-06-28T18:43:41.098Z"
       },
-      "checked": true,
+      "checked": false,
       "fromLibrary": false,
       "manual": true
     },
