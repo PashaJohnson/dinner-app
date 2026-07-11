@@ -19,34 +19,16 @@
       "section": "Condiments & Sauces"
     },
     {
-      "id": "rec_mmwpcwdxvcqq",
-      "name": "Flank steak (1lb)",
-      "quantity": "",
-      "section": "Meat & Seafood"
-    },
-    {
       "id": "rec_v634417bvn2c",
       "name": "Cilantto",
       "quantity": "",
       "section": "Other"
     },
     {
-      "id": "rec_nx93d6hu3a51",
-      "name": "Brown rice spaghetti",
-      "quantity": "",
-      "section": "Pantry"
-    },
-    {
       "id": "rec_68i39ca83h3y",
       "name": "Burrata",
       "quantity": "",
       "section": "Other"
-    },
-    {
-      "id": "rec_qtjhelj34fe6",
-      "name": "Bacon",
-      "quantity": "",
-      "section": "Meat & Seafood"
     }
   ]
 }
