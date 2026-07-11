@@ -1,159 +1,6 @@
 {
-  "weekStartDate": "2026-06-15",
+  "weekStartDate": "2026-07-11",
   "picks": [
-    {
-      "recipe": {
-        "id": "rec_xsxvf7hm5l5t",
-        "title": "Indian Curry Pasta | Spicy Masala Pasta Salad",
-        "sourceUrl": "https://cookilicious.com/one-pot-indian-curry-pasta/",
-        "ingredients": [
-          {
-            "item": "pasta (any variety)",
-            "quantity": "12 oz",
-            "section": "Pantry"
-          },
-          {
-            "item": "olive oil (or vegan butter)",
-            "quantity": "1 tbsp",
-            "section": "Pantry"
-          },
-          {
-            "item": "mustard seeds",
-            "quantity": "1 tsp",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "cumin seeds",
-            "quantity": "1 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "GF asafoetida",
-            "quantity": "1/2 tsp",
-            "section": "Other"
-          },
-          {
-            "item": "fresh curry leaves",
-            "quantity": "5",
-            "section": "Other"
-          },
-          {
-            "item": "ginger garlic paste",
-            "quantity": "1 tbsp",
-            "section": "Produce"
-          },
-          {
-            "item": "green chillies (finely chopped)",
-            "quantity": "2-3",
-            "section": "Other"
-          },
-          {
-            "item": "onion (finely chopped)",
-            "quantity": "1 cup",
-            "section": "Produce"
-          },
-          {
-            "item": "tomato (finely chopped)",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "mushrooms (sliced)",
-            "quantity": "8 oz",
-            "section": "Produce"
-          },
-          {
-            "item": "frozen green peas",
-            "quantity": "1/4 cup",
-            "section": "Frozen"
-          },
-          {
-            "item": "bell pepper (finely chopped)",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "turmeric powder",
-            "quantity": "1 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "cumin powder",
-            "quantity": "1 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "coriander powder",
-            "quantity": "1 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "chilly powder",
-            "quantity": "1 tsp",
-            "section": "Other"
-          },
-          {
-            "item": "salt",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "red pepper flakes",
-            "quantity": "1 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "oregano",
-            "quantity": "1 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "garam masala",
-            "quantity": "1 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "Kasoori methi",
-            "quantity": "1 tbsp",
-            "section": "Other"
-          },
-          {
-            "item": "chopped cilantro",
-            "quantity": "4 tbsp",
-            "section": "Produce"
-          },
-          {
-            "item": "lemon juice",
-            "quantity": "1 tbsp",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "vegan Parmesan cheese",
-            "quantity": "2 tbsp",
-            "section": "Dairy & Eggs"
-          }
-        ],
-        "steps": [
-          "In a pan, boil water with salt. Once it starts boiling, add the pasta and cook it as per the instructions on the packet. Keep stirring at intervals to ensure even cooking. Cook it al dente. Strain but do not throw away the water. Drizzle olive oil over it. Mix and keep it aside.",
-          "Meanwhile, slice the mushrooms, and finely chop all the veggies needed after washing them. Chef tip - Do not chop them too chunky, keep them fine.",
-          "Heat olive oil in the same pan. You can also use ghee instead (if you are not vegan). Once the oil is hot, temper mustard seeds and cumin seeds along with GF asafoetida. As the seeds begin to crackle, add curry leaves, green chillies, ginger paste, garlic paste, and part of the cilantro. Fry for a minute or two.",
-          "Then add the chopped onions. Fry till the onions turn translucent. This could take 3-4 minutes on medium flame.",
-          "Now add tomatoes and salt. Continue to saute till the tomatoes are cooked. This could take 3-4 minutes on medium flame.",
-          "Add mushrooms to the pan. Mix and saute for 5-7 minutes or till the mushrooms are cooked.",
-          "Next, add the green peas and bell peppers. Continue to saute for 2-3 more minutes.",
-          "Then add the dry spices like turmeric powder, cumin powder, coriander powder, chilly powder, oregano, and red pepper flakes. Also, add a teaspoon of sugar to balance out the flavors. Add 1/4 cup of the reserved water to prevent the masala from burning. Cook it for a minute.",
-          "Add the cooked pasta. Mix it all together so that it coats with the masala. taste and adjust the salt as needed.",
-          "Garnish with remaining cilantro, vegan Parmesan cheese, garam masala, Kasoori methi, and lemon juice for extra tanginess. Mix and take the pan off the flame. Keep it covered."
-        ],
-        "servings": 6,
-        "cuisineType": "fusion",
-        "mainProtein": "Vegetarian",
-        "addedAt": "2026-06-15T00:56:11.105Z"
-      },
-      "checked": false,
-      "fromLibrary": false,
-      "manual": false
-    },
     {
       "recipe": {
         "id": "rec_40ndemhfja4d",
@@ -239,237 +86,6 @@
       },
       "checked": true,
       "fromLibrary": true,
-      "manual": false
-    },
-    {
-      "recipe": {
-        "id": "rec_imgyht34jaxe",
-        "title": "Greek Chicken Avgolemono",
-        "sourceUrl": "https://honestcooking.com/greek-chicken-avgolemono-sauce/",
-        "ingredients": [
-          {
-            "item": "extra virgin olive oil",
-            "quantity": "2 tbsp",
-            "section": "Pantry"
-          },
-          {
-            "item": "(454 g) boneless, skinless chicken breast halves, pounded to ½-inch thickness",
-            "quantity": "1 lbs",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "(237 ml) low-sodium chicken stock",
-            "quantity": "1 cup",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "large eggs",
-            "quantity": "2",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "large lemon zest and juice",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "Salt",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "Freshly ground black pepper",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "Freshly chopped dill or parsley, for garnish",
-            "quantity": "",
-            "section": "Produce"
-          }
-        ],
-        "steps": [
-          "Prepare the Chicken: In a skillet over medium-high heat, warm 2 tablespoons of extra virgin olive oil. Add the chicken breasts (work in batches if necessary) and cook for about 4-5 minutes on each side or until golden brown and the internal temperature reaches 165°F (74°C). Once cooked, transfer the chicken to a plate and loosely cover with aluminum foil.",
-          "Make the Avgolemono Sauce: In the same skillet, add 1 cup of low-sodium chicken stock, scraping the bottom of the pan to loosen any browned bits.",
-          "Temper the Eggs: In a medium bowl, whisk together 2 large eggs, the zest and juice of 1 large lemon. Carefully ladle half a cup of the hot chicken stock into the egg mixture, whisking constantly to temper the eggs and prevent them from scrambling.",
-          "Combine and Cook the Sauce: Once the eggs are tempered, slowly whisk the egg mixture back into the skillet with the remaining hot chicken stock. Reduce heat to medium-low and continue to whisk the sauce until it thickens, about 3 minutes. Avoid boiling to prevent the eggs from curdling.",
-          "Strain and Serve: Place a fine mesh sieve over a bowl and strain the sauce to ensure its smooth. Serve the sauce hot over the cooked chicken breasts. Garnish with freshly chopped dill or parsley."
-        ],
-        "servings": 4,
-        "cuisineType": "Greek",
-        "mainProtein": "Chicken",
-        "addedAt": "2026-06-15T01:06:51.026Z"
-      },
-      "checked": false,
-      "fromLibrary": false,
-      "manual": false
-    },
-    {
-      "recipe": {
-        "id": "rec_k0t68uu3jbkv",
-        "title": "Greek-Style Chicken Fricassee Avgolemono",
-        "sourceUrl": "https://www.dimitrasdishes.com/greek-style-chicken-fricassee-avgolemono/",
-        "ingredients": [
-          {
-            "item": "boneless, skinless chicken breasts cut into strips, or 3 pounds chicken cut into pieces",
-            "quantity": "4",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "greens, spinach, swiss chard, and/or kale, roughly chopped",
-            "quantity": "1-pound",
-            "section": "Produce"
-          },
-          {
-            "item": "olive oil",
-            "quantity": "¼ cup",
-            "section": "Pantry"
-          },
-          {
-            "item": "onion, finely chopped",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "scallions, thinly sliced",
-            "quantity": "2-3",
-            "section": "Produce"
-          },
-          {
-            "item": "garlic cloves, grated",
-            "quantity": "2",
-            "section": "Produce"
-          },
-          {
-            "item": "(946 ml) chicken stock",
-            "quantity": "4 cups",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "chopped dried dill",
-            "quantity": "1 tablespoon",
-            "section": "Produce"
-          },
-          {
-            "item": "all-purpose flour, or more",
-            "quantity": "¼ cup",
-            "section": "Pantry"
-          },
-          {
-            "item": "Salt and black pepper, to taste",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "• 3 egg yolks",
-            "quantity": "",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "• ¼ cup fresh lemon juice",
-            "quantity": "",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "• 2 teaspoons cornstarch",
-            "quantity": "",
-            "section": "Pantry"
-          }
-        ],
-        "steps": [
-          "Place the chicken strips on a tray and season it on both sides with salt, pepper, and flour.",
-          "Add the oil to a pot and heat over medium heat. Cook the chicken in 2-3 batches for 4-5 minutes on each side. The chicken will not be fully cooked. Set it aside on a plate or tray.",
-          "Add the onions to the pot and cook over medium-low heat until soft and golden. About 5-6 minutes.",
-          "Add the scallions to the pot and cook for 3 minutes.",
-          "Add the garlic and warm through for 20-30 seconds.",
-          "Pour the chicken stock into the pot and bring to a boil.",
-          "Add the chopped greens and cook for a few minutes until wilted.",
-          "Place the chicken back into the pot and reduce the heat to low.",
-          "Prepare the egg-lemon sauce. Whisk all of the avgolemono ingredients together and add 1-2 cups of hot chicken broth from the pot to temper the sauce. Whisk together and add the sauce to the pot.",
-          "Simmer for 4-5 minutes. Taste and adjust the seasoning if needed.",
-          "Serve with toasted bread, mashed potatoes, pasta, or rice. Enjoy!"
-        ],
-        "servings": 6,
-        "cuisineType": null,
-        "mainProtein": "Chicken",
-        "addedAt": "2026-06-15T01:06:51.871Z"
-      },
-      "checked": false,
-      "fromLibrary": false,
-      "manual": false
-    },
-    {
-      "recipe": {
-        "id": "rec_8jyoa3q5ja3y",
-        "title": "Avgolemono Soup (Greek chicken soup with lemon and egg)",
-        "sourceUrl": "https://www.bowlofdelicious.com/avgolemono/",
-        "ingredients": [
-          {
-            "item": "butter (or olive oil, optional, see notes)",
-            "quantity": "2 tablespoons",
-            "section": "Pantry"
-          },
-          {
-            "item": "ribs celery (finely diced, optional)",
-            "quantity": "2",
-            "section": "Produce"
-          },
-          {
-            "item": "onion (finely diced, optional)",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "chicken stock/broth (low sodium preferred)",
-            "quantity": "8 cups",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "long grain white rice (or another kind (see notes))",
-            "quantity": "1 cup",
-            "section": "Pantry"
-          },
-          {
-            "item": "cooked chicken (such as rotisserie)",
-            "quantity": "2 cups",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "eggs",
-            "quantity": "5",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "lemon juice (from about 4-5 lemons (more or less if you like - see notes))",
-            "quantity": "3/4 cup",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "salt and fresh cracked pepper (to taste)",
-            "quantity": "",
-            "section": "Produce"
-          },
-          {
-            "item": "extra butter or olive oil (optional)",
-            "quantity": "",
-            "section": "Pantry"
-          }
-        ],
-        "steps": [
-          "Optional: If using the celery and onion - melt 2 of the 2 tablespoons butter in a large heavy pot with a lid (such as a Dutch oven). Add the diced 2 ribs celery and 1 onion. Sauté over medium-high heat until softened (about 3 minutes).",
-          "Pour in the 8 cups chicken stock/broth. Bring to a boil. Add the 1 cup long grain white rice. Stir, cover, and simmer on low for 15-20 minutes, or until rice is fully cooked.",
-          "Make the Avgolemono sauce. Add the 5 eggs and 3/4 cup lemon juice to your blender. Turn the blender on to thoroughly mix the eggs and lemon juice. While the blender is running, very gradually pour some of the hot chicken broth from the pot. It's OK if some of the rice or veggies gets in there - this will only help to thicken the sauce. Continue blending until about 2 cups of broth is added. You will end up with a foamy, cream-colored sauce.",
-          "Add the 2 cups cooked chicken to the pot. Stir, cover, and continue simmering on low for 3-5 minutes, until chicken is heated.",
-          "Turn off the heat on the soup. Slowly and gradually add the Avgolemono sauce into the soup from the blender, stirring it in as you add it. It will look quite foamy still. This is what is supposed to happen!",
-          "If you like, you can stir in extra butter or olive oil to the pot for a richer taste. Taste and adjust seasoning if needed with salt and fresh cracked pepper. Serve with more freshly cracked black pepper on top."
-        ],
-        "servings": 8,
-        "cuisineType": "Greek",
-        "mainProtein": "Chicken",
-        "addedAt": "2026-06-15T01:06:49.966Z"
-      },
-      "checked": false,
-      "fromLibrary": false,
       "manual": false
     },
     {
@@ -843,6 +459,260 @@
       "checked": false,
       "fromLibrary": false,
       "manual": true
+    },
+    {
+      "recipe": {
+        "id": "rec_bnhq9vojaxq4",
+        "title": "Easy Mediterranean Stuffed Eggplant Recipe (Vegetarian)",
+        "sourceUrl": "https://www.themediterraneandish.com/vegetarian-stuffed-eggplant/",
+        "ingredients": [
+          {
+            "item": "large eggplants",
+            "quantity": "2",
+            "section": "Produce"
+          },
+          {
+            "item": "Kosher salt",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "Extra virgin olive oil",
+            "quantity": "",
+            "section": "Pantry"
+          },
+          {
+            "item": "For spice mixture",
+            "quantity": "",
+            "section": "Other"
+          },
+          {
+            "item": "allspice",
+            "quantity": "3/4 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "coriander",
+            "quantity": "3/4 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "paprika",
+            "quantity": "1/2 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "ground cinnamon",
+            "quantity": "1/2 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "For the Filling:",
+            "quantity": "",
+            "section": "Other"
+          },
+          {
+            "item": "dry couscous",
+            "quantity": "1 cup",
+            "section": "Pantry"
+          },
+          {
+            "item": "canned or cooked chickpeas (drained)",
+            "quantity": "1 cup",
+            "section": "Pantry"
+          },
+          {
+            "item": "Roma tomato (small diced)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "green onion (chopped)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "Handful fresh parsley (finely chopped)",
+            "quantity": "",
+            "section": "Produce"
+          },
+          {
+            "item": "To Serve:",
+            "quantity": "",
+            "section": "Other"
+          },
+          {
+            "item": "Tahini sauce (per this recipe)",
+            "quantity": "",
+            "section": "Condiments & Sauces"
+          }
+        ],
+        "steps": [
+          "Prepare the eggplant. Cut eggplant in half lengthwise. Season the flesh with kosher salt. Set aside, flesh side up, for 20 to 30 minutes to allow the eggplant to \"sweat.\" Pat dry with a paper towel. This is an optional step, but it can make a big difference.",
+          "Preheat the oven and combine the spices. Heat the oven to 425°F. In a small bowl, combine allspice, coriander, paprika, and ground cinnamon.",
+          "Season and Roast the Eggplant. Place eggplant halves, cut side up, on a generously oiled sheet pan. Brush the cut side with extra virgin olive oil. Set aside 1 teaspoon of the spice mixture and rub the remaining mixture over the cut side of each eggplant half. Place the baking sheet in the oven and bake for 35 to 45 minutes or until the eggplant flesh is nice and tender.",
+          "Cook the couscous. While the eggplant roasts, bring a kettle of water to a boil and place a medium saucepan over medium heat. Add a little 2 teaspoons of extra virgin olive oil to the pan. Add the couscous, stirring regularly, until toasted. Add 1 cup of boiling water to the couscous, cover, and immediately remove from the heat. Let it sit for 10 minutes until the couscous is cooked, doubled in size, and fluffy.",
+          "Make the filling. Fluff the couscous with a fork and season with a dash of salt and the reserved spice mixture. Add chickpeas, chopped tomatoes, green onions, and parsley. Stir to combine.",
+          "Assemble the stuffed eggplant. Arrange the roasted eggplant on a serving platter, flesh side up. With the back of a spoon, push the flesh down to create a cavity for the couscous filling. Spoon in the couscous filling. Drizzle with tahini, if using. Enjoy!"
+        ],
+        "servings": 4,
+        "cuisineType": "Mediterranean",
+        "mainProtein": "Vegetarian",
+        "addedAt": "2026-07-11T23:39:28.444Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": false
+    },
+    {
+      "recipe": {
+        "id": "rec_o1i1b3z5axus",
+        "title": "One Pan Tandoori-Inspired Chicken and Rice",
+        "sourceUrl": "https://www.ambitiouskitchen.com/one-pan-tandoori-chicken-spiced-coconut-rice/",
+        "ingredients": [
+          {
+            "item": "For the marinade",
+            "quantity": "",
+            "section": "Other"
+          },
+          {
+            "item": "boneless skinless chicken thighs",
+            "quantity": "1 ½ pounds",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "coriander",
+            "quantity": "1 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "cumin",
+            "quantity": "1 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "paprika",
+            "quantity": "1 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "ground turmeric",
+            "quantity": "1 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "cayenne pepper",
+            "quantity": "1 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "½ tablespoon garam masala",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "nonfat plain Greek yogurt",
+            "quantity": "¾ cup",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "zest and juice of 1/2 lemon",
+            "quantity": "",
+            "section": "Produce"
+          },
+          {
+            "item": "garlic cloves, minced",
+            "quantity": "3",
+            "section": "Produce"
+          },
+          {
+            "item": "freshly grated ginger",
+            "quantity": "1 tablespoon",
+            "section": "Produce"
+          },
+          {
+            "item": "kosher salt",
+            "quantity": "1 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "Freshly ground black pepper",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "For the rice",
+            "quantity": "",
+            "section": "Pantry"
+          },
+          {
+            "item": "avocado oil",
+            "quantity": "1 tablespoon",
+            "section": "Pantry"
+          },
+          {
+            "item": "(15 ounce) can lite coconut milk",
+            "quantity": "1",
+            "section": "Pantry"
+          },
+          {
+            "item": "low-sodium chicken broth",
+            "quantity": "1 1/2 cup",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "½ teaspoon turmeric",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "½ teaspoon cumin",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "⅛ teaspoon coriander",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "½ teaspoon kosher salt",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "Freshly ground black pepper",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "uncooked basmati white rice",
+            "quantity": "1 cup",
+            "section": "Pantry"
+          },
+          {
+            "item": "frozen green peas",
+            "quantity": "¾ cup",
+            "section": "Frozen"
+          }
+        ],
+        "steps": [
+          "Preheat the oven to 375 degrees F.",
+          "In a large bowl, add the chicken, coriander, cumin, paprika, turmeric, cayenne pepper, garam masala, greek yogurt, lemon zest and juice, garlic, ginger, salt, and pepper; mix with a spoon to combine and coat the chicken and then cover with plastic wrap and place in fridge for anywhere from 1-8 hours to marinate. Once ready to cook chicken discard excess marinade.",
+          "Place an oven-safe large dutch oven or a 3.5 quart braiser over medium-high heat and add in the oil. Once oil is hot, add in the chicken and cook until golden brown, about 3 to 5 minutes per side. Remove from the pan and transfer to a plate.",
+          "In the same skillet, add in the coconut milk, broth, turmeric, cumin, coriander, salt, and pepper. Bring to a simmer, then stir in the uncooked rice and peas, making sure it is evenly distributed.",
+          "Arrange the chicken on top, including any accumulated chicken juices on the plate, and gently nestle into the rice mixture. Bring to a gentle boil. Cover, transfer the pan to the oven and bake for 25 minutes until the rice is tender.",
+          "Remove from the oven. Garnish with fresh cilantro and sliced green onion. Top with a squeeze of fresh lime juice. Serve extra yogurt on top if you'd like.",
+          "To meal prep: This meal serves four. Place rice in a meal prep containers and top with 1 chicken thigh. Garnish with cilantro and green onions."
+        ],
+        "servings": 4,
+        "cuisineType": "American",
+        "mainProtein": "Chicken",
+        "addedAt": "2026-07-11T23:39:28.612Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": false
     }
   ]
 }
