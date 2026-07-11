@@ -189,106 +189,6 @@
     },
     {
       "recipe": {
-        "id": "rec_migtvj2n1mt5",
-        "title": "Tzatziki Chicken Bowls with Cucumber Salad",
-        "sourceUrl": "https://kaleforniakravings.com/tzatziki-chicken-bowls-with-cucumber-salad/?mcp_token=eyJwaWQiOjg4MTg3OSwic2lkIjoxNzU2MzM3Mzk2LCJheCI6ImQwM2NhZTAyNzZkODExZTBlYTY4YTFhOWMxMGUyNTlkIiwidHMiOjE3ODI2NzIyMzEsImV4cCI6MTc4NTA5MTQzMX0.H_IhdcyCcJ2G9WZD6uJBFLJlmqnZUNtgVja9Zc9ktdQ&fbclid=PAVERFWASuSsNleHRuA2FlbQIxMABzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAafZxZrGt50x9Eueq4opPHrY4ozPdzo-wcVIfGMHu4eHLXivQFJybX7uRaHwRg_aem__CKB3kQrYPv28sgQ2fM2wQ#recipe",
-        "ingredients": [
-          {
-            "item": "chicken breasts",
-            "quantity": "2 lbs",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "Greek yogurt",
-            "quantity": "1 cup",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "fresh dill",
-            "quantity": "3 tbsp, chopped",
-            "section": "Produce"
-          },
-          {
-            "item": "fresh mint",
-            "quantity": "2 tbsp, chopped",
-            "section": "Produce"
-          },
-          {
-            "item": "cucumber",
-            "quantity": "1 large, grated",
-            "section": "Produce"
-          },
-          {
-            "item": "garlic",
-            "quantity": "3 cloves, minced",
-            "section": "Produce"
-          },
-          {
-            "item": "lemon juice",
-            "quantity": "2 tbsp",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "salt",
-            "quantity": "to taste",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "black pepper",
-            "quantity": "to taste",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "olive oil",
-            "quantity": "2 tbsp",
-            "section": "Pantry"
-          },
-          {
-            "item": "cucumber",
-            "quantity": "2 medium, diced",
-            "section": "Produce"
-          },
-          {
-            "item": "red onion",
-            "quantity": "1/4 cup, diced",
-            "section": "Produce"
-          },
-          {
-            "item": "tomatoes",
-            "quantity": "1 cup, diced",
-            "section": "Produce"
-          },
-          {
-            "item": "kalamata olives",
-            "quantity": "1/2 cup",
-            "section": "Other"
-          },
-          {
-            "item": "feta cheese",
-            "quantity": "1/2 cup, crumbled",
-            "section": "Dairy & Eggs"
-          }
-        ],
-        "steps": [
-          "Mix Greek yogurt, dill, mint, grated cucumber, garlic, and lemon juice in a bowl to make tzatziki sauce. Season with salt and pepper to taste.",
-          "Season chicken breasts with salt and pepper on both sides.",
-          "Heat olive oil in a large skillet over medium-high heat.",
-          "Cook chicken breasts for 6-7 minutes per side until cooked through. Remove and let rest for 5 minutes, then slice.",
-          "Combine diced cucumber, red onion, tomatoes, olives, and feta cheese in a bowl to make the cucumber salad.",
-          "Assemble bowls with sliced chicken, cucumber salad, and a generous dollop of tzatziki sauce.",
-          "Serve immediately and enjoy."
-        ],
-        "servings": 4,
-        "cuisineType": "Mediterranean",
-        "mainProtein": "Chicken",
-        "addedAt": "2026-06-28T18:44:35.129Z"
-      },
-      "checked": false,
-      "fromLibrary": false,
-      "manual": true
-    },
-    {
-      "recipe": {
         "id": "rec_bnhq9vojaxq4",
         "title": "Easy Mediterranean Stuffed Eggplant Recipe (Vegetarian)",
         "sourceUrl": "https://www.themediterraneandish.com/vegetarian-stuffed-eggplant/",
@@ -540,6 +440,93 @@
       "checked": false,
       "fromLibrary": false,
       "manual": false
+    },
+    {
+      "recipe": {
+        "id": "rec_40ndemhfja4d",
+        "title": "Avgolemono: Greek Lemon Chicken Soup",
+        "sourceUrl": "https://www.themediterraneandish.com/avgolemono-soup-recipe/",
+        "ingredients": [
+          {
+            "item": "Extra Virgin Olive Oil (I used Private Reserve Greek olive oil)",
+            "quantity": "",
+            "section": "Pantry"
+          },
+          {
+            "item": "to 1 cup finely chopped carrots",
+            "quantity": "1/2",
+            "section": "Produce"
+          },
+          {
+            "item": "to 1 cup finely chopped celery",
+            "quantity": "1/2",
+            "section": "Produce"
+          },
+          {
+            "item": "to 1 cup finely chopped green onions",
+            "quantity": "1/2",
+            "section": "Produce"
+          },
+          {
+            "item": "garlic cloves, finely chopped",
+            "quantity": "2",
+            "section": "Produce"
+          },
+          {
+            "item": "low-sodium chicken broth",
+            "quantity": "8 cups",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "bay leaves",
+            "quantity": "2",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "rice",
+            "quantity": "1 cup",
+            "section": "Pantry"
+          },
+          {
+            "item": "Salt and pepper",
+            "quantity": "",
+            "section": "Produce"
+          },
+          {
+            "item": "cooked boneless chicken breast pieces, shredded ( about 6 to 8 oz store-bought rotisserie chicken will work)",
+            "quantity": "2",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "freshly-squeezed lemon juice",
+            "quantity": "1/2 cup",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "large eggs",
+            "quantity": "2",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "Fresh parsley for garnish (optional)",
+            "quantity": "",
+            "section": "Produce"
+          }
+        ],
+        "steps": [
+          "In a large Dutch oven or heavy pot, heat 1 tbsp olive oil on medium-high. Add the carrots, celery and green onions, toss together to saute briefly then stir in the garlic.",
+          "Add the chicken broth and bay leaves then raise the heat to high. Once the liquid has come to a rolling boil, add the rice, salt and pepper. Turn the heat to medium-low and simmer for 20 minutes or until the rice is tender. Now stir in the cooked chicken.",
+          "To prepare the egg-lemon sauce, in a medium bowl, whisk together the lemon juice and eggs. While whisking add 2 ladles-full of the broth from the cooking pot (this helps temper the eggs). Once fully combined, add the sauce to the chicken soup and stir. Remove from the heat immediately.",
+          "Garnish with fresh parsley, if you like. Serve hot with your favorite bread. Enjoy!"
+        ],
+        "servings": 6,
+        "cuisineType": "Greek",
+        "mainProtein": "Chicken",
+        "addedAt": "2026-06-15T01:06:49.981Z"
+      },
+      "checked": true,
+      "fromLibrary": true,
+      "manual": true
     }
   ]
 }
