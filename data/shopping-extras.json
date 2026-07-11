@@ -41,6 +41,12 @@
       "name": "Lemon",
       "quantity": "",
       "section": "Produce"
+    },
+    {
+      "id": "rec_ioml3li4pch3",
+      "name": "Burrata",
+      "quantity": "",
+      "section": "Other"
     }
   ]
 }
