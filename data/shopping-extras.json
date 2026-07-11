@@ -1,22 +1,3 @@
 {
-  "items": [
-    {
-      "id": "rec_xndht4uslwtw",
-      "name": "2 anchovies",
-      "quantity": "",
-      "section": "Other"
-    },
-    {
-      "id": "rec_v634417bvn2c",
-      "name": "Cilantto",
-      "quantity": "",
-      "section": "Other"
-    },
-    {
-      "id": "rec_68i39ca83h3y",
-      "name": "Burrata",
-      "quantity": "",
-      "section": "Other"
-    }
-  ]
+  "items": []
 }
