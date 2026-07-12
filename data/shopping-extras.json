@@ -139,12 +139,6 @@
       "section": "Produce"
     },
     {
-      "id": "rec_y0lubfsp1wf7",
-      "name": "Lemongrass",
-      "quantity": "",
-      "section": "Produce"
-    },
-    {
       "id": "rec_sr1g6ebz20cu",
       "name": "Greenonion",
       "quantity": "",
@@ -155,6 +149,12 @@
       "name": "Chili paste",
       "quantity": "",
       "section": "Produce"
+    },
+    {
+      "id": "rec_2a0om8dq2fqv",
+      "name": "Coconut milk",
+      "quantity": "",
+      "section": "Pantry"
     }
   ]
 }
