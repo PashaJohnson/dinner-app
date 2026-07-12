@@ -137,6 +137,18 @@
       "name": "Mint",
       "quantity": "",
       "section": "Produce"
+    },
+    {
+      "id": "rec_y0lubfsp1wf7",
+      "name": "Lemongrass",
+      "quantity": "",
+      "section": "Produce"
+    },
+    {
+      "id": "rec_sr1g6ebz20cu",
+      "name": "Greenonion",
+      "quantity": "",
+      "section": "Produce"
     }
   ]
 }
