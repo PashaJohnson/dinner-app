@@ -1,12 +1,6 @@
 {
   "items": [
     {
-      "id": "rec_8iwu5duyjj1k",
-      "name": "Chickpea pasta",
-      "quantity": "",
-      "section": "Pantry"
-    },
-    {
       "id": "rec_i77oeap6oyzw",
       "name": "Pesto",
       "quantity": "",
@@ -29,12 +23,6 @@
       "name": "Bag salad",
       "quantity": "",
       "section": "Other"
-    },
-    {
-      "id": "rec_ccfgftml04un",
-      "name": "Cardamom pod",
-      "quantity": "",
-      "section": "Spices & Seasonings"
     },
     {
       "id": "rec_iri1j3av3jmf",
