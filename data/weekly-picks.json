@@ -359,205 +359,116 @@
     },
     {
       "recipe": {
-        "id": "rec_d4qwj6hgeuix",
-        "title": "Roasted Pepper, Lentil & Feta Curry Bake",
-        "sourceUrl": "https://www.happyveggiekitchen.com/pepper-feta-curry/",
+        "id": "rec_ck6r94edfsgj",
+        "title": "Thai Red Curry with Chicken",
+        "sourceUrl": "https://www.recipetineats.com/thai-red-curry-with-chicken/",
         "ingredients": [
           {
-            "item": "Coconut or olive oil",
-            "quantity": "",
-            "section": "Pantry"
+            "item": "Thai Red Curry Paste ((store bought, Maesri best) (Note 1))",
+            "quantity": "5 - 6 tbsp",
+            "section": "Other"
           },
           {
-            "item": "bell peppers (sliced*)",
-            "quantity": "3",
-            "section": "Produce"
-          },
-          {
-            "item": "onion (sliced)",
+            "item": "quantity homemade Thai Red Curry Paste",
             "quantity": "1",
+            "section": "Other"
+          },
+          {
+            "item": "large garlic cloves (, minced)",
+            "quantity": "2",
             "section": "Produce"
           },
           {
-            "item": "garlic (chopped)",
-            "quantity": "4 cloves",
+            "item": "fresh ginger (, finely grated )",
+            "quantity": "2 tsp",
             "section": "Produce"
           },
           {
-            "item": "chopped tomatoes ((14oz / 400g size)**)",
-            "quantity": "2 cans",
+            "item": "lemongrass paste (or finely chopped fresh (Note 3))",
+            "quantity": "1 tbsp",
             "section": "Produce"
           },
           {
-            "item": "cooked green or brown lentils***",
-            "quantity": "1.5 cups",
+            "item": "vegetable oil ((or canola or peanut))",
+            "quantity": "3 tbsp",
             "section": "Pantry"
           },
           {
-            "item": "double (heavy) cream",
-            "quantity": "1/4 cup",
-            "section": "Dairy & Eggs"
+            "item": "(250 ml) chicken broth/stock (, low sodium)",
+            "quantity": "1 cup",
+            "section": "Meat & Seafood"
           },
           {
-            "item": "block of feta cheese",
-            "quantity": "7 oz",
-            "section": "Dairy & Eggs"
+            "item": "/ 14 oz coconut milk ((full fat!))",
+            "quantity": "400 ml",
+            "section": "Pantry"
           },
           {
-            "item": "Handful of chopped fresh coriander (cilantro)",
-            "quantity": "",
-            "section": "Spices & Seasonings"
+            "item": "kaffir lime leaves ((Note 4))",
+            "quantity": "6",
+            "section": "Produce"
           },
           {
-            "item": "cumin seeds",
-            "quantity": "4 tsp",
-            "section": "Spices & Seasonings"
+            "item": "sugar ((white, brown or palm))",
+            "quantity": "1 tbsp",
+            "section": "Pantry"
           },
           {
-            "item": "mustard seeds",
+            "item": "fish sauce (, plus more to taste)",
             "quantity": "2 tsp",
             "section": "Condiments & Sauces"
           },
           {
-            "item": "ground coriander",
-            "quantity": "1 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "cinnamon",
-            "quantity": "1/4 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "chili powder",
-            "quantity": "1 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "garam masala",
-            "quantity": "1 Tbsp",
-            "section": "Spices & Seasonings"
-          }
-        ],
-        "steps": [
-          "Heat the oven to 200C / 390F.",
-          "Scatter the peppers, onions and garlic in a casserole dish and drizzle with oil. Roast for 30-40 minutes, until the peppers are soft and charred.",
-          "Remove from the oven and quickly add the cumin seeds and mustard seeds to the pan, mixing through the hot oil to toast them. Add the ground spices next, mixing through, followed by the lentils, tomatoes and cream.",
-          "Slice your feta cheese into 6 pieces lengthwise, and then slice each piece widthwise so you have 12 thin pieces. Arrange these on top of the dish. Drizzle or spray with oil.",
-          "Place back in the oven for 20 minutes, and then use the grill / broiler on a high setting to brown the feta cheese.",
-          "Let it rest until it stops bubbling before serving. Toss some fresh coriander (cilantro) on top."
-        ],
-        "servings": 4,
-        "cuisineType": "Indian Inspired",
-        "mainProtein": "Vegetarian",
-        "addedAt": "2026-07-18T23:12:13.065Z"
-      },
-      "checked": false,
-      "fromLibrary": false,
-      "manual": false
-    },
-    {
-      "recipe": {
-        "id": "rec_texflhirewsz",
-        "title": "Fragrant shrimp and chickpea curry",
-        "sourceUrl": "https://www.mediterrasian.com/delicious_recipes_shrimp_chickpea_curry.htm",
-        "ingredients": [
-          {
-            "item": "peanut or canola oil",
-            "quantity": "2 tablespoons",
-            "section": "Pantry"
-          },
-          {
-            "item": "onion",
-            "quantity": "1, finely chopped",
-            "section": "Produce"
-          },
-          {
-            "item": "garlic",
-            "quantity": "2 cloves, finely chopped",
-            "section": "Produce"
-          },
-          {
-            "item": "fresh ginger",
-            "quantity": "1 teaspoon, finely grated",
-            "section": "Produce"
-          },
-          {
-            "item": "canned chickpeas",
-            "quantity": "½ cup",
-            "section": "Pantry"
-          },
-          {
-            "item": "ground cumin",
-            "quantity": "2 teaspoons",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "ground turmeric",
-            "quantity": "1 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "garam masala",
-            "quantity": "1 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "chili powder",
-            "quantity": "½ teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "canned chopped tomatoes",
-            "quantity": "14 oz (400g)",
-            "section": "Pantry"
-          },
-          {
-            "item": "coconut milk",
-            "quantity": "1 cup",
-            "section": "Pantry"
-          },
-          {
-            "item": "salt",
-            "quantity": "1 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "basmati rice",
-            "quantity": "½ cup",
-            "section": "Pantry"
-          },
-          {
-            "item": "uncooked shrimp",
-            "quantity": "16 large, peeled and deveined",
+            "item": "/ 12 oz chicken thighs ((boneless and skinless), cut into 0.75 / 1/3\" thick slices (Note 5))",
+            "quantity": "350g",
             "section": "Meat & Seafood"
           },
           {
-            "item": "fresh cilantro",
-            "quantity": "1 tablespoon, finely chopped",
+            "item": "/ 5 oz pumpkin or butternut squash, ( cut into 1.5cm / 3/5\" cubes (~1 heaped cup))",
+            "quantity": "150g",
             "section": "Produce"
           },
           {
-            "item": "lemon juice",
-            "quantity": "1 tablespoon",
-            "section": "Condiments & Sauces"
+            "item": "/ 4oz green beans (, trimmed and cut into 5cm/2\" pieces)",
+            "quantity": "120g",
+            "section": "Produce"
+          },
+          {
+            "item": "Thai basil leaves ((Note 6))",
+            "quantity": "12",
+            "section": "Produce"
+          },
+          {
+            "item": "Fresh red chilli slices ((small chilli - spicy, large = less spicy))",
+            "quantity": "",
+            "section": "Other"
+          },
+          {
+            "item": "Fresh coriander / cilantro leaves",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "Steamed jasmine rice",
+            "quantity": "",
+            "section": "Pantry"
           }
         ],
         "steps": [
-          "Heat the oil in a large saucepan over a medium heat and cook the onion for 8 minutes, stirring occasionally.",
-          "Add the garlic and ginger, and cook for two minutes.",
-          "Add the cumin, turmeric, garam masala and chili powder and cook, stirring, for a minute.",
-          "Add the tomatoes, coconut milk and salt and bring to a boil.",
-          "Reduce the heat and simmer, uncovered, for 10 minutes.",
-          "While the curry simmers, cook the rice according to package directions.",
-          "Add the shrimp and chickpeas to the curry, cover with a lid, and simmer for another 4 minutes.",
-          "Stir in the chopped cilantro and lemon juice.",
-          "Serve on a bed of basmati rice."
+          "Heat oil in a large heavy based skillet over medium high heat.",
+          "Add curry paste and Extras (if using jar paste) and cook for about 2 minutes so it \"dries out\" (See video)",
+          "Add chicken broth and stir to dissolve paste. Simmer rapidly for 3 minutes or until liquid reduces by half.",
+          "Add coconut milk, lime leaves, sugar and fish sauce. Stir, then add chicken.",
+          "Spread chicken out, bring to simmer, then turn heat down to medium. Simmer for about 8- 10 minutes or until Sauce reduces, the chicken is cooked and the sauce is almost at the thickness you want.",
+          "Do a taste test. Add more fish sauce (or even shrimp paste) to add more saltiness, sugar for sweetness.",
+          "Add pumpkin and beans, stir. Cook for 3 minutes or until pumpkin is just cooked through and Sauce is thickened - see video for Sauce thickness.",
+          "Remove from heat. Stir through a handful of Thai basil leaves.",
+          "Serve over jasmine rice, garnished with fresh red chilli slices and fresh coriander/cilantro leaves, if desired."
         ],
-        "servings": 2,
-        "cuisineType": "Indian",
-        "mainProtein": "Shrimp",
-        "addedAt": "2026-07-18T23:12:16.019Z"
+        "servings": 4,
+        "cuisineType": "Thai",
+        "mainProtein": "Chicken",
+        "addedAt": "2026-07-18T23:12:57.043Z"
       },
       "checked": false,
       "fromLibrary": false,
@@ -565,103 +476,235 @@
     },
     {
       "recipe": {
-        "id": "rec_xfdknl47ezrm",
-        "title": "Easy Vegetable Curry",
-        "sourceUrl": "https://www.inspiredtaste.net/49493/vegetable-curry/",
+        "id": "rec_tjzvha4yfrsi",
+        "title": "Thai Red Curry with Vegetables",
+        "sourceUrl": "https://cookieandkate.com/thai-red-curry-recipe/",
         "ingredients": [
           {
-            "item": "coconut oil or vegetable oil",
-            "quantity": "1 ½ tablespoons",
+            "item": "brown jasmine rice or long-grain brown rice, rinsed",
+            "quantity": "1 ¼ cups",
             "section": "Pantry"
           },
           {
-            "item": "onion",
-            "quantity": "1 large, halved and sliced",
+            "item": "coconut oil or olive oil",
+            "quantity": "1 tablespoon",
+            "section": "Pantry"
+          },
+          {
+            "item": "small white onion, chopped (about 1 cup)",
+            "quantity": "1",
             "section": "Produce"
           },
           {
-            "item": "cauliflower",
-            "quantity": "½ medium head, cut into florets",
-            "section": "Produce"
-          },
-          {
-            "item": "carrots",
-            "quantity": "2 medium, sliced",
-            "section": "Produce"
-          },
-          {
-            "item": "Yukon Gold potato",
-            "quantity": "1 large, halved and thinly sliced",
-            "section": "Produce"
-          },
-          {
-            "item": "garlic",
-            "quantity": "1 tablespoon minced (3 to 4 medium cloves)",
-            "section": "Produce"
-          },
-          {
-            "item": "ginger",
-            "quantity": "1 tablespoon minced fresh (1-inch piece)",
-            "section": "Produce"
-          },
-          {
-            "item": "turmeric",
-            "quantity": "1 teaspoon dried (or 1 tablespoon minced fresh)",
+            "item": "of salt, more to taste",
+            "quantity": "Pinch",
             "section": "Spices & Seasonings"
           },
           {
-            "item": "red curry paste",
-            "quantity": "1 ½ tablespoons",
+            "item": "finely grated fresh ginger (about a 1-inch nub of ginger)",
+            "quantity": "1 tablespoon",
+            "section": "Produce"
+          },
+          {
+            "item": "garlic, pressed or minced",
+            "quantity": "2 cloves",
+            "section": "Produce"
+          },
+          {
+            "item": "red bell pepper, sliced into thin 2-inch long strips",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "yellow, orange or green bell pepper, sliced into thin 2-inch long strips",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "carrots, peeled and sliced on the diagonal into ¼-inch thick rounds (about 1 cup)",
+            "quantity": "3",
+            "section": "Produce"
+          },
+          {
+            "item": "Thai red curry paste*",
+            "quantity": "2 tablespoons",
             "section": "Other"
           },
           {
-            "item": "coconut milk",
-            "quantity": "1 (15-ounce) can full-fat (about 1 ½ cups)",
+            "item": "(14 ounces) regular coconut milk**",
+            "quantity": "1 can",
             "section": "Pantry"
           },
           {
-            "item": "water or broth",
-            "quantity": "1 to 1 ½ cups",
+            "item": "water",
+            "quantity": "½ cup",
+            "section": "Beverages"
+          },
+          {
+            "item": "packed thinly sliced kale (tough ribs removed first), preferably the Tuscan/lacinato/dinosaur variety",
+            "quantity": "1 ½ cups",
+            "section": "Produce"
+          },
+          {
+            "item": "coconut sugar or turbinado (raw) sugar or brown sugar",
+            "quantity": "1 ½ teaspoons",
             "section": "Pantry"
           },
           {
-            "item": "green beans or snap peas",
-            "quantity": "Handful, trimmed and cut in half",
-            "section": "Produce"
-          },
-          {
-            "item": "tomatoes",
-            "quantity": "1 cup chopped (3 small tomatoes)",
-            "section": "Produce"
-          },
-          {
-            "item": "fish sauce",
+            "item": "tamari or soy sauce***",
             "quantity": "1 tablespoon",
             "section": "Condiments & Sauces"
           },
           {
-            "item": "cilantro",
-            "quantity": "Handful fresh leaves with tender stems, chopped",
-            "section": "Produce"
+            "item": "rice vinegar or fresh lime juice",
+            "quantity": "2 teaspoons",
+            "section": "Condiments & Sauces"
           },
           {
-            "item": "lime",
-            "quantity": "1, juiced (or more to taste)",
+            "item": "Garnishes/sides: handful of chopped fresh basil or cilantro, optional red pepper flakes, optional sriracha or chili garlic sauce",
+            "quantity": "",
             "section": "Produce"
           }
         ],
         "steps": [
-          "Heat the oil in a wok or wide saucepan over medium-high heat. When the oil shimmers, add the onions, carrots, and cauliflower florets. Cook, stirring occasionally, until the vegetables begin to take on a little color and soften, about 8 minutes.",
-          "Toss in the minced garlic, ginger, and turmeric. Cook while tossing the spices around the pan for one minute.",
-          "Add the curry paste, and then toss, making sure that it has a chance to coat most of the vegetables.",
-          "Stir in the potatoes, coconut milk, and 1 cup of water. Stir, and then bring to a simmer. Cook, at a low simmer, until the potatoes are almost tender, 5 to 10 minutes. If the curry seems too thick or there isn't enough liquid, add another ½ cup of water.",
-          "Toss in the tomatoes and green beans, and cook another 3 to 5 minutes or until the green beans are bright green and tender.",
-          "Finish by stirring in the fish sauce, cilantro, and lime juice. Taste and adjust with more fish sauce or lime juice if necessary."
+          "To cook the rice, bring a large pot of water to boil. Add the rinsed rice and continue boiling for 30 minutes, reducing heat as necessary to prevent overflow. Remove from heat, drain the rice and return the rice to pot. Cover and let the rice rest for 10 minutes or longer, until you’re ready to serve. Just before serving, season the rice to taste with salt and fluff it with a fork.",
+          "To make the curry, warm a large skillet with deep sides over medium heat. Once it’s hot, add the oil. Add the onion and a sprinkle of salt and cook, stirring often, until the onion has softened and is turning translucent, about 5 minutes. Add the ginger and garlic and cook until fragrant, about 30 seconds, while stirring continuously.",
+          "Add the bell peppers and carrots. Cook until the bell peppers are fork-tender, 3 to 5 more minutes, stirring occasionally. Then add the curry paste and cook, stirring often, for 2 minutes.",
+          "Add the coconut milk, water, kale and sugar, and stir to combine. Bring the mixture to a simmer over medium heat. Reduce heat as necessary to maintain a gentle simmer and cook until the peppers, carrots and kale have softened to your liking, about 5 to 10 minutes, stirring occasionally.",
+          "Remove the pot from the heat and season with tamari and rice vinegar. Add salt (I added ¼ teaspoon for optimal flavor), to taste. If the curry needs a little more punch, add ½ teaspoon more tamari, or for more acidity, add ½ teaspoon more rice vinegar. Divide rice and curry into bowls and garnish with chopped cilantro and a sprinkle of red pepper flakes, if you’d like. If you love spicy curries, serve with sriracha or chili garlic sauce on the side."
         ],
         "servings": 4,
         "cuisineType": "Thai",
         "mainProtein": "Vegetarian",
-        "addedAt": "2026-07-18T23:12:19.858Z"
+        "addedAt": "2026-07-18T23:12:56.178Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": false
+    },
+    {
+      "recipe": {
+        "id": "rec_4vpc6mvyfsbm",
+        "title": "Authentic Thai Red Curry with Chicken",
+        "sourceUrl": "https://hot-thai-kitchen.com/red-curry-chicken-squash/",
+        "ingredients": [
+          {
+            "item": "kabocha squash (bite-sized pieces (see note 1))",
+            "quantity": "2 cups",
+            "section": "Produce"
+          },
+          {
+            "item": "coconut milk",
+            "quantity": "1 ½ cup",
+            "section": "Pantry"
+          },
+          {
+            "item": "red curry paste (store bougth, or recipe below (see note 2))",
+            "quantity": "3½-5 Tbsp",
+            "section": "Other"
+          },
+          {
+            "item": "chicken thigh (boneless, skinless, 1.5-inch cubes )",
+            "quantity": "1 lb",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "chicken stock (unsalted or low sodium)",
+            "quantity": "1 cup",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "fish sauce",
+            "quantity": "2 Tbsp",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "palm sugar (finely chopped)",
+            "quantity": "2-3 Tbsp",
+            "section": "Pantry"
+          },
+          {
+            "item": "Thai basil leaves",
+            "quantity": "1 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "¼ red bell pepper (julienned (optional for colour))",
+            "quantity": "",
+            "section": "Produce"
+          },
+          {
+            "item": "mild dried chilies (such as guajillo or puya, see note 3)",
+            "quantity": "0.4 oz",
+            "section": "Produce"
+          },
+          {
+            "item": "spicy dried chilies (such as arbol, see note 3)",
+            "quantity": "0.2 oz",
+            "section": "Produce"
+          },
+          {
+            "item": "coarse sea salt",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "white peppercorns",
+            "quantity": "1/4 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "chopped shallots",
+            "quantity": "1/4 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "chopped garlic",
+            "quantity": "3 Tbsp",
+            "section": "Produce"
+          },
+          {
+            "item": "finely chopped lemongrass (from the bottom half)",
+            "quantity": "3 Tbsp",
+            "section": "Produce"
+          },
+          {
+            "item": "finely chopped galangal",
+            "quantity": "1 Tbsp",
+            "section": "Other"
+          },
+          {
+            "item": "chopped cilantro roots (or sub 6 cilantro stems)",
+            "quantity": "2",
+            "section": "Produce"
+          },
+          {
+            "item": "chopped makrut lime zest (see note 4)",
+            "quantity": "1 tsp",
+            "section": "Produce"
+          },
+          {
+            "item": "fermented shrimp paste (gapi)",
+            "quantity": "1 tsp",
+            "section": "Meat & Seafood"
+          }
+        ],
+        "steps": [
+          "Wash the kabocha squash and slice off any part of the skin that has blemishes, otherwise the skin can be left on. Remove the seeds by scraping off with a spoon and cut into bite-sized cubes. If you have leftover squash, try using it in this stir-fry recipe!",
+          "Bring 1/2 cup of coconut milk to a boil, add curry paste and stir to break up lumps. Continue cooking and reducing over medium high heat until it is very thick and the coconut oil starts separating from the curry paste (if the paste is very thick but no oil is separating, don't worry, just proceed with the recipe).",
+          "Add the chicken and toss to mix with the paste. Add the remaining coconut milk and the chicken stock. Season with 1 tablespoon (15 ml) of the fish sauce and the palm sugar, then simmer for about 8 minutes.",
+          "Add the kabocha squash and simmer for about 6-8 minutes, or until the squash is fully cooked and can easily be pierced through with a fork. Be careful not to overcook the squash or it’ll turn to mush.",
+          "Remove from heat and adjust seasoning with the remaining fish sauce as needed; different brands of curry pastes have different amounts of salt, so it is important to taste and adjust. Stir in Thai basil and red pepper, if using. Serve immediately with jasmine rice.",
+          "Cut chilies into chunks, remove the seeds, then grind in a coffee grinder until fine.",
+          "In a heavy-duty mortar and pestle, add lemongrass, galangal, cilantro roots, kaffir lime zest, white peppercorns and salt. Pound until fine.",
+          "Add ground chilies and pound to mix.",
+          "Add garlic and shallots, pound until fine.",
+          "Add shrimp paste, pound to mix."
+        ],
+        "servings": 4,
+        "cuisineType": "Thai",
+        "mainProtein": "Chicken",
+        "addedAt": "2026-07-18T23:12:56.866Z"
       },
       "checked": false,
       "fromLibrary": false,
