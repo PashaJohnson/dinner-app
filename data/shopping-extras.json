@@ -1,12 +1,6 @@
 {
   "items": [
     {
-      "id": "rec_93wys5urp03a",
-      "name": "Mayo",
-      "quantity": "",
-      "section": "Condiments & Sauces"
-    },
-    {
       "id": "rec_ioml3li4pch3",
       "name": "Burrata",
       "quantity": "",
@@ -17,12 +11,6 @@
       "name": "Bag salad",
       "quantity": "",
       "section": "Other"
-    },
-    {
-      "id": "rec_iri1j3av3jmf",
-      "name": "Dark chocolate",
-      "quantity": "",
-      "section": "Beverages"
     }
   ]
 }
