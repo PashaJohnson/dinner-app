@@ -1,5 +1,5 @@
 {
-  "weekStartDate": "2026-07-11",
+  "weekStartDate": "2026-07-18",
   "picks": [
     {
       "recipe": {
@@ -189,260 +189,6 @@
     },
     {
       "recipe": {
-        "id": "rec_bnhq9vojaxq4",
-        "title": "Easy Mediterranean Stuffed Eggplant Recipe (Vegetarian)",
-        "sourceUrl": "https://www.themediterraneandish.com/vegetarian-stuffed-eggplant/",
-        "ingredients": [
-          {
-            "item": "large eggplants",
-            "quantity": "2",
-            "section": "Produce"
-          },
-          {
-            "item": "Kosher salt",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "Extra virgin olive oil",
-            "quantity": "",
-            "section": "Pantry"
-          },
-          {
-            "item": "For spice mixture",
-            "quantity": "",
-            "section": "Other"
-          },
-          {
-            "item": "allspice",
-            "quantity": "3/4 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "coriander",
-            "quantity": "3/4 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "paprika",
-            "quantity": "1/2 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "ground cinnamon",
-            "quantity": "1/2 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "For the Filling:",
-            "quantity": "",
-            "section": "Other"
-          },
-          {
-            "item": "dry couscous",
-            "quantity": "1 cup",
-            "section": "Pantry"
-          },
-          {
-            "item": "canned or cooked chickpeas (drained)",
-            "quantity": "1 cup",
-            "section": "Pantry"
-          },
-          {
-            "item": "Roma tomato (small diced)",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "green onion (chopped)",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "Handful fresh parsley (finely chopped)",
-            "quantity": "",
-            "section": "Produce"
-          },
-          {
-            "item": "To Serve:",
-            "quantity": "",
-            "section": "Other"
-          },
-          {
-            "item": "Tahini sauce (per this recipe)",
-            "quantity": "",
-            "section": "Condiments & Sauces"
-          }
-        ],
-        "steps": [
-          "Prepare the eggplant. Cut eggplant in half lengthwise. Season the flesh with kosher salt. Set aside, flesh side up, for 20 to 30 minutes to allow the eggplant to \"sweat.\" Pat dry with a paper towel. This is an optional step, but it can make a big difference.",
-          "Preheat the oven and combine the spices. Heat the oven to 425°F. In a small bowl, combine allspice, coriander, paprika, and ground cinnamon.",
-          "Season and Roast the Eggplant. Place eggplant halves, cut side up, on a generously oiled sheet pan. Brush the cut side with extra virgin olive oil. Set aside 1 teaspoon of the spice mixture and rub the remaining mixture over the cut side of each eggplant half. Place the baking sheet in the oven and bake for 35 to 45 minutes or until the eggplant flesh is nice and tender.",
-          "Cook the couscous. While the eggplant roasts, bring a kettle of water to a boil and place a medium saucepan over medium heat. Add a little 2 teaspoons of extra virgin olive oil to the pan. Add the couscous, stirring regularly, until toasted. Add 1 cup of boiling water to the couscous, cover, and immediately remove from the heat. Let it sit for 10 minutes until the couscous is cooked, doubled in size, and fluffy.",
-          "Make the filling. Fluff the couscous with a fork and season with a dash of salt and the reserved spice mixture. Add chickpeas, chopped tomatoes, green onions, and parsley. Stir to combine.",
-          "Assemble the stuffed eggplant. Arrange the roasted eggplant on a serving platter, flesh side up. With the back of a spoon, push the flesh down to create a cavity for the couscous filling. Spoon in the couscous filling. Drizzle with tahini, if using. Enjoy!"
-        ],
-        "servings": 4,
-        "cuisineType": "Mediterranean",
-        "mainProtein": "Vegetarian",
-        "addedAt": "2026-07-11T23:39:28.444Z"
-      },
-      "checked": false,
-      "fromLibrary": false,
-      "manual": false
-    },
-    {
-      "recipe": {
-        "id": "rec_o1i1b3z5axus",
-        "title": "One Pan Tandoori-Inspired Chicken and Rice",
-        "sourceUrl": "https://www.ambitiouskitchen.com/one-pan-tandoori-chicken-spiced-coconut-rice/",
-        "ingredients": [
-          {
-            "item": "For the marinade",
-            "quantity": "",
-            "section": "Other"
-          },
-          {
-            "item": "boneless skinless chicken thighs",
-            "quantity": "1 ½ pounds",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "coriander",
-            "quantity": "1 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "cumin",
-            "quantity": "1 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "paprika",
-            "quantity": "1 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "ground turmeric",
-            "quantity": "1 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "cayenne pepper",
-            "quantity": "1 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "½ tablespoon garam masala",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "nonfat plain Greek yogurt",
-            "quantity": "¾ cup",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "zest and juice of 1/2 lemon",
-            "quantity": "",
-            "section": "Produce"
-          },
-          {
-            "item": "garlic cloves, minced",
-            "quantity": "3",
-            "section": "Produce"
-          },
-          {
-            "item": "freshly grated ginger",
-            "quantity": "1 tablespoon",
-            "section": "Produce"
-          },
-          {
-            "item": "kosher salt",
-            "quantity": "1 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "Freshly ground black pepper",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "For the rice",
-            "quantity": "",
-            "section": "Pantry"
-          },
-          {
-            "item": "avocado oil",
-            "quantity": "1 tablespoon",
-            "section": "Pantry"
-          },
-          {
-            "item": "(15 ounce) can lite coconut milk",
-            "quantity": "1",
-            "section": "Pantry"
-          },
-          {
-            "item": "low-sodium chicken broth",
-            "quantity": "1 1/2 cup",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "½ teaspoon turmeric",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "½ teaspoon cumin",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "⅛ teaspoon coriander",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "½ teaspoon kosher salt",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "Freshly ground black pepper",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "uncooked basmati white rice",
-            "quantity": "1 cup",
-            "section": "Pantry"
-          },
-          {
-            "item": "frozen green peas",
-            "quantity": "¾ cup",
-            "section": "Frozen"
-          }
-        ],
-        "steps": [
-          "Preheat the oven to 375 degrees F.",
-          "In a large bowl, add the chicken, coriander, cumin, paprika, turmeric, cayenne pepper, garam masala, greek yogurt, lemon zest and juice, garlic, ginger, salt, and pepper; mix with a spoon to combine and coat the chicken and then cover with plastic wrap and place in fridge for anywhere from 1-8 hours to marinate. Once ready to cook chicken discard excess marinade.",
-          "Place an oven-safe large dutch oven or a 3.5 quart braiser over medium-high heat and add in the oil. Once oil is hot, add in the chicken and cook until golden brown, about 3 to 5 minutes per side. Remove from the pan and transfer to a plate.",
-          "In the same skillet, add in the coconut milk, broth, turmeric, cumin, coriander, salt, and pepper. Bring to a simmer, then stir in the uncooked rice and peas, making sure it is evenly distributed.",
-          "Arrange the chicken on top, including any accumulated chicken juices on the plate, and gently nestle into the rice mixture. Bring to a gentle boil. Cover, transfer the pan to the oven and bake for 25 minutes until the rice is tender.",
-          "Remove from the oven. Garnish with fresh cilantro and sliced green onion. Top with a squeeze of fresh lime juice. Serve extra yogurt on top if you'd like.",
-          "To meal prep: This meal serves four. Place rice in a meal prep containers and top with 1 chicken thigh. Garnish with cilantro and green onions."
-        ],
-        "servings": 4,
-        "cuisineType": "American",
-        "mainProtein": "Chicken",
-        "addedAt": "2026-07-11T23:39:28.612Z"
-      },
-      "checked": false,
-      "fromLibrary": false,
-      "manual": false
-    },
-    {
-      "recipe": {
         "id": "rec_40ndemhfja4d",
         "title": "Avgolemono: Greek Lemon Chicken Soup",
         "sourceUrl": "https://www.themediterraneandish.com/avgolemono-soup-recipe/",
@@ -527,6 +273,386 @@
       "checked": true,
       "fromLibrary": true,
       "manual": true
+    },
+    {
+      "recipe": {
+        "id": "rec_60aseu996y0p",
+        "title": "Mediterranean Baked Fish Recipe with Artichokes and Olives",
+        "sourceUrl": "https://theforkedspoon.com/mediterranean-baked-fish-with-artichokes-olives/",
+        "ingredients": [
+          {
+            "item": "olive oil",
+            "quantity": "1.5 tablespoon",
+            "section": "Pantry"
+          },
+          {
+            "item": "yellow onion (chopped or 2 large shallots, chopped)",
+            "quantity": "1/2",
+            "section": "Produce"
+          },
+          {
+            "item": "garlic (minced)",
+            "quantity": "6 cloves",
+            "section": "Produce"
+          },
+          {
+            "item": "chopped tomatoes (two 14 ounce cans , liquid drained)",
+            "quantity": "28 oz",
+            "section": "Produce"
+          },
+          {
+            "item": "fresh chopped basil (packed)",
+            "quantity": "1/4 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "salt + pepper",
+            "quantity": "",
+            "section": "Produce"
+          },
+          {
+            "item": "White fish (I used cod fillets, 4 fillets)",
+            "quantity": "16 oz",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "feta cheese (crumbled)",
+            "quantity": "1/2 cup",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "artichoke hearts (liquid drained )",
+            "quantity": "15 oz",
+            "section": "Produce"
+          },
+          {
+            "item": "Roma tomatoes (roughly chopped)",
+            "quantity": "2",
+            "section": "Produce"
+          },
+          {
+            "item": "kalamata olives",
+            "quantity": "4 ounces",
+            "section": "Other"
+          },
+          {
+            "item": "capers",
+            "quantity": "2 tablespoon",
+            "section": "Other"
+          },
+          {
+            "item": "lemon (sliced)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "additional feta cheese, basil, and capers (for serving)",
+            "quantity": "",
+            "section": "Dairy & Eggs"
+          }
+        ],
+        "steps": [
+          "Preheat oven to 375 degrees F.",
+          "In a large oven-safe skillet, heat olive oil over medium heat (if you do not have an oven safe skillet, that's ok. You will just need to use two dishes). Once warm, add onion (or shallots) and garlic and sauté until fragrant, approximately 1-2 minutes. Add chopped tomatoes, basil, salt and pepper and mix well. Bring to just a boil and remove from heat.",
+          "In the same (oven-safe) skillet, place fish on top of the fresh basil tomato sauce. Sprinkle with feta cheese.",
+          "Gently place artichokes and chopped Roma tomatoes in the tomato sauce between the fish fillets, and place thin slices of lemon on top of the fish. Add the drained olives and capers on top of the fish and tomatoes.",
+          "Place skillet in the center of your preheated oven and bake for approximately 15-25 minutes, or until fish flakes easily with a fork (the time will vary depending on the size and thickness of your fish).",
+          "Garnish with fresh basil and feta cheese and serve with a side of fresh bread, couscous or quinoa."
+        ],
+        "servings": 4,
+        "cuisineType": "Mediterranean",
+        "mainProtein": "Fish",
+        "addedAt": "2026-07-18T23:06:04.345Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": false
+    },
+    {
+      "recipe": {
+        "id": "rec_29b8r8k36z0r",
+        "title": "Mediterranean Cod with Tomatoes, Olives, and Feta",
+        "sourceUrl": "https://stemandspoon.com/mediterranean-cod-with-tomatoes-olives-and-feta/",
+        "ingredients": [
+          {
+            "item": "wild cod (about 3-4 pieces)",
+            "quantity": "1-½ pounds",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "½ teaspoon fine sea salt",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "½ teaspoon black pepper",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "½ teaspoon garlic powder",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "olive oil, divided",
+            "quantity": "2 tablespoons",
+            "section": "Pantry"
+          },
+          {
+            "item": "½ large yellow onion, chopped small",
+            "quantity": "",
+            "section": "Produce"
+          },
+          {
+            "item": "garlic cloves, minced",
+            "quantity": "3",
+            "section": "Produce"
+          },
+          {
+            "item": "fresh chopped oregano (or 1 teaspoon dried oregano)",
+            "quantity": "1 tablespoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "½ teaspoon red pepper flakes (optional)",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "1, 15-ounce can diced tomatoes",
+            "quantity": "",
+            "section": "Produce"
+          },
+          {
+            "item": "chopped parsley",
+            "quantity": "1-2 tablespoons",
+            "section": "Produce"
+          },
+          {
+            "item": "chopped Kalamata olives",
+            "quantity": "⅓ cup",
+            "section": "Other"
+          },
+          {
+            "item": "crumbled feta cheese",
+            "quantity": "¼ cup",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "Lemon wedges for serving",
+            "quantity": "",
+            "section": "Produce"
+          }
+        ],
+        "steps": [
+          "Preheat the oven to 400°F.",
+          "Pat dry the cod and season both sides with the salt, pepper, and garlic powder.",
+          "Heat a cast iron skillet (or nonstick skillet) over medium-high heat. Add 1 tablespoon of olive oil, then add the fish pieces to the pan, searing for 1-2 minutes per side. This is only to sear them; they will finish cooking in the oven.",
+          "Transfer the cod to a plate. In the same skillet, add the other tablespoon of oil, then cook the diced onion for 1-2 minutes to soften. Stir in the garlic and oregano, cooking until fragrant, about 30 seconds. Pour in the can of diced tomatoes and add the parsley and olives. Stir and cook for 1-2 minutes, just to heat the mixture.",
+          "Nestle the seared pieces of cod into the tomato mixture. Sprinkle with the feta, then transfer the skillet to the oven and bake for 8-12 minutes or until the fish flakes easily with a fork.",
+          "Remove from the oven and sprinkle red pepper flakes and extra parsley on top, if desired. Serve with lemon."
+        ],
+        "servings": 3,
+        "cuisineType": "mediterranean",
+        "mainProtein": "Fish",
+        "addedAt": "2026-07-18T23:06:05.643Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": false
+    },
+    {
+      "recipe": {
+        "id": "rec_1rufnps56y79",
+        "title": "Comforting Red Lentil Soup (Dal Soup)",
+        "sourceUrl": "https://www.littlespicejar.com/red-lentil-soup/",
+        "ingredients": [
+          {
+            "item": "butter (or ghee)",
+            "quantity": "1 tablespoon",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "olive oil",
+            "quantity": "1 tablespoon",
+            "section": "Pantry"
+          },
+          {
+            "item": "minced garlic",
+            "quantity": "4 cloves",
+            "section": "Produce"
+          },
+          {
+            "item": "medium onion (chopped)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "celery (chopped)",
+            "quantity": "2 stalks",
+            "section": "Produce"
+          },
+          {
+            "item": "½ teaspoon ground turmeric",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "½ teaspoon garam masala",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "½ teaspoon chili powder",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "ground cumin",
+            "quantity": "1 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "curry powder (mild or hot)",
+            "quantity": "2-3 teaspoons",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "can diced tomatoes",
+            "quantity": "15 ounce",
+            "section": "Produce"
+          },
+          {
+            "item": "red lentils (washed and drained)",
+            "quantity": "1½ cups",
+            "section": "Pantry"
+          },
+          {
+            "item": "vegetable broth (or chicken stock)",
+            "quantity": "3-5 cups",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "of coconut milk",
+            "quantity": "1½ cups",
+            "section": "Pantry"
+          },
+          {
+            "item": "lemon juice",
+            "quantity": "3 tablespoons",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "Chopped cilantro (for serving)",
+            "quantity": "",
+            "section": "Produce"
+          }
+        ],
+        "steps": [
+          "SAUTE: Melt the butter and olive oil in a large pot over medium heat. Sauté the onions and celery for 5-6 minutes or until tender and translucent. Add the garlic and continue to cook for 1 additional minute. Add the turmeric, garam masala, chili powder, cumin, and curry powder. Continue to cook the veggies for another 1-2 minutes.",
+          "MAKE ON THE STOVETOP: Add the tomatoes, lentils, 4 cups of broth, bay leaf, and bring to a boil. Reduce the heat to low and allow the soup to simmer for 10 minutes. Add the coconut milk and allow the soup to continue cooking for an additional 12-18 minutes or until the lentils are fall-apart tender. If the lentils soak up too much of the liquid, use the remaining ½ cup of broth to thin the soup to your liking. Use an immersion blender to puree the mixture if you prefer a smooth texture. Leave as-is for a chunkier texture. Turn the stove off and stir in the lemon juice. Taste and adjust with additional salt if the soup needs it. Serve in bowls. Sometimes I like to add a scoop of basmati rice to my bowl of soup!",
+          "MAKE IN THE SLOW COOKER: Transfer the mixture from step 1 to a crockpot (slow cooker) and add the tomatoes, lentils and 3 cups of broth. Cook on high for 3 and 1/2 hours or on low for 6 and 1/2 hours. 20 minutes before the time is up add the coconut milk, lemon juice, and cilantro. If at any point the lentils soak up too much of the soup, use the additional broth to thin the soup to your liking. Use an immersion blender to puree the mixture if you prefer a smooth texture. Leave as-is for a chunkier texture. Adjust salt to taste. SOmetimes I like to add a scoop of basmati rice to my bowl of soup!"
+        ],
+        "servings": 6,
+        "cuisineType": "Indian",
+        "mainProtein": "Chicken",
+        "addedAt": "2026-07-18T23:06:04.581Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": false
+    },
+    {
+      "recipe": {
+        "id": "rec_lfvakhns72bv",
+        "title": "Indian Lentil Soup",
+        "sourceUrl": "https://greenkitchenstories.com/indian-lentil-soup/",
+        "ingredients": [
+          {
+            "item": "extra virgin olive oil or coconut oil",
+            "quantity": "2-3 tbsp",
+            "section": "Pantry"
+          },
+          {
+            "item": "yellow onion",
+            "quantity": "1, finely chopped",
+            "section": "Produce"
+          },
+          {
+            "item": "garlic",
+            "quantity": "3 cloves, finely chopped",
+            "section": "Produce"
+          },
+          {
+            "item": "fresh ginger",
+            "quantity": "1 tbsp, very finely chopped",
+            "section": "Produce"
+          },
+          {
+            "item": "curry powder",
+            "quantity": "1 tbsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "ground turmeric",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "ground chili or harissa",
+            "quantity": "1/2 tsp",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "potatoes",
+            "quantity": "3 medium, diced",
+            "section": "Produce"
+          },
+          {
+            "item": "carrots",
+            "quantity": "2, sliced",
+            "section": "Produce"
+          },
+          {
+            "item": "red or yellow lentils",
+            "quantity": "200g, rinsed",
+            "section": "Pantry"
+          },
+          {
+            "item": "vegetable stock",
+            "quantity": "4 cups / 1 liter",
+            "section": "Pantry"
+          },
+          {
+            "item": "sea salt",
+            "quantity": "a pinch",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "tomatoes",
+            "quantity": "2-3, diced",
+            "section": "Produce"
+          }
+        ],
+        "steps": [
+          "Prepare the vegetables.",
+          "Heat the olive oil in a big soup pot.",
+          "Add onion, garlic, ginger and all the spices.",
+          "After about a minute add the potatoes, carrots and the lentils, stir it around another minute before adding the vegetable stock.",
+          "Let it boil on low-medium heat for 30 minutes, stir occasionally, taste the soup and add more salt and spices if needed.",
+          "Add the tomatoes and let it boil for 5-10 more minutes.",
+          "The soup is done when the lentils are dissolved.",
+          "Serve with roasted pumpkin seeds and some fresh coriander."
+        ],
+        "servings": 4,
+        "cuisineType": "Indian",
+        "mainProtein": "Vegetarian",
+        "addedAt": "2026-07-18T23:06:09.931Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": false
     }
   ]
 }
