@@ -276,123 +276,6 @@
     },
     {
       "recipe": {
-        "id": "rec_pi2b3fqf81qz",
-        "title": "Makhani Masala Pasta Recipe",
-        "sourceUrl": "https://profusioncurry.com/makhani-masala-pasta-recipe/",
-        "ingredients": [
-          {
-            "item": "cooking oil (I used olive oil)",
-            "quantity": "1 Tablespoon",
-            "section": "Pantry"
-          },
-          {
-            "item": "box of pasta",
-            "quantity": "1 8 oz",
-            "section": "Pantry"
-          },
-          {
-            "item": "can tomato sauce or puree",
-            "quantity": "1 14.5 oz",
-            "section": "Pantry"
-          },
-          {
-            "item": "chopped mixed vegetables - I used frozen mix veggie mix",
-            "quantity": "2 cup",
-            "section": "Frozen"
-          },
-          {
-            "item": "garlic (minced)",
-            "quantity": "3-4 cloves",
-            "section": "Produce"
-          },
-          {
-            "item": "inch ginger (finely chopped)",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "medium yellow onion (chopped)",
-            "quantity": "1",
-            "section": "Produce"
-          },
-          {
-            "item": "water",
-            "quantity": "1 cup",
-            "section": "Beverages"
-          },
-          {
-            "item": "¼ teaspoon cardamom powder",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "½ teaspoon garam masala",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "½ teaspoon red chili powder - adjust per taste",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "salt (or to taste)",
-            "quantity": "1/2 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "cashews (make a paste by blending in 1/2 cup water)",
-            "quantity": "½ cup",
-            "section": "Beverages"
-          },
-          {
-            "item": "kasuri methi (crushed, dried fenugreek leaves)",
-            "quantity": "1 teaspoon",
-            "section": "Other"
-          },
-          {
-            "item": "chopped cilantro for garnish",
-            "quantity": "1 Tablespoon",
-            "section": "Produce"
-          },
-          {
-            "item": "freshly ground black pepper",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "extra cardamom powder and garam masala to sprinkle over the top.",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          }
-        ],
-        "steps": [
-          "Press the sauté button on the Instant Pot. Once it displays hot, add the oil and then add the chopped garlic, ginger and onion. Sprinkle some salt. Sauté for 2 to 3 minutes until onions are soft.",
-          "Add a can of tomato puree, veggies, cardamom powder, garam masala, red chili powder. Mix well and let it cook for few minutes till the sauce starts to thicken.",
-          "Add the water and de-glaze the pot. Make sure there's nothing stuck at the bottom.",
-          "Add the pasta. Do NOT stir. Close the pot with its lid. Valve at SEALING. Press the MANUAL or PRESSURE COOK button and cook on high pressure for 5 minutes.",
-          "After it's done cooking, let the pressure release naturally for 5 minutes and then quick release the pressure. Once the silver pin drops, open the lid, stir everything and press the saute button.",
-          "Add the cashew paste. Crush kasuri methi on your palm and add it in the sauce. Let the pasta simmer for 2 minutes. Sprinkle chopped cilantro.",
-          "For additional flavor, sprinkle freshly ground black pepper, cardamom powder and garam masala on top before serving. Serve warm.",
-          "STOVE TOP INSTRUCTIONS",
-          "Prepare pasta according to the package instructions. Once boiled and ready, drain the water in colander and set it aside.",
-          "Heat a pan on medium heat and once hot, add oil to it. Then add garlic, ginger and onion. Sprinkle some salt. Cook for 2 to 3 minutes until softened.",
-          "Then add tomato sauce, veggies, cardamom powder, garam masala and red chili powder. Stir well and cook for 2 to 3 minutes until the raw smell goes away.",
-          "Add the cashew paste and mix. Add in the boiled pasta and mix well. You may have to add extra warm water if the sauce looks very thick. Adjust the seasoning. Let the pasta heat through.",
-          "Crush some kasuri methi on your palm and sprinkle it over. Turn off heat. Sprinkle freshly ground black pepper, cardamom powder, garam masala over the pasta just before serving.",
-          "Garnish with fresh chopped cilantro and serve warm."
-        ],
-        "servings": 6,
-        "cuisineType": "Fusion",
-        "mainProtein": "Vegetarian",
-        "addedAt": "2026-07-18T23:06:55.835Z"
-      },
-      "checked": false,
-      "fromLibrary": false,
-      "manual": false
-    },
-    {
-      "recipe": {
         "id": "rec_0s7oul2e81l3",
         "title": "Masala Pasta (Indian Style Pasta)",
         "sourceUrl": "https://www.jcookingodyssey.com/indian-masala-pasta/",
@@ -476,99 +359,98 @@
     },
     {
       "recipe": {
-        "id": "rec_my4zxbiw865v",
-        "title": "Masala Macaroni with Peas and Carrots",
-        "sourceUrl": "https://recipe4peace.com/indian-pasta-recipes/",
+        "id": "rec_d4qwj6hgeuix",
+        "title": "Roasted Pepper, Lentil & Feta Curry Bake",
+        "sourceUrl": "https://www.happyveggiekitchen.com/pepper-feta-curry/",
         "ingredients": [
           {
-            "item": "elbow macaroni",
-            "quantity": "8 ounces",
+            "item": "Coconut or olive oil",
+            "quantity": "",
             "section": "Pantry"
           },
           {
-            "item": "extra virgin olive oil",
-            "quantity": "2 tablespoons",
+            "item": "bell peppers (sliced*)",
+            "quantity": "3",
+            "section": "Produce"
+          },
+          {
+            "item": "onion (sliced)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "garlic (chopped)",
+            "quantity": "4 cloves",
+            "section": "Produce"
+          },
+          {
+            "item": "chopped tomatoes ((14oz / 400g size)**)",
+            "quantity": "2 cans",
+            "section": "Produce"
+          },
+          {
+            "item": "cooked green or brown lentils***",
+            "quantity": "1.5 cups",
             "section": "Pantry"
           },
           {
-            "item": "yellow onion",
-            "quantity": "1 medium, finely chopped",
-            "section": "Produce"
-          },
-          {
-            "item": "garlic cloves",
-            "quantity": "2, minced",
-            "section": "Produce"
-          },
-          {
-            "item": "fresh ginger",
-            "quantity": "1 teaspoon, grated",
-            "section": "Produce"
-          },
-          {
-            "item": "garam masala",
-            "quantity": "1 teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "turmeric",
-            "quantity": "½ teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "cayenne pepper",
-            "quantity": "¼ teaspoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "frozen peas",
-            "quantity": "1 cup",
-            "section": "Frozen"
-          },
-          {
-            "item": "carrots",
-            "quantity": "1 cup, diced into ¼-inch pieces",
-            "section": "Produce"
-          },
-          {
-            "item": "diced tomatoes",
-            "quantity": "1 (14.5-ounce) can",
-            "section": "Produce"
-          },
-          {
-            "item": "heavy cream",
-            "quantity": "½ cup",
+            "item": "double (heavy) cream",
+            "quantity": "1/4 cup",
             "section": "Dairy & Eggs"
           },
           {
-            "item": "salt",
-            "quantity": "½ teaspoon",
+            "item": "block of feta cheese",
+            "quantity": "7 oz",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "Handful of chopped fresh coriander (cilantro)",
+            "quantity": "",
             "section": "Spices & Seasonings"
           },
           {
-            "item": "fresh cilantro",
-            "quantity": "2 tablespoons, chopped",
-            "section": "Produce"
+            "item": "cumin seeds",
+            "quantity": "4 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "mustard seeds",
+            "quantity": "2 tsp",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "ground coriander",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "cinnamon",
+            "quantity": "1/4 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "chili powder",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "garam masala",
+            "quantity": "1 Tbsp",
+            "section": "Spices & Seasonings"
           }
         ],
         "steps": [
-          "Bring a large pot of salted water to a rolling boil over high heat.",
-          "Add the elbow macaroni and cook for 8 minutes exactly, stirring occasionally to prevent sticking.",
-          "Drain the pasta thoroughly, reserving ½ cup of the starchy cooking water.",
-          "Heat the olive oil in a large skillet over medium heat until it shimmers, about 1 minute.",
-          "Add the chopped onion and cook, stirring frequently, until translucent and lightly golden, 5-6 minutes.",
-          "Stir in the minced garlic and grated ginger, cooking until fragrant, about 30 seconds.",
-          "Sprinkle in the garam masala, turmeric, and cayenne, toasting the spices for 45 seconds until deeply aromatic.",
-          "Add the diced carrots and frozen peas, stirring to coat them in the spiced oil.",
-          "Pour in the diced tomatoes with their juices and the heavy cream, stirring to combine.",
-          "Bring the sauce to a gentle simmer, then reduce heat to low and cook for 8 minutes until the carrots are tender-crisp.",
-          "Stir in the drained macaroni and salt, adding reserved pasta water 1 tablespoon at a time until the sauce reaches your desired consistency.",
-          "Remove from heat and fold in the chopped cilantro."
+          "Heat the oven to 200C / 390F.",
+          "Scatter the peppers, onions and garlic in a casserole dish and drizzle with oil. Roast for 30-40 minutes, until the peppers are soft and charred.",
+          "Remove from the oven and quickly add the cumin seeds and mustard seeds to the pan, mixing through the hot oil to toast them. Add the ground spices next, mixing through, followed by the lentils, tomatoes and cream.",
+          "Slice your feta cheese into 6 pieces lengthwise, and then slice each piece widthwise so you have 12 thin pieces. Arrange these on top of the dish. Drizzle or spray with oil.",
+          "Place back in the oven for 20 minutes, and then use the grill / broiler on a high setting to brown the feta cheese.",
+          "Let it rest until it stops bubbling before serving. Toss some fresh coriander (cilantro) on top."
         ],
-        "servings": null,
-        "cuisineType": "Indian",
+        "servings": 4,
+        "cuisineType": "Indian Inspired",
         "mainProtein": "Vegetarian",
-        "addedAt": "2026-07-18T23:07:01.555Z"
+        "addedAt": "2026-07-18T23:12:13.065Z"
       },
       "checked": false,
       "fromLibrary": false,
@@ -576,108 +458,210 @@
     },
     {
       "recipe": {
-        "id": "rec_qmzvl78886nn",
-        "title": "Masala Macaroni",
-        "sourceUrl": "https://panmastery.com/indian-pasta-recipes/",
+        "id": "rec_texflhirewsz",
+        "title": "Fragrant shrimp and chickpea curry",
+        "sourceUrl": "https://www.mediterrasian.com/delicious_recipes_shrimp_chickpea_curry.htm",
         "ingredients": [
           {
-            "item": "elbow macaroni",
-            "quantity": "8 oz",
-            "section": "Pantry"
-          },
-          {
-            "item": "water",
-            "quantity": "4 cups",
-            "section": "Beverages"
-          },
-          {
-            "item": "salt",
-            "quantity": "1 tsp",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "vegetable oil",
-            "quantity": "2 tbsp",
+            "item": "peanut or canola oil",
+            "quantity": "2 tablespoons",
             "section": "Pantry"
           },
           {
             "item": "onion",
-            "quantity": "1 medium, finely chopped",
+            "quantity": "1, finely chopped",
             "section": "Produce"
           },
           {
-            "item": "garlic cloves",
-            "quantity": "2, minced",
+            "item": "garlic",
+            "quantity": "2 cloves, finely chopped",
             "section": "Produce"
           },
           {
-            "item": "ginger",
-            "quantity": "1 tbsp, grated",
+            "item": "fresh ginger",
+            "quantity": "1 teaspoon, finely grated",
             "section": "Produce"
           },
           {
-            "item": "green chili",
-            "quantity": "1, finely chopped (optional)",
-            "section": "Produce"
+            "item": "canned chickpeas",
+            "quantity": "½ cup",
+            "section": "Pantry"
           },
           {
-            "item": "cumin seeds",
-            "quantity": "1 tsp",
+            "item": "ground cumin",
+            "quantity": "2 teaspoons",
             "section": "Spices & Seasonings"
           },
           {
-            "item": "turmeric powder",
-            "quantity": "1 tsp",
+            "item": "ground turmeric",
+            "quantity": "1 teaspoon",
             "section": "Spices & Seasonings"
           },
           {
             "item": "garam masala",
-            "quantity": "1 tsp",
+            "quantity": "1 teaspoon",
             "section": "Spices & Seasonings"
           },
           {
-            "item": "red chili powder",
-            "quantity": "1 tsp",
+            "item": "chili powder",
+            "quantity": "½ teaspoon",
             "section": "Spices & Seasonings"
           },
           {
-            "item": "tomato puree",
+            "item": "canned chopped tomatoes",
+            "quantity": "14 oz (400g)",
+            "section": "Pantry"
+          },
+          {
+            "item": "coconut milk",
             "quantity": "1 cup",
+            "section": "Pantry"
+          },
+          {
+            "item": "salt",
+            "quantity": "1 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "basmati rice",
+            "quantity": "½ cup",
+            "section": "Pantry"
+          },
+          {
+            "item": "uncooked shrimp",
+            "quantity": "16 large, peeled and deveined",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "fresh cilantro",
+            "quantity": "1 tablespoon, finely chopped",
             "section": "Produce"
           },
           {
-            "item": "heavy cream",
-            "quantity": "1/2 cup",
-            "section": "Dairy & Eggs"
+            "item": "lemon juice",
+            "quantity": "1 tablespoon",
+            "section": "Condiments & Sauces"
+          }
+        ],
+        "steps": [
+          "Heat the oil in a large saucepan over a medium heat and cook the onion for 8 minutes, stirring occasionally.",
+          "Add the garlic and ginger, and cook for two minutes.",
+          "Add the cumin, turmeric, garam masala and chili powder and cook, stirring, for a minute.",
+          "Add the tomatoes, coconut milk and salt and bring to a boil.",
+          "Reduce the heat and simmer, uncovered, for 10 minutes.",
+          "While the curry simmers, cook the rice according to package directions.",
+          "Add the shrimp and chickpeas to the curry, cover with a lid, and simmer for another 4 minutes.",
+          "Stir in the chopped cilantro and lemon juice.",
+          "Serve on a bed of basmati rice."
+        ],
+        "servings": 2,
+        "cuisineType": "Indian",
+        "mainProtein": "Shrimp",
+        "addedAt": "2026-07-18T23:12:16.019Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": false
+    },
+    {
+      "recipe": {
+        "id": "rec_xfdknl47ezrm",
+        "title": "Easy Vegetable Curry",
+        "sourceUrl": "https://www.inspiredtaste.net/49493/vegetable-curry/",
+        "ingredients": [
+          {
+            "item": "coconut oil or vegetable oil",
+            "quantity": "1 ½ tablespoons",
+            "section": "Pantry"
           },
           {
-            "item": "cheddar cheese",
-            "quantity": "1/2 cup, shredded",
-            "section": "Dairy & Eggs"
+            "item": "onion",
+            "quantity": "1 large, halved and sliced",
+            "section": "Produce"
+          },
+          {
+            "item": "cauliflower",
+            "quantity": "½ medium head, cut into florets",
+            "section": "Produce"
+          },
+          {
+            "item": "carrots",
+            "quantity": "2 medium, sliced",
+            "section": "Produce"
+          },
+          {
+            "item": "Yukon Gold potato",
+            "quantity": "1 large, halved and thinly sliced",
+            "section": "Produce"
+          },
+          {
+            "item": "garlic",
+            "quantity": "1 tablespoon minced (3 to 4 medium cloves)",
+            "section": "Produce"
+          },
+          {
+            "item": "ginger",
+            "quantity": "1 tablespoon minced fresh (1-inch piece)",
+            "section": "Produce"
+          },
+          {
+            "item": "turmeric",
+            "quantity": "1 teaspoon dried (or 1 tablespoon minced fresh)",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "red curry paste",
+            "quantity": "1 ½ tablespoons",
+            "section": "Other"
+          },
+          {
+            "item": "coconut milk",
+            "quantity": "1 (15-ounce) can full-fat (about 1 ½ cups)",
+            "section": "Pantry"
+          },
+          {
+            "item": "water or broth",
+            "quantity": "1 to 1 ½ cups",
+            "section": "Pantry"
+          },
+          {
+            "item": "green beans or snap peas",
+            "quantity": "Handful, trimmed and cut in half",
+            "section": "Produce"
+          },
+          {
+            "item": "tomatoes",
+            "quantity": "1 cup chopped (3 small tomatoes)",
+            "section": "Produce"
+          },
+          {
+            "item": "fish sauce",
+            "quantity": "1 tablespoon",
+            "section": "Condiments & Sauces"
           },
           {
             "item": "cilantro",
-            "quantity": "2 tbsp, chopped",
+            "quantity": "Handful fresh leaves with tender stems, chopped",
+            "section": "Produce"
+          },
+          {
+            "item": "lime",
+            "quantity": "1, juiced (or more to taste)",
             "section": "Produce"
           }
         ],
         "steps": [
-          "Bring 4 cups of water to a boil in a large pot over high heat, then add 1 tsp salt and 8 oz elbow macaroni. Cook for 8-10 minutes until al dente, stirring occasionally to prevent sticking. Test a piece at 8 minutes—it should be tender but firm, not mushy!",
-          "Drain the macaroni in a colander and set it aside, but do not rinse to keep the starch for a creamier sauce.",
-          "Heat 2 tbsp vegetable oil in a large skillet over medium heat until shimmering, about 1 minute. Add 1 tsp cumin seeds and let them sizzle for 30 seconds until fragrant.",
-          "Add 1 medium finely chopped onion to the skillet and sauté for 4-5 minutes until soft and translucent, stirring frequently to avoid burning.",
-          "Stir in 2 minced garlic cloves, 1 tbsp grated ginger, and 1 finely chopped green chili (if using), cooking for 1 minute until aromatic. Keep the heat medium to prevent the garlic from turning bitter!",
-          "Sprinkle in 1 tsp turmeric powder, 1 tsp garam masala, and 1 tsp red chili powder, stirring constantly for 30 seconds to toast the spices and release their flavors.",
-          "Pour in 1 cup tomato puree and mix well, then simmer for 5 minutes over medium-low heat until the sauce thickens slightly and the raw tomato taste disappears.",
-          "Reduce the heat to low and stir in 1/2 cup heavy cream and 1/2 tsp salt, cooking for 2 minutes until the sauce is smooth and creamy. Avoid boiling after adding cream to prevent curdling!",
-          "Add the cooked macaroni to the skillet, tossing gently to coat every piece evenly with the masala sauce.",
-          "Sprinkle 1/2 cup shredded cheddar cheese over the top and cover the skillet for 2 minutes until the cheese melts slightly.",
-          "Remove from heat and garnish with 2 tbsp chopped cilantro before serving hot."
+          "Heat the oil in a wok or wide saucepan over medium-high heat. When the oil shimmers, add the onions, carrots, and cauliflower florets. Cook, stirring occasionally, until the vegetables begin to take on a little color and soften, about 8 minutes.",
+          "Toss in the minced garlic, ginger, and turmeric. Cook while tossing the spices around the pan for one minute.",
+          "Add the curry paste, and then toss, making sure that it has a chance to coat most of the vegetables.",
+          "Stir in the potatoes, coconut milk, and 1 cup of water. Stir, and then bring to a simmer. Cook, at a low simmer, until the potatoes are almost tender, 5 to 10 minutes. If the curry seems too thick or there isn't enough liquid, add another ½ cup of water.",
+          "Toss in the tomatoes and green beans, and cook another 3 to 5 minutes or until the green beans are bright green and tender.",
+          "Finish by stirring in the fish sauce, cilantro, and lime juice. Taste and adjust with more fish sauce or lime juice if necessary."
         ],
         "servings": 4,
-        "cuisineType": "Indian",
+        "cuisineType": "Thai",
         "mainProtein": "Vegetarian",
-        "addedAt": "2026-07-18T23:07:02.195Z"
+        "addedAt": "2026-07-18T23:12:19.858Z"
       },
       "checked": false,
       "fromLibrary": false,
