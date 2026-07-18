@@ -276,225 +276,52 @@
     },
     {
       "recipe": {
-        "id": "rec_60aseu996y0p",
-        "title": "Mediterranean Baked Fish Recipe with Artichokes and Olives",
-        "sourceUrl": "https://theforkedspoon.com/mediterranean-baked-fish-with-artichokes-olives/",
+        "id": "rec_pi2b3fqf81qz",
+        "title": "Makhani Masala Pasta Recipe",
+        "sourceUrl": "https://profusioncurry.com/makhani-masala-pasta-recipe/",
         "ingredients": [
           {
-            "item": "olive oil",
-            "quantity": "1.5 tablespoon",
+            "item": "cooking oil (I used olive oil)",
+            "quantity": "1 Tablespoon",
             "section": "Pantry"
           },
           {
-            "item": "yellow onion (chopped or 2 large shallots, chopped)",
-            "quantity": "1/2",
-            "section": "Produce"
+            "item": "box of pasta",
+            "quantity": "1 8 oz",
+            "section": "Pantry"
+          },
+          {
+            "item": "can tomato sauce or puree",
+            "quantity": "1 14.5 oz",
+            "section": "Pantry"
+          },
+          {
+            "item": "chopped mixed vegetables - I used frozen mix veggie mix",
+            "quantity": "2 cup",
+            "section": "Frozen"
           },
           {
             "item": "garlic (minced)",
-            "quantity": "6 cloves",
+            "quantity": "3-4 cloves",
             "section": "Produce"
           },
           {
-            "item": "chopped tomatoes (two 14 ounce cans , liquid drained)",
-            "quantity": "28 oz",
-            "section": "Produce"
-          },
-          {
-            "item": "fresh chopped basil (packed)",
-            "quantity": "1/4 cup",
-            "section": "Produce"
-          },
-          {
-            "item": "salt + pepper",
-            "quantity": "",
-            "section": "Produce"
-          },
-          {
-            "item": "White fish (I used cod fillets, 4 fillets)",
-            "quantity": "16 oz",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "feta cheese (crumbled)",
-            "quantity": "1/2 cup",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "artichoke hearts (liquid drained )",
-            "quantity": "15 oz",
-            "section": "Produce"
-          },
-          {
-            "item": "Roma tomatoes (roughly chopped)",
-            "quantity": "2",
-            "section": "Produce"
-          },
-          {
-            "item": "kalamata olives",
-            "quantity": "4 ounces",
-            "section": "Other"
-          },
-          {
-            "item": "capers",
-            "quantity": "2 tablespoon",
-            "section": "Other"
-          },
-          {
-            "item": "lemon (sliced)",
+            "item": "inch ginger (finely chopped)",
             "quantity": "1",
             "section": "Produce"
           },
           {
-            "item": "additional feta cheese, basil, and capers (for serving)",
-            "quantity": "",
-            "section": "Dairy & Eggs"
-          }
-        ],
-        "steps": [
-          "Preheat oven to 375 degrees F.",
-          "In a large oven-safe skillet, heat olive oil over medium heat (if you do not have an oven safe skillet, that's ok. You will just need to use two dishes). Once warm, add onion (or shallots) and garlic and sauté until fragrant, approximately 1-2 minutes. Add chopped tomatoes, basil, salt and pepper and mix well. Bring to just a boil and remove from heat.",
-          "In the same (oven-safe) skillet, place fish on top of the fresh basil tomato sauce. Sprinkle with feta cheese.",
-          "Gently place artichokes and chopped Roma tomatoes in the tomato sauce between the fish fillets, and place thin slices of lemon on top of the fish. Add the drained olives and capers on top of the fish and tomatoes.",
-          "Place skillet in the center of your preheated oven and bake for approximately 15-25 minutes, or until fish flakes easily with a fork (the time will vary depending on the size and thickness of your fish).",
-          "Garnish with fresh basil and feta cheese and serve with a side of fresh bread, couscous or quinoa."
-        ],
-        "servings": 4,
-        "cuisineType": "Mediterranean",
-        "mainProtein": "Fish",
-        "addedAt": "2026-07-18T23:06:04.345Z"
-      },
-      "checked": false,
-      "fromLibrary": false,
-      "manual": false
-    },
-    {
-      "recipe": {
-        "id": "rec_29b8r8k36z0r",
-        "title": "Mediterranean Cod with Tomatoes, Olives, and Feta",
-        "sourceUrl": "https://stemandspoon.com/mediterranean-cod-with-tomatoes-olives-and-feta/",
-        "ingredients": [
-          {
-            "item": "wild cod (about 3-4 pieces)",
-            "quantity": "1-½ pounds",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "½ teaspoon fine sea salt",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "½ teaspoon black pepper",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "½ teaspoon garlic powder",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "olive oil, divided",
-            "quantity": "2 tablespoons",
-            "section": "Pantry"
-          },
-          {
-            "item": "½ large yellow onion, chopped small",
-            "quantity": "",
-            "section": "Produce"
-          },
-          {
-            "item": "garlic cloves, minced",
-            "quantity": "3",
-            "section": "Produce"
-          },
-          {
-            "item": "fresh chopped oregano (or 1 teaspoon dried oregano)",
-            "quantity": "1 tablespoon",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "½ teaspoon red pepper flakes (optional)",
-            "quantity": "",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "1, 15-ounce can diced tomatoes",
-            "quantity": "",
-            "section": "Produce"
-          },
-          {
-            "item": "chopped parsley",
-            "quantity": "1-2 tablespoons",
-            "section": "Produce"
-          },
-          {
-            "item": "chopped Kalamata olives",
-            "quantity": "⅓ cup",
-            "section": "Other"
-          },
-          {
-            "item": "crumbled feta cheese",
-            "quantity": "¼ cup",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "Lemon wedges for serving",
-            "quantity": "",
-            "section": "Produce"
-          }
-        ],
-        "steps": [
-          "Preheat the oven to 400°F.",
-          "Pat dry the cod and season both sides with the salt, pepper, and garlic powder.",
-          "Heat a cast iron skillet (or nonstick skillet) over medium-high heat. Add 1 tablespoon of olive oil, then add the fish pieces to the pan, searing for 1-2 minutes per side. This is only to sear them; they will finish cooking in the oven.",
-          "Transfer the cod to a plate. In the same skillet, add the other tablespoon of oil, then cook the diced onion for 1-2 minutes to soften. Stir in the garlic and oregano, cooking until fragrant, about 30 seconds. Pour in the can of diced tomatoes and add the parsley and olives. Stir and cook for 1-2 minutes, just to heat the mixture.",
-          "Nestle the seared pieces of cod into the tomato mixture. Sprinkle with the feta, then transfer the skillet to the oven and bake for 8-12 minutes or until the fish flakes easily with a fork.",
-          "Remove from the oven and sprinkle red pepper flakes and extra parsley on top, if desired. Serve with lemon."
-        ],
-        "servings": 3,
-        "cuisineType": "mediterranean",
-        "mainProtein": "Fish",
-        "addedAt": "2026-07-18T23:06:05.643Z"
-      },
-      "checked": false,
-      "fromLibrary": false,
-      "manual": false
-    },
-    {
-      "recipe": {
-        "id": "rec_1rufnps56y79",
-        "title": "Comforting Red Lentil Soup (Dal Soup)",
-        "sourceUrl": "https://www.littlespicejar.com/red-lentil-soup/",
-        "ingredients": [
-          {
-            "item": "butter (or ghee)",
-            "quantity": "1 tablespoon",
-            "section": "Dairy & Eggs"
-          },
-          {
-            "item": "olive oil",
-            "quantity": "1 tablespoon",
-            "section": "Pantry"
-          },
-          {
-            "item": "minced garlic",
-            "quantity": "4 cloves",
-            "section": "Produce"
-          },
-          {
-            "item": "medium onion (chopped)",
+            "item": "medium yellow onion (chopped)",
             "quantity": "1",
             "section": "Produce"
           },
           {
-            "item": "celery (chopped)",
-            "quantity": "2 stalks",
-            "section": "Produce"
+            "item": "water",
+            "quantity": "1 cup",
+            "section": "Beverages"
           },
           {
-            "item": "½ teaspoon ground turmeric",
+            "item": "¼ teaspoon cardamom powder",
             "quantity": "",
             "section": "Spices & Seasonings"
           },
@@ -504,60 +331,61 @@
             "section": "Spices & Seasonings"
           },
           {
-            "item": "½ teaspoon chili powder",
+            "item": "½ teaspoon red chili powder - adjust per taste",
             "quantity": "",
             "section": "Spices & Seasonings"
           },
           {
-            "item": "ground cumin",
+            "item": "salt (or to taste)",
+            "quantity": "1/2 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "cashews (make a paste by blending in 1/2 cup water)",
+            "quantity": "½ cup",
+            "section": "Beverages"
+          },
+          {
+            "item": "kasuri methi (crushed, dried fenugreek leaves)",
             "quantity": "1 teaspoon",
-            "section": "Spices & Seasonings"
+            "section": "Other"
           },
           {
-            "item": "curry powder (mild or hot)",
-            "quantity": "2-3 teaspoons",
-            "section": "Spices & Seasonings"
-          },
-          {
-            "item": "can diced tomatoes",
-            "quantity": "15 ounce",
+            "item": "chopped cilantro for garnish",
+            "quantity": "1 Tablespoon",
             "section": "Produce"
           },
           {
-            "item": "red lentils (washed and drained)",
-            "quantity": "1½ cups",
-            "section": "Pantry"
-          },
-          {
-            "item": "vegetable broth (or chicken stock)",
-            "quantity": "3-5 cups",
-            "section": "Meat & Seafood"
-          },
-          {
-            "item": "of coconut milk",
-            "quantity": "1½ cups",
-            "section": "Pantry"
-          },
-          {
-            "item": "lemon juice",
-            "quantity": "3 tablespoons",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "Chopped cilantro (for serving)",
+            "item": "freshly ground black pepper",
             "quantity": "",
-            "section": "Produce"
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "extra cardamom powder and garam masala to sprinkle over the top.",
+            "quantity": "",
+            "section": "Spices & Seasonings"
           }
         ],
         "steps": [
-          "SAUTE: Melt the butter and olive oil in a large pot over medium heat. Sauté the onions and celery for 5-6 minutes or until tender and translucent. Add the garlic and continue to cook for 1 additional minute. Add the turmeric, garam masala, chili powder, cumin, and curry powder. Continue to cook the veggies for another 1-2 minutes.",
-          "MAKE ON THE STOVETOP: Add the tomatoes, lentils, 4 cups of broth, bay leaf, and bring to a boil. Reduce the heat to low and allow the soup to simmer for 10 minutes. Add the coconut milk and allow the soup to continue cooking for an additional 12-18 minutes or until the lentils are fall-apart tender. If the lentils soak up too much of the liquid, use the remaining ½ cup of broth to thin the soup to your liking. Use an immersion blender to puree the mixture if you prefer a smooth texture. Leave as-is for a chunkier texture. Turn the stove off and stir in the lemon juice. Taste and adjust with additional salt if the soup needs it. Serve in bowls. Sometimes I like to add a scoop of basmati rice to my bowl of soup!",
-          "MAKE IN THE SLOW COOKER: Transfer the mixture from step 1 to a crockpot (slow cooker) and add the tomatoes, lentils and 3 cups of broth. Cook on high for 3 and 1/2 hours or on low for 6 and 1/2 hours. 20 minutes before the time is up add the coconut milk, lemon juice, and cilantro. If at any point the lentils soak up too much of the soup, use the additional broth to thin the soup to your liking. Use an immersion blender to puree the mixture if you prefer a smooth texture. Leave as-is for a chunkier texture. Adjust salt to taste. SOmetimes I like to add a scoop of basmati rice to my bowl of soup!"
+          "Press the sauté button on the Instant Pot. Once it displays hot, add the oil and then add the chopped garlic, ginger and onion. Sprinkle some salt. Sauté for 2 to 3 minutes until onions are soft.",
+          "Add a can of tomato puree, veggies, cardamom powder, garam masala, red chili powder. Mix well and let it cook for few minutes till the sauce starts to thicken.",
+          "Add the water and de-glaze the pot. Make sure there's nothing stuck at the bottom.",
+          "Add the pasta. Do NOT stir. Close the pot with its lid. Valve at SEALING. Press the MANUAL or PRESSURE COOK button and cook on high pressure for 5 minutes.",
+          "After it's done cooking, let the pressure release naturally for 5 minutes and then quick release the pressure. Once the silver pin drops, open the lid, stir everything and press the saute button.",
+          "Add the cashew paste. Crush kasuri methi on your palm and add it in the sauce. Let the pasta simmer for 2 minutes. Sprinkle chopped cilantro.",
+          "For additional flavor, sprinkle freshly ground black pepper, cardamom powder and garam masala on top before serving. Serve warm.",
+          "STOVE TOP INSTRUCTIONS",
+          "Prepare pasta according to the package instructions. Once boiled and ready, drain the water in colander and set it aside.",
+          "Heat a pan on medium heat and once hot, add oil to it. Then add garlic, ginger and onion. Sprinkle some salt. Cook for 2 to 3 minutes until softened.",
+          "Then add tomato sauce, veggies, cardamom powder, garam masala and red chili powder. Stir well and cook for 2 to 3 minutes until the raw smell goes away.",
+          "Add the cashew paste and mix. Add in the boiled pasta and mix well. You may have to add extra warm water if the sauce looks very thick. Adjust the seasoning. Let the pasta heat through.",
+          "Crush some kasuri methi on your palm and sprinkle it over. Turn off heat. Sprinkle freshly ground black pepper, cardamom powder, garam masala over the pasta just before serving.",
+          "Garnish with fresh chopped cilantro and serve warm."
         ],
         "servings": 6,
-        "cuisineType": "Indian",
-        "mainProtein": "Chicken",
-        "addedAt": "2026-07-18T23:06:04.581Z"
+        "cuisineType": "Fusion",
+        "mainProtein": "Vegetarian",
+        "addedAt": "2026-07-18T23:06:55.835Z"
       },
       "checked": false,
       "fromLibrary": false,
@@ -565,90 +393,291 @@
     },
     {
       "recipe": {
-        "id": "rec_lfvakhns72bv",
-        "title": "Indian Lentil Soup",
-        "sourceUrl": "https://greenkitchenstories.com/indian-lentil-soup/",
+        "id": "rec_0s7oul2e81l3",
+        "title": "Masala Pasta (Indian Style Pasta)",
+        "sourceUrl": "https://www.jcookingodyssey.com/indian-masala-pasta/",
         "ingredients": [
           {
-            "item": "extra virgin olive oil or coconut oil",
-            "quantity": "2-3 tbsp",
+            "item": "pasta ((uncooked))",
+            "quantity": "250 gram",
+            "section": "Pantry"
+          },
+          {
+            "item": "oil",
+            "quantity": "1 tablespoon",
+            "section": "Pantry"
+          },
+          {
+            "item": "onion (finely chopped)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "garlic (finely chopped)",
+            "quantity": "4 cloves",
+            "section": "Produce"
+          },
+          {
+            "item": "tomato puree",
+            "quantity": "100 gram",
+            "section": "Produce"
+          },
+          {
+            "item": "red chilli flakes",
+            "quantity": "1 teaspoon",
+            "section": "Other"
+          },
+          {
+            "item": "curry powder (see substitutes in the post)",
+            "quantity": "1 teaspoon",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "kashmiri chilli powder",
+            "quantity": "1 teaspoon",
+            "section": "Other"
+          },
+          {
+            "item": "cream",
+            "quantity": "¼ cup",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "cheddar cheese",
+            "quantity": "¼ cup",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "salt to taste",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "coriander (optional for garnishing)",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          }
+        ],
+        "steps": [
+          "Boil pasta according to packet instructions. Drain and reserve some of the pasta water.",
+          "Heat oil in a pan and add the garlic. Sauté for a few seconds then tip in the onions. Cook until the onions have softened.",
+          "Add the tomato puree and stir. Add the spices - chilli flakes, kashmiri chilli powder and curry powder. Season with salt. Pour over some pasta water to prevent the spices burning.",
+          "Pour over the cream, mix to combine and stir through the pasta. Toss to combine and add more pasta water to loosen.",
+          "Add the cheese and mix. Garnish with coriander if using and serve."
+        ],
+        "servings": 4,
+        "cuisineType": "Indian fusion",
+        "mainProtein": "Vegetarian",
+        "addedAt": "2026-07-18T23:06:55.623Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": false
+    },
+    {
+      "recipe": {
+        "id": "rec_my4zxbiw865v",
+        "title": "Masala Macaroni with Peas and Carrots",
+        "sourceUrl": "https://recipe4peace.com/indian-pasta-recipes/",
+        "ingredients": [
+          {
+            "item": "elbow macaroni",
+            "quantity": "8 ounces",
+            "section": "Pantry"
+          },
+          {
+            "item": "extra virgin olive oil",
+            "quantity": "2 tablespoons",
             "section": "Pantry"
           },
           {
             "item": "yellow onion",
-            "quantity": "1, finely chopped",
+            "quantity": "1 medium, finely chopped",
             "section": "Produce"
           },
           {
-            "item": "garlic",
-            "quantity": "3 cloves, finely chopped",
+            "item": "garlic cloves",
+            "quantity": "2, minced",
             "section": "Produce"
           },
           {
             "item": "fresh ginger",
-            "quantity": "1 tbsp, very finely chopped",
+            "quantity": "1 teaspoon, grated",
             "section": "Produce"
           },
           {
-            "item": "curry powder",
-            "quantity": "1 tbsp",
+            "item": "garam masala",
+            "quantity": "1 teaspoon",
             "section": "Spices & Seasonings"
           },
           {
-            "item": "ground turmeric",
-            "quantity": "1 tsp",
+            "item": "turmeric",
+            "quantity": "½ teaspoon",
             "section": "Spices & Seasonings"
           },
           {
-            "item": "ground chili or harissa",
-            "quantity": "1/2 tsp",
-            "section": "Condiments & Sauces"
+            "item": "cayenne pepper",
+            "quantity": "¼ teaspoon",
+            "section": "Spices & Seasonings"
           },
           {
-            "item": "potatoes",
-            "quantity": "3 medium, diced",
-            "section": "Produce"
+            "item": "frozen peas",
+            "quantity": "1 cup",
+            "section": "Frozen"
           },
           {
             "item": "carrots",
-            "quantity": "2, sliced",
+            "quantity": "1 cup, diced into ¼-inch pieces",
             "section": "Produce"
           },
           {
-            "item": "red or yellow lentils",
-            "quantity": "200g, rinsed",
-            "section": "Pantry"
+            "item": "diced tomatoes",
+            "quantity": "1 (14.5-ounce) can",
+            "section": "Produce"
           },
           {
-            "item": "vegetable stock",
-            "quantity": "4 cups / 1 liter",
-            "section": "Pantry"
+            "item": "heavy cream",
+            "quantity": "½ cup",
+            "section": "Dairy & Eggs"
           },
           {
-            "item": "sea salt",
-            "quantity": "a pinch",
+            "item": "salt",
+            "quantity": "½ teaspoon",
             "section": "Spices & Seasonings"
           },
           {
-            "item": "tomatoes",
-            "quantity": "2-3, diced",
+            "item": "fresh cilantro",
+            "quantity": "2 tablespoons, chopped",
             "section": "Produce"
           }
         ],
         "steps": [
-          "Prepare the vegetables.",
-          "Heat the olive oil in a big soup pot.",
-          "Add onion, garlic, ginger and all the spices.",
-          "After about a minute add the potatoes, carrots and the lentils, stir it around another minute before adding the vegetable stock.",
-          "Let it boil on low-medium heat for 30 minutes, stir occasionally, taste the soup and add more salt and spices if needed.",
-          "Add the tomatoes and let it boil for 5-10 more minutes.",
-          "The soup is done when the lentils are dissolved.",
-          "Serve with roasted pumpkin seeds and some fresh coriander."
+          "Bring a large pot of salted water to a rolling boil over high heat.",
+          "Add the elbow macaroni and cook for 8 minutes exactly, stirring occasionally to prevent sticking.",
+          "Drain the pasta thoroughly, reserving ½ cup of the starchy cooking water.",
+          "Heat the olive oil in a large skillet over medium heat until it shimmers, about 1 minute.",
+          "Add the chopped onion and cook, stirring frequently, until translucent and lightly golden, 5-6 minutes.",
+          "Stir in the minced garlic and grated ginger, cooking until fragrant, about 30 seconds.",
+          "Sprinkle in the garam masala, turmeric, and cayenne, toasting the spices for 45 seconds until deeply aromatic.",
+          "Add the diced carrots and frozen peas, stirring to coat them in the spiced oil.",
+          "Pour in the diced tomatoes with their juices and the heavy cream, stirring to combine.",
+          "Bring the sauce to a gentle simmer, then reduce heat to low and cook for 8 minutes until the carrots are tender-crisp.",
+          "Stir in the drained macaroni and salt, adding reserved pasta water 1 tablespoon at a time until the sauce reaches your desired consistency.",
+          "Remove from heat and fold in the chopped cilantro."
+        ],
+        "servings": null,
+        "cuisineType": "Indian",
+        "mainProtein": "Vegetarian",
+        "addedAt": "2026-07-18T23:07:01.555Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": false
+    },
+    {
+      "recipe": {
+        "id": "rec_qmzvl78886nn",
+        "title": "Masala Macaroni",
+        "sourceUrl": "https://panmastery.com/indian-pasta-recipes/",
+        "ingredients": [
+          {
+            "item": "elbow macaroni",
+            "quantity": "8 oz",
+            "section": "Pantry"
+          },
+          {
+            "item": "water",
+            "quantity": "4 cups",
+            "section": "Beverages"
+          },
+          {
+            "item": "salt",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "vegetable oil",
+            "quantity": "2 tbsp",
+            "section": "Pantry"
+          },
+          {
+            "item": "onion",
+            "quantity": "1 medium, finely chopped",
+            "section": "Produce"
+          },
+          {
+            "item": "garlic cloves",
+            "quantity": "2, minced",
+            "section": "Produce"
+          },
+          {
+            "item": "ginger",
+            "quantity": "1 tbsp, grated",
+            "section": "Produce"
+          },
+          {
+            "item": "green chili",
+            "quantity": "1, finely chopped (optional)",
+            "section": "Produce"
+          },
+          {
+            "item": "cumin seeds",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "turmeric powder",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "garam masala",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "red chili powder",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "tomato puree",
+            "quantity": "1 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "heavy cream",
+            "quantity": "1/2 cup",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "cheddar cheese",
+            "quantity": "1/2 cup, shredded",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "cilantro",
+            "quantity": "2 tbsp, chopped",
+            "section": "Produce"
+          }
+        ],
+        "steps": [
+          "Bring 4 cups of water to a boil in a large pot over high heat, then add 1 tsp salt and 8 oz elbow macaroni. Cook for 8-10 minutes until al dente, stirring occasionally to prevent sticking. Test a piece at 8 minutes—it should be tender but firm, not mushy!",
+          "Drain the macaroni in a colander and set it aside, but do not rinse to keep the starch for a creamier sauce.",
+          "Heat 2 tbsp vegetable oil in a large skillet over medium heat until shimmering, about 1 minute. Add 1 tsp cumin seeds and let them sizzle for 30 seconds until fragrant.",
+          "Add 1 medium finely chopped onion to the skillet and sauté for 4-5 minutes until soft and translucent, stirring frequently to avoid burning.",
+          "Stir in 2 minced garlic cloves, 1 tbsp grated ginger, and 1 finely chopped green chili (if using), cooking for 1 minute until aromatic. Keep the heat medium to prevent the garlic from turning bitter!",
+          "Sprinkle in 1 tsp turmeric powder, 1 tsp garam masala, and 1 tsp red chili powder, stirring constantly for 30 seconds to toast the spices and release their flavors.",
+          "Pour in 1 cup tomato puree and mix well, then simmer for 5 minutes over medium-low heat until the sauce thickens slightly and the raw tomato taste disappears.",
+          "Reduce the heat to low and stir in 1/2 cup heavy cream and 1/2 tsp salt, cooking for 2 minutes until the sauce is smooth and creamy. Avoid boiling after adding cream to prevent curdling!",
+          "Add the cooked macaroni to the skillet, tossing gently to coat every piece evenly with the masala sauce.",
+          "Sprinkle 1/2 cup shredded cheddar cheese over the top and cover the skillet for 2 minutes until the cheese melts slightly.",
+          "Remove from heat and garnish with 2 tbsp chopped cilantro before serving hot."
         ],
         "servings": 4,
         "cuisineType": "Indian",
         "mainProtein": "Vegetarian",
-        "addedAt": "2026-07-18T23:06:09.931Z"
+        "addedAt": "2026-07-18T23:07:02.195Z"
       },
       "checked": false,
       "fromLibrary": false,
