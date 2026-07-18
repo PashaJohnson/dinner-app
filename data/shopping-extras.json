@@ -11,6 +11,12 @@
       "name": "Chicken breast",
       "quantity": "",
       "section": "Meat & Seafood"
+    },
+    {
+      "id": "rec_la5buzz7i8f8",
+      "name": "Pasta",
+      "quantity": "",
+      "section": "Pantry"
     }
   ]
 }
