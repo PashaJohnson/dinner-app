@@ -561,75 +561,123 @@
     },
     {
       "recipe": {
-        "id": "rec_8e8ofvaiu0nd",
-        "title": "Long Noodle Pasta Salad with Chili Crisp",
-        "sourceUrl": "https://www.foodnetwork.com/recipes/long-noodle-pasta-salad-with-chili-crisp-18315271",
+        "id": "rec_iu5lbalpxsri",
+        "title": "Spicy Crispy Pasta Salad with Chili Crisp Yogurt Dressing",
+        "sourceUrl": "https://drveganblog.com/spicy-crispy-pasta-salad/",
         "ingredients": [
           {
-            "item": "mayonnaise",
-            "quantity": "1/4 cup",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "tahini",
-            "quantity": "1/4 cup",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "(60 grams) unseasoned rice vinegar",
-            "quantity": "1/4 cup",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "(30 grams) chili crisp, plus more for drizzling",
-            "quantity": "2 tablespoons",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "(30 grams) soy sauce",
-            "quantity": "2 tablespoons",
-            "section": "Condiments & Sauces"
-          },
-          {
-            "item": "(13 grams) toasted sesame oil",
-            "quantity": "1 tablespoon",
+            "item": "farfalle pasta",
+            "quantity": "300 g",
             "section": "Pantry"
           },
           {
-            "item": "(42 grams) honey",
-            "quantity": "2 tablespoons",
+            "item": "olive oil",
+            "quantity": "3 tbsp",
             "section": "Pantry"
           },
           {
-            "item": "kosher salt",
-            "quantity": "1/2 teaspoon",
+            "item": "smoked paprika",
+            "quantity": "1 tsp",
             "section": "Spices & Seasonings"
           },
           {
-            "item": "(340 grams) long Chinese wheat noodles",
-            "quantity": "12 ounces",
-            "section": "Pantry"
+            "item": "garlic powder",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
           },
           {
-            "item": "(113 grams) snow peas, stringed and thinly sliced on the bias",
-            "quantity": "4 ounces",
+            "item": "dried oregano",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "salt",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "black pepper",
+            "quantity": "1/2 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "red onion",
+            "quantity": "1",
             "section": "Produce"
           },
           {
-            "item": "scallions, finely sliced, divided",
-            "quantity": "3",
+            "item": "spring onions (sliced)",
+            "quantity": "4",
             "section": "Produce"
+          },
+          {
+            "item": "cucumber (diced)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "cherry tomatoes (halved)",
+            "quantity": "200 g",
+            "section": "Produce"
+          },
+          {
+            "item": "fresh parsley (chopped)",
+            "quantity": "2 tbsp",
+            "section": "Produce"
+          },
+          {
+            "item": "fresh dill (chopped)",
+            "quantity": "1 tbsp",
+            "section": "Produce"
+          },
+          {
+            "item": "vegan yogurt (unsweetened)",
+            "quantity": "120 ml",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "vegan mayo",
+            "quantity": "3 tbsp",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "chili crisp",
+            "quantity": "2 tbsp",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "garlic clove (minced)",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "lemon juice",
+            "quantity": "1 tbsp",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "red pepper flakes",
+            "quantity": "1/2 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "of salt",
+            "quantity": "Pinch",
+            "section": "Spices & Seasonings"
           }
         ],
         "steps": [
-          "In a large bowl, whisk together the mayonnaise, tahini, rice vinegar, chili crisp, soy sauce, sesame oil, honey and 1/2 teaspoon salt.",
-          "Cook the noodles according to the package directions and then drain and add to the sauce. Add the snow peas and most of the scallions and toss to combine. Transfer to a serving bowl, top with the remaining scallions and drizzle with more chili crisp before serving. This is great warm or at room temp. (This salad can be made a day ahead; return to room temperature before serving.)",
-          "Leftovers will keep in a sealed container in the refrigerator for up to 3 days."
+          "Cook and season the pasta. Preheat oven to 400°F (200°C). Cook the farfalle in salted boiling water until al dente. Drain well and toss with olive oil, smoked paprika, garlic powder, oregano, salt, and pepper.",
+          "Bake the pasta. Spread the seasoned pasta in a single layer on a parchment-lined baking tray. Bake for 30 minutes, tossing halfway through, until deeply golden and extra crispy.",
+          "Prep the salad. While the pasta bakes, add the diced red onion, sliced spring onions, diced cucumber, halved cherry tomatoes, parsley, and dill to a large bowl.",
+          "Make the dressing. In a small bowl, mix together the vegan yogurt, vegan mayo, chili crisp, minced garlic, lemon juice, red pepper flakes, and a pinch of salt. Stir until smooth.",
+          "Dress the salad. Pour the dressing over the chopped vegetables and toss to coat everything evenly.",
+          "Combine and serve. When the pasta comes out of the oven, let it cool slightly, then add it to the dressed salad. Toss everything together, top with extra spring onions and crushed crispy pasta pieces, and serve immediately."
         ],
-        "servings": 6,
-        "cuisineType": null,
+        "servings": 4,
+        "cuisineType": "American",
         "mainProtein": "Vegetarian",
-        "addedAt": "2026-07-18T23:24:00.841Z"
+        "addedAt": "2026-07-18T23:26:57.246Z"
       },
       "checked": false,
       "fromLibrary": false,
