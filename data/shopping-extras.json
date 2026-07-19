@@ -23,6 +23,12 @@
       "name": "Bacon",
       "quantity": "",
       "section": "Meat & Seafood"
+    },
+    {
+      "id": "rec_4xil343q1vmr",
+      "name": "Protein pasta",
+      "quantity": "",
+      "section": "Pantry"
     }
   ]
 }
