@@ -842,6 +842,105 @@
       "checked": true,
       "fromLibrary": false,
       "manual": true
+    },
+    {
+      "recipe": {
+        "id": "rec_pssinfg724dh",
+        "title": "20 Minute Ginger Pineapple Chicken Stir Fry",
+        "sourceUrl": "https://www.halfbakedharvest.com/pineapple-chicken-stir-fry/",
+        "ingredients": [
+          {
+            "item": "sesame oil (or olive oil)",
+            "quantity": "3 tablespoons",
+            "section": "Pantry"
+          },
+          {
+            "item": "ground chicken ((or ground pork))",
+            "quantity": "1 1/2 pounds",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "black pepper and chili flakes",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "salted butter",
+            "quantity": "3 tablespoons",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "Thai red curry paste",
+            "quantity": "1-3 tablespoons",
+            "section": "Other"
+          },
+          {
+            "item": "garlic, chopped",
+            "quantity": "3-4 cloves",
+            "section": "Produce"
+          },
+          {
+            "item": "chopped fresh ginger",
+            "quantity": "1 tablespoon",
+            "section": "Produce"
+          },
+          {
+            "item": "bell peppers, sliced",
+            "quantity": "2",
+            "section": "Produce"
+          },
+          {
+            "item": "fresh pineapple chunks",
+            "quantity": "1 1/2 cups",
+            "section": "Produce"
+          },
+          {
+            "item": "cashews or peanuts",
+            "quantity": "1 cup",
+            "section": "Pantry"
+          },
+          {
+            "item": "tamari or soy sauce",
+            "quantity": "1/2 cup",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "honey ((or real maple syrup))",
+            "quantity": "1-2 tablespoons",
+            "section": "Pantry"
+          },
+          {
+            "item": "fresh cilantro, chopped",
+            "quantity": "1/2 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "green onions, chopped",
+            "quantity": "4",
+            "section": "Produce"
+          },
+          {
+            "item": "fresh chopped Thai basil or basil",
+            "quantity": "1/4 cup",
+            "section": "Produce"
+          },
+          {
+            "item": "sweet Thai chili sauce and sesame seeds (for topping (optional))",
+            "quantity": "",
+            "section": "Pantry"
+          }
+        ],
+        "steps": [
+          "1. In a large skillet, combine the oil, chicken, and black pepper. Cook over medium heat, breaking up the meat as it cooks until browned, about 5 minutes. Add the chili paste, butter, garlic, and ginger. Cook 2 minutes, until the butter browns and the chicken gets crispy.2. Mix in the peppers, 3/4 cup pineapple, and cashews. Cook another 2-5 minutes. Pour over the tamari and honey. Cook until the sauce coats the chicken, 2-3 minutes. Remove from the heat.3. In a bowl, toss 3/4 cup pineapple with the cilantro and basil. 4. Serve the chicken, peppers, and sweet chili sauce over bowls of rice. Top with the pineapple/cilantro/basil. Add the chopped green onions, and if desired, serve with sweet Thai chili sauce and sesame seeds. Enjoy!"
+        ],
+        "servings": 6,
+        "cuisineType": "Asian",
+        "mainProtein": "Chicken",
+        "addedAt": "2026-07-26T19:31:44.165Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": true
     }
   ]
 }
