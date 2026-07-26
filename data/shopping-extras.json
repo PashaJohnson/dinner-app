@@ -1,22 +1,10 @@
 {
   "items": [
     {
-      "id": "rec_x3ojzz39xjvi",
-      "name": "Bag salad",
-      "quantity": "",
-      "section": "Other"
-    },
-    {
       "id": "rec_257hrad5eahl",
       "name": "Chicken breast",
       "quantity": "",
       "section": "Meat & Seafood"
-    },
-    {
-      "id": "rec_4xil343q1vmr",
-      "name": "Protein pasta",
-      "quantity": "",
-      "section": "Pantry"
     }
   ]
 }
