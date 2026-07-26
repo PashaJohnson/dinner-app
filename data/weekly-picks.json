@@ -691,7 +691,7 @@
         "addedAt": "2026-07-26T17:37:38.326Z"
       },
       "checked": false,
-      "fromLibrary": false,
+      "fromLibrary": true,
       "manual": true
     }
   ]
