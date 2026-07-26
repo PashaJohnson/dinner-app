@@ -770,6 +770,78 @@
       "checked": true,
       "fromLibrary": false,
       "manual": true
+    },
+    {
+      "recipe": {
+        "id": "rec_c59ynj8mc5p1",
+        "title": "Tuna & Sweet Potato Cakes with Dill Mayo",
+        "sourceUrl": "https://thenourishapp.theclubb.co/recipe/tuna-sweet-potato-cakes-with-dill-mayo",
+        "ingredients": [
+          {
+            "item": "Sweet potato",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "x 150g tin Tuna",
+            "quantity": "1",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "Mustard",
+            "quantity": "1 tsp",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "Egg",
+            "quantity": "1",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "Spring onion",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "Fresh chives",
+            "quantity": "1 tbsp",
+            "section": "Produce"
+          },
+          {
+            "item": "Fresh dill",
+            "quantity": "1 tbsp",
+            "section": "Produce"
+          },
+          {
+            "item": "Panko breadcrumbs",
+            "quantity": "3 tbsp",
+            "section": "Bakery & Bread"
+          },
+          {
+            "item": "Olive oil",
+            "quantity": "2 tsp",
+            "section": "Pantry"
+          },
+          {
+            "item": "Light mayonnaise",
+            "quantity": "30 g",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "Fresh dill",
+            "quantity": "1 tbsp",
+            "section": "Produce"
+          }
+        ],
+        "steps": [],
+        "servings": 2,
+        "cuisineType": null,
+        "mainProtein": "Fish",
+        "addedAt": "2026-07-26T19:11:32.821Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": true
     }
   ]
 }
