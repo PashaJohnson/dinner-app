@@ -581,6 +581,118 @@
       "checked": false,
       "fromLibrary": false,
       "manual": false
+    },
+    {
+      "recipe": {
+        "id": "rec_nbpm4bqbze3a",
+        "title": "Spiced Chicken & Turmeric Rice Bowl",
+        "sourceUrl": "https://thenourishapp.theclubb.co/recipe/spiced-chicken-turmeric-rice-bowl",
+        "ingredients": [
+          {
+            "item": "Basmati rice",
+            "quantity": "60 g",
+            "section": "Pantry"
+          },
+          {
+            "item": "Water",
+            "quantity": "90 ml",
+            "section": "Beverages"
+          },
+          {
+            "item": "Red onion",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "Butter",
+            "quantity": "5 g",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "Garlic clove",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "Cardamom pod",
+            "quantity": "1",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "Turmeric",
+            "quantity": "1/2 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "Fennel seeds",
+            "quantity": "1 pinch",
+            "section": "Produce"
+          },
+          {
+            "item": "Cucumber",
+            "quantity": "1/3",
+            "section": "Produce"
+          },
+          {
+            "item": "Sumac",
+            "quantity": "1 pinch",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "Chicken breast",
+            "quantity": "1",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "Natural yogurt",
+            "quantity": "20 g",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "Paprika",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "Chilli flakes",
+            "quantity": "1 pinch",
+            "section": "Other"
+          },
+          {
+            "item": "Turmeric",
+            "quantity": "1 pinch",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "Cumin",
+            "quantity": "1 pinch",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "Olive oil",
+            "quantity": "1 tsp",
+            "section": "Pantry"
+          },
+          {
+            "item": "Natural yogurt",
+            "quantity": "20 g",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "Fresh mint",
+            "quantity": "1 bunch",
+            "section": "Produce"
+          }
+        ],
+        "steps": [],
+        "servings": 1,
+        "cuisineType": null,
+        "mainProtein": "Chicken",
+        "addedAt": "2026-07-26T17:37:38.326Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": true
     }
   ]
 }
