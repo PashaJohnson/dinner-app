@@ -938,7 +938,7 @@
         "mainProtein": "Chicken",
         "addedAt": "2026-07-26T19:31:44.165Z"
       },
-      "checked": false,
+      "checked": true,
       "fromLibrary": false,
       "manual": true
     }
