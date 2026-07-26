@@ -693,6 +693,83 @@
       "checked": true,
       "fromLibrary": true,
       "manual": true
+    },
+    {
+      "recipe": {
+        "id": "rec_rb8o2hikarpt",
+        "title": "Caramelised Onion Giant Couscous with Herby Beef Meatballs & Feta",
+        "sourceUrl": "https://thenourishapp.theclubb.co/recipe/caramelised-onion-giant-couscous-with-herby-beef-meatballs-feta",
+        "ingredients": [
+          {
+            "item": "Beef mince",
+            "quantity": "200 g",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "Onion",
+            "quantity": "0.5",
+            "section": "Produce"
+          },
+          {
+            "item": "Garlic cloves",
+            "quantity": "2",
+            "section": "Produce"
+          },
+          {
+            "item": "Fresh parsley",
+            "quantity": "2 tbsp",
+            "section": "Produce"
+          },
+          {
+            "item": "Milk",
+            "quantity": "2 tsp",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "Oregano",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "Giant couscous",
+            "quantity": "80 g",
+            "section": "Pantry"
+          },
+          {
+            "item": "Olive oil",
+            "quantity": "1 tbsp",
+            "section": "Pantry"
+          },
+          {
+            "item": "Onion",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "Garlic clove",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "Beef stock",
+            "quantity": "150 ml",
+            "section": "Pantry"
+          },
+          {
+            "item": "Feta cheese",
+            "quantity": "60 g",
+            "section": "Dairy & Eggs"
+          }
+        ],
+        "steps": [],
+        "servings": 2,
+        "cuisineType": null,
+        "mainProtein": "Beef",
+        "addedAt": "2026-07-26T19:10:28.049Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": true
     }
   ]
 }
