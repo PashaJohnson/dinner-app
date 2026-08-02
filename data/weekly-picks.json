@@ -1013,6 +1013,63 @@
       "checked": true,
       "fromLibrary": false,
       "manual": true
+    },
+    {
+      "recipe": {
+        "id": "rec_xvfki7449fi6",
+        "title": "Grilled Salmon, Sun-dried Tomato & Red Onion Couscous and Garlicky Broccoli",
+        "sourceUrl": "https://thenourishapp.theclubb.co/recipe/grilled-salmon-sun-dried-tomato-red-onion-couscous-and-garlicky-broccoli",
+        "ingredients": [
+          {
+            "item": "Salmon fillet",
+            "quantity": "1",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "Olive oil",
+            "quantity": "1 tsp",
+            "section": "Pantry"
+          },
+          {
+            "item": "Red onion",
+            "quantity": "1/2",
+            "section": "Produce"
+          },
+          {
+            "item": "Giant couscous",
+            "quantity": "40 g",
+            "section": "Pantry"
+          },
+          {
+            "item": "Sun-dried tomatoes",
+            "quantity": "30 g",
+            "section": "Produce"
+          },
+          {
+            "item": "Olive oil",
+            "quantity": "1 tsp",
+            "section": "Pantry"
+          },
+          {
+            "item": "Garlic clove",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "Tenderstem broccoli spears",
+            "quantity": "4",
+            "section": "Produce"
+          }
+        ],
+        "steps": [],
+        "servings": 1,
+        "cuisineType": null,
+        "mainProtein": "Salmon",
+        "addedAt": "2026-08-02T20:31:06.174Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": true
     }
   ]
 }
