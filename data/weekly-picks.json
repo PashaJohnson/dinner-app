@@ -1070,6 +1070,73 @@
       "checked": true,
       "fromLibrary": false,
       "manual": true
+    },
+    {
+      "recipe": {
+        "id": "rec_rgxp003ycdnx",
+        "title": "Peri Peri Chicken, Herby Dill Yogurt & Grilled Courgettes",
+        "sourceUrl": "https://thenourishapp.theclubb.co/recipe/peri-peri-chicken-herby-dill-yogurt-grilled-courgettes",
+        "ingredients": [
+          {
+            "item": "Chicken breast",
+            "quantity": "1",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "Peri peri seasoning",
+            "quantity": "2-3 tsp",
+            "section": "Other"
+          },
+          {
+            "item": "Olive oil",
+            "quantity": "1 tbsp",
+            "section": "Pantry"
+          },
+          {
+            "item": "Garlic clove",
+            "quantity": "1/2",
+            "section": "Produce"
+          },
+          {
+            "item": "Lemon",
+            "quantity": "1/4",
+            "section": "Produce"
+          },
+          {
+            "item": "Greek yogurt",
+            "quantity": "60 g",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "Garlic clove",
+            "quantity": "1/2",
+            "section": "Produce"
+          },
+          {
+            "item": "Fresh dill",
+            "quantity": "1 tbsp",
+            "section": "Produce"
+          },
+          {
+            "item": "Courgette",
+            "quantity": "1",
+            "section": "Other"
+          },
+          {
+            "item": "Olive oil",
+            "quantity": "1 tsp",
+            "section": "Pantry"
+          }
+        ],
+        "steps": [],
+        "servings": 1,
+        "cuisineType": null,
+        "mainProtein": "Chicken",
+        "addedAt": "2026-08-02T20:33:23.757Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": true
     }
   ]
 }
