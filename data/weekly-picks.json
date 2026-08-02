@@ -938,7 +938,79 @@
         "mainProtein": "Chicken",
         "addedAt": "2026-07-26T19:31:44.165Z"
       },
-      "checked": true,
+      "checked": false,
+      "fromLibrary": false,
+      "manual": true
+    },
+    {
+      "recipe": {
+        "id": "rec_0dxjdp5v7udm",
+        "title": "Smoky Taco Style Chicken & Rice Bowl",
+        "sourceUrl": "https://thenourishapp.theclubb.co/recipe/smoky-taco-style-chicken-and-rice-bowl",
+        "ingredients": [
+          {
+            "item": "Olive oil",
+            "quantity": "2 tsp",
+            "section": "Pantry"
+          },
+          {
+            "item": "breast Chicken",
+            "quantity": "1",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "White rice",
+            "quantity": "60 g",
+            "section": "Pantry"
+          },
+          {
+            "item": "medium Red bell pepper",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "medium Red onion",
+            "quantity": "1/2",
+            "section": "Produce"
+          },
+          {
+            "item": "Small tomatoes",
+            "quantity": "100 g",
+            "section": "Produce"
+          },
+          {
+            "item": "Taco/fajita seasoning",
+            "quantity": "3 tsp",
+            "section": "Other"
+          },
+          {
+            "item": "Smoked paprika",
+            "quantity": "1 tsp",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "medium Avocado",
+            "quantity": "1/4",
+            "section": "Produce"
+          },
+          {
+            "item": "Greek yogurt",
+            "quantity": "25 g",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "Chilli flakes",
+            "quantity": "1 tsp",
+            "section": "Other"
+          }
+        ],
+        "steps": [],
+        "servings": 1,
+        "cuisineType": null,
+        "mainProtein": "Chicken",
+        "addedAt": "2026-08-02T20:29:52.138Z"
+      },
+      "checked": false,
       "fromLibrary": false,
       "manual": true
     }
