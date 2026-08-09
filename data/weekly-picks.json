@@ -1233,7 +1233,7 @@
         "addedAt": "2026-08-09T15:24:09.216Z"
       },
       "checked": false,
-      "fromLibrary": false,
+      "fromLibrary": true,
       "manual": true
     }
   ]
