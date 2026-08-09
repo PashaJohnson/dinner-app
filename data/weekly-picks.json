@@ -1137,6 +1137,88 @@
       "checked": false,
       "fromLibrary": false,
       "manual": true
+    },
+    {
+      "recipe": {
+        "id": "rec_qgugzmsaagij",
+        "title": "Fresh Spring Onion & Chilli Brothy Chicken & Rice",
+        "sourceUrl": "https://thenourishapp.theclubb.co/recipe/fresh-spring-onion-chilli-brothy-chicken-rice",
+        "ingredients": [
+          {
+            "item": "Chicken thigh",
+            "quantity": "1",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "Soy sauce",
+            "quantity": "2 tbsp",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "Honey",
+            "quantity": "1 tsp",
+            "section": "Pantry"
+          },
+          {
+            "item": "Garlic clove",
+            "quantity": "1/2",
+            "section": "Produce"
+          },
+          {
+            "item": "Olive oil",
+            "quantity": "1 tsp",
+            "section": "Pantry"
+          },
+          {
+            "item": "Fresh chicken stock",
+            "quantity": "250 ml",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "Lemongrass stem",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "Spring onion",
+            "quantity": "1",
+            "section": "Produce"
+          },
+          {
+            "item": "Soy sauce",
+            "quantity": "2 tsp",
+            "section": "Condiments & Sauces"
+          },
+          {
+            "item": "Fresh chilli",
+            "quantity": "1 tsp",
+            "section": "Other"
+          },
+          {
+            "item": "White rice",
+            "quantity": "50 g",
+            "section": "Pantry"
+          },
+          {
+            "item": "leaves Fresh coriander",
+            "quantity": "3-4",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "Spring onion",
+            "quantity": "1",
+            "section": "Produce"
+          }
+        ],
+        "steps": [],
+        "servings": 1,
+        "cuisineType": null,
+        "mainProtein": "Chicken",
+        "addedAt": "2026-08-09T15:21:40.123Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": true
     }
   ]
 }
