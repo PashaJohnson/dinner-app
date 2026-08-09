@@ -1153,6 +1153,88 @@
       "checked": true,
       "fromLibrary": true,
       "manual": true
+    },
+    {
+      "recipe": {
+        "id": "rec_hisnfzyddnk0",
+        "title": "Pasta With Burst Cherry Tomatoes",
+        "sourceUrl": "https://cooking.nytimes.com/recipes/1016634-pasta-with-burst-cherry-tomatoes",
+        "ingredients": [
+          {
+            "item": "fusilli pasta",
+            "quantity": "1 pound",
+            "section": "Pantry"
+          },
+          {
+            "item": "extra-virgin olive oil, more for drizzling",
+            "quantity": "1 tablespoon",
+            "section": "Pantry"
+          },
+          {
+            "item": "pancetta, preferably thick cut, diced",
+            "quantity": "6 ounces",
+            "section": "Meat & Seafood"
+          },
+          {
+            "item": "garlic cloves, smashed and peeled",
+            "quantity": "6",
+            "section": "Produce"
+          },
+          {
+            "item": "of red pepper flakes",
+            "quantity": "Pinch",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "Fine sea salt and black pepper, as needed",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          },
+          {
+            "item": "cherry or grape tomatoes, halved",
+            "quantity": "1 quart",
+            "section": "Produce"
+          },
+          {
+            "item": "butter",
+            "quantity": "3 tablespoons",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "Fresh ricotta cheese, for serving (optional)",
+            "quantity": "",
+            "section": "Dairy & Eggs"
+          },
+          {
+            "item": "whole mint leaves, torn",
+            "quantity": "3 cups",
+            "section": "Produce"
+          },
+          {
+            "item": "scallions, preferably red scallions for color, thinly sliced",
+            "quantity": "4",
+            "section": "Produce"
+          },
+          {
+            "item": "Flaky sea salt, to finish",
+            "quantity": "",
+            "section": "Spices & Seasonings"
+          }
+        ],
+        "steps": [
+          "Bring a large pot of heavily salted water to a boil. Add pasta and cook until 1 minute shy of al dente. Drain pasta, reserving ½ cup pasta cooking water.",
+          "Meanwhile, heat a large skillet over medium-high heat for 15 seconds, then add the oil and heat until it thins out and easily coats the pan when swirled. Add pancetta and cook until it starts to render its fat, about 2 minutes. Add garlic, red pepper flakes and a large pinch of salt and pepper and cook until fragrant, about 2 minutes. Add tomatoes and cook until they burst, turn golden at the edges and shrivel up slightly, about 5 to 8 minutes.",
+          "Add pasta to pan and toss with tomato-pancetta mixture; if the mixture looks dry add a little pasta cooking water a few tablespoons at a time. Cook over high heat until the pasta finishes cooking in the sauce. Add the butter and toss until it melts and coats everything.",
+          "Divide pasta among warmed pasta bowls. Garnish with dollops of ricotta if desired, and top with a generous mound of fresh mint and scallions. Drizzle with olive oil and sprinkle with sea salt and more pepper before serving."
+        ],
+        "servings": 4,
+        "cuisineType": null,
+        "mainProtein": "Vegetarian",
+        "addedAt": "2026-08-09T15:24:09.216Z"
+      },
+      "checked": false,
+      "fromLibrary": false,
+      "manual": true
     }
   ]
 }
