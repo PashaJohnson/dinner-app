@@ -1010,7 +1010,7 @@
         "mainProtein": "Chicken",
         "addedAt": "2026-08-02T20:29:52.138Z"
       },
-      "checked": true,
+      "checked": false,
       "fromLibrary": false,
       "manual": true
     },
@@ -1067,7 +1067,7 @@
         "mainProtein": "Salmon",
         "addedAt": "2026-08-02T20:31:06.174Z"
       },
-      "checked": true,
+      "checked": false,
       "fromLibrary": false,
       "manual": true
     },
@@ -1134,7 +1134,7 @@
         "mainProtein": "Chicken",
         "addedAt": "2026-08-02T20:33:23.757Z"
       },
-      "checked": true,
+      "checked": false,
       "fromLibrary": false,
       "manual": true
     }
