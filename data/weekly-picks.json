@@ -839,7 +839,7 @@
         "mainProtein": "Fish",
         "addedAt": "2026-07-26T19:11:32.821Z"
       },
-      "checked": true,
+      "checked": false,
       "fromLibrary": true,
       "manual": true
     },
