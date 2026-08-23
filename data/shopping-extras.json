@@ -1,34 +1,3 @@
 {
-  "items": [
-    {
-      "id": "rec_257hrad5eahl",
-      "name": "Chicken breast",
-      "quantity": "",
-      "section": "Meat & Seafood"
-    },
-    {
-      "id": "rec_zqiyzwwqbctm",
-      "name": "Chicken breast",
-      "quantity": "",
-      "section": "Meat & Seafood"
-    },
-    {
-      "id": "rec_brpu6alxbs2l",
-      "name": "Bacon",
-      "quantity": "",
-      "section": "Meat & Seafood"
-    },
-    {
-      "id": "rec_45f694dadxbm",
-      "name": "Bacon",
-      "quantity": "",
-      "section": "Meat & Seafood"
-    },
-    {
-      "id": "rec_lp3sfynpe76e",
-      "name": "Bacon",
-      "quantity": "",
-      "section": "Meat & Seafood"
-    }
-  ]
+  "items": []
 }
