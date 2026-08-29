@@ -71,6 +71,12 @@
       "name": "Eggs",
       "quantity": "",
       "section": "Dairy & Eggs"
+    },
+    {
+      "id": "rec_qcc8e34sshlr",
+      "name": "Lemkn",
+      "quantity": "",
+      "section": "Other"
     }
   ]
 }
