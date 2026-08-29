@@ -47,6 +47,12 @@
       "name": "Lemon",
       "quantity": "",
       "section": "Produce"
+    },
+    {
+      "id": "rec_8um3a8knrfpg",
+      "name": "Bacon",
+      "quantity": "",
+      "section": "Meat & Seafood"
     }
   ]
 }
