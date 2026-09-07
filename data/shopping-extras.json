@@ -19,28 +19,10 @@
       "section": "Other"
     },
     {
-      "id": "rec_zzoebpzdq8o7",
-      "name": "12 oz cherry tomatoes",
-      "quantity": "",
-      "section": "Produce"
-    },
-    {
-      "id": "rec_d81v0wosqfpi",
-      "name": "Pepperoncinis",
-      "quantity": "",
-      "section": "Produce"
-    },
-    {
       "id": "rec_dta3bvuoqmob",
       "name": "Small radichio",
       "quantity": "",
       "section": "Other"
-    },
-    {
-      "id": "rec_wz9k3ysvr8wg",
-      "name": "Lemon",
-      "quantity": "",
-      "section": "Produce"
     },
     {
       "id": "rec_8um3a8knrfpg",
@@ -67,12 +49,6 @@
       "section": "Pantry"
     },
     {
-      "id": "rec_hl73qnnbt169",
-      "name": "Lemon",
-      "quantity": "",
-      "section": "Produce"
-    },
-    {
       "id": "rec_bezq8hq2t7ky",
       "name": "Grated parm",
       "quantity": "",
@@ -89,12 +65,6 @@
       "name": "Bacon",
       "quantity": "",
       "section": "Meat & Seafood"
-    },
-    {
-      "id": "rec_qtfjc2zrzwrk",
-      "name": "Lemon",
-      "quantity": "",
-      "section": "Produce"
     }
   ]
 }
