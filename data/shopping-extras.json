@@ -53,6 +53,12 @@
       "name": "Whole milk",
       "quantity": "",
       "section": "Dairy & Eggs"
+    },
+    {
+      "id": "rec_dmkkmxlbqnp3",
+      "name": "Vegetable oil",
+      "quantity": "",
+      "section": "Pantry"
     }
   ]
 }
