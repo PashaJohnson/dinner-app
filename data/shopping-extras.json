@@ -59,6 +59,12 @@
       "name": "Vegetable oil",
       "quantity": "",
       "section": "Pantry"
+    },
+    {
+      "id": "rec_m7gbnlzgqrrg",
+      "name": "Scallion",
+      "quantity": "",
+      "section": "Produce"
     }
   ]
 }
