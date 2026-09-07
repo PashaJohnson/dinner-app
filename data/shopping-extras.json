@@ -47,6 +47,12 @@
       "name": "Chicken breast",
       "quantity": "",
       "section": "Meat & Seafood"
+    },
+    {
+      "id": "rec_i9l4nzskq7b3",
+      "name": "Whole milk",
+      "quantity": "",
+      "section": "Dairy & Eggs"
     }
   ]
 }
