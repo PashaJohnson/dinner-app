@@ -7,12 +7,6 @@
       "section": "Pantry"
     },
     {
-      "id": "rec_uc5ln4h6prq3",
-      "name": "5 oz pepperoni",
-      "quantity": "",
-      "section": "Meat & Seafood"
-    },
-    {
       "id": "rec_84x1ygmwq00q",
       "name": "Burrata",
       "quantity": "",
@@ -23,24 +17,6 @@
       "name": "Small radichio",
       "quantity": "",
       "section": "Other"
-    },
-    {
-      "id": "rec_8um3a8knrfpg",
-      "name": "Bacon",
-      "quantity": "",
-      "section": "Meat & Seafood"
-    },
-    {
-      "id": "rec_jx08x17ps36h",
-      "name": "Chicken breast",
-      "quantity": "",
-      "section": "Meat & Seafood"
-    },
-    {
-      "id": "rec_e42x6859s7vs",
-      "name": "Breadcrumbs",
-      "quantity": "",
-      "section": "Bakery & Bread"
     },
     {
       "id": "rec_clcb841wsrdl",
@@ -59,12 +35,6 @@
       "name": "Salad",
       "quantity": "",
       "section": "Other"
-    },
-    {
-      "id": "rec_0rgppn1zy1lo",
-      "name": "Bacon",
-      "quantity": "",
-      "section": "Meat & Seafood"
     }
   ]
 }
