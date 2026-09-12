@@ -125,6 +125,12 @@
       "name": "Sourdough bread",
       "quantity": "",
       "section": "Bakery & Bread"
+    },
+    {
+      "id": "rec_2ofi2px182io",
+      "name": "Chives",
+      "quantity": "",
+      "section": "Produce"
     }
   ]
 }
