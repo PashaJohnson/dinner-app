@@ -77,6 +77,12 @@
       "name": "Yellow onion",
       "quantity": "",
       "section": "Produce"
+    },
+    {
+      "id": "rec_byjjrvcd6nqp",
+      "name": "Tomato paste",
+      "quantity": "",
+      "section": "Pantry"
     }
   ]
 }
