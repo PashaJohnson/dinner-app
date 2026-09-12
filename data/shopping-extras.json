@@ -31,12 +31,6 @@
       "section": "Pantry"
     },
     {
-      "id": "rec_n0fz07c5prsj",
-      "name": "Chicken broth",
-      "quantity": "",
-      "section": "Meat & Seafood"
-    },
-    {
       "id": "rec_vpd6f155q179",
       "name": "Chicken breast",
       "quantity": "",
@@ -53,12 +47,6 @@
       "name": "Vegetable oil",
       "quantity": "",
       "section": "Pantry"
-    },
-    {
-      "id": "rec_m7gbnlzgqrrg",
-      "name": "Scallion",
-      "quantity": "",
-      "section": "Produce"
     }
   ]
 }
