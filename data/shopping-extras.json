@@ -29,6 +29,12 @@
       "name": "Yellow onion",
       "quantity": "",
       "section": "Produce"
+    },
+    {
+      "id": "rec_8wbltthtf44s",
+      "name": "Chicken breast",
+      "quantity": "",
+      "section": "Meat & Seafood"
     }
   ]
 }
