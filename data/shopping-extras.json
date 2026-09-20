@@ -13,28 +13,10 @@
       "section": "Bakery & Bread"
     },
     {
-      "id": "rec_khxwqz44xono",
-      "name": "Dill",
-      "quantity": "",
-      "section": "Produce"
-    },
-    {
       "id": "rec_x1ingal3y51c",
       "name": "Chicken broth",
       "quantity": "",
       "section": "Meat & Seafood"
-    },
-    {
-      "id": "rec_78gd2ghr35hb",
-      "name": "Tomatoes on the vine",
-      "quantity": "",
-      "section": "Produce"
-    },
-    {
-      "id": "rec_h6q9zh8y3bxp",
-      "name": "Red onion",
-      "quantity": "",
-      "section": "Produce"
     },
     {
       "id": "rec_hxwu475n3id6",
@@ -43,20 +25,8 @@
       "section": "Dairy & Eggs"
     },
     {
-      "id": "rec_68b7pc4j3j4h",
-      "name": "Mint",
-      "quantity": "",
-      "section": "Produce"
-    },
-    {
       "id": "rec_h4xiz4a43l48",
       "name": "Parsley",
-      "quantity": "",
-      "section": "Produce"
-    },
-    {
-      "id": "rec_9rvw4xlp3mwm",
-      "name": "Dill",
       "quantity": "",
       "section": "Produce"
     },
