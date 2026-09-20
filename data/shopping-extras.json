@@ -1,18 +1,6 @@
 {
   "items": [
     {
-      "id": "rec_9pngfpcbx0y4",
-      "name": "Panko",
-      "quantity": "",
-      "section": "Bakery & Bread"
-    },
-    {
-      "id": "rec_hxwu475n3id6",
-      "name": "Feta crumble",
-      "quantity": "",
-      "section": "Dairy & Eggs"
-    },
-    {
       "id": "rec_uqwohpg83xun",
       "name": "Tzatziki",
       "quantity": "",
@@ -29,12 +17,6 @@
       "name": "Salt",
       "quantity": "",
       "section": "Spices & Seasonings"
-    },
-    {
-      "id": "rec_e1bjp8db7dw8",
-      "name": "Butter/lima bean 3 cans",
-      "quantity": "",
-      "section": "Dairy & Eggs"
     },
     {
       "id": "rec_ci7rv5w77m11",
