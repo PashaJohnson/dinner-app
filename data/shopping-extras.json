@@ -1,22 +1,10 @@
 {
   "items": [
     {
-      "id": "rec_vpd6f155q179",
-      "name": "Chicken breast",
-      "quantity": "",
-      "section": "Meat & Seafood"
-    },
-    {
       "id": "rec_9pngfpcbx0y4",
       "name": "Panko",
       "quantity": "",
       "section": "Bakery & Bread"
-    },
-    {
-      "id": "rec_x1ingal3y51c",
-      "name": "Chicken broth",
-      "quantity": "",
-      "section": "Meat & Seafood"
     },
     {
       "id": "rec_hxwu475n3id6",
@@ -55,22 +43,10 @@
       "section": "Pantry"
     },
     {
-      "id": "rec_5kyyhc3d7r6i",
-      "name": "Tomato sayce",
-      "quantity": "",
-      "section": "Produce"
-    },
-    {
       "id": "rec_yb0j65a87vl6",
       "name": "Sourdough bread",
       "quantity": "",
       "section": "Bakery & Bread"
-    },
-    {
-      "id": "rec_2ofi2px182io",
-      "name": "Chives",
-      "quantity": "",
-      "section": "Produce"
     }
   ]
 }
