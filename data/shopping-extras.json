@@ -1,22 +1,3 @@
 {
-  "items": [
-    {
-      "id": "rec_uqwohpg83xun",
-      "name": "Tzatziki",
-      "quantity": "",
-      "section": "Other"
-    },
-    {
-      "id": "rec_byjjrvcd6nqp",
-      "name": "Tomato paste",
-      "quantity": "",
-      "section": "Pantry"
-    },
-    {
-      "id": "rec_q2i56juj6qk4",
-      "name": "Salt",
-      "quantity": "",
-      "section": "Spices & Seasonings"
-    }
-  ]
+  "items": []
 }
