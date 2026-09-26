@@ -1,22 +1,3 @@
 {
-  "items": [
-    {
-      "id": "rec_6z3r95juajv9",
-      "name": "Langostino tails",
-      "quantity": "",
-      "section": "Other"
-    },
-    {
-      "id": "rec_8dj3c6olaopi",
-      "name": "Lobster bisque",
-      "quantity": "",
-      "section": "Meat & Seafood"
-    },
-    {
-      "id": "rec_y1lbj9l6aw0j",
-      "name": "Goodles",
-      "quantity": "",
-      "section": "Other"
-    }
-  ]
+  "items": []
 }
