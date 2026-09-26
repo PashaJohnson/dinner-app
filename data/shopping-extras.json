@@ -1,12 +1,6 @@
 {
   "items": [
     {
-      "id": "rec_8y2btq704qkm",
-      "name": "Chicken breast",
-      "quantity": "",
-      "section": "Meat & Seafood"
-    },
-    {
       "id": "rec_6z3r95juajv9",
       "name": "Langostino tails",
       "quantity": "",
@@ -23,18 +17,6 @@
       "name": "Goodles",
       "quantity": "",
       "section": "Other"
-    },
-    {
-      "id": "rec_8wbltthtf44s",
-      "name": "Chicken breast",
-      "quantity": "",
-      "section": "Meat & Seafood"
-    },
-    {
-      "id": "rec_uvkdkhbxgbtv",
-      "name": "Chives",
-      "quantity": "",
-      "section": "Produce"
     }
   ]
 }
