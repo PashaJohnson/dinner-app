@@ -796,7 +796,7 @@
         "mainProtein": "Salmon",
         "addedAt": "2026-08-02T20:31:06.174Z"
       },
-      "checked": true,
+      "checked": false,
       "fromLibrary": false,
       "manual": true
     },
