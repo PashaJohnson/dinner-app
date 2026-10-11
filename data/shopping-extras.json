@@ -1,22 +1,3 @@
 {
-  "items": [
-    {
-      "id": "rec_lefcruh6qzs2",
-      "name": "Greek yogurt",
-      "quantity": "",
-      "section": "Dairy & Eggs"
-    },
-    {
-      "id": "rec_49sqvoctrs57",
-      "name": "Red onion",
-      "quantity": "",
-      "section": "Produce"
-    },
-    {
-      "id": "rec_mbd8iuhcs2oj",
-      "name": "Green bell pepper",
-      "quantity": "",
-      "section": "Produce"
-    }
-  ]
+  "items": []
 }
