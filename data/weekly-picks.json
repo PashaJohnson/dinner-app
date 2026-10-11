@@ -1200,7 +1200,7 @@
         "mainProtein": "Vegetarian",
         "addedAt": "2026-06-15T00:55:23.204Z"
       },
-      "checked": true,
+      "checked": false,
       "fromLibrary": true,
       "manual": true
     }
