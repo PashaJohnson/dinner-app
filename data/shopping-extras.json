@@ -29,6 +29,12 @@
       "name": "Tortillas",
       "quantity": "",
       "section": "Bakery & Bread"
+    },
+    {
+      "id": "rec_p8ccmr8wefts",
+      "name": "Mexican salad",
+      "quantity": "",
+      "section": "Other"
     }
   ]
 }
