@@ -1,12 +1,6 @@
 {
   "items": [
     {
-      "id": "rec_3bqrnf2j3j9w",
-      "name": "Steak",
-      "quantity": "",
-      "section": "Meat & Seafood"
-    },
-    {
       "id": "rec_lefcruh6qzs2",
       "name": "Greek yogurt",
       "quantity": "",
@@ -21,12 +15,6 @@
     {
       "id": "rec_mbd8iuhcs2oj",
       "name": "Green bell pepper",
-      "quantity": "",
-      "section": "Produce"
-    },
-    {
-      "id": "rec_2dqw9j97tv3o",
-      "name": "Sweet onion",
       "quantity": "",
       "section": "Produce"
     }
